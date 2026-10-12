@@ -1,0 +1,34 @@
+instruction: |-
+  You are provided with a Turtle file at `/app/university_graph.ttl` containing the
+  ontology and instance data for a university knowledge graph.
+
+  Create a SPARQL query that returns every full professor and assistant professor
+  together with the university where that person works.
+
+  Contract:
+  - Professor status may be represented by a string-valued `uni:role`, by a
+    `uni:hasAcademicRank` resource, or by both.
+  - Rank resources may be the named Full/Assistant Professor resources or expose
+    their title through `uni:rankLabel`.
+  - Exclude lecturers and postdoctoral researchers.
+  - Starting from `uni:worksAt`, affiliation can traverse one or more of
+    `uni:partOfUniversity`, `uni:belongsToUniversity`, `uni:partOf`, or
+    `uni:affiliatedWithUniversity` before reaching a `uni:University`.
+  - Return each qualifying pair exactly once, even when a person has more than one
+    professor signal or the graph contains duplicate-producing noise.
+  - Return exactly `?professorName` and `?universityName`.
+
+  Save the query to `/app/solution.sparql`.
+author_name: Task Author
+difficulty: hard
+category: data-querying
+tags:
+  - knowledge-graph
+  - sparql-query
+  - heterogeneous-rank-representation
+  - property-path
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

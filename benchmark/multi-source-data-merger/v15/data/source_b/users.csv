@@ -1,0 +1,6 @@
+person_id,legal_name,email_contact,created_ts,lifecycle
+201,,ava@example.com,2024-01-05T09:30:00Z,
+202,MIA CHEN,mia.north@example.com,2024/02/14,ACTIVE
+203,Leo Park,leo@example.com ,03/01/2024 15:00:00,
+204,,,2024-04-20 08:00:00,inactive
+205,Omar Reyes,omar@example.com,2024.05.11,ENABLED

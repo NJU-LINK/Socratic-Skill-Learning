@@ -1,0 +1,29 @@
+axes:
+  - name: table_relation
+    type: freeform
+    description: >
+      The relation computed at the spreadsheet boundary: endpoint difference, descriptive
+      statistics, ranking and top-k selection, categorical event counting, or extraction and
+      aggregation of values that will be written into a workbook.
+  - name: source_artifact
+    type: enum
+    values: [xlsx, ics, pdf]
+    description: >
+      The source artifact from which structured records are read. Every case has a spreadsheet
+      as an input or output boundary, while held-out members may require parsing calendars or
+      PDFs before creating the workbook result.
+  - name: output_artifacts
+    type: freeform
+    description: >
+      The artifact set materialized from the computed relation, including text, XLSX, DOCX, PDF,
+      ICS, and EML. A case may fan one table result out to several mutually consistent artifacts.
+  - name: routing_and_cardinality
+    type: freeform
+    description: >
+      Whether the result is one aggregate report, one artifact per selected row, one artifact per
+      person, or a conditional notification created only when a public threshold is crossed.
+  - name: cross_artifact_consistency
+    type: freeform
+    description: >
+      Which computed values, selected entities, labels, dates, or routing decisions must agree
+      across every output artifact produced by the workflow.

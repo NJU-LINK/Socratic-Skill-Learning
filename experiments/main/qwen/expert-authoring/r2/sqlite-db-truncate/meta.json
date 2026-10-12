@@ -1,0 +1,75 @@
+{
+  "method": "expert-authoring",
+  "round": 2,
+  "family": "sqlite-db-truncate",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 168
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 30
+      },
+      "iteration-2": {
+        "records": 35
+      },
+      "iteration-3": {
+        "records": 23
+      }
+    },
+    "heldout": {
+      "v04": {
+        "records": 31,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 41,
+        "score": 1,
+        "passed": 19,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 27,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v18": {
+        "records": 38,
+        "score": 1,
+        "passed": 10,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v19": {
+        "records": 47,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v20": {
+        "records": 41,
+        "score": 0.3333333333333333,
+        "passed": 3,
+        "failed": 6,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 168,
+    "train": 88,
+    "heldout": 225,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

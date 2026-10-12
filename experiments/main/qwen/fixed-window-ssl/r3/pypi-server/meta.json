@@ -1,0 +1,106 @@
+{
+  "method": "fixed-window-ssl",
+  "round": 3,
+  "family": "pypi-server",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 25
+      },
+      "student-author": {
+        "records": 134
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 29
+      },
+      "iteration-2": {
+        "records": 29
+      },
+      "iteration-3": {
+        "records": 21
+      }
+    },
+    "heldout": {
+      "v04": {
+        "records": 47,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 35,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 32,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 47,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 42,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 37,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 27,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 39,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 27,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 50,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 159,
+    "train": 79,
+    "heldout": 383,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

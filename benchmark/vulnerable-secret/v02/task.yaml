@@ -1,0 +1,17 @@
+instruction: |-
+  A security analysis program at `/app/vulnerable` contains a hidden secret key. The program prompts for a buffer length, then reads input data. Your task is to extract the secret key and save it to `/app/results.txt`.
+
+  The secret key is in the format `FLAG{...}`.
+
+  The task is complete when the secret key has been successfully extracted and written to `/app/results.txt`.
+author_name: Task Author
+difficulty: medium
+category: security
+tags:
+  - security
+  - reversing
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

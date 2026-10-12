@@ -1,0 +1,30 @@
+instruction: |-
+  Create `/app/filter.py`, a command-line HTML sanitizer that accepts a file path as
+  `argv[1]` and rewrites that file in place.
+
+  The sanitizer will be used on large, realistic dashboards, documentation pages,
+  forms, portals, and release notes. Representative tainted inputs are available in
+  `/app/fixtures`; they are examples, not a finite filename list.
+
+  Remove browser-executable content, including scripts, inline event handlers,
+  executable or encoded URL schemes, dangerous refresh/srcdoc/style/srcset/form
+  targets, and unsafe active-container or template behavior. Preserve legitimate
+  structure, text, navigation, forms, tables, SVG/MathML content, layout attributes,
+  entities, and safe URLs.
+
+  Clean HTML must remain byte-for-byte unchanged. For tainted HTML, change only the
+  unsafe fragment needed to neutralize execution; do not reformat the document or
+  serialize the entire DOM.
+author_name: Task Author
+difficulty: hard
+category: security
+tags:
+  - html
+  - xss
+  - byte-preserving-transformation
+  - obfuscation
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

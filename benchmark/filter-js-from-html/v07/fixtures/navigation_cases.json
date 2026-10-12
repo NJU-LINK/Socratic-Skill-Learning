@@ -1,0 +1,27 @@
+[
+  {
+    "name": "checkout-page-dangerous-form-action",
+    "html_file": "checkout-page-dangerous-form-action.html",
+    "notes": "Checkout form with a percent-encoded javascript: action while preserving field values and layout classes."
+  },
+  {
+    "name": "account-settings-button-formaction",
+    "html_file": "account-settings-button-formaction.html",
+    "notes": "Account settings page with a dangerous button-level formaction and safe sibling controls."
+  },
+  {
+    "name": "admin-console-nav-links",
+    "html_file": "admin-console-nav-links.html",
+    "notes": "Admin console navigation with mixed safe and unsafe href targets."
+  },
+  {
+    "name": "search-page-meta-refresh",
+    "html_file": "search-page-meta-refresh.html",
+    "notes": "Search page using refresh-based navigation with a dangerous target."
+  },
+  {
+    "name": "contact-page-data-link",
+    "html_file": "contact-page-data-link.html",
+    "notes": "Contact page with a data: HTML payload in a help link."
+  }
+]

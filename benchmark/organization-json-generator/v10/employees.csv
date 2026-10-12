@@ -1,0 +1,24 @@
+id,name,position,skills,years_of_service,department_id
+D001-E001," Cristiano Ronaldo ","Manager "," Python ; Leadership ;; Project Management "," 10 "," D001 "
+D001-E002,Bernardo Silva,"Senior Developer","JavaScript ; Python ;; Cloud Services","07",D001
+D001-E003,Sergio Ramos," Team Lead ","""Java"" ; C++ ; DevOps "," 12",D001
+D002-E001,Kylian Mbappe,Designer,"UI/UX Design ; Communication ;; Marketing ","5 ",D002
+D002-E002," Vinicius Junior","Specialist ","Content Creation; Marketing ; Communication ; Python "," 3 "," D002 "
+D003-E001,Antonio Silva,Director,"Leadership ; Communication ; Project Management"," 18",D003
+D003-E002,Diogo Dalot," Coordinator"," SQL ; Data Analysis ; Communication ","004"," D003 "
+D004-E001,Lewis Hamilton,"Senior Developer","Python ; Machine Learning ; Data Analysis ","19",D004
+D004-E002,Charles Leclerc,Researcher,"Research ; Python ; Data Analysis","16 "," D004 "
+D004-E003,Max Verstappen,Analyst,"SQL ; Data Analysis ; Machine Learning ; Python"," 17",D004
+D004-E004,Fernando Alonso,"Principal Scientist","Python ; Machine Learning ; Research "," 24 ",D004
+D005-E001,Jude Bellingham,"Team Lead","Customer Service ; Leadership ; Communication ; Python","5",D005
+D005-E002,Luka Modric,Specialist,"Customer Service ; Communication ; Sales "," 21 "," D005 "
+D006-E001,Ada Lovelace,"Platform Lead","Python ; Data Engineering ; Leadership","14",D006
+D006-E002,Grace Hopper," Staff Engineer ","Python ; Distributed Systems ; Data Engineering","22 "," D006 "
+D006-E003,Katherine Johnson,Analyst,"Python ; SQL ; Data Analysis","11",D006
+D006-E004,Margaret Hamilton,"Reliability Engineer","Python ; DevOps ; Incident Response","13",D006
+D006-E005,Barbara Liskov,Architect,"Python ; Distributed Systems ; Architecture","026"," D006 "
+D007-E001,Alex Morgan,"Operations Manager","Operations ; Leadership ; Scheduling"," 8",D007
+D007-E002,Megan Rapinoe,Coordinator,"Operations ; Communication ; Python "," 6 "," D007 "
+D007-E003,Sam Kerr,Specialist,"Logistics ; Operations ; Reporting","4",D007
+D008-E001,Naomi Osaka,"Compliance Lead","Risk Management ; Communication ; Policy","09",D008
+D008-E002,Coco Gauff,Analyst,"Policy ; Auditing ; Python","2 "," D008 "

@@ -1,0 +1,72 @@
+{
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "financial-document-processor",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 147
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 17
+      },
+      "iteration-2": {
+        "records": 12
+      },
+      "iteration-3": {
+        "records": 12
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 0,
+        "empty": true,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 22,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 0,
+        "empty": true,
+        "score": 0.0,
+        "timedOut": true
+      },
+      "v09": {
+        "records": 0,
+        "empty": true,
+        "score": 0.0,
+        "timedOut": true
+      },
+      "v15": {
+        "records": 0,
+        "empty": true,
+        "score": 0.0,
+        "timedOut": true
+      },
+      "v16": {
+        "records": 0,
+        "empty": true,
+        "score": 0.0,
+        "timedOut": true
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 147,
+    "train": 41,
+    "heldout": 22,
+    "heldoutVariants": 1,
+    "heldoutEmpty": 5,
+    "noSkillFormation": false
+  }
+}

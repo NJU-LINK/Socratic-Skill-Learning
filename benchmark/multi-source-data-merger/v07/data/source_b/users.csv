@@ -1,0 +1,10 @@
+user_id,name,email_address,created_at,is_active
+201,Alicia C.,alicia+crm@example.com,01/05/2024,true
+202,Brandon Lee,brandon@secondary.example,01/18/2024,false
+203,Carla Gomez,carla@primary.example,02/03/2024,true
+204,Darius Reed,darius.reed@secondary.example,02/11/2024,true
+205,Elena P.,elena@secondary.example,02/27/2024,false
+206,Farah Khan,farah@primary.example,03/09/2024,true
+207,Gavin Moore,gavin@secondary.example,03/17/2024,true
+209,Iris Nguyen,iris@secondary.example,04/04/2024,true
+210,Jamal Ortiz,jamal@secondary.example,04/10/2024,false

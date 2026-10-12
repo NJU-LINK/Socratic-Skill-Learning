@@ -1,0 +1,109 @@
+{
+  "method": "trace2skill",
+  "round": 2,
+  "family": "audio-synth-stft-peaks",
+  "stats": {
+    "skill_formation": {
+      "trajectory-1": {
+        "records": 2
+      },
+      "trajectory-2": {
+        "records": 2
+      },
+      "trajectory-3": {
+        "records": 2
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 39
+      },
+      "iteration-2": {
+        "records": 33
+      },
+      "iteration-3": {
+        "records": 41
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 41,
+        "score": 0.3333333333333333,
+        "passed": 2,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 35,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 35,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 35,
+        "score": 0,
+        "passed": 0,
+        "failed": 6,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 31,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 37,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 33,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 39,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 37,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 29,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 6,
+    "train": 113,
+    "heldout": 352,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

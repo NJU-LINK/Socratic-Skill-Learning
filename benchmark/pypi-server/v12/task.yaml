@@ -1,0 +1,35 @@
+instruction: |-
+  Create and publish a Python distribution to an authenticated local package index
+  at `http://localhost:8080`.
+
+  Package contract:
+  - The distribution name is `vector-ops`, the import name is `vectorops`, and the
+    version is `0.1.0`.
+  - Export `dotproduct` and `cosine_similarity` at the package top level.
+  - Both functions accept equal-length numeric lists. `dotproduct` returns their dot
+    product; `cosine_similarity` returns their cosine similarity and rejects a zero
+    vector with `ValueError`.
+  - Build at least one wheel and one source distribution in
+    `/app/vector-ops-work/vector-ops-project/dist`.
+
+  Index contract:
+  - Leave a service running on port 8080 with a PEP 503-style `/simple` endpoint.
+  - Uploads at `/legacy/` must require HTTP Basic authentication.
+  - Use username `publisher` and password `upload-secret`.
+  - Publish the built artifacts through that authenticated endpoint.
+  - The simple index must serve every built artifact byte-for-byte.
+  - A fresh environment must be able to install
+    `vector-ops==0.1.0` from `http://localhost:8080/simple` and import `vectorops`.
+author_name: Task Author
+difficulty: hard
+category: software-engineering
+tags:
+  - python
+  - packaging
+  - authenticated-upload
+  - local-package-index
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

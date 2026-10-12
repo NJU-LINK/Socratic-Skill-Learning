@@ -1,0 +1,275 @@
+@prefix uni: <http://university.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ---------------------------
+# Universities
+# ---------------------------
+uni:NTUA a uni:University ;
+    uni:hasName "National Technical University of Athens" ;
+    uni:locatedInCountry "GR" .
+
+uni:IST a uni:University ;
+    uni:hasName "Instituto Superior Tecnico" ;
+    uni:locatedInCountry "PT" .
+
+uni:NKUA a uni:University ;
+    uni:hasName "National and Kapodistrian University of Athens" ;
+    uni:locatedInCountry "GR" .
+
+uni:MIT a uni:University ;
+    uni:hasName "Massachusetts Institute of Technology" ;
+    uni:locatedInCountry "US" .
+
+uni:Sorbonne a uni:University ;
+    uni:hasName "Sorbonne University" ;
+    uni:locatedInCountry "FR" .
+
+uni:LMU a uni:University ;
+    uni:hasName "Ludwig Maximilian University of Munich" ;
+    uni:locatedInCountry "DE" .
+
+uni:Berkeley a uni:University ;
+    uni:hasName "University of California, Berkeley" ;
+    uni:locatedInCountry "US" .
+
+# ---------------------------
+# Departments and units
+# ---------------------------
+uni:ComputerScience_NTUA a uni:Department ;
+    uni:partOfUniversity uni:NTUA .
+
+uni:DataScience_NTUA a uni:Department ;
+    uni:partOfUniversity uni:NTUA .
+
+uni:AIInstitute_NTUA a uni:Department ;
+    uni:partOfUniversity uni:NTUA .
+
+uni:Mathematics_IST a uni:Department ;
+    uni:partOfUniversity uni:IST .
+
+uni:Statistics_IST a uni:Department ;
+    uni:partOfUniversity uni:IST .
+
+uni:HistoryAndPhilosophy_NKUA a uni:Department ;
+    uni:partOfUniversity uni:NKUA .
+
+uni:SciencePolicy_NKUA a uni:Department ;
+    uni:partOfUniversity uni:NKUA .
+
+uni:Biology_MIT a uni:Department ;
+    uni:partOfUniversity uni:MIT .
+
+uni:MolecularSystems_MIT a uni:Department ;
+    uni:partOfUniversity uni:MIT .
+
+uni:Mathematics_Sorbonne a uni:Department ;
+    uni:partOfUniversity uni:Sorbonne .
+
+uni:AppliedMath_Sorbonne a uni:Department ;
+    uni:partOfUniversity uni:Sorbonne .
+
+uni:Engineering_LMU a uni:Department ;
+    uni:partOfUniversity uni:LMU .
+
+uni:Robotics_LMU a uni:Department ;
+    uni:partOfUniversity uni:LMU .
+
+uni:Engineering_Berkeley a uni:Department ;
+    uni:partOfUniversity uni:Berkeley .
+
+uni:AI_Berkeley a uni:Department ;
+    uni:partOfUniversity uni:Berkeley .
+
+uni:Registrar_Berkeley a uni:Department ;
+    uni:partOfUniversity uni:Berkeley .
+
+# ---------------------------
+# Courses and labs
+# ---------------------------
+uni:CS101 a uni:Course ;
+    uni:isTaughtIn uni:ComputerScience_NTUA .
+
+uni:AI501 a uni:Course ;
+    uni:isTaughtIn uni:AIInstitute_NTUA .
+
+uni:DS410 a uni:Course ;
+    uni:isTaughtIn uni:DataScience_NTUA .
+
+uni:Math101 a uni:Course ;
+    uni:isTaughtIn uni:Mathematics_IST .
+
+uni:Stats220 a uni:Course ;
+    uni:isTaughtIn uni:Statistics_IST .
+
+uni:STS101 a uni:Course ;
+    uni:isTaughtIn uni:HistoryAndPhilosophy_NKUA .
+
+uni:Policy305 a uni:Course ;
+    uni:isTaughtIn uni:SciencePolicy_NKUA .
+
+uni:Bio101 a uni:Course ;
+    uni:isTaughtIn uni:Biology_MIT .
+
+uni:Bio440 a uni:Course ;
+    uni:isTaughtIn uni:MolecularSystems_MIT .
+
+uni:Math201 a uni:Course ;
+    uni:isTaughtIn uni:Mathematics_Sorbonne .
+
+uni:AMath510 a uni:Course ;
+    uni:isTaughtIn uni:AppliedMath_Sorbonne .
+
+uni:Eng202 a uni:Course ;
+    uni:isTaughtIn uni:Engineering_LMU .
+
+uni:Rob330 a uni:Course ;
+    uni:isTaughtIn uni:Robotics_LMU .
+
+uni:EECS127 a uni:Course ;
+    uni:isTaughtIn uni:Engineering_Berkeley .
+
+uni:ML290 a uni:Course ;
+    uni:isTaughtIn uni:AI_Berkeley .
+
+uni:NTUA_VisionLab a uni:Lab ;
+    uni:operatedBy uni:AIInstitute_NTUA .
+
+uni:IST_DataLab a uni:Lab ;
+    uni:operatedBy uni:Statistics_IST .
+
+uni:MIT_GenomicsLab a uni:Lab ;
+    uni:operatedBy uni:MolecularSystems_MIT .
+
+uni:Berkeley_AIHub a uni:Lab ;
+    uni:operatedBy uni:AI_Berkeley .
+
+# ---------------------------
+# Professors
+# ---------------------------
+uni:Alex_Morgan a uni:Person ;
+    uni:hasName "Alex Morgan" ;
+    uni:role "Professor of Computer Science" ;
+    uni:teaches uni:CS101, uni:AI501 ;
+    uni:worksAt uni:ComputerScience_NTUA, uni:AIInstitute_NTUA .
+
+uni:Thomas_Berger a uni:Person ;
+    uni:hasName "Thomas Berger" ;
+    uni:role "Assistant Professor of Computer Science" ;
+    uni:teaches uni:CS101, uni:DS410 ;
+    uni:worksAt uni:ComputerScience_NTUA, uni:DataScience_NTUA .
+
+uni:Felix_Wagner a uni:Person ;
+    uni:hasName "Felix Wagner" ;
+    uni:role "Professor of Mathematics" ;
+    uni:teaches uni:Math101, uni:Stats220 ;
+    uni:worksAt uni:Mathematics_IST, uni:Statistics_IST .
+
+uni:Martin_Keller a uni:Person ;
+    uni:hasName "Martin Keller" ;
+    uni:role "Professor of History of Science and Technology" ;
+    uni:teaches uni:STS101, uni:Policy305 ;
+    uni:worksAt uni:HistoryAndPhilosophy_NKUA, uni:SciencePolicy_NKUA .
+
+uni:John_Smith a uni:Person ;
+    uni:hasName "John Smith" ;
+    uni:role "Professor of Biology" ;
+    uni:teaches uni:Bio101, uni:Bio440 ;
+    uni:worksAt uni:Biology_MIT, uni:MolecularSystems_MIT .
+
+uni:Marie_Dubois a uni:Person ;
+    uni:hasName "Marie Dubois" ;
+    uni:role "Professor of Mathematics" ;
+    uni:teaches uni:Math201, uni:AMath510 ;
+    uni:worksAt uni:Mathematics_Sorbonne, uni:AppliedMath_Sorbonne .
+
+uni:Stefan_Mueller a uni:Person ;
+    uni:hasName "Stefan Mueller" ;
+    uni:role "Assistant Professor of Engineering" ;
+    uni:teaches uni:Eng202, uni:Rob330 ;
+    uni:worksAt uni:Engineering_LMU, uni:Robotics_LMU .
+
+uni:Nathan_Cole a uni:Person ;
+    uni:hasName "Nathan Cole" ;
+    uni:role "Professor of Electrical Engineering" ;
+    uni:teaches uni:EECS127, uni:ML290 ;
+    uni:worksAt uni:Engineering_Berkeley, uni:AI_Berkeley .
+
+# ---------------------------
+# Other employees and affiliates
+# ---------------------------
+uni:Jane_Petterson a uni:Person ;
+    uni:hasName "Jane Petterson" ;
+    uni:role "Lecturer" ;
+    uni:worksAt uni:Engineering_Berkeley .
+
+uni:Monika_Weber a uni:Person ;
+    uni:hasName "Monika Weber" ;
+    uni:role "Research Staff" ;
+    uni:worksAt uni:Robotics_LMU .
+
+uni:Elena_Park a uni:Person ;
+    uni:hasName "Elena Park" ;
+    uni:role "Lab Coordinator" ;
+    uni:worksAt uni:MolecularSystems_MIT .
+
+uni:Henrik_Berg a uni:Person ;
+    uni:hasName "Henrik Berg" ;
+    uni:role "Department Administrator" ;
+    uni:worksAt uni:ComputerScience_NTUA .
+
+uni:Claire_Morel a uni:Person ;
+    uni:hasName "Claire Morel" ;
+    uni:role "Postdoctoral Researcher" ;
+    uni:worksAt uni:AppliedMath_Sorbonne .
+
+# ---------------------------
+# Students
+# ---------------------------
+uni:Student1 a uni:Person ;
+    uni:hasName "Sophia Muller" ;
+    uni:role "Student" .
+
+uni:Student2 a uni:Person ;
+    uni:hasName "Luca Rossi" ;
+    uni:role "Student" .
+
+uni:Student3 a uni:Person ;
+    uni:hasName "Emma Garcia" ;
+    uni:role "Student" .
+
+uni:Student4 a uni:Person ;
+    uni:hasName "Noah Chen" ;
+    uni:role "Student" .
+
+uni:Student5 a uni:Person ;
+    uni:hasName "Marta Silva" ;
+    uni:role "Student" .
+
+uni:Student1 uni:isEnrolledIn uni:CS101, uni:DS410, uni:ML290 ;
+    uni:hasEnrollmentDate "2024-01-10"^^xsd:date .
+
+uni:Student2 uni:isEnrolledIn uni:AI501, uni:Math101, uni:Stats220 ;
+    uni:hasEnrollmentDate "2024-01-11"^^xsd:date .
+
+uni:Student3 uni:isEnrolledIn uni:STS101, uni:Policy305, uni:Math201 ;
+    uni:hasEnrollmentDate "2024-01-12"^^xsd:date .
+
+uni:Student4 uni:isEnrolledIn uni:Bio101, uni:Bio440, uni:Eng202 ;
+    uni:hasEnrollmentDate "2024-01-13"^^xsd:date .
+
+uni:Student5 uni:isEnrolledIn uni:Rob330, uni:EECS127, uni:AMath510 ;
+    uni:hasEnrollmentDate "2024-01-14"^^xsd:date .
+
+# ---------------------------
+# Additional noise edges
+# ---------------------------
+uni:CS101 uni:hasTeachingAssistant uni:Student1 .
+uni:AI501 uni:hasTeachingAssistant uni:Student2 .
+uni:Math201 uni:hasTeachingAssistant uni:Student3 .
+uni:Bio440 uni:hasTeachingAssistant uni:Student4 .
+uni:ML290 uni:hasTeachingAssistant uni:Student5 .
+
+uni:Alex_Morgan uni:memberOfLab uni:NTUA_VisionLab .
+uni:Felix_Wagner uni:memberOfLab uni:IST_DataLab .
+uni:John_Smith uni:memberOfLab uni:MIT_GenomicsLab .
+uni:Nathan_Cole uni:memberOfLab uni:Berkeley_AIHub .

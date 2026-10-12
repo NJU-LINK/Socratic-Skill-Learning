@@ -1,0 +1,21 @@
+[
+  {
+    "member_ref": 201,
+    "display_name": "Ava Stone"
+  },
+  {
+    "member_ref": 202,
+    "display_name": "  mia   chen "
+  },
+  {
+    "member_ref": 203,
+    "contact_email": "leo@example.com",
+    "signup_day": "2024-03-01",
+    "account_state": "DISABLED"
+  },
+  {
+    "member_ref": 204,
+    "display_name": "Nora Diaz",
+    "contact_email": "nora.primary@example.com"
+  }
+]

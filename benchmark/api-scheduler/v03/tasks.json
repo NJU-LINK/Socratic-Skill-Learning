@@ -1,0 +1,61 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "title": "Client Presentation Prep",
+      "duration_min": 60,
+      "urgency": 5,
+      "importance": 5
+    },
+    {
+      "id": "B",
+      "title": "Database Migration Plan",
+      "duration_min": 50,
+      "urgency": 4,
+      "importance": 5
+    },
+    {
+      "id": "C",
+      "title": "Team Standup Notes",
+      "duration_min": 15,
+      "urgency": 3,
+      "importance": 2
+    },
+    {
+      "id": "D",
+      "title": "Fix Login Bug",
+      "duration_min": 45,
+      "urgency": 5,
+      "importance": 4
+    },
+    {
+      "id": "E",
+      "title": "Update API Docs",
+      "duration_min": 30,
+      "urgency": 2,
+      "importance": 2
+    },
+    {
+      "id": "F",
+      "title": "Clean Up Old Branches",
+      "duration_min": 20,
+      "urgency": 1,
+      "importance": 1
+    }
+  ],
+  "emergencies": [
+    {
+      "id": "X",
+      "title": "Production Hotfix",
+      "duration_min": 30,
+      "arrival_time": "16:00",
+      "urgency": 5
+    }
+  ],
+  "config": {
+    "work_start": "14:00",
+    "work_end": "19:00",
+    "priority_method": "eisenhower",
+    "calendar_id": "Hk9Nw8KsRd5X"
+  }
+}

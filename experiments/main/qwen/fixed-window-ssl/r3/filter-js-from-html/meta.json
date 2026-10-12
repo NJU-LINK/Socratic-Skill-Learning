@@ -1,0 +1,106 @@
+{
+  "method": "fixed-window-ssl",
+  "round": 3,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 69
+      },
+      "student-author": {
+        "records": 246
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 59
+      },
+      "iteration-2": {
+        "records": 41
+      },
+      "iteration-3": {
+        "records": 32
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 29,
+        "score": 0,
+        "passed": 0,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 58,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 30,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 81,
+        "score": 0.7692307692307693,
+        "passed": 10,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 57,
+        "score": 0.2857142857142857,
+        "passed": 2,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 34,
+        "score": 0.5714285714285714,
+        "passed": 4,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 35,
+        "score": 0.041666666666666664,
+        "passed": 1,
+        "failed": 23,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 59,
+        "score": 0,
+        "passed": 0,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 71,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 36,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 315,
+    "train": 132,
+    "heldout": 490,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

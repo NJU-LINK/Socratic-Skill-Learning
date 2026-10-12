@@ -1,0 +1,29 @@
+family_definition:
+  invariant: >-
+    Recover logically valid rows from damaged SQLite storage when ordinary
+    queries are insufficient, and serialize the recoverable records using the
+    case-specific public JSON schema.
+  evidence_boundary: >-
+    Recovery may combine intact SQLite behavior with raw page, record-header,
+    varint, serial-type, text, integer, float, and fragment analysis.
+axes:
+  - name: corruption_mechanism
+    type: freeform
+    description: >-
+      Damage varies across truncation, zeroed regions, random byte flips,
+      damaged page structures, and split fragments that require reassembly.
+  - name: schema_and_value_encoding
+    type: freeform
+    description: >-
+      Cases vary in table count, column order, SQLite serial types, NULLs,
+      integers, IEEE-754 values, text, and records that cross page boundaries.
+  - name: record_identification
+    type: freeform
+    description: >-
+      Recoverable rows may have recognizable textual keys, numeric keys,
+      multiple interleaved table signatures, or partially damaged headers.
+  - name: recovery_scale
+    type: freeform
+    description: >-
+      The number of rows and tables varies from a small two-column relation to
+      hundreds of records or several related tables.

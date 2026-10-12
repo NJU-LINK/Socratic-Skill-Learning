@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Release Pipeline Diagram</title>
+  </head>
+  <body>
+    <article class="pipeline-brief">
+      <h1>Release Pipeline Diagram</h1>
+      <p>
+        Keep the stage cards, labels, and explanatory copy stable while removing
+        executable SVG behavior.
+      </p>
+
+      <svg
+        viewBox="0 0 860 300"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <rect x="20" y="30" width="180" height="110" rx="18" fill="#e0f2fe" stroke="#0284c7" stroke-width="3" />
+        <rect x="240" y="30" width="180" height="110" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3" />
+        <rect x="460" y="30" width="180" height="110" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="3" />
+        <rect x="680" y="30" width="160" height="110" rx="18" fill="#fee2e2" stroke="#dc2626" stroke-width="3" />
+        <text x="65" y="92" font-size="26" fill="#0f172a">Author</text>
+        <text x="285" y="92" font-size="26" fill="#0f172a">Build</text>
+        <text x="493" y="92" font-size="26" fill="#0f172a">Verify</text>
+        <text x="720" y="92" font-size="26" fill="#0f172a">Publish</text>
+        <path d="M200 84 H240 M420 84 H460 M640 84 H680" fill="none" stroke="#475569" stroke-width="8" stroke-linecap="round" />
+        <a id="handoffLink" XLINK:href='javas&#x63;ript:alert("pipeline-click")'>
+          <circle cx="785" cy="215" r="42" fill="#1d4ed8" />
+          <text x="753" y="222" font-size="18" fill="#ffffff">Details</text>
+        </a>
+        <animate
+          xlink:href="#handoffLink"
+          attributeName="xlink:href"
+          dur="1s"
+          repeatCount="1"
+          to="javascript:alert('pipeline-animate')"
+          fill="freeze"
+        />
+      </svg>
+
+      <nav>
+        <a href="/reports/releases/q3">View archived release notes</a>
+      </nav>
+    </article>
+  </body>
+</html>

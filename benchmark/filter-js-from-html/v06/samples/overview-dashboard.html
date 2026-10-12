@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quarterly Operations Overview</title>
+  </head>
+  <body>
+    <article class="report" data-quarter="Q3">
+      <h1>Quarterly Operations Overview</h1>
+      <p>
+        Preserve the chart styling, labels, and summary text while removing any
+        executable behavior.
+      </p>
+
+      <svg
+        viewBox="0 0 640 360"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        role="img"
+        aria-labelledby="overview-title overview-desc"
+      >
+        <title id="overview-title">Operations overview</title>
+        <desc id="overview-desc">A bar chart and callout labels for the Q3 summary.</desc>
+        <defs>
+          <linearGradient id="barGlow" x1="0%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#5eead4" />
+            <stop offset="100%" stop-color="#0f766e" />
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="640" height="360" fill="#f8fafc" rx="18" />
+        <text x="40" y="55" font-size="24" fill="#0f172a">Distribution Center Throughput</text>
+        <line x1="55" y1="290" x2="580" y2="290" stroke="#94a3b8" stroke-width="2" />
+        <line x1="55" y1="90" x2="55" y2="290" stroke="#94a3b8" stroke-width="2" />
+        <rect x="100" y="150" width="70" height="140" rx="8" fill="url(#barGlow)" />
+        <rect x="220" y="118" width="70" height="172" rx="8" fill="url(#barGlow)" />
+        <rect x="340" y="98" width="70" height="192" rx="8" fill="url(#barGlow)" />
+        <rect x="460" y="170" width="70" height="120" rx="8" fill="url(#barGlow)" />
+        <text x="117" y="320" font-size="16" fill="#334155">North</text>
+        <text x="242" y="320" font-size="16" fill="#334155">East</text>
+        <text x="357" y="320" font-size="16" fill="#334155">West</text>
+        <text x="475" y="320" font-size="16" fill="#334155">South</text>
+        <a xlink:href="javas&#99;ript:alert('overview-link')" target="_self">
+          <rect x="420" y="28" width="165" height="42" rx="21" fill="#1d4ed8" />
+          <text x="452" y="55" font-size="16" fill="#ffffff">Open raw event log</text>
+        </a>
+      </svg>
+
+      <p>
+        Keep this note and the adjacent button text readable after sanitization.
+      </p>
+    </article>
+  </body>
+</html>

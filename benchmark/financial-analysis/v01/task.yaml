@@ -1,0 +1,26 @@
+instruction: |-
+  There is financial data somewhere in /app/financials/ directory. Your task is to:
+
+  1. Explore the directory to find the correct financial data file for NVIDIA Corporation
+  2. Extract the Revenue and Gross Profit figures for all available fiscal years
+  3. Calculate Gross Margin for each year:
+     Gross Margin = Gross Profit / Revenue
+  4. If the most recent year's Gross Margin exceeds 70%, calculate Gross Margin for ALL years
+     and write the results to /app/results.csv with columns: fiscal_year,gross_margin_pct
+     If it does NOT exceed 70%, calculate Net Margin (Net Income / Revenue) for all years instead
+  5. Round percentages to 2 decimal places (e.g., 72.72)
+
+  The Gross Margin values should be expressed as percentage numbers, not decimals
+  (e.g., 72.72 means 72.72%, not 0.7272).
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - financial-analysis
+  - data-discovery
+  - conditional-computation
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

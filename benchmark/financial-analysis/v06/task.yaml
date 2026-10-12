@@ -1,0 +1,25 @@
+instruction: |-
+  In /app/financials/ there's a CSV file containing Microsoft's financial data.
+  The file includes both financial metrics AND non-financial data (department info).
+  You need to filter and compute correctly.
+
+  Your task:
+  1. Find and parse the CSV file
+  2. Identify which rows are financial data vs non-financial
+  3. Extract Revenue and Net_Income for each fiscal year
+  4. Calculate Net Margin = Net_Income / Revenue * 100 for each year
+  5. Write the results to an Excel file at /app/msft_analysis.xlsx
+     with columns: Fiscal Year, Revenue, Net_Income, Net_Margin_Pct
+  6. Round Net Margin to 2 decimal places
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - financial-analysis
+  - data-filtering
+  - excel
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

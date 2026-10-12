@@ -1,0 +1,5 @@
+{
+  "memory_export": "heap",
+  "wasm_function": "emit",
+  "so_symbol": "score_bytes"
+}

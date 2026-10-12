@@ -1,0 +1,106 @@
+{
+  "method": "issue-guided-ssl",
+  "round": 1,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 23
+      },
+      "student-author": {
+        "records": 199
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 137
+      },
+      "iteration-2": {
+        "records": 100
+      },
+      "iteration-3": {
+        "records": 48
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 76,
+        "score": 0,
+        "passed": 0,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 84,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 96,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 75,
+        "score": 0.6153846153846154,
+        "passed": 8,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 52,
+        "score": 0.2857142857142857,
+        "passed": 2,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 120,
+        "score": 0.42857142857142855,
+        "passed": 3,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 128,
+        "score": 0.041666666666666664,
+        "passed": 1,
+        "failed": 23,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 94,
+        "score": 0,
+        "passed": 0,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 93,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 79,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 222,
+    "train": 285,
+    "heldout": 897,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

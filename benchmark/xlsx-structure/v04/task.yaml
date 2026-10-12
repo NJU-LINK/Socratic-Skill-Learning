@@ -1,0 +1,29 @@
+instruction: |-
+  Read /app/input.xlsx. Expand the filter expressions on the Input sheet into normalized rows on
+  the Output sheet.
+
+  Each Input row contains wtype_id, name, status, and a filter expression. Extract orgId,
+  careType, specialtyId, and contextId from equality clauses and IN LIST clauses. If a filter has
+  multiple specialtyId or contextId values, emit the Cartesian product in the source list order.
+  If one of those fields is absent, leave its output cell blank. Write numeric identifier values
+  as numbers, so leading zeros may be omitted.
+
+  Keep Input row order. Write the exact header
+  `wtype_id,name,status,orgId,careType,specialtyId,contextId` to Output!A1:G1 and write the expanded
+  rows to Output!A2:G10. Do not treat any prior contents in Output!A2:G10 as answers.
+
+  Preserve every input sheet, all values outside Output!A1:G10, and the workbook's existing styles,
+  filters, merged ranges, panes, row heights, and column widths. Save the result to
+  /app/output.xlsx.
+author_name: Task Author
+difficulty: medium
+category: software-engineering
+tags:
+  - spreadsheet
+  - xlsx
+  - structural
+  - normalization
+parser_name: pytest
+max_agent_timeout_sec: 360
+max_test_timeout_sec: 60
+run_tests_in_same_shell: false

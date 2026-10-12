@@ -1,0 +1,5 @@
+.venv/
+tests/
+solution.sh
+run-tests.sh
+__pycache__/

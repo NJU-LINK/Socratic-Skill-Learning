@@ -1,0 +1,31 @@
+{
+  "model": "kimi",
+  "method": "no-skill",
+  "round": 1,
+  "family": "git-leak-recovery",
+  "stats": {
+    "heldout": {
+      "v05": {
+        "records": 32
+      },
+      "v07": {
+        "records": 50
+      },
+      "v11": {
+        "records": 84
+      },
+      "v12": {
+        "records": 126
+      },
+      "v14": {
+        "records": 92
+      },
+      "v16": {
+        "records": 106
+      }
+    }
+  },
+  "totals": {
+    "records": 490
+  }
+}

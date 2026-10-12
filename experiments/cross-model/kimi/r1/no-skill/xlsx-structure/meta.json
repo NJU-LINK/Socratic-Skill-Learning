@@ -1,0 +1,31 @@
+{
+  "model": "kimi",
+  "method": "no-skill",
+  "round": 1,
+  "family": "xlsx-structure",
+  "stats": {
+    "heldout": {
+      "v02": {
+        "records": 36
+      },
+      "v04": {
+        "records": 22
+      },
+      "v07": {
+        "records": 18
+      },
+      "v09": {
+        "records": 32
+      },
+      "v14": {
+        "records": 28
+      },
+      "v15": {
+        "records": 22
+      }
+    }
+  },
+  "totals": {
+    "records": 158
+  }
+}

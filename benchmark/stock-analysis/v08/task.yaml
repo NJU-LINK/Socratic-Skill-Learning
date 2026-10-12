@@ -1,0 +1,23 @@
+instruction: |-
+  Tesla (TSLA) daily stock prices are stored in /app/tsla_prices.json.
+  Explore the JSON schema and extract every date and close value.
+
+  Calculate trailing SMA5 and SMA10 values. Set signal to 1 when both are valid
+  and the unrounded SMA5 is strictly greater than the unrounded SMA10;
+  otherwise set it to 0. Use N/A for each unavailable average and for signal
+  until both averages exist.
+
+  Write /app/results.csv with columns date,close,sma5,sma10,signal. Keep
+  comparisons at full precision and round displayed averages to 2 decimals.
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - technical-analysis
+  - json-parsing
+  - data-discovery
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

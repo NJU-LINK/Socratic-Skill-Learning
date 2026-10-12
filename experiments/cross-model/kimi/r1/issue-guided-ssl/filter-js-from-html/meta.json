@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "issue-guided-ssl",
+  "round": 1,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 20
+      },
+      "student-author": {
+        "records": 211
+      }
+    }
+  },
+  "totals": {
+    "records": 231
+  }
+}

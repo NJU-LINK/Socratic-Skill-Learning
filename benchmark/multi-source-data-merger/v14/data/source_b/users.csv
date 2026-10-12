@@ -1,0 +1,9 @@
+user_key,display_name,contact_email,created_on,enabled
+201,Alicia S.,alicia@beta.example,2024-01-14T09:00:00,true
+202,Ben Turner,ben@alpha.example,01/20/2024,true
+203,Carla G.,carla+ops@beta.example,2024-02-04T11:30:00,false
+204,Devin Patel,devin@alpha.example,2024-02-10T00:00:00,true
+205,Elena M.,elena@alpha.example,2024-02-22T08:00:00,true
+206,Farah Khan,farah@beta.example,03/01/2024,false
+207,Graham Lee,graham@alpha.example,2024-03-05T00:00:00,true
+208,Hannah Wu,hannah@beta.example,2024-03-12T07:45:00,true

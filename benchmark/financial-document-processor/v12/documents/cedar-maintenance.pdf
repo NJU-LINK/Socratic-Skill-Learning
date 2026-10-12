@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 415 >>
+stream
+BT
+/F1 16 Tf
+1 0 0 1 72 740 Tm (Cedar Maintenance Group) Tj
+1 0 0 1 72 712 Tm (Job Billing Record CM-2307) Tj
+1 0 0 1 72 684 Tm (For: Studio Meridian) Tj
+1 0 0 1 72 656 Tm (Monthly HVAC inspection) Tj
+1 0 0 1 72 628 Tm (Charge summary) Tj
+1 0 0 1 72 600 Tm (Subtotal: $540.00) Tj
+1 0 0 1 72 572 Tm (Tax: $43.20) Tj
+1 0 0 1 72 544 Tm (Settlement Total: $583.20) Tj
+1 0 0 1 72 516 Tm (Please pay within 15 days) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+777
+%%EOF

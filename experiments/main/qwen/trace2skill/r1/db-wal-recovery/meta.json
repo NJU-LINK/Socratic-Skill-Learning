@@ -1,0 +1,88 @@
+{
+  "method": "trace2skill",
+  "round": 1,
+  "family": "db-wal-recovery",
+  "stats": {
+    "skill_formation": {
+      "trajectory-1": {
+        "records": 2
+      },
+      "trajectory-2": {
+        "records": 2
+      },
+      "trajectory-3": {
+        "records": 2
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 68
+      },
+      "iteration-2": {
+        "records": 129
+      },
+      "iteration-3": {
+        "records": 73
+      }
+    },
+    "heldout": {
+      "v05": {
+        "records": 62,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 61,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 61,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 172,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 89,
+        "score": 1,
+        "passed": 14,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 47,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 43,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 6,
+    "train": 270,
+    "heldout": 535,
+    "heldoutVariants": 7,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

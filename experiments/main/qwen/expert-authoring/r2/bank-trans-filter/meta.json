@@ -1,0 +1,75 @@
+{
+  "method": "expert-authoring",
+  "round": 2,
+  "family": "bank-trans-filter",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 168
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 31
+      },
+      "iteration-2": {
+        "records": 30
+      },
+      "iteration-3": {
+        "records": 22
+      }
+    },
+    "heldout": {
+      "v04": {
+        "records": 15,
+        "score": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 27,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 23,
+        "score": 0.3333333333333333,
+        "passed": 2,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 26,
+        "score": 0.3333333333333333,
+        "passed": 2,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 31,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 26,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 168,
+    "train": 83,
+    "heldout": 148,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

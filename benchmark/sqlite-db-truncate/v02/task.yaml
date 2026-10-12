@@ -1,0 +1,12 @@
+instruction: |-
+  I have a SQLite database file at /app/trunc.db that has a corrupted header and cannot be opened by the sqlite3 CLI or any standard SQLite library. The file originally contained a table of word-value pairs where each word is the string "testword" followed by two digits (e.g. testword00) and each value is a positive integer. Recover as many of the rows as possible and save the results as a JSON file at /app/recover.json. The output should use the format [{"word": "testwordXX", "value": N}, ...].
+author_name: Task Author
+difficulty: medium
+category: debugging
+tags:
+  - file-operations
+parser_name: pytest
+max_agent_timeout_sec: 900
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

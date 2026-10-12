@@ -1,0 +1,44 @@
+Company Name,Account Number,Date,Amount,Transaction Type,Description
+Northwind Capital Holdings,BUS-44110,2024-05-01,$185000.00,Deposit,Fund Allocation
+West Capital Partners,BUS-44770,2024-05-02,-$22450.00,Payment,Research Vendor
+North W. Cap.,BUS-41001,2024-05-03,$120500.00,Deposit,Capital Call Return
+Harbor Insurance Group,BUS-22340,2024-05-04,$94120.00,Transfer,Quarterly Earnings
+Meridian Treasury Desk,BUS-41001,2024-05-05,-$12100.00,Payment,Bank Platform Fee
+NWC Advisory,BUS-41007,2024-05-06,-$8000.00,Payment,Conference Expense
+NW Capital Group,BUS-41001,2024-05-07,-$34500.00,Payment,Compliance Counsel
+Northwind Capital Holdings,BUS-44110,2024-05-08,-$12000.00,Withdrawal,Office Rent
+Meridian Treasury Desk,BUS-41002,2024-05-09,$90500.00,Transfer,Account Consolidation
+West Capital Partners,BUS-44770,2024-05-10,$28750.00,Deposit,Consulting Income
+Meridian Treasury Desk,BUS-41002,2024-05-11,-$1200.00,Payment,Bank Service Fee
+Northwind Cap. Mgmt,BUS-44111,2024-05-12,$61200.00,Transfer,Intercompany Sweep
+Lodestar Settlement,BUS-41002,2024-05-13,$110000.00,Deposit,Portfolio Income
+Northwestern Custody Group,BUS-55120,2024-05-14,$83000.00,Deposit,Client Escrow
+Lodestar Settlement,BUS-41003,2024-05-15,-$27500.00,Payment,Audit Retainer
+Northwind Capital Holdings,BUS-44110,2024-05-16,$73400.00,Deposit,Revenue Payment
+Settlement Desk,BUS-41003,2024-05-17,$67000.00,Transfer,Liquidity Rebalance
+NWC Advisory,BUS-41070,2024-05-18,$15600.00,Transfer,Client Reimbursement
+Corporate Treasury Services,BUS-41003,2024-05-19,-$18200.00,Withdrawal,Payroll
+West Capital Partners,BUS-44770,2024-05-20,-$5000.00,Withdrawal,Travel Expense
+Lodestar Settlement,BUS-41003,2024-05-21,$130500.00,Transfer,Intercompany Settlement
+Northwest Capital Services,BUS-41020,2024-05-22,$48200.00,Transfer,Partner Distribution
+Settlement Desk,BUS-41003,2024-05-23,-$9500.00,Payment,Data Provider Invoice
+Corporate Treasury Services,BUS-41003,2024-05-24,$88000.00,Deposit,Quarterly Earnings
+Northwind Capital Holdings,BUS-44110,2024-05-25,-$3400.00,Payment,Subscription Renewal
+Lodestar Settlement,BUS-41003,2024-05-26,-$22300.00,Payment,Legal Services
+Northwest Capital Services,BUS-41020,2024-05-27,-$7200.00,Payment,Advisory Contractor
+West Capital Partners,BUS-44770,2024-05-28,-$4100.00,Payment,Software Subscription
+Settlement Desk,BUS-41003,2024-05-29,-$11800.00,Withdrawal,Office Supplies
+Northwind Cap. Mgmt,BUS-44111,2024-05-30,-$7600.00,Payment,Recruiting Fee
+Corporate Treasury Services,BUS-41003,2024-05-31,$99000.00,Deposit,Investment Return
+Northwind Capital Holdings,BUS-44110,2024-06-01,$50100.00,Deposit,Service Income
+West Capital Partners,BUS-44770,2024-06-02,$18400.00,Transfer,Client Allocation
+Settlement Desk,BUS-41003,2024-06-03,-$30400.00,Payment,Consulting Fee
+Corporate Treasury Services,BUS-41003,2024-06-04,$74500.00,Transfer,Capital Movement
+NWC Advisory,BUS-41007,2024-06-05,$9200.00,Deposit,Advisory Fee
+Settlement Desk,BUS-41003,2024-06-06,-$8600.00,Payment,License Renewal
+Northwest Capital Services,BUS-41020,2024-06-07,$14200.00,Transfer,Vendor Credit
+Harbor Insurance Group,BUS-22340,2024-06-08,-$24300.00,Payment,Claims Processing
+Lodestar Settlement,BUS-41003,2024-06-09,$102300.00,Deposit,Investment Return
+Northwind Capital Holdings,BUS-44110,2024-06-10,$29500.00,Deposit,Interest Receipt
+West Capital Partners,BUS-44770,2024-06-11,-$6900.00,Withdrawal,Utilities
+Corporate Treasury Services,BUS-41003,2024-06-12,-$14300.00,Payment,License Renewal

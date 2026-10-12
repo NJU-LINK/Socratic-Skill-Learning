@@ -1,0 +1,72 @@
+import threading
+from concurrent import futures
+
+import grpc
+import kv_store_pb2  # SLOT: GENERATED_MODULE — proto base name with '-' etc -> '_' + _pb2
+import kv_store_pb2_grpc  # SLOT: GENERATED_GRPC_MODULE
+
+# =====================================================================
+# Template: server.py.tmpl
+# Fill guide:
+#   SLOT: GENERATED_MODULE / GENERATED_GRPC_MODULE — see filename-derivation
+#         rule in SKILL.md step 2.
+#   SLOT: SERVICER_BASE — <ServiceName>Servicer from the _pb2_grpc module
+#         (named after the SERVICE, not the file).
+#   SLOT: SEMANTIC_HANDLERS — one method per RPC, named exactly like the
+#         RPC; implement per the leaf-operation table (SKILL.md step 3).
+#         A new semantic variant = new table row = new/changed handler,
+#         never a redesign of this file's skeleton.
+#   SLOT: PORT — listening port (v01: 5328).
+#   SLOT: REGISTRAR — add_<ServiceName>Servicer_to_server.
+#   SLOT: POOL_SIZE — thread pool workers; keep >= 16 for concurrency headroom.
+# =====================================================================
+
+
+class Server(kv_store_pb2_grpc.KVStoreServicer):  # SLOT: SERVICER_BASE
+    """In-memory namespaced integer store. State persists across calls AND
+    across client channels; never reset anything in a handler."""
+
+    def __init__(self):
+        self._data = {}  # namespace -> {key: value}
+        self._lock = threading.Lock()  # handlers run concurrently
+
+    # SLOT: SEMANTIC_HANDLERS — v01 fill (leaf operations)
+    def Put(self, request, context):
+        with self._lock:
+            self._data.setdefault(request.namespace, {})[request.key] = request.value
+        return kv_store_pb2.PutResponse(value=request.value)
+
+    def Fetch(self, request, context):
+        with self._lock:
+            return kv_store_pb2.FetchResponse(
+                value=self._data.get(request.namespace, {}).get(request.key, 0)
+            )
+
+    def Delete(self, request, context):
+        with self._lock:
+            ns = self._data.get(request.namespace, {})
+            if request.key in ns:
+                return kv_store_pb2.DeleteResponse(success=True, value=ns.pop(request.key))
+        return kv_store_pb2.DeleteResponse(success=False, value=0)
+
+    def ListNamespaceTotal(self, request, context):
+        with self._lock:
+            return kv_store_pb2.ListNamespaceTotalResponse(
+                total=sum(self._data.get(request.namespace, {}).values())
+            )
+
+
+def main():
+    # SLOT: thread pool REQUIRED by grpc.server(); bare call raises.
+    server = grpc.server(futures.ThreadPoolExecutor(max_workers=16))  # SLOT: POOL_SIZE
+    kv_store_pb2_grpc.add_KVStoreServicer_to_server(Server(), server)  # SLOT: REGISTRAR
+    server.add_insecure_port("0.0.0.0:5328")  # SLOT: PORT
+    server.start()
+    print("server listening", flush=True)
+    # SLOT: wait_for_termination REQUIRED — without it the Python process
+    # SLOT: exits right after start() and the endpoint dies.
+    server.wait_for_termination()
+
+
+if __name__ == "__main__":
+    main()

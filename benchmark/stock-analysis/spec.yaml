@@ -1,0 +1,47 @@
+axes:
+  - name: price_data_representation
+    type: freeform
+    description: >
+      Daily close prices may be supplied as CSV or JSON, at a known path or among
+      unrelated decoy files. Cases retain chronological daily observations and
+      an explicit close-price field.
+  - name: technical_indicator
+    type: enum
+    values:
+      - simple_moving_average
+      - exponential_moving_average
+      - relative_strength_index
+      - moving_average_convergence_divergence
+      - bollinger_bands
+      - crossover_signal
+    description: >
+      A case requests one or more deterministic rolling indicators over a single
+      security, with periods and initialization rules stated in the task.
+  - name: warmup_and_initialization
+    type: freeform
+    description: >
+      Window length, the first valid row, EMA seeding, RSI smoothing, and the
+      representation of insufficient history vary by indicator.
+  - name: derived_output
+    type: freeform
+    description: >
+      Some cases output only indicator values; others apply an explicitly stated
+      pointwise threshold or crossing rule to valid indicator series. These labels
+      are deterministic columns in the same per-observation table. Portfolio
+      execution, strategy backtesting, cross-security comparison, and free-form
+      reporting are not part of this family.
+  - name: precision_and_schema
+    type: freeform
+    description: >
+      Output columns, N/A handling, row coverage, and rounding are explicit public
+      constraints and may vary across cases.
+invariants:
+  - >
+    Emit exactly one result row for every source observation, in the source's
+    chronological order, and preserve its date and close price.
+  - >
+    Use N/A for an indicator or derived label until the public initialization
+    rule has enough history.
+  - >
+    Keep intermediate indicator state at full precision. Apply comparisons and
+    threshold rules to unrounded values, and round only serialized numeric output.

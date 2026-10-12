@@ -1,0 +1,135 @@
+{
+  "method": "skill-kd",
+  "round": 3,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "0000-round_00-student_retry-2175e951": {
+        "records": 69
+      },
+      "0000-round_01-student_retry-30bd366e": {
+        "records": 75
+      },
+      "0000-round_02-student_retry-b9752514": {
+        "records": 65
+      },
+      "0000-student_initial-26ad285a": {
+        "records": 51
+      },
+      "0000-teacher-5e9f416d": {
+        "records": 103
+      },
+      "0001-round_00-student_retry-05fa4d14": {
+        "records": 105
+      },
+      "0001-round_01-student_retry-614ef9d5": {
+        "records": 103
+      },
+      "0001-round_02-student_retry-3ce92a85": {
+        "records": 89
+      },
+      "0001-student_initial-a5a2539e": {
+        "records": 91
+      },
+      "0001-teacher-8e752468": {
+        "records": 53
+      },
+      "0002-round_00-student_retry-f4850c7b": {
+        "records": 89
+      },
+      "0002-round_01-student_retry-0a35129f": {
+        "records": 101
+      },
+      "0002-round_02-student_retry-eb980a6b": {
+        "records": 79
+      },
+      "0002-student_initial-74898eeb": {
+        "records": 77
+      },
+      "0002-teacher-a62dfe8c": {
+        "records": 128
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 44,
+        "score": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 111,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 70,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 40,
+        "score": 0.3076923076923077,
+        "passed": 4,
+        "failed": 9,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 50,
+        "score": 0.42857142857142855,
+        "passed": 3,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 96,
+        "score": 0.42857142857142855,
+        "passed": 3,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 76,
+        "score": 0.041666666666666664,
+        "passed": 1,
+        "failed": 23,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 53,
+        "score": 0,
+        "passed": 0,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 66,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 73,
+        "score": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 1278,
+    "train": 0,
+    "heldout": 679,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

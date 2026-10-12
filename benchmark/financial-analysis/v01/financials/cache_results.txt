@@ -1,0 +1,8 @@
+[INFO] Financial analysis cache - generated 2026-02-15
+[INFO] Processing income statement...
+[WARN] Gross Margin for FY2024: 65.24%
+[WARN] Gross Margin for FY2025: 62.18%
+[INFO] Net Income trend: positive across all periods
+[INFO] Revenue CAGR: 22.4%
+[DATA] FY2024: Revenue=$58,000M, GP=$37,800M
+[DATA] FY2025: Revenue=$68,500M, GP=$42,600M

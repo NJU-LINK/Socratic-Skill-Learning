@@ -1,0 +1,6 @@
+{
+  "side_effect_paths": ["/tmp/recon_data.txt"],
+  "minimum_input_bytes": 500,
+  "required_input_markers": ["E=", "xxd -r -p", "base64 -d"],
+  "forbidden_plaintext_markers": ["Gathering system information"]
+}

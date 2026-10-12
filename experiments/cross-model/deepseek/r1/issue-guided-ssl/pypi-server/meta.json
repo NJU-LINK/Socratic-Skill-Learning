@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "issue-guided-ssl",
+  "round": 1,
+  "family": "pypi-server",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 33
+      },
+      "student-author": {
+        "records": 189
+      }
+    }
+  },
+  "totals": {
+    "records": 222
+  }
+}

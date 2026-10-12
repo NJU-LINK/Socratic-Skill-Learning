@@ -1,0 +1,82 @@
+{
+  "method": "expert-authoring",
+  "round": 3,
+  "family": "jq-data-processing",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 191
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 46
+      },
+      "iteration-2": {
+        "records": 45
+      },
+      "iteration-3": {
+        "records": 44
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 53,
+        "score": 0.9375,
+        "passed": 15,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 49,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 68,
+        "score": 0.75,
+        "passed": 6,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 50,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 40,
+        "score": 0.9230769230769231,
+        "passed": 12,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 38,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 50,
+        "score": 0.9,
+        "passed": 9,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 191,
+    "train": 135,
+    "heldout": 348,
+    "heldoutVariants": 7,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

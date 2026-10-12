@@ -1,0 +1,5 @@
+Your files have been... scrambled.
+A simple XOR was all it took. Nothing fancy.
+The key? Look closely at each protected file — the first byte holds the secret.
+Files with the magic OBF: prefix are the ones you want.
+Good luck finding your originals in /app/sensitive_data/.

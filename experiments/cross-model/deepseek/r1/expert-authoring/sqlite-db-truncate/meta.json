@@ -1,0 +1,16 @@
+{
+  "model": "deepseek",
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "sqlite-db-truncate",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 253
+      }
+    }
+  },
+  "totals": {
+    "records": 253
+  }
+}

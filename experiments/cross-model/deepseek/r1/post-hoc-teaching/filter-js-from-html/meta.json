@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 15
+      },
+      "student-author": {
+        "records": 443
+      }
+    }
+  },
+  "totals": {
+    "records": 458
+  }
+}

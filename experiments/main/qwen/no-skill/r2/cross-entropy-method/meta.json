@@ -1,0 +1,61 @@
+{
+  "method": "no-skill",
+  "round": 2,
+  "family": "cross-entropy-method",
+  "stats": {
+    "skill_formation": {},
+    "train": {},
+    "heldout": {
+      "v06": {
+        "records": 42,
+        "score": 0,
+        "passed": 0,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 46,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 49,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 42,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 41,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 52,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 0,
+    "train": 0,
+    "heldout": 272,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": true
+  }
+}

@@ -1,0 +1,25 @@
+instruction: |-
+  Read /app/input.xlsx and summarize the source records in ورقة1!A2:E.
+
+  For each brand, retain only records on that brand's latest date. Group retained records with the
+  same date, brand, batch, and origin, summing their quantity. Sort the resulting groups by date
+  ascending and then by brand, batch, and origin case-insensitively.
+
+  Write date, brand, batch, origin, and summed quantity to ورقة1!H2:L4. Do not rely on any prior
+  contents in that answer range.
+
+  Preserve every input sheet, all values outside H2:L4, and the workbook's existing styles,
+  filters, merged ranges, panes, row heights, and column widths. Save the result to
+  /app/output.xlsx.
+author_name: Task Author
+difficulty: medium
+category: software-engineering
+tags:
+  - spreadsheet
+  - xlsx
+  - structural
+  - latest-record-aggregation
+parser_name: pytest
+max_agent_timeout_sec: 360
+max_test_timeout_sec: 60
+run_tests_in_same_shell: false

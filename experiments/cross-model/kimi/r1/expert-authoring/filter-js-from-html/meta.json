@@ -1,0 +1,16 @@
+{
+  "model": "kimi",
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 134
+      }
+    }
+  },
+  "totals": {
+    "records": 134
+  }
+}

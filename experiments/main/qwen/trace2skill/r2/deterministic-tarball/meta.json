@@ -1,0 +1,81 @@
+{
+  "method": "trace2skill",
+  "round": 2,
+  "family": "deterministic-tarball",
+  "stats": {
+    "skill_formation": {
+      "trajectory-1": {
+        "records": 2
+      },
+      "trajectory-2": {
+        "records": 2
+      },
+      "trajectory-3": {
+        "records": 2
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 59
+      },
+      "iteration-2": {
+        "records": 81
+      },
+      "iteration-3": {
+        "records": 72
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 61,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 69,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 58,
+        "score": 0.9090909090909091,
+        "passed": 10,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 80,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 66,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 58,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 6,
+    "train": 212,
+    "heldout": 392,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

@@ -1,0 +1,6 @@
+services:
+  client:
+    build:
+      dockerfile: Dockerfile
+    image: organization-json-generator-v04
+    command: ["sh", "-c", "sleep infinity"]

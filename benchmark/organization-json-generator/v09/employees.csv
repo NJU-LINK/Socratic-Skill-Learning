@@ -1,0 +1,18 @@
+id,name,position,skills,years_of_service,department_id
+D001-E001,Ada Mercer,Manager,"Communication ; Python ; Leadership"," 18 ",D001
+D001-E002,Ben Ito,Senior Developer,"Communication;Python;Systems Design",2,D001
+D001-E003,Cy Logan,Team Lead,"Communication ; Go ; Incident Response",1,D001
+D001-E004,Dee Patel,Platform Engineer,"Communication;;Rust;Automation",0,D001
+D002-E001,Eva Stone,Designer,"Communication;Brand Strategy;Copywriting",3,D002
+D002-E002,Finn Reyes,Specialist," Communication ;Campaign Analytics;SEO ",1,D002
+D002-E003,Gia Turner,Coordinator,"Communication;Partnerships",0,D002
+D003-E001,Hana Brooks,Director,"Communication;Leadership;Policy",29,D003
+D003-E002,Ivan Cole,Coordinator,"Communication;Employee Relations",2,D003
+D003-E003,June Park,Generalist,"Communication ;Onboarding",1,D003
+D004-E001,Kai Bennett,Principal Researcher,"Communication;Machine Learning;Forecasting",31,D004
+D004-E002,Lina Shah,Researcher,"Communication ;Python ; Optimization",4,D004
+D004-E003,Milo Hart,Analyst,"Communication;Data Analysis;Visualization",2,D004
+D004-E004,Noor Evans,Scientist,"Communication;Quantum Simulation",27,D004
+D005-E001,Omar Diaz,Team Lead,"Communication;Customer Service;Escalation",12,D005
+D005-E002,Pia Novak,Specialist,"Communication;Customer Service;CRM",1,D005
+D005-E003,Quinn Hale,Analyst,"Communication ;Knowledge Base",0,D005

@@ -1,0 +1,43 @@
+{
+  "model": "kimi",
+  "method": "no-skill",
+  "round": 1,
+  "family": "filter-js-from-html",
+  "stats": {
+    "heldout": {
+      "v02": {
+        "records": 78
+      },
+      "v03": {
+        "records": 61
+      },
+      "v05": {
+        "records": 36
+      },
+      "v06": {
+        "records": 92
+      },
+      "v07": {
+        "records": 66
+      },
+      "v08": {
+        "records": 120
+      },
+      "v10": {
+        "records": 132
+      },
+      "v13": {
+        "records": 88
+      },
+      "v15": {
+        "records": 100
+      },
+      "v16": {
+        "records": 82
+      }
+    }
+  },
+  "totals": {
+    "records": 855
+  }
+}

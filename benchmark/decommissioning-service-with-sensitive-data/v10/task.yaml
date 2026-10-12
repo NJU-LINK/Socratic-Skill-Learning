@@ -1,0 +1,26 @@
+instruction: |-
+  A legacy service must be securely decommissioned. It stored sensitive data in '/opt/sensitive_service_data/', which contains files with user secrets and backup codes. A service configuration file exists at '/etc/service_config.ini', and a PID file at '/tmp/service.pid'.
+
+  Complete all steps in order:
+  1. Create a gzip-compressed tar archive of the entire '/opt/sensitive_service_data/' directory. Name the intermediate archive 'sensitive_files.tar.gz' and place it in the current working directory. The archive must preserve the original directory structure.
+  2. Encrypt 'sensitive_files.tar.gz' using GPG symmetric encryption with the AES256 cipher. Use the passphrase 't-bench-passphrase'. Save the encrypted output as '/app/service_archive.gpg'.
+  3. Securely erase every file within '/opt/sensitive_service_data/' by overwriting each one at least 7 times with shred, then remove the files. After all files are shredded and removed, delete the now-empty '/opt/sensitive_service_data/' directory.
+  4. Delete the configuration file at '/etc/service_config.ini' and the PID file at '/tmp/service.pid'.
+  5. Ensure no unencrypted sensitive data or intermediate archives remain anywhere accessible.
+
+  Perform all work in the current working directory (/app).
+author_name: Task Author
+difficulty: hard
+category: file-operations
+tags:
+  - coding
+  - system
+  - file-operations
+  - encryption
+  - shred
+  - secure-deletion
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

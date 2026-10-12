@@ -1,0 +1,28 @@
+instruction: |-
+  Microsoft (MSFT) daily prices are in /app/msft_prices.csv.
+
+  Calculate 14-period RSI using Wilder smoothing:
+  - output N/A for the first 14 observations;
+  - seed average gain/loss at observation 15 from the preceding 14 changes;
+  - thereafter update each as
+    (previous_average * 13 + current_gain_or_loss) / 14;
+  - RSI = 100 - 100/(1+AvgGain/AvgLoss), or 100 when AvgLoss is zero.
+
+  Derive signal from the unrounded RSI: overbought if RSI > 70, oversold if
+  RSI < 30, otherwise neutral. Signal is N/A wherever RSI is unavailable.
+
+  Write /app/results.csv with columns date,close,rsi14,signal and round displayed
+  RSI values to 2 decimals while retaining full-precision smoothing state.
+author_name: Task Author
+difficulty: hard
+category: data-analysis
+tags:
+  - technical-analysis
+  - rsi
+  - trading-signal
+  - overbought-oversold
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

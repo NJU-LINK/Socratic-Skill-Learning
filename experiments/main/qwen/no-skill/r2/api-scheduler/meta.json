@@ -1,0 +1,89 @@
+{
+  "method": "no-skill",
+  "round": 2,
+  "family": "api-scheduler",
+  "stats": {
+    "skill_formation": {},
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 17,
+        "score": 0.8181818181818182,
+        "passed": 9,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 19,
+        "score": 0.8181818181818182,
+        "passed": 9,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 25,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 21,
+        "score": 0.8181818181818182,
+        "passed": 9,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 26,
+        "score": 0.8181818181818182,
+        "passed": 9,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 34,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 22,
+        "score": 0.8181818181818182,
+        "passed": 9,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 21,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 19,
+        "score": 0.6363636363636364,
+        "passed": 7,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 28,
+        "score": 0.9090909090909091,
+        "passed": 10,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 0,
+    "train": 0,
+    "heldout": 232,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": true
+  }
+}

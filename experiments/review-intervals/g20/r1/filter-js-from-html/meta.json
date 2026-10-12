@@ -1,0 +1,104 @@
+{
+  "model": "qwen",
+  "method": "fixed-window-ssl",
+  "checkpoint_interval": 20,
+  "round": 1,
+  "family": "filter-js-from-html",
+  "run_id": "20260810064806975-develop-g20-filter-js-from-html-r1",
+  "stats": {
+    "skill_formation": {
+      "student-author": {
+        "records": 200
+      },
+      "max-educator": {
+        "records": 29
+      }
+    }
+  },
+  "heldout": {
+    "v02": {
+      "score": 0.0,
+      "passed": 0,
+      "failed": 4,
+      "errors": 0,
+      "toolCalls": 16,
+      "timedOut": false
+    },
+    "v03": {
+      "score": 0.8,
+      "passed": 4,
+      "failed": 1,
+      "errors": 0,
+      "toolCalls": 44,
+      "timedOut": false
+    },
+    "v05": {
+      "score": 1.0,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 25,
+      "timedOut": false
+    },
+    "v06": {
+      "score": 0.6923076923076923,
+      "passed": 9,
+      "failed": 4,
+      "errors": 0,
+      "toolCalls": 33,
+      "timedOut": false
+    },
+    "v07": {
+      "score": 0.2857142857142857,
+      "passed": 2,
+      "failed": 5,
+      "errors": 0,
+      "toolCalls": 27,
+      "timedOut": false
+    },
+    "v08": {
+      "score": 0.42857142857142855,
+      "passed": 3,
+      "failed": 4,
+      "errors": 0,
+      "toolCalls": 33,
+      "timedOut": false
+    },
+    "v10": {
+      "score": 0.041666666666666664,
+      "passed": 1,
+      "failed": 23,
+      "errors": 0,
+      "toolCalls": 16,
+      "timedOut": false
+    },
+    "v13": {
+      "score": 0.0,
+      "passed": 0,
+      "failed": 5,
+      "errors": 0,
+      "toolCalls": 23,
+      "timedOut": false
+    },
+    "v15": {
+      "score": 0.5,
+      "passed": 4,
+      "failed": 4,
+      "errors": 0,
+      "toolCalls": 55,
+      "timedOut": false
+    },
+    "v16": {
+      "score": 0.4,
+      "passed": 2,
+      "failed": 3,
+      "errors": 0,
+      "toolCalls": 26,
+      "timedOut": false
+    }
+  },
+  "primary_score": 0.41482600732600733,
+  "totals": {
+    "records": 229
+  }
+}

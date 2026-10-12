@@ -1,0 +1,20 @@
+protocolVersion: sst-custom
+assetsRoot: ./benchmark
+runsRoot: ./out/runs
+replicates: 1
+iterations: 2
+heldoutEachIteration: false
+reuseDockerImages: true
+cellConcurrency: 1
+groupConcurrency: 4
+families:
+- name: kv-store-grpc
+  train: v01
+  heldout:
+  - v04
+  - v05
+- name: xlsx-structure
+  train: v01
+  heldout:
+  - v02
+  - v07

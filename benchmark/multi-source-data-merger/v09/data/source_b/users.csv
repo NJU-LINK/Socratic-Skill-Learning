@@ -1,0 +1,6 @@
+user_id,name,email_address,created_at,is_active
+201,Alice Ng,alice@north.example,2024/03/01,true
+202,Bruno Diaz,bruno@north.example,2024-03-05T00:00:00Z,false
+203,Carla Ruiz,carla@legacy.example,March 8 2024,true
+204,Devon Hart,devon@west.example,2024/03/11,
+205,Eli Moss,,2024-03-15T00:00:00Z,false

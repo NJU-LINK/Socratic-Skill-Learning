@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "issue-guided-ssl",
+  "round": 1,
+  "family": "git-leak-recovery",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 25
+      },
+      "student-author": {
+        "records": 304
+      }
+    }
+  },
+  "totals": {
+    "records": 329
+  }
+}

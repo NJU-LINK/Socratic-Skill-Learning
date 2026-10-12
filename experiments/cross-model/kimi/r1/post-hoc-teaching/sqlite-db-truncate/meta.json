@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "sqlite-db-truncate",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 19
+      },
+      "student-author": {
+        "records": 258
+      }
+    }
+  },
+  "totals": {
+    "records": 277
+  }
+}

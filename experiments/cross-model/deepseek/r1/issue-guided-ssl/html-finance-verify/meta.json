@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "issue-guided-ssl",
+  "round": 1,
+  "family": "html-finance-verify",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 35
+      },
+      "student-author": {
+        "records": 236
+      }
+    }
+  },
+  "totals": {
+    "records": 271
+  }
+}

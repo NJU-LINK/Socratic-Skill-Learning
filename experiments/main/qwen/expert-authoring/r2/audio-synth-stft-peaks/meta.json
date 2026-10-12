@@ -1,0 +1,103 @@
+{
+  "method": "expert-authoring",
+  "round": 2,
+  "family": "audio-synth-stft-peaks",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 150
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 25
+      },
+      "iteration-2": {
+        "records": 31
+      },
+      "iteration-3": {
+        "records": 26
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 27,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 29,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 33,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 31,
+        "score": 0,
+        "passed": 0,
+        "failed": 6,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 27,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 35,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 35,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 25,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 31,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 32,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 150,
+    "train": 82,
+    "heldout": 305,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

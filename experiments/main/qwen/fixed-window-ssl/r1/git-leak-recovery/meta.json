@@ -1,0 +1,78 @@
+{
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "git-leak-recovery",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 37
+      },
+      "student-author": {
+        "records": 182
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 21
+      },
+      "iteration-2": {
+        "records": 38
+      },
+      "iteration-3": {
+        "records": 39
+      }
+    },
+    "heldout": {
+      "v05": {
+        "records": 31,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 26,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 74,
+        "score": 0.8571428571428571,
+        "passed": 6,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 40,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 62,
+        "score": 0.9,
+        "passed": 9,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 54,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 219,
+    "train": 98,
+    "heldout": 287,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

@@ -1,0 +1,231 @@
+protocolVersion: sst-main-22-family
+assetsRoot: ./benchmark
+runsRoot: ./out/runs
+replicates: 3
+iterations: 3
+heldoutEachIteration: false
+reuseDockerImages: true
+cellConcurrency: 1
+groupConcurrency: 12
+families:
+- name: acl-permissions-inheritance
+  train: v01
+  heldout:
+  - v03
+  - v04
+  - v08
+  - v11
+  - v12
+  - v15
+- name: api-scheduler
+  train: v01
+  heldout:
+  - v02
+  - v03
+  - v05
+  - v07
+  - v08
+  - v11
+  - v12
+  - v13
+  - v14
+  - v16
+- name: audio-synth-stft-peaks
+  train: v01
+  heldout:
+  - v02
+  - v03
+  - v04
+  - v05
+  - v06
+  - v08
+  - v12
+  - v14
+  - v15
+  - v16
+- name: bank-trans-filter
+  train: v01
+  heldout:
+  - v04
+  - v06
+  - v08
+  - v09
+  - v13
+  - v16
+- name: cross-entropy-method
+  train: v01
+  heldout:
+  - v06
+  - v07
+  - v09
+  - v10
+  - v11
+  - v14
+- name: db-wal-recovery
+  train: v01
+  heldout:
+  - v05
+  - v06
+  - v07
+  - v10
+  - v11
+  - v15
+  - v16
+- name: deterministic-tarball
+  train: v01
+  heldout:
+  - v02
+  - v03
+  - v08
+  - v10
+  - v11
+  - v12
+- name: filter-js-from-html
+  train: v01
+  heldout:
+  - v02
+  - v03
+  - v05
+  - v06
+  - v07
+  - v08
+  - v10
+  - v13
+  - v15
+  - v16
+- name: financial-analysis
+  train: v01
+  heldout:
+  - v02
+  - v03
+  - v04
+  - v06
+  - v07
+  - v08
+- name: financial-document-processor
+  train: v01
+  heldout:
+  - v02
+  - v05
+  - v08
+  - v09
+  - v15
+  - v16
+- name: flask
+  train: v01
+  heldout:
+  - v02
+  - v04
+  - v12
+  - v13
+  - v14
+  - v15
+- name: git-leak-recovery
+  train: v01
+  heldout:
+  - v05
+  - v07
+  - v11
+  - v12
+  - v14
+  - v16
+- name: html-finance-verify
+  train: v01
+  heldout:
+  - v05
+  - v08
+  - v09
+  - v13
+  - v14
+  - v16
+- name: jq-data-processing
+  train: v01
+  heldout:
+  - v02
+  - v05
+  - v06
+  - v11
+  - v12
+  - v15
+  - v16
+- name: kv-store-grpc
+  train: v01
+  heldout:
+  - v04
+  - v05
+  - v06
+  - v09
+  - v11
+  - v13
+- name: ode-solver-rk4
+  train: v01
+  heldout:
+  - v03
+  - v07
+  - v12
+  - v14
+  - v15
+- name: office-workflow
+  train: v01
+  heldout:
+  - v03
+  - v07
+  - v08
+  - v10
+  - v14
+  - v15
+- name: organization-json-generator
+  train: v01
+  heldout:
+  - v02
+  - v04
+  - v05
+  - v07
+  - v09
+  - v12
+  - v13
+  - v15
+- name: pypi-server
+  train: v01
+  heldout:
+  - v04
+  - v06
+  - v07
+  - v08
+  - v10
+  - v11
+  - v13
+  - v14
+  - v15
+  - v16
+- name: sparql-professors-universities
+  train: v01
+  heldout:
+  - v03
+  - v04
+  - v05
+  - v07
+  - v08
+  - v09
+  - v10
+  - v11
+  - v12
+  - v16
+- name: sqlite-db-truncate
+  train: v01
+  heldout:
+  - v04
+  - v05
+  - v13
+  - v18
+  - v19
+  - v20
+- name: xlsx-structure
+  train: v01
+  heldout:
+  - v02
+  - v04
+  - v07
+  - v09
+  - v14
+  - v15

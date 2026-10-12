@@ -1,0 +1,29 @@
+instruction: |-
+  You are a product manager with 5 hours available (14:00 - 19:00).
+  A list of 7 tasks is in /app/tasks.json.
+  An additional 1 emergency task will arrive mid-session.
+
+  Your job:
+  1. Read the API and deterministic scheduling contract in /app/simulator_intro.md.
+  2. Inspect and interact with /app/api_simulator.py.
+  3. Schedule tasks using the weighted priority method and replan after the emergency.
+  4. The simulator exposes an additional batch capability. Submit the entire initial
+     normal-task plan with one successful batch_insert request; later emergency
+     mutations may use the basic commands.
+  5. Record every API request and response, including retries, in /app/history.jsonl.
+  6. Write the final schedule and completed/missed partition to /app/output.json.
+
+  Calendar ID: Hk9Nw8KsRd5X
+
+author_name: Task Author
+difficulty: hard
+category: Workflow Automation
+tags:
+  - api-interaction
+  - task-scheduling
+  - workflow
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

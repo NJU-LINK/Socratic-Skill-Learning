@@ -1,0 +1,61 @@
+{
+  "method": "no-skill",
+  "round": 3,
+  "family": "sqlite-db-truncate",
+  "stats": {
+    "skill_formation": {},
+    "train": {},
+    "heldout": {
+      "v04": {
+        "records": 44,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 58,
+        "score": 1,
+        "passed": 19,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 44,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v18": {
+        "records": 76,
+        "score": 1,
+        "passed": 10,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v19": {
+        "records": 62,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v20": {
+        "records": 107,
+        "score": 0.6666666666666666,
+        "passed": 6,
+        "failed": 3,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 0,
+    "train": 0,
+    "heldout": 391,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": true
+  }
+}

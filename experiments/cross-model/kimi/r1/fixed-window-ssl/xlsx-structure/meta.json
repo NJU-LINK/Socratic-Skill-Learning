@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "xlsx-structure",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 72
+      },
+      "student-author": {
+        "records": 213
+      }
+    }
+  },
+  "totals": {
+    "records": 285
+  }
+}

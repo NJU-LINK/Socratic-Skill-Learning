@@ -1,0 +1,28 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local credentials
+/.env
+/.env.*
+!/.env.example
+
+# Local dependencies and generated outputs
+/node_modules/
+/dist/
+/out/
+*.log
+!/benchmark/**/*.log
+
+# Local documentation preview caches
+/.preview/
+/.preview-cache/
+/.cache/
+
+# The paper is hosted on arXiv; keep manuscript PDFs outside the code repository.
+/docs/paper.pdf
+
+# Full experiment transcripts are restored from experiments/archives/ on demand.
+/experiments/**/*.jsonl
+!/experiments/main/qwen/fixed-window-ssl/r1/html-finance-verify/**/*.jsonl
+!/experiments/main/qwen/issue-guided-ssl/r1/html-finance-verify/**/*.jsonl

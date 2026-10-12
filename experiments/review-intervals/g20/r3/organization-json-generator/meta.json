@@ -1,0 +1,88 @@
+{
+  "model": "qwen",
+  "method": "fixed-window-ssl",
+  "checkpoint_interval": 20,
+  "round": 3,
+  "family": "organization-json-generator",
+  "run_id": "20260810064806975-develop-g20-organization-json-generator-r3",
+  "stats": {
+    "skill_formation": {
+      "student-author": {
+        "records": 213
+      },
+      "max-educator": {
+        "records": 32
+      }
+    }
+  },
+  "heldout": {
+    "v02": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 13,
+      "timedOut": false
+    },
+    "v04": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 14,
+      "timedOut": false
+    },
+    "v05": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 17,
+      "timedOut": false
+    },
+    "v07": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 10,
+      "timedOut": false
+    },
+    "v09": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 17,
+      "timedOut": false
+    },
+    "v12": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 12,
+      "timedOut": false
+    },
+    "v13": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 15,
+      "timedOut": false
+    },
+    "v15": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 14,
+      "timedOut": false
+    }
+  },
+  "primary_score": 1.0,
+  "totals": {
+    "records": 245
+  }
+}

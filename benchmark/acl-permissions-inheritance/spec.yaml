@@ -1,0 +1,29 @@
+axes:
+  - description: >
+      Which principals must be granted or denied access through the ACL policy. The seed uses one
+      collaborating group plus two named users with full access, while everyone else is denied. The
+      same skill must also handle different mixes of named users and groups, principals whose access
+      comes partly from group membership and partly from explicit ACL entries, additional denied
+      principals beyond the generic others class, and collaboration patterns where several actors
+      must share a workspace without exposing it to unrelated accounts.
+    name: access_policy_topology
+    type: freeform
+  - description: >
+      What effective permissions the ACL configuration must provide for directories and files. The
+      seed requires read, write, and execute access for collaborators, no access for
+      non-collaborators, and correct behavior for both file editing and directory traversal. The
+      same skill must also handle different read/write/execute combinations, cases where directory
+      traversal and file execution requirements differ, policies that rely on the ACL mask to
+      preserve or restrict named entry permissions, and tasks where the effective access pattern is
+      more subtle than simply granting everyone full control.
+    name: permission_model
+    type: freeform
+  - description: >
+      How permissions must propagate from a shared directory to newly created descendants. The seed
+      uses one top-level shared directory whose group ownership and ACLs must carry forward to files
+      and subdirectories created later. The same skill must also handle deeper directory trees,
+      multiple generations of subdirectories, inherited access that must remain correct for newly
+      created files versus new subdirectories, and setups where group propagation and inherited ACLs
+      must continue to work under different creator identities and creation orders.
+    name: inheritance_and_group_propagation
+    type: freeform

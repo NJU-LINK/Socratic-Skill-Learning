@@ -1,0 +1,7 @@
+## Agent2_Idea 4: Alternating Growth-Decay Segments Under a Tight Call Cap
+
+- **Axis choices**: `rhs_dynamics=smooth sign-changing linear coefficient plus bounded nonlinear correction`, `evaluation_schedule=uneven staircase with several medium clusters`, `integration_constraints=seed landing but materially tighter sample-efficiency budget`
+- **What changes**: Use an RHS whose effective linear coefficient alternates between weak damping and transient growth over several segments, while remaining smooth and non-stiff. Make `eval_ts` arrive in a staircase pattern: short medium-density clusters separated by uneven gaps. Keep the same step ceiling, but lower the allowed total RHS-call budget enough that over-subdividing everywhere is no longer safe.
+- **Difficulty**: hard
+- **Data source**: Modify the hidden problem writer so `A(t)` changes sign smoothly across multiple windows and retain a bounded nonlinear term like `tanh(y)`. Generate `eval_ts` from 4-5 uneven segments, and tighten the call-count assertion from `8 * steps_min + 50` to a smaller multiplier or slack term.
+- **Why this tests the skill**: It keeps the same solver task but makes efficiency decisive. The implementation must exploit the fixed-step ceiling intelligently instead of spending extra substeps in every segment.

@@ -1,0 +1,31 @@
+{
+  "model": "deepseek",
+  "method": "no-skill",
+  "round": 1,
+  "family": "xlsx-structure",
+  "stats": {
+    "heldout": {
+      "v02": {
+        "records": 44
+      },
+      "v04": {
+        "records": 24
+      },
+      "v07": {
+        "records": 17
+      },
+      "v09": {
+        "records": 23
+      },
+      "v14": {
+        "records": 19
+      },
+      "v15": {
+        "records": 40
+      }
+    }
+  },
+  "totals": {
+    "records": 167
+  }
+}

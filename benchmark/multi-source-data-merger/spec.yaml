@@ -1,0 +1,27 @@
+axes:
+  - description: >
+      How each source expresses the same user attributes before unification into the canonical
+      output columns. The seed uses straightforward aliases for user id, name, email, created date,
+      and status, plus boolean-to-string status conversion. The same skill must also handle wider
+      variation in source-specific column names, different date string conventions that still need
+      normalization to YYYY-MM-DD, and source values that require type or label normalization before
+      merging.
+    name: schema_and_value_normalization
+    type: freeform
+  - description: >
+      How user records are distributed across the three sources and where field disagreements
+      appear. The seed has a small number of overlapping users and conflicts on a subset of fields,
+      resolved by fixed source priority source_a > source_b > source_c. The same skill must also
+      handle mostly disjoint datasets, dense overlap across all three sources, conflicts on
+      different combinations of fields, and repeated disagreements for the same user.
+    name: overlap_and_conflict_structure
+    type: freeform
+  - description: >
+      How complete each source record is, and how the merged row must be formed when higher-priority
+      records are only partially populated. The seed mainly uses complete records with an optional
+      status field. The same skill must also handle users missing some fields in higher-priority
+      sources, fields that must be filled from lower-priority sources without violating overall
+      precedence, and sparse data where merged rows must be assembled from partial records across
+      sources.
+    name: record_completeness_and_backfill
+    type: freeform

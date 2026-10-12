@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "title": "Complete Audit Report",
+      "duration_min": 120,
+      "urgency": 5,
+      "importance": 5,
+      "deadline": "17:00"
+    },
+    {
+      "id": "B",
+      "title": "Prepare Board Slides",
+      "duration_min": 90,
+      "urgency": 5,
+      "importance": 5,
+      "deadline": "18:00"
+    },
+    {
+      "id": "C",
+      "title": "Organize Files",
+      "duration_min": 15,
+      "urgency": 1,
+      "importance": 1
+    }
+  ],
+  "emergencies": [],
+  "config": {
+    "work_start": "14:00",
+    "work_end": "17:00",
+    "priority_method": "weighted",
+    "calendar_id": "Hk9Nw8KsRd5X",
+    "contradictory": true
+  }
+}

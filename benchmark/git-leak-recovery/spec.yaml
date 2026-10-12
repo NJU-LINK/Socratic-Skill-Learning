@@ -1,0 +1,24 @@
+axes:
+  - name: secret_location
+    type: freeform
+    description: >
+      Where the leaked value remains in Git storage or metadata. In v01 the file was added to the
+      index, removed from the index, and deleted from the worktree, leaving its blob unreachable.
+      Other cases may place the value in several staged blobs, a live or dropped stash, an amended
+      or reset-away commit, a deleted branch, a replace ref, a submodule object database, reachable
+      history, or an annotated tag.
+  - name: repo_complexity
+    type: freeform
+    description: >
+      The size and topology that must be understood and preserved. v01 has two legitimate commits
+      on one branch. Other cases may contain independent branches, tags, merges, a nested Git
+      repository, dozens of legitimate commits, or both reachable and unreachable histories.
+  - name: cleanup_scope
+    type: freeform
+    description: >
+      Which references and objects keep the leak recoverable. Cleanup may require dropping a stash,
+      removing replace or backup refs, deleting only tainted tags, expiring reflogs, rewriting
+      reachable history while preserving legitimate content, pruning unreachable objects, and
+      checking every relevant object database. Recovery must happen before destructive cleanup,
+      and the resulting repository must retain its legitimate branches, files, tags, and commit
+      messages.

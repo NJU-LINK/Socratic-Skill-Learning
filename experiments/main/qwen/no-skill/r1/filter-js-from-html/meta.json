@@ -1,0 +1,89 @@
+{
+  "method": "no-skill",
+  "round": 1,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {},
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 62,
+        "score": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 82,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 98,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 46,
+        "score": 0.38461538461538464,
+        "passed": 5,
+        "failed": 8,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 50,
+        "score": 0.2857142857142857,
+        "passed": 2,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 150,
+        "score": 0.42857142857142855,
+        "passed": 3,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 124,
+        "score": 0,
+        "passed": 0,
+        "failed": 24,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 62,
+        "score": 0,
+        "passed": 0,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 76,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 70,
+        "score": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 0,
+    "train": 0,
+    "heldout": 820,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": true
+  }
+}

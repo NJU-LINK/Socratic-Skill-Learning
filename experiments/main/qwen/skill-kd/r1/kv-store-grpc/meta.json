@@ -1,0 +1,71 @@
+{
+  "method": "skill-kd",
+  "round": 1,
+  "family": "kv-store-grpc",
+  "stats": {
+    "skill_formation": {
+      "0000-student_initial-1bbbec2c": {
+        "records": 29
+      },
+      "0001-student_initial-bbe87fd3": {
+        "records": 27
+      },
+      "0002-student_initial-3baf76eb": {
+        "records": 27
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v04": {
+        "records": 31,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 25,
+        "score": 0.875,
+        "passed": 7,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 25,
+        "score": 0.16666666666666666,
+        "passed": 1,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 51,
+        "score": 0.16666666666666666,
+        "passed": 1,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 28,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 27,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 83,
+    "train": 0,
+    "heldout": 187,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

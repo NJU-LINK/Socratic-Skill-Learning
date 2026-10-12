@@ -1,0 +1,17 @@
+instruction: |-
+  Important files in the `/app/sensitive_data/` directory have been obfuscated by an attacker. Their original filenames and file contents have both been transformed and replaced with encoded versions. A manifest at `/app/MANIFEST.txt` lists the obfuscated filenames but does not reveal their original names or the encoding details. A file `/app/NOTE_FROM_ATTACKER.txt` may contain clues about the encoding scheme used.
+
+  Your task is to find all obfuscated files listed in the manifest, determine their original filenames and original content, and save each recovered file with its original name and content into the `/app/recovered/` directory.
+author_name: Task Author
+difficulty: hard
+category: security
+tags:
+  - file-recovery
+  - multi-pass-encoding
+  - forensics
+  - string-manipulation
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

@@ -1,0 +1,36 @@
+description: >-
+  Use a stateful calendar API to build a priority schedule, then revise the
+  actual remote state when emergencies or API behavior invalidate the plan.
+  The family is defined by the scheduling contract in simulator_intro.md and
+  the concrete anchor in v01.
+axes:
+  - name: task_volume
+    type: range
+    min: 3
+    max: 12
+    description: >-
+      Number and total duration of normal tasks, including cases where every
+      task fits and cases requiring a principled completed/missed partition.
+  - name: interruption_pattern
+    type: freeform
+    description: >-
+      No interruption, one emergency, or multiple chronological emergencies.
+      An arrival invalidates overlapping and future calendar entries and
+      requires stateful deletion and rescheduling.
+  - name: priority_method
+    type: enum
+    values: [urgency, eisenhower, weighted]
+    description: >-
+      Public scoring rules based on urgency, importance, and optionally team
+      priority, with deterministic deadline and input-order tie breaks.
+  - name: scheduling_constraints
+    type: freeform
+    description: >-
+      Work windows, hard deadlines, dependency DAGs, infeasible requirements,
+      duplicate human-readable titles, and API errors.
+  - name: api_capability
+    type: enum
+    values: [basic, transient-errors, batch]
+    description: >-
+      Basic calendar mutations, retryable transient failures, or a required
+      batch insertion capability discovered from the public simulator.

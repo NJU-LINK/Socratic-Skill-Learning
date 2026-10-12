@@ -1,0 +1,117 @@
+{
+  "method": "skill-kd",
+  "round": 2,
+  "family": "api-scheduler",
+  "stats": {
+    "skill_formation": {
+      "0000-round_00-student_retry-fa33f3e2": {
+        "records": 18
+      },
+      "0000-round_01-student_retry-d0689b0b": {
+        "records": 21
+      },
+      "0000-round_02-student_retry-bcf0dc59": {
+        "records": 22
+      },
+      "0000-student_initial-9e961d82": {
+        "records": 23
+      },
+      "0000-teacher-b139dc4c": {
+        "records": 17
+      },
+      "0001-round_00-student_retry-dab5253d": {
+        "records": 22
+      },
+      "0001-student_initial-54127e35": {
+        "records": 26
+      },
+      "0001-teacher-2f44c455": {
+        "records": 15
+      },
+      "0002-student_initial-09bb965b": {
+        "records": 19
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 18,
+        "score": 0.9090909090909091,
+        "passed": 10,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 24,
+        "score": 0.8181818181818182,
+        "passed": 9,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 24,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 21,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 23,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 19,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 24,
+        "score": 0.9090909090909091,
+        "passed": 10,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 18,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 30,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 19,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 183,
+    "train": 0,
+    "heldout": 220,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

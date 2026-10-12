@@ -1,0 +1,7 @@
+user_ref,display_label,email_address,created_at,lifecycle
+201,,ariana@bright.example,03/14/2024,active
+202,,brian@beta.example,2024/03/01,enabled
+203,,casey@sample.example,02/01/2024,
+204,Mina Patel,mina@legacy.example,2024/03/04,
+205,Evan Lee,evan.lee@northwind.example,2024-05-11,disabled
+206,,noor@sample.example,,

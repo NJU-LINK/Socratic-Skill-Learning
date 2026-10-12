@@ -1,0 +1,103 @@
+{
+  "method": "expert-authoring",
+  "round": 3,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 163
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 29
+      },
+      "iteration-2": {
+        "records": 35
+      },
+      "iteration-3": {
+        "records": 21
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 25,
+        "score": 0,
+        "passed": 0,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 25,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 42,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 24,
+        "score": 0.6153846153846154,
+        "passed": 8,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 35,
+        "score": 0.2857142857142857,
+        "passed": 2,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 21,
+        "score": 0.42857142857142855,
+        "passed": 3,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 41,
+        "score": 0.041666666666666664,
+        "passed": 1,
+        "failed": 23,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 33,
+        "score": 0,
+        "passed": 0,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 30,
+        "score": 0,
+        "passed": 0,
+        "failed": 8,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 36,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 163,
+    "train": 85,
+    "heldout": 312,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

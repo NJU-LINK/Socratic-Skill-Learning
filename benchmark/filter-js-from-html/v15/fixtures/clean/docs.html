@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Widget SDK Integration Guide</title>
+  <link rel="stylesheet" href="/docs/site.css">
+</head>
+<body>
+  <header>
+    <h1>Widget SDK Integration Guide</h1>
+    <p>Version 4.2 documentation for internal platform teams.</p>
+  </header>
+  <nav aria-label="Table of contents">
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#install">Install</a></li>
+      <li><a href="#config">Configuration</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+  <main>
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>The SDK renders embedded widgets for approved product surfaces.</p>
+      <p>Use semantic HTML in guides so screen readers can navigate examples correctly.</p>
+    </section>
+    <section id="install">
+      <h2>Install</h2>
+      <pre><code>npm install @northwind/widget-sdk</code></pre>
+      <p>Pin a tested version in production release branches.</p>
+    </section>
+    <section id="config">
+      <h2>Configuration</h2>
+      <table>
+        <thead>
+          <tr><th>Key</th><th>Required</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>tenantId</td><td>Yes</td><td>Tenant identifier supplied by operations.</td></tr>
+          <tr><td>theme</td><td>No</td><td>Optional theme preset such as light or slate.</td></tr>
+          <tr><td>region</td><td>Yes</td><td>Deployment region used for asset routing.</td></tr>
+        </tbody>
+      </table>
+      <math display="block">
+        <mrow>
+          <mi>timeout</mi>
+          <mo>=</mo>
+          <mn>30</mn>
+          <mo>+</mo>
+          <mi>retryBudget</mi>
+        </mrow>
+      </math>
+      <p class="callout">Need a sample app? <span data-modal="quickstart" data-context="docs">Open the quickstart helper</span>.</p>
+    </section>
+    <section id="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Does the widget require a framework?</summary>
+        <p>No. It can be mounted from plain HTML.</p>
+      </details>
+      <details>
+        <summary>Where do I find changelogs?</summary>
+        <p>Use the release notes page linked from the engineering portal.</p>
+      </details>
+    </section>
+    <section id="sandbox-example">
+      <h2>Embedded Preview</h2>
+      <iframe class="sample-frame" sandbox="allow-same-origin" srcdoc="&lt;section&gt;&lt;h3&gt;Preview&lt;/h3&gt;&lt;/section&gt;"></iframe>
+    </section>
+  </main>
+</body>
+</html>

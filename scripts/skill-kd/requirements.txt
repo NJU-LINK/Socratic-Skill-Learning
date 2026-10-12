@@ -1,0 +1,5 @@
+# Only imports required by upstream evolve_on_task + our Pi benchmark adapter.
+# Its datasets/browser/ALFWorld environments are replaced by our existing runner.
+openai==1.109.1
+openpyxl==3.1.5
+PyYAML==6.0.2

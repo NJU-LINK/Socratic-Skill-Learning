@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "git-leak-recovery",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 55
+      },
+      "student-author": {
+        "records": 169
+      }
+    }
+  },
+  "totals": {
+    "records": 224
+  }
+}

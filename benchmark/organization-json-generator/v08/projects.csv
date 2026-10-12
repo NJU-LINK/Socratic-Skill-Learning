@@ -1,0 +1,19 @@
+name,status,member_ids,deadline,department_id
+Atlas Platform,In Progress,D001-E001;D001-E002;D001-E003,2025-06-30,D001
+Compiler Refresh,In Progress,D001-E001;D001-E002,2025-07-15,D001
+Edge Gateway,In Progress,D001-E002;D001-E003,2025-08-01,D001
+Fleet Telemetry,In Progress,D001-E001;D001-E002;D001-E003,2025-08-20,D001
+Identity Sync,In Progress,D001-E001;D001-E003,2025-09-05,D001
+Latency Watch,In Progress,D001-E001;D001-E002,2025-09-18,D001
+Release Train,Completed,D001-E002;D001-E003,2025-05-10,D001
+Service Mesh,In Progress,D001-E001;D001-E002;D001-E003,2025-10-02,D001
+Brand Pulse,In Progress,D002-E001;D002-E002,2025-07-30,D002
+Hiring Sprint,In Progress,D003-E001;D003-E002,2025-08-12,D003
+Adaptive Search,In Progress,D004-E001;D004-E002;D004-E003,2025-06-25,D004
+Anomaly Lab,In Progress,D004-E001;D004-E003,2025-07-11,D004
+Benchmark Suite,In Progress,D004-E001;D004-E002,2025-07-27,D004
+Discovery Graph,In Progress,D004-E001;D004-E002;D004-E003,2025-08-14,D004
+Forecast Engine,In Progress,D004-E002;D004-E003,2025-09-01,D004
+Model Registry,In Progress,D004-E001;D004-E002,2025-09-19,D004
+Signal Review,Testing,D004-E001;D004-E002;D004-E003,2025-10-08,D004
+Support Portal,On Hold,D005-E001;D005-E002,2025-11-30,D005

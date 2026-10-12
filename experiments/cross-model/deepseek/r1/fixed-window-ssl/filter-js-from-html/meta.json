@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 98
+      },
+      "student-author": {
+        "records": 322
+      }
+    }
+  },
+  "totals": {
+    "records": 420
+  }
+}

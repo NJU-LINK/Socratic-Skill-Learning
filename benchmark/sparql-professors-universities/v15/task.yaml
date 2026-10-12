@@ -1,0 +1,32 @@
+instruction: |-
+  You are provided with a Turtle file at `/app/university_graph.ttl` containing the
+  ontology and instance data for a university knowledge graph.
+
+  Create a SPARQL query that returns every professor's name and the university where
+  that person works.
+
+  Contract:
+  - Academic titles are strings in `uni:role`. Assistant Professors, Full Professors,
+    and unmodified Professor titles qualify; lecturers, students, and staff do not.
+  - Prefer the person's `uni:worksAt` organization when that relation exists.
+  - If `uni:worksAt` is absent, infer the affiliation from a course linked by
+    `uni:teaches`, then from the course's `uni:isTaughtIn` department.
+  - Departments connect to universities through `uni:partOfUniversity`.
+  - Return each professor-university pair once, including when several courses imply
+    the same fallback affiliation.
+  - Return exactly `?professorName` and `?universityName`.
+
+  Save the query to `/app/solution.sparql`.
+author_name: Task Author
+difficulty: hard
+category: data-querying
+tags:
+  - knowledge-graph
+  - sparql-query
+  - preferred-path
+  - fallback-inference
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

@@ -1,0 +1,17 @@
+instruction: |-
+  Analyze the program and bypass its authentication mechanism to extract the hidden secret key. Save the secret key to `/app/results.txt`.
+
+  The secret is only computed at runtime when specific conditions are met — it is not stored anywhere on disk. You must interact with the program to trigger the conditions that reveal it.
+
+  The secret key is in the format `FLAG{...}`.
+author_name: Task Author
+difficulty: hard
+category: security
+tags:
+  - security
+  - binary-exploitation
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

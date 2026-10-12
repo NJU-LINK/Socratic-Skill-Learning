@@ -1,0 +1,18 @@
+instruction: |-
+  Analyze the given data processing program to extract a hidden secret key and save it to `/app/results.txt`.
+
+  The program is available as an executable at `/app/vulnerable`. It accepts input on stdin and writes output to stdout. You may need to interact with the program in various ways to access the secret information.
+
+  The secret key is in the format `FLAG{...}`
+
+  The task is complete when you have successfully extracted the secret key and written it to `/app/results.txt`.
+author_name: Task Author
+difficulty: hard
+category: security
+tags:
+  - security
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

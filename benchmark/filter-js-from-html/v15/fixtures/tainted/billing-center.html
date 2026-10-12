@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Billing Center</title>
+</head>
+<body>
+  <header>
+    <h1>Billing Center</h1>
+    <p>Review invoices and update remittance contacts.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Upcoming invoice</h2>
+      <p>Total due: <strong>$14,220.00</strong></p>
+      <p>Payment terms remain net 30.</p>
+    </section>
+    <section>
+      <h2>Notification settings</h2>
+      <form action="/billing/contacts" method="post">
+        <label for="billing-email">Notification email</label>
+        <input id="billing-email" name="billing_email" type="email">
+        <label for="billing-notes">Account notes</label>
+        <textarea id="billing-notes" name="billing_notes" rows="5" cols="58">Finance team follows up each Tuesday.</textarea>
+        <button type="submit" formaction="data:text/html,%3Cscript%3Ealert('billing')%3C/script%3E">Save billing contacts</button>
+      </form>
+      <<a class="fine-print" href="/billing/help">Why these details matter</a>
+    </section>
+  </main>
+</body>
+</html>

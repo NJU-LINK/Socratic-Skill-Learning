@@ -1,0 +1,14 @@
+schemaVersion: 1
+protocolVersion: adapted-skill-kd-v1
+experimentConfig: configs/scopes/main.yaml
+runsRoot: out/skill-kd-baseline
+upstreamRepository: https://github.com/KhanCold/SKILL-KD.git
+upstreamCommit: f76b51c3e855578cbcf9251e64aff08c4e2283c5
+upstreamCheckout: out/external/SKILL-KD
+pythonVenv: out/external/skill-kd-venv
+anchorPasses: 3
+maxAdaptiveRounds: 3
+replicates: 3
+familyConcurrency: 2
+heldoutVariantConcurrency: 3
+experimentModel: configs/models/qwen.yaml

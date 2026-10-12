@@ -1,0 +1,22 @@
+# Adapted from Terminal-Bench for SkillTransferBench; task text and metadata were curated.
+# Original task credits and source: ../../ATTRIBUTION.md (vulnerable-secret).
+# SPDX-License-Identifier: Apache-2.0
+instruction: |-
+  Analyze the local executable `/app/vulnerable` and reach the protected code path that reveals
+  its runtime secret. The program reads from standard input; source code and symbols are not
+  provided.
+
+  Save the exact secret, and nothing else, to `/app/results.txt`. The secret has the form
+  `FLAG{...}`.
+author_name: Task Author
+difficulty: easy
+category: security
+tags:
+  - security
+  - binary-analysis
+  - exploitation
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

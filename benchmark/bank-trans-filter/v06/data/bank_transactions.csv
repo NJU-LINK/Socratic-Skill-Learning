@@ -1,0 +1,28 @@
+Company Name,Account Number,Date,Amount,Transaction Type,Description
+Blue Mountain Coffee Co,BUS-24268,2024-01-02,-$56345.00,Payment,Contractor Payment
+NorthWest Cap Group,BUS-30001,2024-01-03,-$18750.00,Payment,Advisor Retainer
+Northwind Cargo LLC,BUS-3000I,2024-01-04,$48120.00,Deposit,Freight Settlement
+Treasury Batch,BUS-30001,2024-01-05,$90500.00,Deposit,Capital Call Receipt
+Silver Oak Manufacturing,BUS-30011,2024-01-06,-$22240.00,Withdrawal,Equipment Repair
+Operations Ledger,BUS-30O01,2024-01-08,-$12440.00,Withdrawal,Software Renewal
+Pioneer Agriculture Co,BUS-25628,2024-01-10,$273784.00,Transfer,Investment Transfer
+Vendor Clearing,BUS-30001,2024-01-13,-$3150.00,Payment,Courier Services
+N.W. Capital Inc,BUS-35001,2024-01-16,$140250.00,Transfer,Partner Funding
+Harbor Freight Systems,BUS-3500I,2024-01-17,-$19875.00,Payment,Customs Brokerage
+Treasury Batch,BUS-35001,2024-01-19,-$28990.00,Purchase,Research Licenses
+Summit Advisory LLC,BUS-35101,2024-01-20,$67005.00,Deposit,Client Receipt
+Settlement Queue,BUS-3500l,2024-01-22,-$7420.00,Payment,Compliance Filing
+BluePeak Foods,BUS-3500L,2024-01-24,-$53110.00,Withdrawal,Payroll
+Capital Processing,BUS-35001,2024-01-25,$61275.00,Deposit,Interest Income
+North West Cap.,BUS-32001,2024-02-01,-$53000.00,Payment,Consulting Fee
+Delta Marine Supply,BUS-3200I,2024-02-03,$84590.00,Deposit,Contract Payment
+Vendor Clearing,BUS-32001,2024-02-04,-$16220.00,Withdrawal,Payroll Taxes
+Aurora Software Systems,BUS-20393,2024-02-06,-$175313.00,Purchase,Technology Upgrade
+Treasury Batch,BUS-32O01,2024-02-09,$87510.00,Transfer,Intercompany Rebalance
+Ridgefield Services,BUS-32101,2024-02-10,-$26430.00,Purchase,Office Furnishings
+Capital Processing,BUS-32001,2024-02-12,-$9100.00,Purchase,Office Lease
+Ops Queue,BUS-30001,2024-02-15,$45500.00,Deposit,Loan Repayment
+Settlement Queue,BUS-35001,2024-02-18,-$11880.00,Payment,Network Audit
+Norlight Transport,BUS-32OO1,2024-02-20,-$17560.00,Payment,Fuel Advance
+Treasury Batch,BUS-32001,2024-02-22,$126300.00,Deposit,Investment Return
+Metro Construction Group,BUS-20998,2024-02-24,-$241983.00,Purchase,Inventory Purchase

@@ -1,0 +1,43 @@
+{
+  "model": "deepseek",
+  "method": "no-skill",
+  "round": 1,
+  "family": "filter-js-from-html",
+  "stats": {
+    "heldout": {
+      "v02": {
+        "records": 32
+      },
+      "v03": {
+        "records": 182
+      },
+      "v05": {
+        "records": 100
+      },
+      "v06": {
+        "records": 44
+      },
+      "v07": {
+        "records": 39
+      },
+      "v08": {
+        "records": 100
+      },
+      "v10": {
+        "records": 102
+      },
+      "v13": {
+        "records": 85
+      },
+      "v15": {
+        "records": 56
+      },
+      "v16": {
+        "records": 132
+      }
+    }
+  },
+  "totals": {
+    "records": 872
+  }
+}

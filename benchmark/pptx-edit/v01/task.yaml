@@ -1,0 +1,22 @@
+instruction: |-
+  You are given a PowerPoint file at `/app/input.pptx` (`hadal.pptx`).
+
+  On slide 1, replace the complete title with `Deep Sea Exploration` and make the
+  resulting title bold. Do not change the title box's geometry or any other
+  formatting.
+
+  Preserve every non-target slide and shape, the page dimensions, media, embedded
+  fonts, themes, masters, layouts, and speaker notes.
+
+  Save the modified presentation as `/app/output.pptx`.
+author_name: Task Author
+difficulty: medium
+category: PPTX Manipulation
+tags:
+  - pptx
+  - document-processing
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

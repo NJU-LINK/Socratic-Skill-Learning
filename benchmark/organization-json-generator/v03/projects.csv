@@ -1,0 +1,24 @@
+name,status,member_ids,deadline,department_id
+Madrid Core Platform,In Progress,D001-E001; D001-E002; D001-E003; D001-E004,2025-06-30,D001
+Ferrari Migration,In Progress,D001-E002; D001-E003; D001-E004,2025-04-18,D001
+Telemetry Hub,In Progress,D001-E001; D001-E003,2025-07-12,D001
+Release Guard,Testing,D001-E003; D001-E004,2025-08-05,D001
+Atlas Automation,In Progress,D001-E001; D001-E002,2025-09-14,D001
+Audience Pulse,In Progress,D002-E001; D002-E002; D002-E003,2025-05-28,D002
+Brand Lift,In Progress,D002-E001; D002-E003,2025-06-22,D002
+Creator Studio,Planning,D002-E002; D002-E003,2025-09-10,D002
+Campaign Radar,In Progress,D002-E001; D002-E002,2025-07-17,D002
+Market Echo,In Progress,D002-E001; D002-E003,2025-08-29,D002
+People Portal,In Progress,D003-E001; D003-E002; D003-E003,2025-06-11,D003
+Policy Refresh,Completed,D003-E001; D003-E002,2025-03-25,D003
+Onboarding Loop,In Progress,D003-E002; D003-E003,2025-07-20,D003
+Talent Signals,In Progress,D003-E001; D003-E003,2025-10-03,D003
+Discovery Engine,In Progress,D004-E001; D004-E002; D004-E003; D004-E004,2025-05-15,D004
+Model Forge,In Progress,D004-E001; D004-E003; D004-E004,2025-06-26,D004
+Vector Lab,In Progress,D004-E002; D004-E003,2025-07-08,D004
+Safety Bench,Testing,D004-E001; D004-E002,2025-08-25,D004
+Inference Sprint,In Progress,D004-E001; D004-E004,2025-09-19,D004
+Support Pulse,In Progress,D005-E001; D005-E002; D005-E003,2025-04-30,D005
+Caseflow Assist,In Progress,D005-E001; D005-E003,2025-06-14,D005
+Retention Watch,On Hold,D005-E002; D005-E003,2025-11-30,D005
+Helpdesk Replay,In Progress,D005-E001; D005-E002,2025-07-25,D005

@@ -1,0 +1,4 @@
+Your files are locked down — layered encoding means double the protection.
+Think about what "layered" might mean. One pass isn't enough.
+I used hex first, then something else on top. Reverse the chain.
+The manifest names the targets, but good luck with the rest.

@@ -1,0 +1,34 @@
+{
+  "model": "kimi",
+  "method": "no-skill",
+  "round": 1,
+  "family": "jq-data-processing",
+  "stats": {
+    "heldout": {
+      "v02": {
+        "records": 94
+      },
+      "v05": {
+        "records": 102
+      },
+      "v06": {
+        "records": 83
+      },
+      "v11": {
+        "records": 54
+      },
+      "v12": {
+        "records": 32
+      },
+      "v15": {
+        "records": 30
+      },
+      "v16": {
+        "records": 40
+      }
+    }
+  },
+  "totals": {
+    "records": 435
+  }
+}

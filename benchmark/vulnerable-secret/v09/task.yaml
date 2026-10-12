@@ -1,0 +1,17 @@
+instruction: |-
+  A program at /app/vulnerable contains a hidden secret key. The program reads integer indices from standard input and outputs characters. Interact with the program to extract the secret key and write it to /app/results.txt.
+
+  The secret key is in the format FLAG{...}
+
+  The task is complete when /app/results.txt contains the correct secret key.
+author_name: Task Author
+difficulty: medium
+category: security
+tags:
+  - security
+  - reverse-engineering
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

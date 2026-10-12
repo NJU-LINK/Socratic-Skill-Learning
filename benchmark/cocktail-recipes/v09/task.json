@@ -1,0 +1,39 @@
+{
+  "description": "Three sources describe the Bloody Mary differently. Two disagree on key details. Read all three and determine the correct IBA recipe.",
+  "recipe": {
+    "name": "Bloody Mary",
+    "glass": "highball",
+    "category": "Longdrink",
+    "ingredients": [
+      {
+        "unit": "cl",
+        "amount": 4.5,
+        "ingredient": "Vodka"
+      },
+      {
+        "unit": "cl",
+        "amount": 9,
+        "ingredient": "Tomato juice"
+      },
+      {
+        "unit": "cl",
+        "amount": 1.5,
+        "ingredient": "Lemon juice"
+      },
+      {
+        "special": "2 to 3 dashes of Worcestershire Sauce"
+      },
+      {
+        "special": "Tabasco"
+      },
+      {
+        "special": "Celery salt"
+      },
+      {
+        "special": "Pepper"
+      }
+    ],
+    "garnish": "Celery and optionally lemon wedge",
+    "preparation": "Stir gently, pour all ingredients into highball glass."
+  }
+}

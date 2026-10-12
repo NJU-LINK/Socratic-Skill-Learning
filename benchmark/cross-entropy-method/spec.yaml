@@ -1,0 +1,27 @@
+axes:
+  - description: >
+      How the point-mass environment translates discrete actions into state updates and rewards. The
+      seed uses a 2D bounded square, integer positions, clipping at the borders, and reward from
+      inclusive Euclidean distance to a circular goal. The same skill must also handle different map
+      sizes, start and goal placements, action sets that still represent local motion in the same
+      state space, and edge cases where boundary behavior or geometric reward regions make
+      off-by-one and metric mistakes easy.
+    name: environment_dynamics
+    type: freeform
+  - description: >
+      How cross-entropy optimization updates the action distribution from sampled plans. The seed
+      uses independently sampled discrete actions at each timestep, elite selection by cumulative
+      reward, and iterative probability updates that must remain correct under deterministic priors,
+      tied rewards, sparse rewards, and repeated calls to optimization. The same skill must also
+      handle different sample counts, elite fractions, trajectory lengths, reward sparsity levels,
+      and convergence patterns without breaking probabilistic correctness.
+    name: policy_update_regime
+    type: freeform
+  - description: >
+      How batches of candidate action sequences are evaluated efficiently when many plans share
+      prefixes or repeat exactly. The seed evaluates discrete plans under heavy redundancy and
+      expects both exact cumulative rewards and measurable speedup on overlapping plan sets. The
+      same skill must also handle varying degrees of prefix overlap, repeated and unique plans, and
+      different batch sizes while preserving exact results under performance pressure.
+    name: overlapping_plan_evaluation
+    type: freeform

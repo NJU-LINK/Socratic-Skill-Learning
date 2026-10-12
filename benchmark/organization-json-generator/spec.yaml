@@ -1,0 +1,31 @@
+axes:
+  - description: >
+      How the rows across the input CSV files relate to each other before they are assembled into
+      the nested organization JSON. The seed has a straightforward three-table structure with 2-3
+      employees per department, 1-2 projects per department, and every project listing at least two
+      members from the same department. The same skill must also handle: departments with no
+      projects, departments with many more projects or employees than the seed, projects with empty
+      member lists, and much denser project-member reuse patterns than the seed's light overlap,
+      while still reconstructing the same nested ownership structure.
+    name: entity_relationship_complexity
+    type: freeform
+  - description: >
+      How much cleaning and type normalization is required when converting CSV fields into
+      schema-conformant JSON values. The seed uses direct string fields, numeric budgets and years
+      of service, semicolon-delimited skills and project members, and ISO-style dates. The same
+      skill must also handle: extra whitespace, repeated delimiters, empty multi-value fields,
+      quoted text, numeric strings with different formatting, and other value-level irregularities
+      that still map to the same schema after normalization.
+    name: field_parsing_and_normalization
+    type: freeform
+  - description: >
+      How challenging it is to derive the required statistics from the assembled organization data
+      because of the size and distribution of the values being summarized. The seed computes
+      averages, totals, per-department counts, skill frequencies, and project-status frequencies
+      over a small, fairly balanced dataset with modest numeric ranges. The same skill must also
+      handle: highly skewed budgets or years-of-service values, dominant or rare skills, heavily
+      concentrated project statuses, extreme numeric ranges, and other distributional patterns where
+      the same fixed statistics become easier to miscompute even though the row counts, output
+      schema, and required metrics stay the same.
+    name: value_distribution_for_aggregation
+    type: freeform

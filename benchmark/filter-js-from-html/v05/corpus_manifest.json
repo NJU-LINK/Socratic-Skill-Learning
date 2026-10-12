@@ -1,0 +1,14 @@
+[
+  {
+    "name": "dangerous-patterns",
+    "description": "Broad HTML attack surface including script tags, event handlers, SVG, form actions, meta refresh, srcdoc, active containers, and encoded payloads."
+  },
+  {
+    "name": "preservation-cases",
+    "description": "Benign pages and fragments with tables, forms, links, semantic HTML, and dense attributes that should survive filtering."
+  },
+  {
+    "name": "normalization-stress",
+    "description": "Malformed or layered inputs that become dangerous only after browser normalization, entity decoding, percent decoding, or wrapper insertion."
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "method": "post-hoc-teaching",
+  "round": 3,
+  "family": "api-scheduler",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 15
+      },
+      "student-author": {
+        "records": 226
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 28
+      },
+      "iteration-2": {
+        "records": 28
+      },
+      "iteration-3": {
+        "records": 29
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 34,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 33,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 26,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 33,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 32,
+        "score": 0.5454545454545454,
+        "passed": 6,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 51,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 26,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 26,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 30,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 30,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 241,
+    "train": 85,
+    "heldout": 321,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

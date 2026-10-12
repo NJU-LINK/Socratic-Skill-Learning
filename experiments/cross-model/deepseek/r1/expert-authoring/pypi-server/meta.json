@@ -1,0 +1,16 @@
+{
+  "model": "deepseek",
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "pypi-server",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 157
+      }
+    }
+  },
+  "totals": {
+    "records": 157
+  }
+}

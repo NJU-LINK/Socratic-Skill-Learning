@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "jq-data-processing",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 14
+      },
+      "student-author": {
+        "records": 235
+      }
+    }
+  },
+  "totals": {
+    "records": 249
+  }
+}

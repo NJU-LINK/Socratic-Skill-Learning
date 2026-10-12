@@ -1,0 +1,92 @@
+{
+  "method": "issue-guided-ssl",
+  "round": 3,
+  "family": "organization-json-generator",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 17
+      },
+      "student-author": {
+        "records": 168
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 33
+      },
+      "iteration-2": {
+        "records": 23
+      },
+      "iteration-3": {
+        "records": 27
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 25,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 27,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 31,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 27,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 28,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 28,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 23,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 32,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 185,
+    "train": 83,
+    "heldout": 221,
+    "heldoutVariants": 8,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

@@ -1,0 +1,42 @@
+axes:
+  - description: >
+      The layout and volume of sensitive data that must be archived and shredded. The seed has a
+      flat directory with 2 small text files. The same skill must also handle: deeply nested
+      subdirectories (5+ levels), many files (hundreds), large individual files (GB-scale), files
+      with spaces and special characters in their names, hidden dotfiles and directories, empty
+      subdirectories that must still be archived, symlinks within the sensitive directory pointing
+      to files outside it, mixed content types (binary and text), files with unusual permissions and
+      ownership.
+    name: sensitive_data_complexity
+    type: freeform
+  - description: >
+      How the archive is compressed and how it is encrypted. The seed uses tar with gzip compression
+      and GPG symmetric encryption with AES256 cipher and an inline passphrase. The same skill must
+      also handle: different compression algorithms (bzip2 with .tar.bz2, xz with .tar.xz,
+      uncompressed .tar), different GPG symmetric ciphers (AES128, TWOFISH, CAMELLIA256), passphrase
+      provided via a key file instead of inline, GPG with a specified recipient key for asymmetric
+      encryption, and different pinentry/gpg-agent modes that require specific batch flags to avoid
+      interactive prompts.
+    name: archive_and_encryption_parameters
+    type: freeform
+  - description: >
+      The parameters governing how original files are destroyed. The seed uses shred with 3
+      overwrite passes, zeroing, and removal of each file. The same skill must also handle: varying
+      numbers of overwrite passes (from 1 to 10), different data sources for overwrite patterns
+      (random data from /dev/urandom vs deterministic patterns), files with immutable or append-only
+      attributes that must be cleared before shredding, files requiring explicit syncing to disk
+      after shredding, and the need to handle files on different filesystem types where in-place
+      overwriting may not be effective (requiring additional verification or alternative methods).
+    name: secure_deletion_thoroughness
+    type: freeform
+  - description: >
+      The breadth of artifacts that must be located and removed after decommissioning. The seed
+      requires deleting an intermediate unencrypted archive, a config file, and a PID file. The same
+      skill must also handle: multiple intermediate artifacts (session keys, checksum files,
+      manifests), service artifacts scattered across multiple system locations (log directories
+      under /var/log, socket files under /run, lock files, temporary directories under /tmp with
+      unpredictable names), and living-process artifacts (a running service process that must be
+      stopped before its files can be removed, or a systemd service unit that must be disabled and
+      its unit file removed).
+    name: artifact_cleanup_scope
+    type: freeform

@@ -1,0 +1,20 @@
+instruction: |-
+  A SQLite database was split into three fragments during disk recovery. The
+  files /app/fragments/frag_1.db, frag_2.db, and frag_3.db must first be put
+  into the correct order. The reassembled database remains truncated, so
+  recover its rows from the remaining binary data.
+
+  Write as many valid rows as possible to /app/recover.json as a JSON array:
+  [{"word": "testwordXY", "value": N}, ...]
+
+  Values may be integers or floating-point numbers. Do not emit duplicate
+  words, and sort the array by word ascending.
+author_name: Task Author
+difficulty: hard
+category: debugging
+tags: [file-operations, sqlite, data-recovery]
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

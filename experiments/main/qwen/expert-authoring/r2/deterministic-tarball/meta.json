@@ -1,0 +1,75 @@
+{
+  "method": "expert-authoring",
+  "round": 2,
+  "family": "deterministic-tarball",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 121
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 48
+      },
+      "iteration-2": {
+        "records": 25
+      },
+      "iteration-3": {
+        "records": 21
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 52,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 57,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 50,
+        "score": 0.9090909090909091,
+        "passed": 10,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 87,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 73,
+        "score": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 44,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 121,
+    "train": 94,
+    "heldout": 363,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "office-workflow",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 38
+      },
+      "student-author": {
+        "records": 138
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 24
+      },
+      "iteration-2": {
+        "records": 26
+      },
+      "iteration-3": {
+        "records": 28
+      }
+    },
+    "heldout": {
+      "v03": {
+        "records": 28,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 35,
+        "score": 0.8571428571428571,
+        "passed": 6,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 34,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 45,
+        "score": 0.9,
+        "passed": 9,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 33,
+        "score": 0.9285714285714286,
+        "passed": 13,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 29,
+        "score": 1,
+        "passed": 13,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 176,
+    "train": 78,
+    "heldout": 204,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

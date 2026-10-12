@@ -1,0 +1,261 @@
+@prefix uni: <http://university.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ---------------------------
+# Universities
+# ---------------------------
+uni:ETHZurich a uni:University ;
+    uni:hasName "ETH Zurich" ;
+    uni:locatedInCountry "CH" .
+
+uni:UPM a uni:University ;
+    uni:hasName "Universidad Politécnica de Madrid" ;
+    uni:locatedInCountry "ES" .
+
+uni:IST a uni:University ;
+    uni:hasName "Instituto Superior Técnico" ;
+    uni:locatedInCountry "PT" .
+
+uni:NTUA a uni:University ;
+    uni:hasName "National Technical University of Athens" ;
+    uni:locatedInCountry "GR" .
+
+uni:NKUA a uni:University ;
+    uni:hasName "National and Kapodistrian University of Athens" ;
+    uni:locatedInCountry "GR" .
+
+uni:Sorbonne a uni:University ;
+    uni:hasName "Sorbonne University" ;
+    uni:locatedInCountry "FR" .
+
+uni:MIT a uni:University ;
+    uni:hasName "Massachusetts Institute of Technology" ;
+    uni:locatedInCountry "US" .
+
+uni:Berkeley a uni:University ;
+    uni:hasName "University of California, Berkeley" ;
+    uni:locatedInCountry "US" .
+
+uni:LMU a uni:University ;
+    uni:hasName "Ludwig Maximilian University of Munich" ;
+    uni:locatedInCountry "DE" .
+
+# ---------------------------
+# Departments
+# ---------------------------
+uni:ComputerScience_NTUA a uni:Department ;
+    uni:partOfUniversity uni:NTUA .
+
+uni:MechEngineering_NTUA a uni:Department ;
+    uni:partOfUniversity uni:NTUA .
+
+uni:Mathematics_IST a uni:Department ;
+    uni:partOfUniversity uni:IST .
+
+uni:Mathematics_Sorbonne a uni:Department ;
+    uni:partOfUniversity uni:Sorbonne .
+
+uni:Physics_ETH a uni:Department ;
+    uni:partOfUniversity uni:ETHZurich .
+
+uni:Biology_MIT a uni:Department ;
+    uni:partOfUniversity uni:MIT .
+
+uni:Sloan_MIT a uni:Department ;
+    uni:partOfUniversity uni:MIT .
+
+uni:Engineering_LMU a uni:Department ;
+    uni:partOfUniversity uni:LMU .
+
+uni:Engineering_Berkeley a uni:Department ;
+    uni:partOfUniversity uni:Berkeley .
+
+uni:Robotics_UPM a uni:Department ;
+    uni:partOfUniversity uni:UPM .
+
+uni:HistoryAndPhilosophy_NKUA a uni:Department ;
+    uni:partOfUniversity uni:NKUA .
+
+# ---------------------------
+# Courses
+# ---------------------------
+uni:CS101 a uni:Course ;
+    uni:isTaughtIn uni:ComputerScience_NTUA .
+
+uni:AI101 a uni:Course ;
+    uni:isTaughtIn uni:ComputerScience_NTUA .
+
+uni:Math101 a uni:Course ;
+    uni:isTaughtIn uni:Mathematics_IST .
+
+uni:Math201 a uni:Course ;
+    uni:isTaughtIn uni:Mathematics_Sorbonne .
+
+uni:Physics301 a uni:Course ;
+    uni:isTaughtIn uni:Physics_ETH .
+
+uni:Bio101 a uni:Course ;
+    uni:isTaughtIn uni:Biology_MIT .
+
+uni:Eng202 a uni:Course ;
+    uni:isTaughtIn uni:Engineering_LMU .
+
+uni:EngUS302 a uni:Course ;
+    uni:isTaughtIn uni:Engineering_Berkeley .
+
+uni:STS101 a uni:Course ;
+    uni:isTaughtIn uni:HistoryAndPhilosophy_NKUA .
+
+# ---------------------------
+# Employees and academic staff
+# ---------------------------
+uni:Karin_Sorensen a uni:Person ;
+    uni:hasName "Karin Sorensen" ;
+    uni:role "Full Professor of Computer Science" ;
+    uni:teaches uni:CS101 ;
+    uni:worksAt uni:ComputerScience_NTUA .
+
+uni:Henrik_Berg a uni:Person ;
+    uni:hasName "Henrik Berg" ;
+    uni:role "Associate Professor of Mechanical Systems" ;
+    uni:worksAt uni:MechEngineering_NTUA .
+
+uni:Teresa_Mendes a uni:Person ;
+    uni:hasName "Teresa Mendes" ;
+    uni:role "Assistant Professor of Mathematics" ;
+    uni:teaches uni:Math101 ;
+    uni:worksAt uni:Mathematics_IST .
+
+uni:Claire_Durand a uni:Person ;
+    uni:hasName "Claire Durand" ;
+    uni:role "Professor Emerita of Mathematics" ;
+    uni:teaches uni:Math201 ;
+    uni:worksAt uni:Mathematics_Sorbonne .
+
+uni:Daniela_Weber a uni:Person ;
+    uni:hasName "Daniela Weber" ;
+    uni:role "Full Professor of Physics" ;
+    uni:teaches uni:Physics301 ;
+    uni:worksAt uni:Physics_ETH .
+
+uni:Marcus_Hill a uni:Person ;
+    uni:hasName "Marcus Hill" ;
+    uni:role "Associate Professor of Biology" ;
+    uni:teaches uni:Bio101 ;
+    uni:worksAt uni:Biology_MIT .
+
+uni:Helena_Fischer a uni:Person ;
+    uni:hasName "Helena Fischer" ;
+    uni:role "Assistant Professor of Engineering" ;
+    uni:teaches uni:Eng202 ;
+    uni:worksAt uni:Engineering_LMU .
+
+uni:Mateo_Serrano a uni:Person ;
+    uni:hasName "Mateo Serrano" ;
+    uni:role "Full Professor of Robotics" ;
+    uni:worksAt uni:Robotics_UPM .
+
+uni:Irene_Lindqvist a uni:Person ;
+    uni:hasName "Irene Lindqvist" ;
+    uni:role "Professor Emerita of History of Science" ;
+    uni:teaches uni:STS101 ;
+    uni:worksAt uni:HistoryAndPhilosophy_NKUA .
+
+uni:Owen_Brooks a uni:Person ;
+    uni:hasName "Owen Brooks" ;
+    uni:role "Teaching Professor Assistant" ;
+    uni:worksAt uni:Engineering_Berkeley .
+
+uni:Priya_Nair a uni:Person ;
+    uni:hasName "Priya Nair" ;
+    uni:role "Professor's Assistant" ;
+    uni:worksAt uni:Sloan_MIT .
+
+uni:Luca_Ferraro a uni:Person ;
+    uni:hasName "Luca Ferraro" ;
+    uni:role "Adjunct Lecturer in Robotics" ;
+    uni:worksAt uni:Robotics_UPM .
+
+uni:Sophie_Martin a uni:Person ;
+    uni:hasName "Sophie Martin" ;
+    uni:role "Associate Research Scientist" ;
+    uni:worksAt uni:Mathematics_Sorbonne .
+
+uni:Jonas_Reiter a uni:Person ;
+    uni:hasName "Jonas Reiter" ;
+    uni:role "Assistant to the Professor" ;
+    uni:worksAt uni:Engineering_LMU .
+
+uni:Maya_Cohen a uni:Person ;
+    uni:hasName "Maya Cohen" ;
+    uni:role "Visiting Scholar" ;
+    uni:worksAt uni:Physics_ETH .
+
+uni:Victor_Lee a uni:Person ;
+    uni:hasName "Victor Lee" ;
+    uni:role "Professoral Fellow" ;
+    uni:worksAt uni:Biology_MIT .
+
+uni:Nadia_Rossi a uni:Person ;
+    uni:hasName "Nadia Rossi" ;
+    uni:role "Senior Lecturer" ;
+    uni:worksAt uni:ComputerScience_NTUA .
+
+uni:Hugo_Silva a uni:Person ;
+    uni:hasName "Hugo Silva" ;
+    uni:role "Research Professor Assistant" ;
+    uni:worksAt uni:Mathematics_IST .
+
+uni:Ava_Thompson a uni:Person ;
+    uni:hasName "Ava Thompson" ;
+    uni:role "Department Administrator" ;
+    uni:worksAt uni:Engineering_Berkeley .
+
+uni:Leo_Grant a uni:Person ;
+    uni:hasName "Leo Grant" ;
+    uni:role "Clinical Coordinator" ;
+    uni:worksAt uni:Biology_MIT .
+
+# ---------------------------
+# Students
+# ---------------------------
+uni:Student1 a uni:Person ;
+    uni:hasName "Sophia Muller" ;
+    uni:role "Student" .
+
+uni:Student2 a uni:Person ;
+    uni:hasName "Luca Rossi" ;
+    uni:role "Student" .
+
+uni:Student3 a uni:Person ;
+    uni:hasName "Emma Garcia" ;
+    uni:role "Student" .
+
+uni:Student4 a uni:Person ;
+    uni:hasName "Noah Laurent" ;
+    uni:role "Student" .
+
+uni:Student5 a uni:Person ;
+    uni:hasName "Isabel Costa" ;
+    uni:role "Student" .
+
+uni:Student6 a uni:Person ;
+    uni:hasName "Felix Novak" ;
+    uni:role "Student" .
+
+uni:Student7 a uni:Person ;
+    uni:hasName "Mina Dubois" ;
+    uni:role "Student" .
+
+uni:Student8 a uni:Person ;
+    uni:hasName "Theo Wagner" ;
+    uni:role "Student" .
+
+uni:Student1 uni:isEnrolledIn uni:CS101, uni:Bio101, uni:STS101 ; uni:hasEnrollmentDate "2024-01-10"^^xsd:date .
+uni:Student2 uni:isEnrolledIn uni:CS101, uni:EngUS302 ; uni:hasEnrollmentDate "2024-01-11"^^xsd:date .
+uni:Student3 uni:isEnrolledIn uni:Math101, uni:Bio101 ; uni:hasEnrollmentDate "2024-01-12"^^xsd:date .
+uni:Student4 uni:isEnrolledIn uni:Math201, uni:STS101 ; uni:hasEnrollmentDate "2024-01-13"^^xsd:date .
+uni:Student5 uni:isEnrolledIn uni:Physics301 ; uni:hasEnrollmentDate "2024-01-14"^^xsd:date .
+uni:Student6 uni:isEnrolledIn uni:Eng202, uni:EngUS302 ; uni:hasEnrollmentDate "2024-01-15"^^xsd:date .
+uni:Student7 uni:isEnrolledIn uni:Math201, uni:CS101 ; uni:hasEnrollmentDate "2024-01-16"^^xsd:date .
+uni:Student8 uni:isEnrolledIn uni:Bio101, uni:STS101 ; uni:hasEnrollmentDate "2024-01-17"^^xsd:date .

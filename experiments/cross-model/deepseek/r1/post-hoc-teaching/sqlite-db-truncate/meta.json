@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "sqlite-db-truncate",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 22
+      },
+      "student-author": {
+        "records": 391
+      }
+    }
+  },
+  "totals": {
+    "records": 413
+  }
+}

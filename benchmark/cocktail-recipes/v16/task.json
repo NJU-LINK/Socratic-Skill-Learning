@@ -1,0 +1,11 @@
+{
+  "description": "Reconstruct the entire Rose recipe from minimal hints. All fields must be filled.",
+  "recipe": {
+    "name": "Rose",
+    "glass": "",
+    "category": "",
+    "ingredients": [],
+    "garnish": null,
+    "preparation": ""
+  }
+}

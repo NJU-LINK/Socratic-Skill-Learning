@@ -1,0 +1,23 @@
+instruction: |-
+  You are given:
+  1. /app/format_spec.json — the required JSON schema for a cocktail recipe
+  2. /app/task.json — the partially filled recipe
+  3. /app/knowledge/source_a.txt, source_b.txt, and source_c.txt — three provenance-labelled
+     sources that disagree about the Manhattan
+
+  Reconcile the conflicting claims using the stated provenance and complete the Manhattan recipe.
+  Do not average incompatible quantities. Write the selected, internally coherent recipe to
+  /app/output.json and ensure it satisfies format_spec.json.
+author_name: Task Author
+difficulty: hard
+category: Data Extraction
+tags:
+  - cocktail-recipes
+  - evidence-reconciliation
+  - source-provenance
+  - format-compliance
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

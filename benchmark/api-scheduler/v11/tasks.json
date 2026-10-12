@@ -1,0 +1,124 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "title": "Architecture Review",
+      "duration_min": 45,
+      "urgency": 5,
+      "importance": 5,
+      "team_priority": 3
+    },
+    {
+      "id": "B",
+      "title": "Fix Security Issue",
+      "duration_min": 60,
+      "urgency": 5,
+      "importance": 5,
+      "team_priority": 5
+    },
+    {
+      "id": "C",
+      "title": "API Design Doc",
+      "duration_min": 45,
+      "urgency": 4,
+      "importance": 4,
+      "team_priority": 2
+    },
+    {
+      "id": "D",
+      "title": "Refactor Legacy Code",
+      "duration_min": 60,
+      "urgency": 3,
+      "importance": 4,
+      "team_priority": 4
+    },
+    {
+      "id": "E",
+      "title": "Code Review Queue",
+      "duration_min": 40,
+      "urgency": 4,
+      "importance": 3,
+      "team_priority": 5
+    },
+    {
+      "id": "F",
+      "title": "Write Test Cases",
+      "duration_min": 45,
+      "urgency": 3,
+      "importance": 3,
+      "team_priority": 4
+    },
+    {
+      "id": "G",
+      "title": "Update Monitoring",
+      "duration_min": 30,
+      "urgency": 4,
+      "importance": 3,
+      "team_priority": 2
+    },
+    {
+      "id": "H",
+      "title": "Performance Benchmark",
+      "duration_min": 40,
+      "urgency": 2,
+      "importance": 3,
+      "team_priority": 3
+    },
+    {
+      "id": "I",
+      "title": "Document Decisions",
+      "duration_min": 20,
+      "urgency": 2,
+      "importance": 2,
+      "team_priority": 1
+    },
+    {
+      "id": "J",
+      "title": "Research Tools",
+      "duration_min": 30,
+      "urgency": 1,
+      "importance": 2,
+      "team_priority": 2
+    },
+    {
+      "id": "K",
+      "title": "Retro Prep",
+      "duration_min": 15,
+      "urgency": 5,
+      "importance": 4,
+      "team_priority": 1
+    },
+    {
+      "id": "L",
+      "title": "Fix CSS Bugs",
+      "duration_min": 20,
+      "urgency": 1,
+      "importance": 1,
+      "team_priority": 3
+    }
+  ],
+  "emergencies": [
+    {
+      "id": "X",
+      "title": "Prod Incident",
+      "duration_min": 45,
+      "arrival_time": "15:00",
+      "urgency": 5,
+      "team_priority": 5
+    },
+    {
+      "id": "Y",
+      "title": "Sprint Planning",
+      "duration_min": 60,
+      "arrival_time": "16:30",
+      "urgency": 4,
+      "team_priority": 3
+    }
+  ],
+  "config": {
+    "work_start": "14:00",
+    "work_end": "19:00",
+    "priority_method": "weighted",
+    "calendar_id": "Hk9Nw8KsRd5X"
+  }
+}

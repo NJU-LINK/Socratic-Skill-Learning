@@ -1,0 +1,29 @@
+instruction: |-
+  Read /app/input.xlsx and perform the following structural transformation on Sheet1.
+
+  Rows form variable-length nonempty blocks separated by one blank row. Within each block, sort
+  the complete rows by the evaluated numeric value of column D in descending order. When two
+  rows have the same evaluated value in column D, preserve their original relative order. Detect
+  the block boundaries from the workbook rather than assuming fixed row counts, and retain
+  exactly one blank row between adjacent blocks.
+
+  Columns D–F may contain formulas or text that represents formulas. Evaluate their row-local
+  arithmetic and write the resulting numeric values to the output workbook; do not leave formula
+  strings or unevaluated formulas in the answer range. Sorting must use those evaluated numeric
+  values, not lexical text order.
+
+  Preserve every input sheet, all values outside A1:H85, and the workbook's existing styles,
+  filters, merged ranges, panes, row heights, and column widths. Write the transformed range to
+  A1:H85 on Sheet1 and save the result as /app/output.xlsx.
+author_name: Task Author
+difficulty: medium
+category: software-engineering
+tags:
+  - spreadsheet
+  - xlsx
+  - structural
+  - block-sort
+parser_name: pytest
+max_agent_timeout_sec: 360
+max_test_timeout_sec: 60
+run_tests_in_same_shell: false

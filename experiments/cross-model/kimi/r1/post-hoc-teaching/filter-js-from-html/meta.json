@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 12
+      },
+      "student-author": {
+        "records": 294
+      }
+    }
+  },
+  "totals": {
+    "records": 306
+  }
+}

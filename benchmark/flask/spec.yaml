@@ -1,0 +1,52 @@
+axes:
+  - name: stateful_service_shape
+    type: invariant
+    description: >
+      Each case implements a JSON HTTP service whose requests share mutable
+      domain state. A case has multiple behaviorally coupled endpoints, or a
+      request middleware plus a lifecycle endpoint; one-route demonstrations,
+      stateless numerical wrappers, authentication snippets, and template
+      rendering are outside this family.
+  - name: resource_model
+    type: freeform
+    description: >
+      The API may manage accounts and transfers, queued tasks, notes, related
+      catalog entities, URL mappings, structured logs, uploaded files, or cart
+      items. Every case fully specifies its resource fields, invariants, and
+      response representations.
+  - name: persistence_model
+    type: enum
+    values:
+      - sqlite3
+      - flask_sqlalchemy
+      - in_memory
+      - file_manifest
+      - jsonl
+    description: >
+      State may use raw SQLite transactions, Flask-SQLAlchemy relationships, or
+      process-local dictionaries, a file plus manifest, or JSONL. Setup, reset,
+      and persistence semantics are stated per case.
+  - name: endpoint_contract
+    type: freeform
+    description: >
+      Route paths, HTTP methods, query filters, JSON bodies, redirects, status
+      codes, and response schemas vary while remaining completely public.
+  - name: state_transition_semantics
+    type: freeform
+    description: >
+      Operations may require atomic transfers, idempotent setup, CRUD updates,
+      uniqueness, counters, aggregates, checkout, or cascading validation.
+  - name: validation_and_failure_behavior
+    type: freeform
+    description: >
+      Missing fields, invalid types or ranges, unknown resources, conflicting
+      routes, and insufficient state must produce the specified JSON error and
+      leave persistent state consistent.
+  - name: implementation_binding
+    type: enum
+    values:
+      - flask_test_client
+    description: >
+      Every case requires `/app/solve.py` to export a Flask application named
+      `app`; evaluation calls it through Flask's test client without a live
+      network server.

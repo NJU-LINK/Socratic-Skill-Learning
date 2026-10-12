@@ -1,0 +1,30 @@
+axes:
+  - name: access_gate_mechanism
+    type: freeform
+    description: >-
+      Every case exposes only a local executable and requires reaching or reconstructing a
+      protected runtime secret. The v01 anchor uses an oversized stdin read to overwrite an
+      adjacent authentication field. Other members vary this mechanism through unsigned-length
+      wraparound, signed-index disclosure, a credentialed state machine, or heap use-after-free.
+      These are different concrete gates over the same analyze-probe-trigger-extract workflow.
+  - name: analysis_obstacle
+    type: freeform
+    description: >-
+      Binaries may be stripped and optimized, keep strings XOR-encoded, check for tracing, flatten
+      control flow, or verify their executable segment. A solution must choose evidence-gathering
+      methods that remain valid under the obstacle actually present rather than assuming symbols,
+      plaintext strings, or a debugger are always available.
+  - name: secret_representation
+    type: freeform
+    description: >-
+      The target may be stored as encrypted bytes and decrypted only behind the gate, disclosed as
+      encrypted bytes that must be decoded, or derived at runtime from a recovered seed by a
+      declared hash chain. In every case results.txt must contain the exact FLAG value attributable
+      to the supplied executable, not a guessed or hard-coded family answer.
+  - name: interaction_protocol
+    type: freeform
+    description: >-
+      Interaction ranges from one-shot binary stdin, to repeated indexed queries, to an ordered
+      multi-stage REPL. The transferable skill is to model the executable's input/output state,
+      construct a minimally sufficient probe or trigger, verify that the protected path was
+      reached, and then normalize the observed or derived secret into /app/results.txt.

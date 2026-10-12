@@ -1,0 +1,2722 @@
+{
+  "schemaVersion": 1,
+  "scorers": {
+    "family-acl-permissions-inheritance/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online uv bootstrap."
+    },
+    "family-acl-permissions-inheritance/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online uv bootstrap."
+    },
+    "family-acl-permissions-inheritance/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online uv bootstrap."
+    },
+    "family-acl-permissions-inheritance/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online uv bootstrap."
+    },
+    "family-acl-permissions-inheritance/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer observes the submitted ACL state directly instead of deleting it and executing the private reference solution."
+    },
+    "family-acl-permissions-inheritance/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online uv bootstrap."
+    },
+    "family-acl-permissions-inheritance/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_acl_workspace.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap."
+    },
+    "family-acl-permissions-inheritance/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap."
+    },
+    "family-acl-permissions-inheritance/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap."
+    },
+    "family-acl-permissions-inheritance/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap."
+    },
+    "family-acl-permissions-inheritance/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap."
+    },
+    "family-acl-permissions-inheritance/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_acl_workspace.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap."
+    },
+    "family-acl-permissions-inheritance/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap."
+    },
+    "family-cross-entropy-method/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v12": {
+      "strategy": "source-runner",
+      "testLayout": "runner-tests-subdir"
+    },
+    "family-cross-entropy-method/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cross-entropy-method/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-deterministic-tarball/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["src"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored from its pre-rollout snapshot before reproducibility, exclusion, normalization, and archive-format checks."
+    },
+    "family-deterministic-tarball/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["src"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored from its pre-rollout snapshot before manifest, metadata, and byte-reproducibility checks."
+    },
+    "family-deterministic-tarball/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["src"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored before manifest-driven type, mode, text-normalization, epoch, and archive-format checks."
+    },
+    "family-deterministic-tarball/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["src"],
+      "testTarget": "test_release_archives.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored before independently checking both payload and metadata archives."
+    },
+    "family-deterministic-tarball/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["src"],
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored before checking dynamic packaging manifests, contents, modes, and reproducibility."
+    },
+    "family-deterministic-tarball/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["sdk"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the SDK tree is restored before checking symlink preservation, exclusions, PAX metadata, ordering, and epoch behavior."
+    },
+    "family-deterministic-tarball/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["src"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the monorepo tree is restored before scoped normalization, exclusion, metadata, and gzip reproducibility checks."
+    },
+    "family-deterministic-tarball/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["src"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the Rust source tree is restored before text/binary, symlink, permission, timestamp, ordering, and xz checks."
+    },
+    "family-deterministic-tarball/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["workspace"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the project workspace is restored before archive layout, transformation, exclusion, gzip-header, and reproducibility checks."
+    },
+    "family-deterministic-tarball/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["site-src"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired output-only scorer requires the agent-authored build.sh and never executes the private reference; the website source tree is restored before verification."
+    },
+    "family-deterministic-tarball/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["src"],
+      "testTarget": "test_release_bundle.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored before ordered include/exclude manifest, metadata, byte identity, and epoch checks."
+    },
+    "family-deterministic-tarball/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["src"],
+      "testTarget": "test_build_archive.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored before independent canonical archive construction and full member verification."
+    },
+    "family-graph-bfs/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-graph-bfs/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-graph-bfs/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-graph-bfs/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-wasm-pipeline/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only pipeline checks with the pytest version baked into the shared native image."
+    },
+    "family-wasm-pipeline/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_pipeline.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer evaluates the submitted pipeline instead of reinstalling the private reference before each case."
+    },
+    "family-wasm-pipeline/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer evaluates the submitted pipeline instead of reinstalling the private reference before each case."
+    },
+    "family-wasm-pipeline/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only pipeline checks with the pytest version baked into the shared native image."
+    },
+    "family-wasm-pipeline/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer evaluates the submitted pipeline instead of executing the private reference."
+    },
+    "family-wasm-pipeline/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer evaluates the submitted pipeline instead of reinstalling the private reference."
+    },
+    "family-wasm-pipeline/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the existing output-only contract-driven checks with the fixed shared runtime."
+    },
+    "family-wasm-pipeline/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only two-slice checks with the fixed shared runtime."
+    },
+    "family-wasm-pipeline/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer evaluates the submitted state-initializing pipeline instead of executing the private reference."
+    },
+    "family-wasm-pipeline/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only XOR-offset checks with the fixed shared runtime."
+    },
+    "family-wasm-pipeline/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_pipeline.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the existing output-only seed-initialization checks with the fixed shared runtime."
+    },
+    "family-jq-data-processing/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl and uv before invoking this exact pytest file. Pytest and the test dependencies are baked into the curated image, so this adapter removes only the network bootstrap."
+    },
+    "family-jq-data-processing/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation."
+    },
+    "family-jq-data-processing/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl and uv before invoking this exact pytest file. Pytest and the test dependencies are baked into the curated image, so this adapter removes only the network bootstrap."
+    },
+    "family-jq-data-processing/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation."
+    },
+    "family-jq-data-processing/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation."
+    },
+    "family-jq-data-processing/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl and uv before invoking this exact pytest file. Pytest and the test dependencies are baked into the curated image, so this adapter removes only the network bootstrap."
+    },
+    "family-jq-data-processing/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation."
+    },
+    "family-jq-data-processing/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl and uv before invoking this exact pytest file. Pytest and the test dependencies are baked into the curated image, so this adapter removes only the network bootstrap."
+    },
+    "family-jq-data-processing/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation."
+    },
+    "family-jq-data-processing/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation."
+    },
+    "family-jq-data-processing/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation."
+    },
+    "family-jq-data-processing/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation."
+    },
+    "family-multi-source-data-merger/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, pandas, and pyarrow before invoking this exact pytest file. Those dependencies are baked into the curated image, so this adapter removes only the network bootstrap."
+    },
+    "family-multi-source-data-merger/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated input-derived scorer evaluates only the submitted Parquet and JSON artifacts; it never executes the private reference solution."
+    },
+    "family-multi-source-data-merger/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated input-derived scorer evaluates only the submitted Parquet and JSON artifacts; it never executes the private reference solution."
+    },
+    "family-multi-source-data-merger/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, pandas, and pyarrow before invoking this exact pytest file. Those dependencies are baked into the curated image, so this adapter removes only the network bootstrap."
+    },
+    "family-multi-source-data-merger/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pandas, PyArrow, and pytest are fixed in the shared image; scoring directly invokes private output-only tests without runtime installation."
+    },
+    "family-multi-source-data-merger/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pandas, PyArrow, and pytest are fixed in the shared image; scoring directly invokes private output-only tests without runtime installation."
+    },
+    "family-multi-source-data-merger/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pandas, PyArrow, and pytest are fixed in the shared image; scoring directly invokes private output-only tests without runtime installation."
+    },
+    "family-multi-source-data-merger/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, pandas, and pyarrow before invoking this exact pytest file. Those dependencies are baked into the curated image, so this adapter removes only the network bootstrap."
+    },
+    "family-multi-source-data-merger/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pandas, PyArrow, and pytest are fixed in the shared image; scoring directly invokes private output-only tests without runtime installation."
+    },
+    "family-multi-source-data-merger/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated input-derived scorer evaluates only the submitted Parquet and JSON artifacts; it never executes the private reference solution."
+    },
+    "family-multi-source-data-merger/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, pandas, and pyarrow before invoking this exact pytest file. Those dependencies are baked into the curated image, so this adapter removes only the network bootstrap."
+    },
+    "family-multi-source-data-merger/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pandas, PyArrow, and pytest are fixed in the shared image; scoring directly invokes private output-only tests without runtime installation."
+    },
+    "family-multi-source-data-merger/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated input-derived scorer evaluates only the submitted Parquet and JSON artifacts; it never executes the private reference solution."
+    },
+    "family-multi-source-data-merger/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated input-derived scorer evaluates only the submitted Parquet and JSON artifacts; it never executes the private reference solution."
+    },
+    "family-kv-store-grpc/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner installs test-only packages at scoring time before invoking this exact pytest file. Pytest is baked into the curated image; task-required gRPC packages remain the agent's responsibility."
+    },
+    "family-kv-store-grpc/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution."
+    },
+    "family-kv-store-grpc/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution."
+    },
+    "family-kv-store-grpc/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner installs test-only packages at scoring time before invoking this exact pytest file. Pytest is baked into the curated image; task-required gRPC packages remain the agent's responsibility."
+    },
+    "family-kv-store-grpc/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest and the scorer-only psutil dependency; private tests exercise startup delay, real gRPC state, and concurrent increments without executing the reference solution."
+    },
+    "family-kv-store-grpc/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution."
+    },
+    "family-kv-store-grpc/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution."
+    },
+    "family-kv-store-grpc/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner installs test-only packages at scoring time before invoking this exact pytest file. Pytest is baked into the curated image; task-required gRPC packages remain the agent's responsibility."
+    },
+    "family-kv-store-grpc/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution."
+    },
+    "family-kv-store-grpc/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner also executes the private reference, so it is bypassed; private pytest instead evaluates the agent/reference artifact directly against concurrent inventory semantics."
+    },
+    "family-kv-store-grpc/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution."
+    },
+    "family-kv-store-grpc/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner installs test-only packages at scoring time before invoking this exact pytest file. Pytest is baked into the curated image; task-required gRPC packages remain the agent's responsibility."
+    },
+    "family-kv-store-grpc/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise compare-and-set behavior under contention through the real gRPC endpoint."
+    },
+    "family-kv-store-grpc/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise both services, delayed readiness, state snapshots, and the real gRPC endpoint."
+    },
+    "family-kv-store-grpc/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise structured repeated fields, deterministic ordering, persistence, and fresh channels."
+    },
+    "family-kv-store-grpc/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests require a real generated and running gRPC implementation even though the state machine is smaller."
+    },
+    "family-camera-layout/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-camera-layout/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["floor_plan.json", "camera_geom.py"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier."
+    },
+    "family-recover-obfuscated-files/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap."
+    },
+    "family-recover-obfuscated-files/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks exact recovered names and bytes without executing the reference solution."
+    },
+    "family-recover-obfuscated-files/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap."
+    },
+    "family-recover-obfuscated-files/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks exact nested paths, decoded content, and absence of encoding artifacts."
+    },
+    "family-recover-obfuscated-files/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer separates marker-based target identification, filename recovery, exact content, and clean-file exclusion."
+    },
+    "family-recover-obfuscated-files/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks recovered files and verifies that nearby clean files remain unmodified."
+    },
+    "family-recover-obfuscated-files/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks marker selection plus independent filename and content transformations."
+    },
+    "family-recover-obfuscated-files/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner conditionally installs pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap."
+    },
+    "family-recover-obfuscated-files/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks manifest-driven discovery and layered recovery without a runtime reference oracle."
+    },
+    "family-recover-obfuscated-files/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks per-file codec dispatch, marker removal, clean-file exclusion, and exact outputs."
+    },
+    "family-recover-obfuscated-files/v19": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks scattered-file discovery, decoded names and bytes, and clean-file exclusion."
+    },
+    "family-recover-obfuscated-files/v20": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap."
+    },
+    "family-shell-deobfuscation/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-shell-deobfuscation/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference."
+    },
+    "family-sqlite-db-truncate/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap."
+    },
+    "family-sqlite-db-truncate/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-sqlite-db-truncate/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-sqlite-db-truncate/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap."
+    },
+    "family-sqlite-db-truncate/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated fragment image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-sqlite-db-truncate/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-sqlite-db-truncate/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated fragment image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-sqlite-db-truncate/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-sqlite-db-truncate/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-sqlite-db-truncate/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-sqlite-db-truncate/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap."
+    },
+    "family-sqlite-db-truncate/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-sqlite-db-truncate/v18": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-sqlite-db-truncate/v19": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap."
+    },
+    "family-sqlite-db-truncate/v20": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions."
+    },
+    "family-api-scheduler/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-api-scheduler/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["tasks.json", "api_simulator.py", "simulator_intro.md"]
+    },
+    "family-decommissioning-service-with-sensitive-data/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-decommissioning-service-with-sensitive-data/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-decommissioning-service-with-sensitive-data/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and task dependencies are fixed in the curated image; scoring invokes the private output-only tests without runtime network installation."
+    },
+    "family-decommissioning-service-with-sensitive-data/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the task image; direct scoring avoids the source runner's runtime curl/uv installation."
+    },
+    "family-decommissioning-service-with-sensitive-data/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the task image; direct scoring avoids the source runner's runtime package installation."
+    },
+    "family-decommissioning-service-with-sensitive-data/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the task image; direct scoring avoids the source runner's runtime package installation."
+    },
+    "family-decommissioning-service-with-sensitive-data/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and task dependencies are fixed in the curated image; scoring invokes the private output-only tests without runtime network installation."
+    },
+    "family-decommissioning-service-with-sensitive-data/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the task image; direct scoring avoids the source runner's runtime curl/uv installation."
+    },
+    "family-decommissioning-service-with-sensitive-data/v18": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-git-leak-recovery/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-git-leak-recovery/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle."
+    },
+    "family-organization-json-generator/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-organization-json-generator/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants."
+    },
+    "family-password-recovery/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-password-recovery/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-password-recovery/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-password-recovery/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-password-recovery/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer requires exactly one CRC-verified password instead of accepting a dump of all syntactic candidates."
+    },
+    "family-password-recovery/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-password-recovery/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-password-recovery/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-password-recovery/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-password-recovery/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-password-recovery/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated test retains the public format/checksum checks and adds a hidden exact-answer digest so an arbitrary checksum collision cannot pass."
+    },
+    "family-password-recovery/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-password-recovery/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap."
+    },
+    "family-pypi-server/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pypi-server/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pypi-server/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pypi-server/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pypi-server/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the local-index and pytest toolchain; the output-only scorer checks the live repaired release without network bootstrap."
+    },
+    "family-pypi-server/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the package-build, local-index, and pytest toolchain; the output-only scorer validates the live service and fresh installations without running the private reference."
+    },
+    "family-pypi-server/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins build and pytest; scoring requires the solver to leave its own local index alive instead of starting a verifier-owned substitute service."
+    },
+    "family-pypi-server/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pypi-server/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image removes prebuilt correct wheels and pins the authenticated-index toolchain; the scorer validates only the solver-built wheel, live service, fresh install, and rejected bad credentials."
+    },
+    "family-pypi-server/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["prebuilt-dist"]
+    },
+    "family-pypi-server/v11": {
+      "strategy": "source-runner",
+      "testLayout": "runner-tests-subdir"
+    },
+    "family-pypi-server/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated output-only scorer probes the declared authenticated upload endpoint, byte-exact hosted artifacts, and fresh installation without replaying the private reference."
+    },
+    "family-pypi-server/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pypi-server/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pypi-server/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pypi-server/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins build, packaging, and pytest; the scorer checks the solver-created authenticated state, retained old release, new release, and exact fresh install."
+    },
+    "family-sparql-professors-universities/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-sparql-professors-universities/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-bank-trans-filter/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation."
+    },
+    "family-bank-trans-filter/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference."
+    },
+    "family-bank-trans-filter/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference."
+    },
+    "family-bank-trans-filter/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference."
+    },
+    "family-bank-trans-filter/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference."
+    },
+    "family-bank-trans-filter/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation."
+    },
+    "family-bank-trans-filter/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference."
+    },
+    "family-bank-trans-filter/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference."
+    },
+    "family-bank-trans-filter/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference."
+    },
+    "family-bank-trans-filter/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation."
+    },
+    "family-bank-trans-filter/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation."
+    },
+    "family-bank-trans-filter/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference."
+    },
+    "family-bank-trans-filter/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation."
+    },
+    "family-bank-trans-filter/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation."
+    },
+    "family-bank-trans-filter/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference."
+    },
+    "family-bank-trans-filter/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": ["data/bank_transactions.csv"],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation."
+    },
+    "family-filter-js-from-html/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and browser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and browser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and browser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pinned parser and browser dependencies execute the output-only sanitizer suite directly; the private reference is never invoked."
+    },
+    "family-filter-js-from-html/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pinned parser and browser dependencies execute the agent-created sanitizer directly; the legacy runner no longer replays the private reference."
+    },
+    "family-filter-js-from-html/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and browser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-filter-js-from-html/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Only public input pages enter the task image; private normalized output digests and synthetic checks score the agent sanitizer without exposing expected HTML."
+    },
+    "family-filter-js-from-html/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Only tainted realistic pages are public; private clean-output digests and fresh synthetic checks score exact preservation without running the reference."
+    },
+    "family-filter-js-from-html/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation."
+    },
+    "family-financial-document-processor/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-financial-document-processor/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation."
+    },
+    "family-ode-solver-rk4/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references."
+    },
+    "family-ode-solver-rk4/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references."
+    },
+    "family-ode-solver-rk4/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references."
+    },
+    "family-ode-solver-rk4/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references."
+    },
+    "family-ode-solver-rk4/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references."
+    },
+    "family-ode-solver-rk4/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer executes the submitted solver across multiple mild nonlinear IVPs without invoking the private reference script."
+    },
+    "family-ode-solver-rk4/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references."
+    },
+    "family-ode-solver-rk4/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references."
+    },
+    "family-ode-solver-rk4/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer evaluates sharp-curvature and near-coincident target cases without invoking the private reference script."
+    },
+    "family-ode-solver-rk4/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer measures the strict RHS-call budget on three schedules without invoking the private reference script."
+    },
+    "family-ode-solver-rk4/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer measures exact landing through a dense middle burst without invoking the private reference script."
+    },
+    "family-ode-solver-rk4/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer enforces the public 1/400 step ceiling and 6*steps+12 call budget without invoking the private reference script."
+    },
+    "family-ode-solver-rk4/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer evaluates local curvature bursts and clustered outputs without invoking the private reference script."
+    },
+    "family-ode-solver-rk4/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer and reference both enforce the public 1/800 step ceiling and tight call budget."
+    },
+    "family-ode-solver-rk4/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer evaluates stronger nonlinear dynamics under clustered schedules and a tight call budget without invoking the private reference script."
+    },
+    "family-audio-synth-stft-peaks/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-audio-synth-stft-peaks/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-audio-synth-stft-peaks/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-audio-synth-stft-peaks/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-audio-synth-stft-peaks/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-audio-synth-stft-peaks/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-audio-synth-stft-peaks/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-audio-synth-stft-peaks/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-audio-synth-stft-peaks/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-audio-synth-stft-peaks/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-audio-synth-stft-peaks/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-finance-verify/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-db-wal-recovery/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks the exact recovered rows from the verified seed database and XOR-obfuscated WAL; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered.json produced from the supplied base database and encoded WAL; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered.json reconstructed from the supplied inverted WAL-only backup; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only the recovered employee rows; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered.json after byte-order and frame-page recovery; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered.json after RC4 and fake-frame recovery; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only the merged recovered output from the two damaged WAL streams; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered scalar and base64-encoded BLOB values; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks recovered rows and the restored public view; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks exact rows and relationships across all recovered tables; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered.json after public-password decryption and frame-page reconstruction; it never invokes the private reference."
+    },
+    "family-db-wal-recovery/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks exact recovery and update provenance across both byte-swapped WAL streams; it never invokes the private reference."
+    },
+    "family-financial-analysis/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates the complete requested per-year result artifact and never invokes the private reference."
+    },
+    "family-financial-analysis/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates all AMD operating-margin rows and never invokes the private reference."
+    },
+    "family-financial-analysis/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates the complete signed year-over-year growth series and never invokes the private reference."
+    },
+    "family-financial-analysis/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates all joined income/equity ROE rows and never invokes the private reference."
+    },
+    "family-financial-analysis/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates the complete Excel schema, source values, and calculated net margins without invoking the private reference."
+    },
+    "family-financial-analysis/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates every joined Chinese-statement ROE row and never invokes the private reference."
+    },
+    "family-financial-analysis/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates all Wuliangye operating-margin rows and never invokes the private reference."
+    },
+    "family-stock-analysis/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["stock_data.csv"],
+      "rationale": "The scorer independently recomputes every SMA value from the restored public price series."
+    },
+    "family-stock-analysis/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["msft_prices.csv"],
+      "rationale": "The scorer independently recomputes the full discovered-series SMA output from restored public prices."
+    },
+    "family-stock-analysis/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["googl_prices.csv"],
+      "rationale": "The scorer independently checks every SMA and pointwise crossover label from restored public prices."
+    },
+    "family-stock-analysis/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["tsla_prices.csv"],
+      "rationale": "The scorer independently applies the public SMA-seeded EMA convention to the complete restored series."
+    },
+    "family-stock-analysis/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["aapl_prices.csv"],
+      "rationale": "The scorer independently applies the public Wilder RSI convention to every restored close."
+    },
+    "family-stock-analysis/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["msft_prices.csv"],
+      "rationale": "The scorer independently recomputes full-precision EMA, MACD, and signal series from restored prices."
+    },
+    "family-stock-analysis/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["googl_prices.csv"],
+      "rationale": "The scorer independently checks all population-standard-deviation Bollinger bands."
+    },
+    "family-stock-analysis/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["tsla_prices.json"],
+      "rationale": "The scorer independently recomputes all JSON-source SMA values and unrounded comparisons."
+    },
+    "family-stock-analysis/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["aapl_prices.csv"],
+      "rationale": "The scorer independently distinguishes discrete SMA crossing events from persistent above/below state."
+    },
+    "family-stock-analysis/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["msft_prices.csv"],
+      "rationale": "The scorer independently checks the entire Wilder RSI series and all threshold labels."
+    },
+    "family-stock-analysis/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "immutableInputs": ["googl_prices.csv"],
+      "rationale": "The scorer independently checks complete MACD, signal, and discrete crossover action series."
+    },
+    "family-flask/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-flask/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-flask/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-flask/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-flask/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-flask/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-flask/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-flask/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-flask/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-xlsx-formula/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v18": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v19": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-formula/v21": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-cocktail-recipes/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cocktail-recipes/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cocktail-recipes/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cocktail-recipes/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cocktail-recipes/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cocktail-recipes/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cocktail-recipes/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-cocktail-recipes/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-xlsx-structure/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-structure/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-structure/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-structure/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-structure/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-structure/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-structure/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-structure/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-structure/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-structure/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-xlsx-structure/v18": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["input.xlsx"]
+    },
+    "family-excel-auto/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/company_revenues.xlsx"]
+    },
+    "family-excel-auto/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/score.xlsx"]
+    },
+    "family-excel-auto/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/financial_report_2.xlsx"]
+    },
+    "family-excel-auto/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/score.xlsx"]
+    },
+    "family-excel-auto/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/team_training_schedule.xlsx"]
+    },
+    "family-excel-auto/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/calendar"]
+    },
+    "family-excel-auto/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/financial_report.pdf"]
+    },
+    "family-excel-auto/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/Invoice.pdf", "data/Invoice_2.pdf"]
+    },
+    "family-excel-auto/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/Invoice.pdf", "data/Invoice_2.pdf"]
+    },
+    "family-office-workflow/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-office-workflow/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-office-workflow/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-office-workflow/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/calendar/Bob.ics",
+        "data/calendar/Tom.ics"
+      ]
+    },
+    "family-office-workflow/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/class_member.xlsx"]
+    },
+    "family-office-workflow/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/sales_report.pdf"]
+    },
+    "family-office-workflow/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-office-workflow/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["data/UIC_Admitted_Students.xlsx"]
+    },
+    "family-office-workflow/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-vulnerable-secret/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-vulnerable-secret/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-vulnerable-secret/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-vulnerable-secret/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-vulnerable-secret/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": ["target.bin"]
+    },
+    "family-vulnerable-secret/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-vulnerable-secret/v18": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-edit/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-edit/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-edit/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-edit/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-html-edit/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pptx-edit/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pptx-edit/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pptx-edit/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pptx-edit/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pptx-edit/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pptx-edit/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    },
+    "family-pptx-edit/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat"
+    }
+  }
+}

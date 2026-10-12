@@ -1,0 +1,30 @@
+[
+  {
+    "id": 201,
+    "full_name": "Avery Stone",
+    "email": null,
+    "registration_date": "2024/01/05",
+    "status": "active"
+  },
+  {
+    "id": 202,
+    "full_name": "Bianca Hart",
+    "email": "bianca@alpha.io",
+    "registration_date": "2024-02-10",
+    "status": null
+  },
+  {
+    "id": 204,
+    "full_name": "Darius Cole",
+    "email": null,
+    "registration_date": null,
+    "status": "inactive"
+  },
+  {
+    "id": 206,
+    "full_name": "Farah Noor",
+    "email": null,
+    "registration_date": "2024/06/18",
+    "status": null
+  }
+]

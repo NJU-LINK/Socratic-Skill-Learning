@@ -1,0 +1,111 @@
+{
+  "method": "skill-kd",
+  "round": 2,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "0000-round_00-student_retry-cf220594": {
+        "records": 93
+      },
+      "0000-student_initial-db73d53e": {
+        "records": 49
+      },
+      "0000-teacher-00b4704a": {
+        "records": 88
+      },
+      "0001-round_00-student_retry-953765c8": {
+        "records": 86
+      },
+      "0001-student_initial-3eab8b7d": {
+        "records": 51
+      },
+      "0001-teacher-5e578625": {
+        "records": 84
+      },
+      "0002-student_initial-829a1498": {
+        "records": 87
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 73,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 36,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 77,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 56,
+        "score": 0.6153846153846154,
+        "passed": 8,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 48,
+        "score": 0.2857142857142857,
+        "passed": 2,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 99,
+        "score": 0.42857142857142855,
+        "passed": 3,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 57,
+        "score": 0.041666666666666664,
+        "passed": 1,
+        "failed": 23,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 63,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 73,
+        "score": 0.625,
+        "passed": 5,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 115,
+        "score": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 538,
+    "train": 0,
+    "heldout": 697,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

@@ -1,0 +1,6 @@
+Your precious files aren't gone — just... scrambled beyond recognition.
+I applied a simple transformation to both the names and what's inside them.
+Think of it as a mask — one that can be lifted if you know what to look for.
+The key to reversing it all is: Key: 0x5A
+I even preserved the file types, in a way. You'll see what I mean.
+Good luck piecing it all back together from wherever they ended up.

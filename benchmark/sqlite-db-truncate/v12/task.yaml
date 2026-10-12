@@ -1,0 +1,14 @@
+instruction: |-
+  My SQLite database at /app/trunc.db has become corrupted. When I try to open it with `sqlite3 /app/trunc.db`, it reports that the file is not a database and refuses to open it. I need to recover the records from the file. The database contains a table with a "word" column (text values like "testwordXX" where XX is a two-digit number) and a "value" column (integers). Please recover all recoverable records and write them to /app/recover.json in the format:
+
+  [{"word": "testwordXX", "value": N}, ...]
+author_name: Task Author
+difficulty: medium
+category: debugging
+tags:
+  - file-operations
+parser_name: pytest
+max_agent_timeout_sec: 900
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

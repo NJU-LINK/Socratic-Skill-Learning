@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+// =====================================================================
+// Template: service.proto.tmpl
+// Fill guide (each slot is one local edit, per the local-edit property):
+//   SLOT: SERVICE_NAME — gRPC service name; drives generated Python names:
+//         <ServiceName>Servicer, add_<ServiceName>Servicer_to_server,
+//         <ServiceName>Stub. Use UpperCamelCase, e.g. KVStore.
+//   SLOT: RPC_LIST — one line per method:
+//         rpc MethodName(RequestType) returns (ResponseType);
+//         Unary services only in this family's seed; streaming RPCs change
+//         the handler signature (request iterator / response iterator) and
+//         the smoke-test call style — treat as a schema+semantics change.
+//   SLOT: MESSAGE_LIST — every request/response message at file scope.
+//         Pick field types per references/proto_field_map.md.
+//   SLOT: FILE_NAME — save as the proto base name, e.g. kv-store.proto;
+//         the generated module is the base name with non-identifier chars
+//         replaced by '_' plus _pb2 / _pb2_grpc (kv-store -> kv_store_pb2).
+// =====================================================================
+
+service KVStore {                 // SLOT: SERVICE_NAME
+  // SLOT: RPC_LIST
+  rpc Put(PutRequest) returns (PutResponse);
+  rpc Fetch(FetchRequest) returns (FetchResponse);
+  rpc Delete(DeleteRequest) returns (DeleteResponse);
+  rpc ListNamespaceTotal(ListNamespaceTotalRequest) returns (ListNamespaceTotalResponse);
+}
+
+// SLOT: MESSAGE_LIST — v01 fill (string/int32/bool scalars only)
+message PutRequest {
+  string namespace = 1;
+  string key = 2;
+  int32 value = 3;
+}
+message PutResponse {
+  int32 value = 1;
+}
+message FetchRequest {
+  string namespace = 1;
+  string key = 2;
+}
+message FetchResponse {
+  int32 value = 1;
+}
+message DeleteRequest {
+  string namespace = 1;
+  string key = 2;
+}
+message DeleteResponse {
+  bool success = 1;
+  int32 value = 2;
+}
+message ListNamespaceTotalRequest {
+  string namespace = 1;
+}
+message ListNamespaceTotalResponse {
+  int32 total = 1;
+}

@@ -1,0 +1,23 @@
+instruction: |-
+  五粮液（000858）的财务数据存储在 /app/financials/ 的 HTML 文件中。
+  表格使用了中文字段名和多级表头（colspan/rowspan）。
+
+  任务：
+  1. 解析 HTML 表格
+  2. 提取"营业收入"和"营业利润"各年数据
+  3. 计算各年营业利润率 = 营业利润 / 营业收入 × 100%
+  4. 输出到 /app/results.csv：列名 fiscal_year,operating_margin_pct
+  5. 百分比四舍五入到2位小数
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - financial-analysis
+  - html-parsing
+  - chinese
+  - operating-margin
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

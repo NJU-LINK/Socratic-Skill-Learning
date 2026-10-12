@@ -1,0 +1,68 @@
+{
+  "method": "expert-authoring",
+  "round": 2,
+  "family": "ode-solver-rk4",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 129
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 25
+      },
+      "iteration-2": {
+        "records": 28
+      },
+      "iteration-3": {
+        "records": 15
+      }
+    },
+    "heldout": {
+      "v03": {
+        "records": 17,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 15,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 21,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 21,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 21,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 129,
+    "train": 68,
+    "heldout": 95,
+    "heldoutVariants": 5,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

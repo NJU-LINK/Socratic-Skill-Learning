@@ -1,0 +1,75 @@
+{
+  "method": "expert-authoring",
+  "round": 2,
+  "family": "xlsx-structure",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 172
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 30
+      },
+      "iteration-2": {
+        "records": 20
+      },
+      "iteration-3": {
+        "records": 24
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 15,
+        "score": 1,
+        "passed": 12,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 13,
+        "score": 1,
+        "passed": 12,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 9,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 13,
+        "score": 0.5833333333333334,
+        "passed": 7,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 13,
+        "score": 1,
+        "passed": 12,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 21,
+        "score": 0.9285714285714286,
+        "passed": 13,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 172,
+    "train": 74,
+    "heldout": 84,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

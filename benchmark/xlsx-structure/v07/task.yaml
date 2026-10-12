@@ -1,0 +1,23 @@
+instruction: |-
+  Read /app/input.xlsx and complete the merging sheet by exact ID alignment.
+
+  For every ID in merging!B2:B11, look for the same string in column B of SH1 and RP1. Write the
+  matching QTY from column C of SH1 to merging column C, and the matching QTY from column C of RP1
+  to merging column D. If an ID is absent from a source sheet or its QTY is blank, write the literal
+  string `-` for that source.
+
+  Write only merging!C2:D11. Preserve every input sheet, all values outside that range, and the
+  workbook's existing styles, filters, merged ranges, panes, row heights, and column widths. Save
+  the result to /app/output.xlsx.
+author_name: Task Author
+difficulty: medium
+category: software-engineering
+tags:
+  - spreadsheet
+  - xlsx
+  - structural
+  - cross-sheet-alignment
+parser_name: pytest
+max_agent_timeout_sec: 360
+max_test_timeout_sec: 60
+run_tests_in_same_shell: false

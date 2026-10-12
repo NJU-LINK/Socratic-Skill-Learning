@@ -1,0 +1,54 @@
+{
+  "method": "no-skill",
+  "round": 2,
+  "family": "ode-solver-rk4",
+  "stats": {
+    "skill_formation": {},
+    "train": {},
+    "heldout": {
+      "v03": {
+        "records": 54,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 44,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 36,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 50,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 58,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 0,
+    "train": 0,
+    "heldout": 242,
+    "heldoutVariants": 5,
+    "heldoutEmpty": 0,
+    "noSkillFormation": true
+  }
+}

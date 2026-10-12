@@ -1,0 +1,61 @@
+{
+  "method": "no-skill",
+  "round": 1,
+  "family": "deterministic-tarball",
+  "stats": {
+    "skill_formation": {},
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 84,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 102,
+        "score": 0.5714285714285714,
+        "passed": 4,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 56,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 84,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 58,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 44,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 0,
+    "train": 0,
+    "heldout": 428,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": true
+  }
+}

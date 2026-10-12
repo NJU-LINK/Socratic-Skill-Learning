@@ -1,0 +1,75 @@
+{
+  "method": "expert-authoring",
+  "round": 3,
+  "family": "html-finance-verify",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 174
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 11
+      },
+      "iteration-2": {
+        "records": 19
+      },
+      "iteration-3": {
+        "records": 11
+      }
+    },
+    "heldout": {
+      "v05": {
+        "records": 31,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 15,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 15,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 17,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 15,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 13,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 174,
+    "train": 41,
+    "heldout": 106,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

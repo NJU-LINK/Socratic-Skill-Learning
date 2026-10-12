@@ -1,0 +1,85 @@
+{
+  "method": "post-hoc-teaching",
+  "round": 2,
+  "family": "db-wal-recovery",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 21
+      },
+      "student-author": {
+        "records": 363
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 28
+      },
+      "iteration-2": {
+        "records": 125
+      },
+      "iteration-3": {
+        "records": 21
+      }
+    },
+    "heldout": {
+      "v05": {
+        "records": 31,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 22,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 31,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 111,
+        "score": 0.25,
+        "passed": 2,
+        "failed": 6,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 205,
+        "score": 0.42857142857142855,
+        "passed": 6,
+        "failed": 8,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 31,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 39,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 384,
+    "train": 174,
+    "heldout": 470,
+    "heldoutVariants": 7,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

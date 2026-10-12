@@ -1,0 +1,29 @@
+{
+  "intel_financials": [
+    {
+      "fiscal_year": "FY2021",
+      "Revenue": 79024.0,
+      "Net_Income": 19868.0
+    },
+    {
+      "fiscal_year": "FY2022",
+      "Revenue": 63054.0,
+      "Net_Income": 8014.0
+    },
+    {
+      "fiscal_year": "FY2023",
+      "Revenue": 54228.0,
+      "Net_Income": 1689.0
+    },
+    {
+      "fiscal_year": "FY2024",
+      "Revenue": 53101.0,
+      "Net_Income": -18756.0
+    },
+    {
+      "fiscal_year": "FY2025",
+      "Revenue": 52853.0,
+      "Net_Income": -267.0
+    }
+  ]
+}

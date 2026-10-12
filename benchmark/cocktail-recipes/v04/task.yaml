@@ -1,0 +1,23 @@
+instruction: |-
+  You are given:
+  1. /app/format_spec.json — the required JSON schema for a cocktail recipe
+  2. /app/task.json — the partially filled recipe
+  3. /app/knowledge/ref.txt — supporting evidence about the recipe
+
+  Complete the Daiquiri recipe according to the supplied evidence and write it to
+  /app/output.json. The ingredient quantities are expressed in fluid ounces. Convert every
+  measured ingredient to centilitres using 1 oz = 3 cl, and round each converted amount to the
+  nearest 0.1 cl. The final document must satisfy format_spec.json.
+author_name: Task Author
+difficulty: hard
+category: Data Extraction
+tags:
+  - cocktail-recipes
+  - data-extraction
+  - unit-conversion
+  - format-compliance
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

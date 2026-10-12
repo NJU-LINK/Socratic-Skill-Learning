@@ -1,0 +1,106 @@
+{
+  "method": "issue-guided-ssl",
+  "round": 3,
+  "family": "sparql-professors-universities",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 24
+      },
+      "student-author": {
+        "records": 117
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 26
+      },
+      "iteration-2": {
+        "records": 12
+      },
+      "iteration-3": {
+        "records": 14
+      }
+    },
+    "heldout": {
+      "v03": {
+        "records": 19,
+        "score": 0.8571428571428571,
+        "passed": 6,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 16,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 29,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 21,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 16,
+        "score": 0.7777777777777778,
+        "passed": 7,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 14,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 28,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 16,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 16,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 24,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 141,
+    "train": 52,
+    "heldout": 199,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

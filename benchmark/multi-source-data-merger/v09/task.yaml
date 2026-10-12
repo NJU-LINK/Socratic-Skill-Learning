@@ -1,0 +1,56 @@
+instruction: |-
+  Merge the user exports from three source systems into one canonical dataset.
+
+  Inputs and field mappings:
+
+  - `/data/source_a/users.json`: `id`, `full_name`, `email`,
+    `registration_date`, `status`
+  - `/data/source_b/users.csv`: `user_id`, `name`, `email_address`,
+    `created_at`, `is_active`
+  - `/data/source_c/users.parquet`: `userId`, `userName`, `email`, `joined`,
+    `active`
+
+  Map them to `user_id`, `name`, `email`, `created_date`, and `status`.
+  Store `user_id` as an integer. Trim surrounding whitespace from text fields and
+  normalize all supported date representations to `YYYY-MM-DD`.
+
+  Normalize status values case-insensitively:
+
+  - boolean true, numeric/string `1`, `true`, `yes`, `y`, and `active` become
+    `active`
+  - boolean false, numeric/string `0`, `false`, `no`, `n`, and `inactive` become
+    `inactive`
+
+  Treat null, NaN, an absent field, or a whitespace-only string as missing.
+
+  Merge on `user_id` using source priority `source_a > source_b > source_c`
+  independently for every field. Select the highest-priority non-missing value
+  for each field; do not select one whole source row when a field needs backfill.
+
+  A conflict exists when at least two sources provide different non-missing values
+  for the same user and field after normalization. Missing values alone are not
+  conflicts. Conflict `values` and `selected` must contain normalized values, and
+  `values` must omit sources where that field is missing.
+
+  Write:
+
+  - `/app/merged_users.parquet`, with one row per unique user and columns in this
+    exact order: `user_id`, `name`, `email`, `created_date`, `status`
+  - `/app/conflicts.json`, containing `total_conflicts` and a `conflicts` array.
+    Each conflict entry must contain `user_id`, `field`, `values`, and `selected`.
+
+  `total_conflicts` must equal the number of conflict entries.
+
+author_name: Task Author
+difficulty: hard
+category: data-processing
+tags:
+  - etl
+  - schema-mapping
+  - conflict-resolution
+  - parquet
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 360
+run_tests_in_same_shell: false
+disable_asciinema: false

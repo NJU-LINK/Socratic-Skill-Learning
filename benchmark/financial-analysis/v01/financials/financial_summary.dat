@@ -1,0 +1,25 @@
+======================================================================
+                     FINANCIAL DATA SUMMARY
+======================================================================
+Company:  NVIDIA Corporation
+Ticker:   NVDA
+Exchange: NASDAQ
+Fiscal Year End: January
+Data Coverage: FY2022 - FY2026
+All values in millions of USD
+======================================================================
+
+Year,Revenue,OperatingIncome,NetIncome,GrossProfit
+FY2022,26914,10041,9752,17475
+FY2023,26974,4224,4368,15356
+FY2024,60922,32972,29760,44301
+FY2025,130497,81453,72880,97858
+FY2026,215938,130387,120067,153463
+
+======================================================================
+NOTES:
+- Revenue recognized on accrual basis
+- Gross Profit = Revenue - Cost of Revenue
+- Operating Income = Gross Profit - Operating Expenses
+- Net Income = Operating Income + Other Income - Tax
+======================================================================

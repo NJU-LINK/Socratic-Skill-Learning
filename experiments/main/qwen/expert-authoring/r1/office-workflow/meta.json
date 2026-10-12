@@ -1,0 +1,75 @@
+{
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "office-workflow",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 114
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 22
+      },
+      "iteration-2": {
+        "records": 21
+      },
+      "iteration-3": {
+        "records": 23
+      }
+    },
+    "heldout": {
+      "v03": {
+        "records": 43,
+        "score": 0.42857142857142855,
+        "passed": 3,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 21,
+        "score": 0.8571428571428571,
+        "passed": 6,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 32,
+        "score": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 33,
+        "score": 1,
+        "passed": 10,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 32,
+        "score": 0.9285714285714286,
+        "passed": 13,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 35,
+        "score": 1,
+        "passed": 13,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 114,
+    "train": 66,
+    "heldout": 196,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

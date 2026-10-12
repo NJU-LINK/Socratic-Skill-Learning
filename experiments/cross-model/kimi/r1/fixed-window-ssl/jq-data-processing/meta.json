@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "jq-data-processing",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 36
+      },
+      "student-author": {
+        "records": 140
+      }
+    }
+  },
+  "totals": {
+    "records": 176
+  }
+}

@@ -1,0 +1,29 @@
+axes:
+  - name: transformation_semantics
+    type: freeform
+    description: >
+      The structural relation that must be applied to workbook data. Cases include block-local
+      sorting, predicate- or style-based filtering and compaction, header-aligned append,
+      sparse-record reconciliation, row extraction, and layout transposition.
+  - name: workbook_topology
+    type: freeform
+    description: >
+      Where source and destination data live: one or several sheets, contiguous tables, repeated
+      blocks separated by blanks, style-marked cells, ordered ID lists paired with sparse tables,
+      header-mapped columns, or sparse source and destination ranges.
+  - name: selection_and_alignment_rule
+    type: freeform
+    description: >
+      How rows or cells are selected and aligned, such as evaluated numeric order, membership in
+      another range, exact header or ID identity, fill color, text predicates with exclusions,
+      source-list order, or positional correspondence.
+  - name: output_geometry
+    type: freeform
+    description: >
+      The existing or newly created destination sheet, range, orientation, and append,
+      insertion, or compaction boundary required by the case.
+  - name: preservation_constraints
+    type: freeform
+    description: >
+      Workbook state outside the declared transformation that must remain intact, including input
+      sheets, unrelated values, existing styles, dimensions, filters, merged ranges, and panes.

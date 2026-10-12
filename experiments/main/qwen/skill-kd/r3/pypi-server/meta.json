@@ -1,0 +1,108 @@
+{
+  "method": "skill-kd",
+  "round": 3,
+  "family": "pypi-server",
+  "stats": {
+    "skill_formation": {
+      "0000-round_00-student_retry-d84beaa1": {
+        "records": 35
+      },
+      "0000-round_01-student_retry-82027413": {
+        "records": 33
+      },
+      "0000-student_initial-2c047887": {
+        "records": 37
+      },
+      "0000-teacher-1bba1032": {
+        "records": 32
+      },
+      "0001-student_initial-1d7efd8e": {
+        "records": 37
+      },
+      "0002-student_initial-89f12588": {
+        "records": 43
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v04": {
+        "records": 50,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 41,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 37,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 61,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 46,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 51,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 45,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 42,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 39,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 71,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 217,
+    "train": 0,
+    "heldout": 483,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

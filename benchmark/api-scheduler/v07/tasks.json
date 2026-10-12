@@ -1,0 +1,118 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "title": "Project Plan Review",
+      "duration_min": 30,
+      "urgency": 5,
+      "importance": 5,
+      "depends_on": []
+    },
+    {
+      "id": "B",
+      "title": "Design API Contracts",
+      "duration_min": 60,
+      "urgency": 4,
+      "importance": 5,
+      "depends_on": [
+        "A"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Implement Auth Module",
+      "duration_min": 90,
+      "urgency": 4,
+      "importance": 4,
+      "depends_on": [
+        "B"
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Review PR #1",
+      "duration_min": 20,
+      "urgency": 3,
+      "importance": 3,
+      "depends_on": [
+        "C"
+      ]
+    },
+    {
+      "id": "E",
+      "title": "Write Tests",
+      "duration_min": 45,
+      "urgency": 3,
+      "importance": 3,
+      "depends_on": [
+        "C"
+      ]
+    },
+    {
+      "id": "F",
+      "title": "Update Documentation",
+      "duration_min": 30,
+      "urgency": 2,
+      "importance": 2,
+      "depends_on": [
+        "D",
+        "E"
+      ]
+    },
+    {
+      "id": "G",
+      "title": "Deploy to Staging",
+      "duration_min": 20,
+      "urgency": 4,
+      "importance": 4,
+      "depends_on": [
+        "F"
+      ]
+    },
+    {
+      "id": "H",
+      "title": "QA Verification",
+      "duration_min": 30,
+      "urgency": 3,
+      "importance": 3,
+      "depends_on": [
+        "G"
+      ]
+    },
+    {
+      "id": "I",
+      "title": "Release Notes",
+      "duration_min": 20,
+      "urgency": 2,
+      "importance": 2,
+      "depends_on": [
+        "H"
+      ]
+    },
+    {
+      "id": "J",
+      "title": "Send Status Report",
+      "duration_min": 15,
+      "urgency": 5,
+      "importance": 3,
+      "depends_on": [
+        "H"
+      ]
+    }
+  ],
+  "emergencies": [
+    {
+      "id": "X",
+      "title": "Security Vulnerability Patch",
+      "duration_min": 40,
+      "arrival_time": "15:00",
+      "urgency": 5
+    }
+  ],
+  "config": {
+    "work_start": "14:00",
+    "work_end": "19:00",
+    "priority_method": "weighted",
+    "calendar_id": "Hk9Nw8KsRd5X"
+  }
+}

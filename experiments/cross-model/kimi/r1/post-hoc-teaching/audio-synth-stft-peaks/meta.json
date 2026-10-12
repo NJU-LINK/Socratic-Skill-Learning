@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "audio-synth-stft-peaks",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 13
+      },
+      "student-author": {
+        "records": 205
+      }
+    }
+  },
+  "totals": {
+    "records": 218
+  }
+}

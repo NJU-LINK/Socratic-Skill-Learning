@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "kv-store-grpc",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 21
+      },
+      "student-author": {
+        "records": 190
+      }
+    }
+  },
+  "totals": {
+    "records": 211
+  }
+}

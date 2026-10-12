@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vendor Intake Form</title>
+</head>
+<body>
+  <header>
+    <h1>Vendor Intake Form</h1>
+    <p>Please complete every section before submitting your onboarding request.</p>
+  </header>
+  <form action="/vendors/submit" method="post">
+    <fieldset>
+      <legend>Company Details</legend>
+      <label for="company-name">Legal company name</label>
+      <input id="company-name" name="company_name" type="text">
+
+      <label for="company-site">Primary website</label>
+      <input id="company-site" name="company_site" type="url" placeholder="https://example.com">
+    </fieldset>
+
+    <fieldset>
+      <legend>Contacts</legend>
+      <label for="ops-contact">Operations contact</label>
+      <input id="ops-contact" name="ops_contact" type="text">
+
+      <label for="ops-email">Operations email</label>
+      <input id="ops-email" name="ops_email" type="email">
+    </fieldset>
+
+    <fieldset>
+      <legend>Capabilities</legend>
+      <label><input type="checkbox" name="capabilities" value="delivery"> Delivery</label>
+      <label><input type="checkbox" name="capabilities" value="inventory"> Inventory sync</label>
+      <label><input type="checkbox" name="capabilities" value="returns"> Returns</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Notes</legend>
+      <textarea name="notes" rows="6" cols="60">List any region-specific constraints here.</textarea>
+    </fieldset>
+
+    <p><a href="/vendors/policy">Read the vendor policy</a> before final submission.</p>
+    <div class="actions">
+      <button type="submit" formmethod="post" formaction="java%73cript:alert('submit')">Submit intake packet</button>
+      <button type="submit" formmethod="post" formaction="/vendors/save-draft">Save draft</button>
+    </div>
+  </form>
+</body>
+</html>

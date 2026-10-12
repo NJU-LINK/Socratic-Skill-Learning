@@ -1,0 +1,5 @@
+Fixture guide for Builder02:
+
+- `editorial-clean-reference.html` is a fully benign editorial page that should remain unchanged.
+- `editorial-fragile-input.html` and `editorial-briefing-input.html` each contain a few sparse XSS vectors inside otherwise normal article-style documents.
+- The matching `*-expected.html` files show the intended preservation-first sanitization target: remove only the dangerous fragments and leave the surrounding document structure intact.

@@ -1,0 +1,24 @@
+axes:
+  - description: >
+      The layout of the HTML earnings report and the accounting relationships needed to identify the
+      single incorrect metric. The seed uses one HTML report with line-numbered financial values and
+      one value that violates a cross-check. Variants may change table structure, section names,
+      metric families, line numbering density, and which arithmetic or ratio relation exposes the
+      incorrect value while keeping the task as HTML financial verification with one wrong metric.
+    name: report_structure_and_metric_relationships
+    type: freeform
+  - description: >
+      How the wrong metric differs from the consistent financial data. The seed requires locating
+      one incorrect reported value and outputting its line and numeric value. Variants may use
+      totals, subtotals, margins, year-over-year changes, per-share values, unit conversions, or
+      rounded figures, with the incorrect value still discoverable from internal consistency rather
+      than external knowledge.
+    name: error_type_and_discoverability
+    type: freeform
+  - description: >
+      The exact required reporting target and tolerance around numeric formatting. The seed writes
+      line_number,value to /app/value.txt. Variants may vary the target file, accepted numeric
+      precision, comma/whitespace robustness, and whether decimals, negatives, percentages, or
+      thousands separators appear, while preserving a deterministic single-answer check.
+    name: output_format_constraints
+    type: freeform

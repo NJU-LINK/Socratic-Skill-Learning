@@ -1,0 +1,3 @@
+Mount-layout probe: confirm that the host package directory (skill/xlsx-structure/)
+is bind-mounted read-only at /skill inside the task container. Both sides show the
+same files. This file is not part of the reusable package; see SKILL.md.

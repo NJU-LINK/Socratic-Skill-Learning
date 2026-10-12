@@ -1,0 +1,43 @@
+{
+  "model": "deepseek",
+  "method": "no-skill",
+  "round": 1,
+  "family": "audio-synth-stft-peaks",
+  "stats": {
+    "heldout": {
+      "v02": {
+        "records": 29
+      },
+      "v03": {
+        "records": 31
+      },
+      "v04": {
+        "records": 39
+      },
+      "v05": {
+        "records": 19
+      },
+      "v06": {
+        "records": 22
+      },
+      "v08": {
+        "records": 23
+      },
+      "v12": {
+        "records": 31
+      },
+      "v14": {
+        "records": 27
+      },
+      "v15": {
+        "records": 24
+      },
+      "v16": {
+        "records": 37
+      }
+    }
+  },
+  "totals": {
+    "records": 282
+  }
+}

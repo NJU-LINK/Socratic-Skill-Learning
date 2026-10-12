@@ -1,0 +1,61 @@
+{
+  "method": "no-skill",
+  "round": 3,
+  "family": "kv-store-grpc",
+  "stats": {
+    "skill_formation": {},
+    "train": {},
+    "heldout": {
+      "v04": {
+        "records": 20,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 30,
+        "score": 0.875,
+        "passed": 7,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 20,
+        "score": 0.16666666666666666,
+        "passed": 1,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 36,
+        "score": 0.16666666666666666,
+        "passed": 1,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 20,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 18,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 0,
+    "train": 0,
+    "heldout": 144,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": true
+  }
+}

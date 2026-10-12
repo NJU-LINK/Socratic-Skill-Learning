@@ -1,0 +1,89 @@
+{
+  "method": "no-skill",
+  "round": 3,
+  "family": "sparql-professors-universities",
+  "stats": {
+    "skill_formation": {},
+    "train": {},
+    "heldout": {
+      "v03": {
+        "records": 14,
+        "score": 0.8571428571428571,
+        "passed": 6,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 24,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 36,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 24,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 20,
+        "score": 0.7777777777777778,
+        "passed": 7,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 22,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 30,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 24,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 16,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 14,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 0,
+    "train": 0,
+    "heldout": 224,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": true
+  }
+}

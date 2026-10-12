@@ -1,0 +1,22 @@
+instruction: |-
+  Read /app/floor_plan.json and place wall-mounted surveillance cameras.
+
+  Visibility is defined by /app/camera_geom.py: cameras at wall endpoints see
+  270 degrees into the room; cameras on a wall body see 180 degrees on the
+  interior side; every listed wall and rectangular obstacle blocks line of
+  sight. Achieve at least 99% coverage of the scorable grid using at most
+  7 cameras.
+
+  Write /app/output.json with:
+  - cameras: objects containing x, y, wall_index, and is_endpoint
+  - coverage: a number from 0 to 1
+  - total_cameras: the number of camera objects
+author_name: Task Author
+difficulty: hard
+category: Spatial Reasoning
+tags: [camera-layout, spatial-reasoning, geometry]
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

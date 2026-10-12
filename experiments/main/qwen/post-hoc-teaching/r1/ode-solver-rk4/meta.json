@@ -1,0 +1,72 @@
+{
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "ode-solver-rk4",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 16
+      },
+      "student-author": {
+        "records": 177
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 41
+      },
+      "iteration-2": {
+        "records": 29
+      },
+      "iteration-3": {
+        "records": 23
+      }
+    },
+    "heldout": {
+      "v03": {
+        "records": 0,
+        "empty": true,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 33,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 45,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 28,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 29,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 193,
+    "train": 93,
+    "heldout": 135,
+    "heldoutVariants": 4,
+    "heldoutEmpty": 1,
+    "noSkillFormation": false
+  }
+}

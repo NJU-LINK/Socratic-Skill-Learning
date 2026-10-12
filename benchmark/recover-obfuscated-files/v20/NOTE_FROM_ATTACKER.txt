@@ -1,0 +1,4 @@
+Your files have been secured with double-layer protection!
+Hex on the outside, base64 on the inside -- peel carefully.
+Not everything here is transformed -- some files are just as they seem.
+The important ones are in /app/sensitive_data/.

@@ -1,0 +1,24 @@
+instruction: |-
+  Intel's financial data is stored in /app/financials/ as a JSON file.
+  The file has a nested structure that you need to explore and understand.
+
+  Your task:
+  1. Find and parse the JSON file in /app/financials/
+  2. Navigate the JSON structure to discover the financial records
+  3. Extract Revenue and Net Income for all available fiscal years
+  4. Calculate YoY (Year-over-Year) Net Income Growth Rate for each year
+     Growth = (current_year_NI - previous_year_NI) / |previous_year_NI| * 100
+  5. Write to /app/results.csv with columns: fiscal_year,net_income_growth_pct
+  6. Round to 2 decimal places. For the first year (2021), write N/A for growth.
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - financial-analysis
+  - json-parsing
+  - yoy-growth
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

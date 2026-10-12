@@ -1,0 +1,30 @@
+[
+  {
+    "acct_id": 201,
+    "display_name": "Mila Hart",
+    "account_state": " ACTIVE "
+  },
+  {
+    "acct_id": 202,
+    "display_name": "Noah Reed",
+    "primary_email": "noah@a.example"
+  },
+  {
+    "acct_id": 203,
+    "signup_on": "2024/03/14",
+    "account_state": "inactive"
+  },
+  {
+    "acct_id": 204,
+    "display_name": "Priya Shah",
+    "primary_email": "",
+    "signup_on": null
+  },
+  {
+    "acct_id": 205,
+    "display_name": "Luca Stone",
+    "primary_email": "luca@a.example",
+    "signup_on": "15 May 2024",
+    "account_state": " Active "
+  }
+]

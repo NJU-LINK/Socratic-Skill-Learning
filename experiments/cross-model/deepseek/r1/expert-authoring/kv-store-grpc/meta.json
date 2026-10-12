@@ -1,0 +1,16 @@
+{
+  "model": "deepseek",
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "kv-store-grpc",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 163
+      }
+    }
+  },
+  "totals": {
+    "records": 163
+  }
+}

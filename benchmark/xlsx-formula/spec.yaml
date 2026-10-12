@@ -1,0 +1,29 @@
+axes:
+  - name: computation_semantics
+    type: freeform
+    description: >
+      The formula-equivalent computation that must be evaluated from workbook values. The seed
+      performs duplicate-aware ranking over a large table. Other members may require conditional
+      aggregation, multi-key or cross-sheet lookup, text membership and joining, date-window
+      arithmetic, allocation, or matrix placement. The invariant is that the agent computes the
+      requested results rather than leaving unevaluated formulas for the scorer.
+  - name: workbook_topology
+    type: freeform
+    description: >
+      Where source values live and how they relate: a single table, multiple ranges, multiple
+      sheets, lookup tables, sparse cells, repeated keys, and mixed text, number, date, or blank
+      values. Sheet names and row or column locations vary, so a solution must inspect the supplied
+      workbook instead of assuming the seed layout.
+  - name: answer_geometry
+    type: freeform
+    description: >
+      The declared output sheet and cells, ranging from one scalar cell through vectors and
+      matrices to a long result column. Results must be written in the public task's stated order
+      and shape.
+  - name: preservation_constraints
+    type: freeform
+    description: >
+      The workbook state that must survive the transformation. Every case writes /app/output.xlsx
+      while retaining all input sheets; variants may additionally require existing formatting,
+      blanks, dates, or unrelated cells to remain intact. Only the requested result locations
+      should be changed unless the task explicitly says otherwise.

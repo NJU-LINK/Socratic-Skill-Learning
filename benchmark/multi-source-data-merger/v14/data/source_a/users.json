@@ -1,0 +1,58 @@
+[
+  {
+    "account_id": 201,
+    "preferred_name": "Alicia Stone",
+    "primary_email": "alicia@alpha.example",
+    "signup_date": "2024/01/15",
+    "status_text": "active"
+  },
+  {
+    "account_id": 202,
+    "preferred_name": "Ben Turner",
+    "primary_email": "ben@alpha.example",
+    "signup_date": "2024/01/20",
+    "status_text": "active"
+  },
+  {
+    "account_id": 203,
+    "preferred_name": "Carla Gomez",
+    "primary_email": "carla@alpha.example",
+    "signup_date": "2024/02/03",
+    "status_text": "inactive"
+  },
+  {
+    "account_id": 204,
+    "preferred_name": "Devin Patel",
+    "primary_email": "devin@alpha.example",
+    "signup_date": "2024/02/10",
+    "status_text": "active"
+  },
+  {
+    "account_id": 205,
+    "preferred_name": "Elena Morris",
+    "primary_email": "elena@alpha.example",
+    "signup_date": "2024/02/21",
+    "status_text": "active"
+  },
+  {
+    "account_id": 206,
+    "preferred_name": "Farah Khan",
+    "primary_email": "farah@alpha.example",
+    "signup_date": "2024/03/01",
+    "status_text": "inactive"
+  },
+  {
+    "account_id": 207,
+    "preferred_name": "Graham Lee",
+    "primary_email": "graham@alpha.example",
+    "signup_date": "2024/03/05",
+    "status_text": "active"
+  },
+  {
+    "account_id": 208,
+    "preferred_name": "Hannah Wu",
+    "primary_email": "hannah@alpha.example",
+    "signup_date": "2024/03/12",
+    "status_text": "active"
+  }
+]

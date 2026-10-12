@@ -1,0 +1,75 @@
+{
+  "method": "expert-authoring",
+  "round": 2,
+  "family": "flask",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 131
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 23
+      },
+      "iteration-2": {
+        "records": 15
+      },
+      "iteration-3": {
+        "records": 18
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 17,
+        "score": 1,
+        "passed": 22,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 19,
+        "score": 0.25,
+        "passed": 2,
+        "failed": 6,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 15,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 27,
+        "score": 0.14285714285714285,
+        "passed": 1,
+        "failed": 6,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 21,
+        "score": 0.25,
+        "passed": 2,
+        "failed": 6,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 17,
+        "score": 0,
+        "passed": 0,
+        "failed": 8,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 131,
+    "train": 56,
+    "heldout": 116,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

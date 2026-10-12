@@ -1,0 +1,13 @@
+instruction: |-
+  A SQLite database file at /app/trunc.db was corrupted through binary truncation — the file was accidentally cut short, losing part of its content. The database originally contained a single table with two columns: an integer ID column and a real-number value column. Recover as many of the original rows as possible from the corrupted file, and write the results to a JSON file at /app/recover.json. The JSON file should contain an array of objects, each with "id" and "value" keys. For example: [{"id": 101, "value": 10.0}, {"id": 102, "value": 25.0}]
+
+author_name: Task Author
+difficulty: high
+category: debugging
+tags:
+  - file-operations
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

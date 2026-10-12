@@ -1,0 +1,15 @@
+# Adapted from Terminal-Bench for SkillTransferBench; task text and metadata were curated.
+# Original task credits and source: ../../ATTRIBUTION.md (sqlite-db-truncate).
+# SPDX-License-Identifier: Apache-2.0
+instruction: |-
+  I have a sqlite database in /app/trunc.db. The file is the correct size but random bytes inside it have been corrupted — bits have been flipped across the file, making it unreadable by standard tools. Recover as many of the rows as possible and write them to /app/recover.json. The output should have the format [{"word": "testwordXY", "value": M}, {"word": "testwordZZ","value": N}, ...]
+author_name: Task Author
+difficulty: easy
+category: debugging
+tags:
+  - file-operations
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

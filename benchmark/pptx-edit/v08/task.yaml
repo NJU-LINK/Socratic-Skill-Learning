@@ -1,0 +1,26 @@
+instruction: |-
+  You are given a PowerPoint file at `/app/input.pptx` (`hadal.pptx`).
+
+  Apply these operations in order:
+
+  1. Delete the original slide 3.
+  2. On the original slide 5, which is now visible as slide 4, change only the
+     title substring `哈达尔区` in `哈达尔区的边界` to `Hadal Zone`.
+
+  Do not replace matching words in the body or any other shape. Preserve the
+  identity and order of every surviving slide, all non-target shapes and
+  formatting, page dimensions, media, embedded fonts, themes, masters, layouts,
+  and notes.
+
+  Save the modified presentation as `/app/output.pptx`.
+author_name: Task Author
+difficulty: hard
+category: PPTX Manipulation
+tags:
+  - pptx
+  - document-processing
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

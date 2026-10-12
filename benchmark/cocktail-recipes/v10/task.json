@@ -1,0 +1,30 @@
+{
+  "description": "The Moscow Mule recipe has intentionally swapped amounts between two ingredients. Detect and fix.",
+  "recipe": {
+    "name": "Moscow Mule",
+    "glass": "highball",
+    "category": "Longdrink",
+    "ingredients": [
+      {
+        "special": "1 slice lime in a highball glass"
+      },
+      {
+        "unit": "cl",
+        "amount": 0.5,
+        "ingredient": "Lime juice"
+      },
+      {
+        "unit": "cl",
+        "amount": 4.5,
+        "ingredient": "Ginger beer"
+      },
+      {
+        "unit": "cl",
+        "amount": 12.0,
+        "ingredient": "Vodka"
+      }
+    ],
+    "garnish": "Lime slice",
+    "preparation": "Combine the vodka and ginger beer. Add lime juice."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "issue-guided-ssl",
+  "round": 1,
+  "family": "sparql-professors-universities",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 23
+      },
+      "student-author": {
+        "records": 183
+      }
+    }
+  },
+  "totals": {
+    "records": 206
+  }
+}

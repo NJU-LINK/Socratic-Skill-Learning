@@ -1,0 +1,64 @@
+{
+  "method": "skill-kd",
+  "round": 1,
+  "family": "ode-solver-rk4",
+  "stats": {
+    "skill_formation": {
+      "0000-student_initial-9265c2c0": {
+        "records": 55
+      },
+      "0001-student_initial-524cae4e": {
+        "records": 81
+      },
+      "0002-student_initial-33f61469": {
+        "records": 58
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v03": {
+        "records": 43,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 60,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 61,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 48,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 42,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 194,
+    "train": 0,
+    "heldout": 254,
+    "heldoutVariants": 5,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

@@ -1,0 +1,24 @@
+axes:
+  - name: source_tree_content_and_exclusions
+    type: freeform
+    description: >
+      The composition of the source tree and the files that must be omitted from the archive. The
+      seed mixes source files, generated artifacts, metadata, dependencies, temporary files,
+      sensitive 0600 files, symlinks, long names, and deep nesting. Variants may alter directory
+      names, extension patterns, sensitive-file rules, symlink cases, and scale while preserving the
+      deterministic packaging skill.
+  - name: normalization_rules
+    type: freeform
+    description: >
+      The metadata and content normalization required before archiving. The seed normalizes
+      permissions, line endings, mtimes, owners, groups, ordering, and text/binary handling.
+      Variants may change permission rules, timestamp sources, text-file detection, line-ending
+      requirements, owner/group policy, or archive root layout while remaining bit-for-bit
+      reproducible.
+  - name: archive_format_and_compression
+    type: freeform
+    description: >
+      The exact archive and compressor behavior. The seed uses GNU tar with stable sorting and zstd
+      deterministic compression. Variants may alter tar format options, compression level, output
+      path, environment variables, or verification hashes while keeping the task a deterministic
+      archive build with binary-comparable outputs.

@@ -1,0 +1,4 @@
+Your files are doubly safe!
+Their names and their contents have been... shifted.
+Every single byte has been shifted up by the letter U.
+Good luck finding them — they're not where you left them.

@@ -1,0 +1,141 @@
+Template queries for the sparql-professors-universities family.
+All templates were executed with rdflib 6.1 against the v01 anchor graph and
+verified row sets. ADAPT PREFIXES/PREDICATES TO THE ACTUAL GRAPH before use
+(run `python3 scripts/check_query.py <graph> <query>` after writing).
+
+The anchor's correct result has 7 rows of (?professorName ?universityName)
+and none of: Jane Petterson (Lecturer), the three Students, and no second
+NTUA row for Felix Wagner.
+
+-----------------------------------------------------------------------------
+T1. Canonical: worksAt chain, depth-robust (use when persons have a preferred
+employment link to a department OR directly to the university).
+    ?org worksAt-from-person, then any-length partOfUniversity* path, then the
+    node filtered by type uni:University. This is the default template.
+
+PREFIX uni: <http://university.org/ontology#>
+
+SELECT DISTINCT ?professorName ?universityName WHERE {
+  ?professor uni:hasName ?professorName ;
+             uni:role ?role ;
+             uni:worksAt ?org .
+  ?org uni:partOfUniversity* ?university .
+  ?university a uni:University ;
+              uni:hasName ?universityName .
+  FILTER (regex(?role, "professor", "i"))
+}
+
+Notes:
+  - partOfUniversity* with the type filter covers both direct affiliation
+    (zero-length step) and department->faculty->university chains.
+  - Do NOT add `a uni:Person` to the professor pattern: person typing may be
+    absent or renamed in variants.
+  - If hops use different predicates, switch the path to an alternation:
+    ?org (uni:partOfUniversity|uni:subOrganizationOf)* ?university .
+  - regex "professor" case-insensitive includes "Professor of ..." and
+    "Assistant/Associate Professor ..." but not "Lecturer"/"Student".
+  - If the instruction enumerates an exact rank set, replace the regex with
+    a disjunction, e.g. regex(?role, "^(Full|Assistant) Professor", "i").
+  - If role strings abbreviate the rank (Prof, Prof., Full Prof of X), use the
+    abbreviation-aware form, verified to also drop "professional staff" and
+    "Professor's Assistant":
+    regex(?role, "(^|\\s)(prof\\.?|professor)(\\s|$)", "i")
+    (It still keeps "Assistant to the Professor" — post-check passed VALUES
+    and block leftovers with an explicit disjunction.)
+
+-----------------------------------------------------------------------------
+T2. Same rank filter but rank stored as RESOURCES with a label (spec axis 1
+variant: uni:hasAcademicRank + uni:rankLabel):
+
+PREFIX uni: <http://university.org/ontology#>
+
+SELECT DISTINCT ?professorName ?universityName WHERE {
+  ?professor uni:hasName ?professorName ;
+             uni:hasAcademicRank ?rank ;
+             uni:worksAt ?org .
+  ?rank uni:rankLabel ?role .
+  ?org uni:partOfUniversity* ?university .
+  ?university a uni:University ;
+              uni:hasName ?universityName .
+  FILTER (regex(?role, "professor", "i"))
+}
+
+If ranks are individually typed (e.g. ?rank a uni:FullProfessor), filter with
+  ?rank a ?rankClass . FILTER (regex(str(?rankClass), "Professor"))  -- or an
+or-union of the observed rank classes.
+
+-----------------------------------------------------------------------------
+T3. Preferred worksAt + teaching fallback (spec axis 2 variant: some
+qualifying professors lack the preferred relation; use their courses).
+The NOT EXISTS guard is MANDATORY so professors who DO have worksAt never
+leak through the teaching branch (Felix trap: anchor has 8 rows without the
+guard, 7 with it).
+
+PREFIX uni: <http://university.org/ontology#>
+
+SELECT DISTINCT ?professorName ?universityName WHERE {
+  {
+    ?professor uni:hasName ?professorName ;
+               uni:role ?role ;
+               uni:worksAt ?org .
+    ?org uni:partOfUniversity* ?university .
+    ?university a uni:University ;
+                uni:hasName ?universityName .
+    FILTER (regex(?role, "professor", "i"))
+  }
+  UNION
+  {
+    ?professor uni:hasName ?professorName ;
+               uni:role ?role .
+    FILTER (regex(?role, "professor", "i"))
+    FILTER NOT EXISTS { ?professor uni:worksAt ?any }
+    ?professor uni:teaches ?course .
+    ?course uni:isTaughtIn ?org .
+    ?org uni:partOfUniversity* ?university .
+    ?university a uni:University ;
+                uni:hasName ?universityName .
+  }
+}
+
+-----------------------------------------------------------------------------
+T4. Appointment-resource bridge (spec axis 2 variant: person linked to orgs
+only via an appointment node). Verified on a simulated graph; the rank can
+live on the person or on the appointment node — pick what the data shows.
+
+PREFIX uni: <http://university.org/ontology#>
+
+SELECT DISTINCT ?professorName ?universityName WHERE {
+  ?professor uni:hasName ?professorName ;
+             uni:hasAcademicRank ?rank ;
+             uni:holds ?appointment .
+  ?rank uni:rankLabel ?role .
+  ?appointment uni:atOrganization ?org .
+  ?org uni:partOfUniversity* ?university .
+  ?university a uni:University ;
+              uni:hasName ?universityName .
+  FILTER (regex(?role, "professor", "i"))
+}
+
+-----------------------------------------------------------------------------
+ANTI-PATTERN (do not use). Teaching-only affiliation. Observed on anchor:
+joins through uni:teaches are a different data relation; Felix Wagner then
+appears with BOTH Institutes (IST and NTUA) and violates exactly-one-row.
+Only teaching may be used via the guarded fallback branch of T3.
+
+PREFIX uni: <http://university.org/ontology#>
+
+SELECT ?professorName ?universityName WHERE {
+  ?professor uni:hasName ?professorName ;
+             uni:role ?role ;
+             uni:teaches ?course .
+  ?course uni:isTaughtIn ?org .
+  ?org uni:partOfUniversity* ?university .
+  ?university a uni:University ;
+              uni:hasName ?universityName .
+  FILTER (regex(?role, "professor", "i"))
+}
+-----------------------------------------------------------------------------
+Inverse-direction variant sketch (university->department->person): reverse the
+triple directions as written in the data, e.g.
+  ?university uni:hasDepartment ?org . ?org uni:employs ?professor .
+Keep ?university a uni:University ; uni:hasName ?universityName.

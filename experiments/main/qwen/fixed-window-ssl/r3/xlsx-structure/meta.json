@@ -1,0 +1,78 @@
+{
+  "method": "fixed-window-ssl",
+  "round": 3,
+  "family": "xlsx-structure",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 37
+      },
+      "student-author": {
+        "records": 114
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 19
+      },
+      "iteration-2": {
+        "records": 21
+      },
+      "iteration-3": {
+        "records": 19
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 20,
+        "score": 1,
+        "passed": 12,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 19,
+        "score": 1,
+        "passed": 12,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 15,
+        "score": 1,
+        "passed": 11,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 15,
+        "score": 0.6666666666666666,
+        "passed": 8,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 19,
+        "score": 1,
+        "passed": 12,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 15,
+        "score": 0.9285714285714286,
+        "passed": 13,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 151,
+    "train": 59,
+    "heldout": 103,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

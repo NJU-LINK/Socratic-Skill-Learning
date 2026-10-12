@@ -1,0 +1,6 @@
+id,full_name,email_address,created_ts,status_label
+101,JANE   SMITH,jane.smith@beta.example,2021-04-05T16:20:00Z,enabled
+102,miguel   alvarez,miguel.alvarez@example.com,11/09/2020 07:15:00,disabled
+103,Priya Nayar, PRIYA.NAIR@example.com ,2019-02-15T01:20:00Z,disabled
+104,OMAR  CHEN,omar.chen@example.com,2022-08-30 12:45:00,enabled
+105,LINA PARK,lina.park@example.com,2023-01-12T09:30:00Z,paused

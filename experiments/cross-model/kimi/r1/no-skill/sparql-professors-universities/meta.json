@@ -1,0 +1,43 @@
+{
+  "model": "kimi",
+  "method": "no-skill",
+  "round": 1,
+  "family": "sparql-professors-universities",
+  "stats": {
+    "heldout": {
+      "v03": {
+        "records": 16
+      },
+      "v04": {
+        "records": 22
+      },
+      "v05": {
+        "records": 22
+      },
+      "v07": {
+        "records": 38
+      },
+      "v08": {
+        "records": 18
+      },
+      "v09": {
+        "records": 24
+      },
+      "v10": {
+        "records": 23
+      },
+      "v11": {
+        "records": 14
+      },
+      "v12": {
+        "records": 16
+      },
+      "v16": {
+        "records": 28
+      }
+    }
+  },
+  "totals": {
+    "records": 221
+  }
+}

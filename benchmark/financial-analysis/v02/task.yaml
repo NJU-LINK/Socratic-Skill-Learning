@@ -1,0 +1,27 @@
+instruction: |-
+  AMD's financial data is stored as an HTML file somewhere in /app/financials/.
+  The HTML table uses merged header cells (colspan/rowspan) that make it
+  non-trivial to parse correctly. Not all HTML files in that directory
+  contain AMD's annual data — you'll need to find the right one.
+
+  Your task:
+  1. Explore /app/financials/ to find the right HTML file
+  2. Parse the HTML table to extract Revenue and Operating Income
+  3. Calculate Operating Margin = Operating Income / Revenue for each year
+  4. Write to /app/results.csv with columns: fiscal_year,operating_margin_pct
+  5. Round to 2 decimal places
+
+  Operating Margin values should be percentage numbers (e.g., 14.52 means 14.52%).
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - financial-analysis
+  - html-parsing
+  - operating-margin
+  - data-discovery
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

@@ -1,0 +1,39 @@
+axes:
+  - description: >
+      Which HTML constructs can cause script execution and therefore must be neutralized. The seed
+      covers direct script tags, inline event handlers, javascript: URLs, data URLs that embed HTML,
+      and active container tags such as iframe, object, and embed. The same skill must also handle:
+      scriptable SVG or MathML elements, form-related executable targets, refresh or
+      navigation-based execution paths, dangerous attributes beyond simple on* handlers, and
+      combinations where individually harmless markup becomes executable when interpreted by the
+      browser.
+    name: executable_html_vectors
+    type: freeform
+  - description: >
+      How much benign HTML structure, attributes, text, and browser-visible content must remain
+      unchanged while removing only the dangerous parts. The seed expects common document structure,
+      tables, forms, semantic HTML, entities, images, and formatting to survive filtering with no
+      functionally meaningful differences. The same skill must also handle: documents with dense
+      attribute sets, mixed safe and unsafe attributes on the same element, nested content where
+      only a small fragment is unsafe, and cases where over-sanitizing would break layout,
+      navigation, or form behavior.
+    name: preservation_fidelity
+    type: freeform
+  - description: >
+      How regular or adversarial the input HTML syntax is. The seed includes malformed tags, unusual
+      spacing, case variation, entity-encoded content, tab characters, embedded templates, and
+      fragments that are wrapped into a full document before filtering. The same skill must also
+      handle: broken nesting, partially encoded payloads, duplicated or conflicting attributes,
+      browser-tolerated invalid markup, and payloads whose danger only becomes apparent after
+      normalization or parsing.
+    name: html_parsing_irregularity
+    type: freeform
+  - description: >
+      How directly the dangerous behavior is expressed in the source text. The seed uses plain
+      script tags, mixed-case tags, HTML entities, null-byte-like strings, and base64-encoded HTML
+      inside URL-bearing attributes. The same skill must also handle: percent-encoding, layered
+      encodings, fragmented payloads split across attributes or nodes, executable content hidden in
+      long attribute values or CSS-like constructs, and payloads that require decoding or
+      normalization before their browser behavior is clear.
+    name: payload_obfuscation
+    type: freeform

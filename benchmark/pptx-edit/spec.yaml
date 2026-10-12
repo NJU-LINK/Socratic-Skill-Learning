@@ -1,0 +1,28 @@
+axes:
+  - name: presentation_structure
+    type: freeform
+    description: >-
+      The v01 anchor is a real multi-slide deck with existing layouts, media, multilingual text,
+      and formatting. Other cases vary deck size and source template while retaining the same
+      package-aware inspect-modify-validate workflow.
+  - name: edit_operation
+    type: freeform
+    description: >-
+      Operations include text replacement with formatting, speaker-note insertion, adding a slide
+      with an existing layout, deleting a slide, and editing a slide after prior deletions have
+      changed its visible index. Cases may combine content and structural operations.
+  - name: action_sequence
+    type: range
+    min: 1
+    max: 3
+    description: >-
+      A case requires one to three ordered actions. Structural edits make index semantics
+      state-dependent, so the solver must distinguish original slide identity from the current
+      position after earlier steps.
+  - name: preservation_contract
+    type: freeform
+    description: >-
+      output.pptx must remain a valid presentation. Slides and shapes outside declared targets,
+      target-shape geometry and unrequested styling, page dimensions, media, themes, masters, and
+      layouts must be preserved. Deleted-slide-only payload may disappear, but surviving package
+      resources may not be silently replaced or corrupted.

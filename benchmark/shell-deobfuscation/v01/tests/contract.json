@@ -1,0 +1,13 @@
+{
+  "side_effect_paths": ["/tmp/audit.txt"],
+  "minimum_input_bytes": 500,
+  "required_input_markers": [
+    "part_a=",
+    "part_b=",
+    "part_c=",
+    "xxd -r -p",
+    "base64 -d",
+    "gzip -dc"
+  ],
+  "forbidden_plaintext_markers": ["Performing system audit"]
+}

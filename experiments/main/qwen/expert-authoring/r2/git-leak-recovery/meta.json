@@ -1,0 +1,75 @@
+{
+  "method": "expert-authoring",
+  "round": 2,
+  "family": "git-leak-recovery",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 137
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 34
+      },
+      "iteration-2": {
+        "records": 19
+      },
+      "iteration-3": {
+        "records": 18
+      }
+    },
+    "heldout": {
+      "v05": {
+        "records": 28,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 33,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 96,
+        "score": 0.7142857142857143,
+        "passed": 5,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 36,
+        "score": 0.8571428571428571,
+        "passed": 6,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 59,
+        "score": 0.9,
+        "passed": 9,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 51,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 137,
+    "train": 71,
+    "heldout": 303,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

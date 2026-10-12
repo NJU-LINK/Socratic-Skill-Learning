@@ -1,0 +1,7 @@
+openai==2.44.0
+tqdm==4.68.3
+diskcache==5.6.3
+requests==2.32.5
+PyYAML==6.0.3
+openpyxl==3.1.5
+socksio==1.0.0

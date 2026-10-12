@@ -1,0 +1,25 @@
+axes:
+  - description: >
+      How the password data is split and scattered across the disk image. The seed places two equal
+      fragments at 1MB and 3MB offsets with a noise block at 2MB. The same skill must also handle:
+      fragments at arbitrary offsets, three or more fragments, fragments of unequal sizes, fragments
+      that overlap with noise regions, fragments placed at the boundaries (start or end) of the disk
+      image, fragments that require assembling from more than two parts.
+    name: fragment_distribution
+    type: freeform
+  - description: >
+      How the target disk image is situated among other files and how it must be discovered. The
+      seed has a single .dat image at a fixed deep path under /app/varsea. The same skill must also
+      handle: multiple decoy disk images with similar names, images hidden inside archives, images
+      with non-standard extensions, images hinted at by configuration or log files, images that
+      require mounting or filesystem analysis before fragment extraction.
+    name: disk_image_context
+    type: freeform
+  - description: >
+      What partial information is given about the password to constrain candidate generation. The
+      seed provides a known prefix, suffix, exact length, and character set (uppercase + digits).
+      The same skill must also handle: only prefix known, only suffix known, a known hash the
+      password must match, known character positions (e.g., "character 5 is X"), a known length
+      range instead of exact length, a known checksum or parity constraint.
+    name: password_constraints
+    type: freeform

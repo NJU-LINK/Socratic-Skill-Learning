@@ -1,0 +1,14 @@
+Development Notes - March 2026
+
+TODO:
+- Update the authentication module to support OAuth2
+- Fix the memory leak in the data processing pipeline
+- Write unit tests for the new API endpoints
+
+DONE:
+- Migrated database from PostgreSQL 14 to 16
+- Added request rate limiting middleware
+- Implemented structured logging with JSON format
+
+The production deployment is scheduled for next week.
+Remember to rotate the API keys before going live.

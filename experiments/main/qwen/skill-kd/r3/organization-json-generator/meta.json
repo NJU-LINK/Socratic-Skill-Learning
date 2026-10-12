@@ -1,0 +1,91 @@
+{
+  "method": "skill-kd",
+  "round": 3,
+  "family": "organization-json-generator",
+  "stats": {
+    "skill_formation": {
+      "0000-student_initial-c519d033": {
+        "records": 24
+      },
+      "0001-student_initial-99a8b7a4": {
+        "records": 22
+      },
+      "0002-round_00-student_retry-3ec1a34b": {
+        "records": 24
+      },
+      "0002-student_initial-921cbcbf": {
+        "records": 22
+      },
+      "0002-teacher-f57a661d": {
+        "records": 23
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 29,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 25,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 23,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 33,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 27,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 23,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 25,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 29,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 115,
+    "train": 0,
+    "heldout": 214,
+    "heldoutVariants": 8,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

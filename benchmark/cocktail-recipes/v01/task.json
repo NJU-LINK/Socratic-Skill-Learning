@@ -1,0 +1,28 @@
+{
+  "description": "Extract the recipe for Negroni from the reference text. All ingredient amounts are missing \u2014 determine them from the description.",
+  "recipe": {
+    "name": "Negroni",
+    "glass": "old-fashioned",
+    "category": "Before Dinner Cocktail",
+    "ingredients": [
+      {
+        "unit": null,
+        "amount": null,
+        "ingredient": "Gin"
+      },
+      {
+        "unit": null,
+        "amount": null,
+        "ingredient": "Campari"
+      },
+      {
+        "unit": null,
+        "amount": null,
+        "ingredient": "Vermouth",
+        "label": "Sweet red vermouth"
+      }
+    ],
+    "garnish": "Half an orange slice",
+    "preparation": "Build into old-fashioned glass filled with ice. Stir gently."
+  }
+}

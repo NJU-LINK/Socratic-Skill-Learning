@@ -1,0 +1,7 @@
+provider:
+  id: dashscope
+  studentModel: qwen3.7-plus
+  teacherModel: qwen3.7-max
+  contextWindow: 1000000
+  maxCompletionTokens: 65536
+  thinkingEnabled: true

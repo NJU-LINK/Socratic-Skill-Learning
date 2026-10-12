@@ -1,0 +1,71 @@
+{
+  "method": "skill-kd",
+  "round": 1,
+  "family": "financial-analysis",
+  "stats": {
+    "skill_formation": {
+      "0000-student_initial-eaf02908": {
+        "records": 20
+      },
+      "0001-student_initial-3c3ee29b": {
+        "records": 18
+      },
+      "0002-student_initial-c49d3a22": {
+        "records": 20
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 20,
+        "score": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 17,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 16,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 17,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 20,
+        "score": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 17,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 58,
+    "train": 0,
+    "heldout": 107,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

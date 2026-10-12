@@ -1,0 +1,7 @@
+provider:
+  id: openai-compatible
+  studentModel: your-student-model
+  teacherModel: your-teacher-model
+  contextWindow: 200000
+  maxCompletionTokens: 32768
+  thinkingEnabled: true

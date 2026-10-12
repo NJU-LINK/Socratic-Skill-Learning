@@ -1,0 +1,30 @@
+[
+  {
+    "id": 201,
+    "full_name": "Alice Ng",
+    "email": "alice@north.example",
+    "registration_date": "2024-03-01",
+    "status": "active"
+  },
+  {
+    "id": 202,
+    "full_name": "Bruno Diaz",
+    "email": "bruno@north.example",
+    "registration_date": "2024-03-05",
+    "status": "inactive"
+  },
+  {
+    "id": 203,
+    "full_name": "Carla Ruiz",
+    "email": "carla@central.example",
+    "registration_date": "2024-03-08",
+    "status": "active"
+  },
+  {
+    "id": 206,
+    "full_name": "Farah Ali",
+    "email": "farah@hq.example",
+    "registration_date": "2024-03-18",
+    "status": "inactive"
+  }
+]

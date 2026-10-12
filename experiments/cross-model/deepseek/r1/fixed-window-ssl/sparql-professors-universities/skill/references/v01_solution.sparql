@@ -1,0 +1,18 @@
+PREFIX uni: <http://university.org/ontology#>
+
+SELECT ?professorName ?universityName
+WHERE {
+  {
+    SELECT DISTINCT ?person ?university
+    WHERE {
+      ?person uni:role ?role .
+      FILTER(CONTAINS(LCASE(?role), "professor"))
+      ?person uni:worksAt ?department .
+      ?department uni:partOfUniversity ?university .
+      ?university a uni:University .
+    }
+  }
+  ?person uni:hasName ?professorName .
+  ?university uni:hasName ?universityName .
+}
+ORDER BY ?professorName ?universityName

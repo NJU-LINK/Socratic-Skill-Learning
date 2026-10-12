@@ -1,0 +1,26 @@
+instruction: |-
+  Apple (AAPL) daily prices are in /app/aapl_prices.csv.
+
+  Calculate the 14-period Relative Strength Index using Wilder smoothing:
+  - changes are differences between consecutive Close values;
+  - output N/A for the first 14 observations;
+  - at observation 15, seed average gain and average loss with the arithmetic
+    means of the preceding 14 nonnegative gains and losses;
+  - thereafter update each average as
+    (previous_average * 13 + current_gain_or_loss) / 14;
+  - RSI = 100 - 100/(1 + AvgGain/AvgLoss), or 100 when AvgLoss is zero.
+
+  Keep intermediate averages at full precision. Write /app/results.csv with
+  columns date,close,rsi14 and round displayed RSI values to 2 decimal places.
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - technical-analysis
+  - rsi
+  - momentum
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

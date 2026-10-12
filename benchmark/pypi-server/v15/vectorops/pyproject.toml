@@ -1,0 +1,11 @@
+[build-system]
+requires = []
+build-backend = "backend"
+backend-path = ["."]
+
+[project]
+name = "vectorops"
+version = "0.1.0"
+description = "Vector operations package"
+authors = [{name = "Task Author"}]
+readme = "README.md"

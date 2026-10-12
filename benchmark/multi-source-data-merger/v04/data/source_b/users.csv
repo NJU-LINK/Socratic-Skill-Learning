@@ -1,0 +1,7 @@
+member_id,preferred_name,contact_email,created_on,status_text
+201,,mila@b.example,,inactive
+202,Noah R.,noah@b.example,2024.02.11,ACTIVE
+203,Zuri Lane,,2024-03-14T08:30:00," Active "
+204,,priya@b.example,2024-04-21,
+205,Luca S.,,2024/05/16,inactive
+206,Evan Cole,evan@b.example,2024-06-01,active

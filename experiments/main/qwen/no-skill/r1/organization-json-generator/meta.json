@@ -1,0 +1,75 @@
+{
+  "method": "no-skill",
+  "round": 1,
+  "family": "organization-json-generator",
+  "stats": {
+    "skill_formation": {},
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 22,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 20,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 28,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 25,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 26,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 22,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 25,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 44,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 0,
+    "train": 0,
+    "heldout": 212,
+    "heldoutVariants": 8,
+    "heldoutEmpty": 0,
+    "noSkillFormation": true
+  }
+}

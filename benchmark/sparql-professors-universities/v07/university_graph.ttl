@@ -1,0 +1,496 @@
+@prefix uni: <http://university.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ---------------------------
+# Universities
+# ---------------------------
+uni:AuroraTechnicalUniversity a uni:University ;
+    uni:hasName "Aurora Technical University" ;
+    uni:locatedInCountry "SE" .
+
+uni:BalticInstituteOfTechnology a uni:University ;
+    uni:hasName "Baltic Institute of Technology" ;
+    uni:locatedInCountry "FI" .
+
+uni:CascadiaStateUniversity a uni:University ;
+    uni:hasName "Cascadia State University" ;
+    uni:locatedInCountry "US" .
+
+uni:DanubeResearchUniversity a uni:University ;
+    uni:hasName "Danube Research University" ;
+    uni:locatedInCountry "AT" .
+
+uni:HeliosPolytechnic a uni:University ;
+    uni:hasName "Helios Polytechnic" ;
+    uni:locatedInCountry "GR" .
+
+uni:MeridianUniversity a uni:University ;
+    uni:hasName "Meridian University" ;
+    uni:locatedInCountry "NL" .
+
+uni:NorthbridgeUniversity a uni:University ;
+    uni:hasName "Northbridge University" ;
+    uni:locatedInCountry "CA" .
+
+uni:RedwoodInstituteOfScience a uni:University ;
+    uni:hasName "Redwood Institute of Science" ;
+    uni:locatedInCountry "US" .
+
+# ---------------------------
+# Departments
+# ---------------------------
+uni:ComputerScience_ATU a uni:Department ;
+    uni:hasName "Department of Computer Science" ;
+    uni:partOfUniversity uni:AuroraTechnicalUniversity .
+
+uni:Mathematics_BIT a uni:Department ;
+    uni:hasName "Department of Mathematics" ;
+    uni:partOfUniversity uni:BalticInstituteOfTechnology .
+
+uni:MarineSystems_BIT a uni:Department ;
+    uni:hasName "Department of Marine Systems" ;
+    uni:partOfUniversity uni:BalticInstituteOfTechnology .
+
+uni:Physics_CSU a uni:Department ;
+    uni:hasName "Department of Physics" ;
+    uni:partOfUniversity uni:CascadiaStateUniversity .
+
+uni:PublicPolicy_DRU a uni:Department ;
+    uni:hasName "School of Public Policy" ;
+    uni:partOfUniversity uni:DanubeResearchUniversity .
+
+uni:Economics_DRU a uni:Department ;
+    uni:hasName "Department of Economics" ;
+    uni:partOfUniversity uni:DanubeResearchUniversity .
+
+uni:Materials_HP a uni:Department ;
+    uni:hasName "Department of Materials Engineering" ;
+    uni:partOfUniversity uni:HeliosPolytechnic .
+
+uni:Biology_NU a uni:Department ;
+    uni:hasName "Department of Biology" ;
+    uni:partOfUniversity uni:NorthbridgeUniversity .
+
+uni:Sociology_MU a uni:Department ;
+    uni:hasName "Department of Sociology" ;
+    uni:partOfUniversity uni:MeridianUniversity .
+
+uni:Linguistics_MU a uni:Department ;
+    uni:hasName "Department of Linguistics" ;
+    uni:partOfUniversity uni:MeridianUniversity .
+
+uni:AI_RIS a uni:Department ;
+    uni:hasName "School of Artificial Intelligence" ;
+    uni:partOfUniversity uni:RedwoodInstituteOfScience .
+
+# ---------------------------
+# Institutes
+# ---------------------------
+uni:DataScienceInstitute_ATU a uni:Institute ;
+    uni:hasName "Data Science Institute" ;
+    uni:belongsToUniversity uni:AuroraTechnicalUniversity .
+
+uni:QuantumSystemsInstitute_CSU a uni:Institute ;
+    uni:hasName "Quantum Systems Institute" ;
+    uni:belongsToUniversity uni:CascadiaStateUniversity .
+
+uni:AdvancedMaterialsInstitute_HP a uni:Institute ;
+    uni:hasName "Advanced Materials Institute" ;
+    uni:belongsToUniversity uni:HeliosPolytechnic .
+
+uni:DigitalSocietyInstitute_MU a uni:Institute ;
+    uni:hasName "Digital Society Institute" ;
+    uni:belongsToUniversity uni:MeridianUniversity .
+
+uni:ClimateInstitute_NU a uni:Institute ;
+    uni:hasName "Climate Informatics Institute" ;
+    uni:belongsToUniversity uni:NorthbridgeUniversity .
+
+uni:ComputationInstitute_RIS a uni:Institute ;
+    uni:hasName "Institute for Computation" ;
+    uni:belongsToUniversity uni:RedwoodInstituteOfScience .
+
+# ---------------------------
+# Research Centers
+# ---------------------------
+uni:RoboticsCenter_ATU a uni:ResearchCenter ;
+    uni:hasName "Center for Robotics and Adaptive Systems" ;
+    uni:hostedByUniversity uni:AuroraTechnicalUniversity .
+
+uni:BioDesignCenter_BIT a uni:ResearchCenter ;
+    uni:hasName "BioDesign and Coastal Analytics Center" ;
+    uni:hostedByUniversity uni:BalticInstituteOfTechnology .
+
+uni:PhotonicsCenter_CSU a uni:ResearchCenter ;
+    uni:hasName "Photonics and Quantum Networks Center" ;
+    uni:hostedByUniversity uni:CascadiaStateUniversity .
+
+uni:RiverSystemsCenter_DRU a uni:ResearchCenter ;
+    uni:hasName "River Systems Data Center" ;
+    uni:hostedByUniversity uni:DanubeResearchUniversity .
+
+uni:SolarFuturesCenter_HP a uni:ResearchCenter ;
+    uni:hasName "Solar Futures Research Center" ;
+    uni:hostedByUniversity uni:HeliosPolytechnic .
+
+uni:CivicDataCenter_MU a uni:ResearchCenter ;
+    uni:hasName "Civic Data and Institutions Center" ;
+    uni:hostedByUniversity uni:MeridianUniversity .
+
+uni:GenomicsCenter_NU a uni:ResearchCenter ;
+    uni:hasName "Genomics and Resilient Health Center" ;
+    uni:hostedByUniversity uni:NorthbridgeUniversity .
+
+uni:VisionCenter_RIS a uni:ResearchCenter ;
+    uni:hasName "Vision and Robotics Center" ;
+    uni:hostedByUniversity uni:RedwoodInstituteOfScience .
+
+# ---------------------------
+# Courses
+# ---------------------------
+uni:DistributedSystems101 a uni:Course ;
+    uni:isTaughtIn uni:ComputerScience_ATU .
+
+uni:AppliedAI201 a uni:Course ;
+    uni:isTaughtIn uni:ComputerScience_ATU .
+
+uni:MarineMath210 a uni:Course ;
+    uni:isTaughtIn uni:Mathematics_BIT .
+
+uni:CoastalModeling220 a uni:Course ;
+    uni:isTaughtIn uni:MarineSystems_BIT .
+
+uni:QuantumPhysics301 a uni:Course ;
+    uni:isTaughtIn uni:Physics_CSU .
+
+uni:QuantumSystems320 a uni:Course ;
+    uni:isTaughtIn uni:Physics_CSU .
+
+uni:PolicyAnalytics330 a uni:Course ;
+    uni:isTaughtIn uni:PublicPolicy_DRU .
+
+uni:EconomicNetworks340 a uni:Course ;
+    uni:isTaughtIn uni:Economics_DRU .
+
+uni:Materials410 a uni:Course ;
+    uni:isTaughtIn uni:Materials_HP .
+
+uni:SustainableManufacturing420 a uni:Course ;
+    uni:isTaughtIn uni:Materials_HP .
+
+uni:CompBio430 a uni:Course ;
+    uni:isTaughtIn uni:Biology_NU .
+
+uni:ClimateData440 a uni:Course ;
+    uni:isTaughtIn uni:Biology_NU .
+
+uni:CivicData450 a uni:Course ;
+    uni:isTaughtIn uni:Sociology_MU .
+
+uni:LanguageAndSociety460 a uni:Course ;
+    uni:isTaughtIn uni:Linguistics_MU .
+
+uni:MachineVision470 a uni:Course ;
+    uni:isTaughtIn uni:AI_RIS .
+
+uni:RoboticPerception480 a uni:Course ;
+    uni:isTaughtIn uni:AI_RIS .
+
+# ---------------------------
+# Professors
+# ---------------------------
+uni:Elena_Marku a uni:Person ;
+    uni:hasName "Elena Marku" ;
+    uni:role "Professor of Distributed Systems" ;
+    uni:teaches uni:DistributedSystems101 ;
+    uni:worksAt uni:ComputerScience_ATU , uni:DataScienceInstitute_ATU ;
+    uni:memberOfResearchCenter uni:RoboticsCenter_ATU .
+
+uni:Nikhil_Rao a uni:Person ;
+    uni:hasName "Nikhil Rao" ;
+    uni:role "Assistant Professor in Applied AI" ;
+    uni:teaches uni:AppliedAI201 ;
+    uni:worksAt uni:DataScienceInstitute_ATU ;
+    uni:memberOfResearchCenter uni:RoboticsCenter_ATU .
+
+uni:Sofia_Lind a uni:Person ;
+    uni:hasName "Sofia Lind" ;
+    uni:role "Full Professor of Marine Mathematics" ;
+    uni:teaches uni:MarineMath210 ;
+    uni:worksAt uni:Mathematics_BIT ;
+    uni:memberOfResearchCenter uni:BioDesignCenter_BIT .
+
+uni:Pavel_Sidorov a uni:Person ;
+    uni:hasName "Pavel Sidorov" ;
+    uni:role "Assistant Professor of Coastal Modeling" ;
+    uni:teaches uni:CoastalModeling220 ;
+    uni:worksAt uni:MarineSystems_BIT ;
+    uni:memberOfResearchCenter uni:BioDesignCenter_BIT .
+
+uni:Maya_Chen a uni:Person ;
+    uni:hasName "Maya Chen" ;
+    uni:role "Professor, Department of Physics" ;
+    uni:teaches uni:QuantumPhysics301 ;
+    uni:worksAt uni:Physics_CSU , uni:QuantumSystemsInstitute_CSU ;
+    uni:memberOfResearchCenter uni:PhotonicsCenter_CSU .
+
+uni:Jonas_Weber a uni:Person ;
+    uni:hasName "Jonas Weber" ;
+    uni:role "Assistant Professor of Quantum Systems" ;
+    uni:teaches uni:QuantumSystems320 ;
+    uni:worksAt uni:QuantumSystemsInstitute_CSU ;
+    uni:memberOfResearchCenter uni:PhotonicsCenter_CSU .
+
+uni:Iris_Novak a uni:Person ;
+    uni:hasName "Iris Novak" ;
+    uni:role "Professor of Public Policy Analytics" ;
+    uni:teaches uni:PolicyAnalytics330 ;
+    uni:worksAt uni:PublicPolicy_DRU ;
+    uni:memberOfResearchCenter uni:RiverSystemsCenter_DRU .
+
+uni:Tomasz_Zielinski a uni:Person ;
+    uni:hasName "Tomasz Zielinski" ;
+    uni:role "Assistant Professor in Economic Networks" ;
+    uni:teaches uni:EconomicNetworks340 ;
+    uni:worksAt uni:Economics_DRU ;
+    uni:memberOfResearchCenter uni:RiverSystemsCenter_DRU .
+
+uni:Leila_Haddad a uni:Person ;
+    uni:hasName "Leila Haddad" ;
+    uni:role "Full Professor of Materials Engineering" ;
+    uni:teaches uni:Materials410 ;
+    uni:worksAt uni:Materials_HP , uni:AdvancedMaterialsInstitute_HP ;
+    uni:memberOfResearchCenter uni:SolarFuturesCenter_HP .
+
+uni:Ana_Costa a uni:Person ;
+    uni:hasName "Ana Costa" ;
+    uni:role "Assistant Professor of Sustainable Manufacturing" ;
+    uni:teaches uni:SustainableManufacturing420 ;
+    uni:worksAt uni:AdvancedMaterialsInstitute_HP ;
+    uni:memberOfResearchCenter uni:SolarFuturesCenter_HP .
+
+uni:Renee_Brooks a uni:Person ;
+    uni:hasName "Renee Brooks" ;
+    uni:role "Professor of Computational Biology" ;
+    uni:teaches uni:CompBio430 ;
+    uni:worksAt uni:Biology_NU ;
+    uni:memberOfResearchCenter uni:GenomicsCenter_NU .
+
+uni:Victor_Stein a uni:Person ;
+    uni:hasName "Victor Stein" ;
+    uni:role "Assistant Professor of Climate Informatics" ;
+    uni:teaches uni:ClimateData440 ;
+    uni:worksAt uni:ClimateInstitute_NU ;
+    uni:memberOfResearchCenter uni:GenomicsCenter_NU .
+
+uni:Camila_Ortiz a uni:Person ;
+    uni:hasName "Camila Ortiz" ;
+    uni:role "Professor of Civic Data Science" ;
+    uni:teaches uni:CivicData450 ;
+    uni:worksAt uni:Sociology_MU , uni:DigitalSocietyInstitute_MU ;
+    uni:memberOfResearchCenter uni:CivicDataCenter_MU .
+
+uni:Owen_Hart a uni:Person ;
+    uni:hasName "Owen Hart" ;
+    uni:role "Assistant Professor of Linguistics and Society" ;
+    uni:teaches uni:LanguageAndSociety460 ;
+    uni:worksAt uni:Linguistics_MU ;
+    uni:memberOfResearchCenter uni:CivicDataCenter_MU .
+
+uni:Priya_Desai a uni:Person ;
+    uni:hasName "Priya Desai" ;
+    uni:role "Professor of Machine Vision" ;
+    uni:teaches uni:MachineVision470 ;
+    uni:worksAt uni:AI_RIS , uni:ComputationInstitute_RIS ;
+    uni:memberOfResearchCenter uni:VisionCenter_RIS .
+
+uni:Leo_Martinez a uni:Person ;
+    uni:hasName "Leo Martinez" ;
+    uni:role "Assistant Professor for Data-Centric Robotics" ;
+    uni:teaches uni:RoboticPerception480 ;
+    uni:worksAt uni:ComputationInstitute_RIS ;
+    uni:memberOfResearchCenter uni:VisionCenter_RIS .
+
+# ---------------------------
+# Other employees and distractors
+# ---------------------------
+uni:Hannah_Cole a uni:Person ;
+    uni:hasName "Hannah Cole" ;
+    uni:role "Lecturer in Distributed Systems" ;
+    uni:worksAt uni:ComputerScience_ATU .
+
+uni:Noor_Ibrahim a uni:Person ;
+    uni:hasName "Noor Ibrahim" ;
+    uni:role "Research Scientist" ;
+    uni:worksAt uni:DataScienceInstitute_ATU ;
+    uni:memberOfResearchCenter uni:RoboticsCenter_ATU .
+
+uni:Peter_Lang a uni:Person ;
+    uni:hasName "Peter Lang" ;
+    uni:role "Professor's Assistant for Lab Operations" ;
+    uni:worksAt uni:Physics_CSU .
+
+uni:Julia_Meyer a uni:Person ;
+    uni:hasName "Julia Meyer" ;
+    uni:role "Associate Dean for Science" ;
+    uni:worksAt uni:QuantumSystemsInstitute_CSU .
+
+uni:Diego_Alvarez a uni:Person ;
+    uni:hasName "Diego Alvarez" ;
+    uni:role "Visiting Scholar" ;
+    uni:worksAt uni:PublicPolicy_DRU ;
+    uni:memberOfResearchCenter uni:RiverSystemsCenter_DRU .
+
+uni:Marta_Silva a uni:Person ;
+    uni:hasName "Marta Silva" ;
+    uni:role "Teaching Fellow" ;
+    uni:worksAt uni:AdvancedMaterialsInstitute_HP .
+
+uni:Grace_Kim a uni:Person ;
+    uni:hasName "Grace Kim" ;
+    uni:role "Postdoctoral Researcher" ;
+    uni:worksAt uni:Biology_NU ;
+    uni:memberOfResearchCenter uni:GenomicsCenter_NU .
+
+uni:Lena_Fischer a uni:Person ;
+    uni:hasName "Lena Fischer" ;
+    uni:role "Program Manager" ;
+    uni:worksAt uni:DigitalSocietyInstitute_MU ;
+    uni:memberOfResearchCenter uni:CivicDataCenter_MU .
+
+uni:Samir_Patel a uni:Person ;
+    uni:hasName "Samir Patel" ;
+    uni:role "Senior Research Engineer" ;
+    uni:worksAt uni:AI_RIS ;
+    uni:memberOfResearchCenter uni:VisionCenter_RIS .
+
+uni:Ava_Johnson a uni:Person ;
+    uni:hasName "Ava Johnson" ;
+    uni:role "Adjunct Lecturer in Computer Vision" ;
+    uni:worksAt uni:AI_RIS .
+
+uni:Nora_Bell a uni:Person ;
+    uni:hasName "Nora Bell" ;
+    uni:role "Student Advisor" ;
+    uni:worksAt uni:Linguistics_MU .
+
+uni:Ethan_Reed a uni:Person ;
+    uni:hasName "Ethan Reed" ;
+    uni:role "Lab Coordinator" ;
+    uni:worksAt uni:ComputationInstitute_RIS ;
+    uni:memberOfResearchCenter uni:VisionCenter_RIS .
+
+# ---------------------------
+# Students
+# ---------------------------
+uni:Student01 a uni:Person ;
+    uni:hasName "Alice Nguyen" ;
+    uni:role "Student" .
+
+uni:Student02 a uni:Person ;
+    uni:hasName "Bruno Keller" ;
+    uni:role "Student" .
+
+uni:Student03 a uni:Person ;
+    uni:hasName "Carla Mendez" ;
+    uni:role "Student" .
+
+uni:Student04 a uni:Person ;
+    uni:hasName "Darius Novak" ;
+    uni:role "Student" .
+
+uni:Student05 a uni:Person ;
+    uni:hasName "Eva Petrov" ;
+    uni:role "Student" .
+
+uni:Student06 a uni:Person ;
+    uni:hasName "Farah Yilmaz" ;
+    uni:role "Student" .
+
+uni:Student07 a uni:Person ;
+    uni:hasName "Gavin Ross" ;
+    uni:role "Student" .
+
+uni:Student08 a uni:Person ;
+    uni:hasName "Helena Costa" ;
+    uni:role "Student" .
+
+uni:Student09 a uni:Person ;
+    uni:hasName "Ivan Horvat" ;
+    uni:role "Student" .
+
+uni:Student10 a uni:Person ;
+    uni:hasName "Jade Laurent" ;
+    uni:role "Student" .
+
+uni:Student11 a uni:Person ;
+    uni:hasName "Khalid Omar" ;
+    uni:role "Student" .
+
+uni:Student12 a uni:Person ;
+    uni:hasName "Lina Svensson" ;
+    uni:role "Student" .
+
+uni:Student13 a uni:Person ;
+    uni:hasName "Mateo Silva" ;
+    uni:role "Student" .
+
+uni:Student14 a uni:Person ;
+    uni:hasName "Nina Bauer" ;
+    uni:role "Student" .
+
+uni:Student15 a uni:Person ;
+    uni:hasName "Omar Hassan" ;
+    uni:role "Student" .
+
+uni:Student16 a uni:Person ;
+    uni:hasName "Paula Romero" ;
+    uni:role "Student" .
+
+uni:Student01 uni:isEnrolledIn uni:DistributedSystems101, uni:AppliedAI201 ;
+    uni:hasEnrollmentDate "2024-01-12"^^xsd:date .
+
+uni:Student02 uni:isEnrolledIn uni:DistributedSystems101, uni:MarineMath210 ;
+    uni:hasEnrollmentDate "2024-01-15"^^xsd:date .
+
+uni:Student03 uni:isEnrolledIn uni:MarineMath210, uni:CoastalModeling220 ;
+    uni:hasEnrollmentDate "2024-01-17"^^xsd:date .
+
+uni:Student04 uni:isEnrolledIn uni:QuantumPhysics301, uni:QuantumSystems320 ;
+    uni:hasEnrollmentDate "2024-01-18"^^xsd:date .
+
+uni:Student05 uni:isEnrolledIn uni:PolicyAnalytics330, uni:EconomicNetworks340 ;
+    uni:hasEnrollmentDate "2024-01-20"^^xsd:date .
+
+uni:Student06 uni:isEnrolledIn uni:Materials410, uni:SustainableManufacturing420 ;
+    uni:hasEnrollmentDate "2024-01-21"^^xsd:date .
+
+uni:Student07 uni:isEnrolledIn uni:CompBio430, uni:ClimateData440 ;
+    uni:hasEnrollmentDate "2024-01-22"^^xsd:date .
+
+uni:Student08 uni:isEnrolledIn uni:CivicData450, uni:LanguageAndSociety460 ;
+    uni:hasEnrollmentDate "2024-01-23"^^xsd:date .
+
+uni:Student09 uni:isEnrolledIn uni:MachineVision470, uni:RoboticPerception480 ;
+    uni:hasEnrollmentDate "2024-01-24"^^xsd:date .
+
+uni:Student10 uni:isEnrolledIn uni:AppliedAI201, uni:QuantumSystems320, uni:CivicData450 ;
+    uni:hasEnrollmentDate "2024-01-25"^^xsd:date .
+
+uni:Student11 uni:isEnrolledIn uni:CoastalModeling220, uni:PolicyAnalytics330 ;
+    uni:hasEnrollmentDate "2024-01-26"^^xsd:date .
+
+uni:Student12 uni:isEnrolledIn uni:SustainableManufacturing420, uni:ClimateData440 ;
+    uni:hasEnrollmentDate "2024-01-27"^^xsd:date .
+
+uni:Student13 uni:isEnrolledIn uni:LanguageAndSociety460, uni:MachineVision470 ;
+    uni:hasEnrollmentDate "2024-01-28"^^xsd:date .
+
+uni:Student14 uni:isEnrolledIn uni:DistributedSystems101, uni:PolicyAnalytics330, uni:Materials410 ;
+    uni:hasEnrollmentDate "2024-01-29"^^xsd:date .
+
+uni:Student15 uni:isEnrolledIn uni:CompBio430, uni:RoboticPerception480 ;
+    uni:hasEnrollmentDate "2024-01-30"^^xsd:date .
+
+uni:Student16 uni:isEnrolledIn uni:MarineMath210, uni:CivicData450, uni:MachineVision470 ;
+    uni:hasEnrollmentDate "2024-02-02"^^xsd:date .

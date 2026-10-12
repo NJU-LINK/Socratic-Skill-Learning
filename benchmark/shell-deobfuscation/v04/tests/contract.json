@@ -1,0 +1,6 @@
+{
+  "side_effect_paths": ["/tmp/env_dump.txt"],
+  "minimum_input_bytes": 10000,
+  "required_input_markers": ["v_dcoy_0", "layer_7", "gzip -dc"],
+  "forbidden_plaintext_markers": ["Collecting environment data"]
+}

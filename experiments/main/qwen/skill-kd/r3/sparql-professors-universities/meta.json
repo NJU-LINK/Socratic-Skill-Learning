@@ -1,0 +1,99 @@
+{
+  "method": "skill-kd",
+  "round": 3,
+  "family": "sparql-professors-universities",
+  "stats": {
+    "skill_formation": {
+      "0000-student_initial-6c58c7b2": {
+        "records": 21
+      },
+      "0001-student_initial-9e44bf49": {
+        "records": 21
+      },
+      "0002-student_initial-9ce53676": {
+        "records": 29
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v03": {
+        "records": 29,
+        "score": 0.8571428571428571,
+        "passed": 6,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 36,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 17,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 38,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 17,
+        "score": 0.7777777777777778,
+        "passed": 7,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 19,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 29,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 22,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 25,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 25,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 71,
+    "train": 0,
+    "heldout": 257,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

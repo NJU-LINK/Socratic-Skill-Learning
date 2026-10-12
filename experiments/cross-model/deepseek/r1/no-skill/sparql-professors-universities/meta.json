@@ -1,0 +1,43 @@
+{
+  "model": "deepseek",
+  "method": "no-skill",
+  "round": 1,
+  "family": "sparql-professors-universities",
+  "stats": {
+    "heldout": {
+      "v03": {
+        "records": 18
+      },
+      "v04": {
+        "records": 68
+      },
+      "v05": {
+        "records": 18
+      },
+      "v07": {
+        "records": 16
+      },
+      "v08": {
+        "records": 16
+      },
+      "v09": {
+        "records": 15
+      },
+      "v10": {
+        "records": 19
+      },
+      "v11": {
+        "records": 32
+      },
+      "v12": {
+        "records": 15
+      },
+      "v16": {
+        "records": 15
+      }
+    }
+  },
+  "totals": {
+    "records": 232
+  }
+}

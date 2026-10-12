@@ -1,0 +1,71 @@
+{
+  "method": "skill-kd",
+  "round": 2,
+  "family": "html-finance-verify",
+  "stats": {
+    "skill_formation": {
+      "0000-student_initial-81be0c25": {
+        "records": 11
+      },
+      "0001-student_initial-7301b64c": {
+        "records": 9
+      },
+      "0002-student_initial-52625b57": {
+        "records": 11
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v05": {
+        "records": 25,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 13,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 13,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 15,
+        "score": 0.3333333333333333,
+        "passed": 1,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 15,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 15,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 31,
+    "train": 0,
+    "heldout": 96,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

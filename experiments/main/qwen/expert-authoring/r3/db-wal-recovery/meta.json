@@ -1,0 +1,82 @@
+{
+  "method": "expert-authoring",
+  "round": 3,
+  "family": "db-wal-recovery",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 172
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 21
+      },
+      "iteration-2": {
+        "records": 19
+      },
+      "iteration-3": {
+        "records": 15
+      }
+    },
+    "heldout": {
+      "v05": {
+        "records": 23,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 15,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 25,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 96,
+        "score": 0,
+        "passed": 0,
+        "failed": 0,
+        "timedOut": true
+      },
+      "v11": {
+        "records": 40,
+        "score": 0.9285714285714286,
+        "passed": 13,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 27,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 21,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 172,
+    "train": 55,
+    "heldout": 247,
+    "heldoutVariants": 7,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

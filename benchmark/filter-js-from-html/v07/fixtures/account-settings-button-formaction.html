@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Account Settings</title>
+</head>
+<body class="settings-page">
+  <main class="settings-layout two-column">
+    <section class="card profile-card">
+      <h1>Account Settings</h1>
+      <form action="/account/settings" method="post" class="settings-form dense" data-owner="self-service">
+        <label for="display-name">Display name</label>
+        <input id="display-name" name="display_name" type="text" value="marin.dev" class="control control-text">
+
+        <label for="email-notes">Email preferences</label>
+        <textarea id="email-notes" name="email_notes" class="control control-area">Send billing reminders only.</textarea>
+
+        <div class="button-row" data-align="end">
+          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="submit" class="btn btn-secondary" formaction="javascript:alert('export-profile')" formmethod="post">Export profile</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

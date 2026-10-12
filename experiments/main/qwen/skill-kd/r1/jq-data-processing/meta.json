@@ -1,0 +1,84 @@
+{
+  "method": "skill-kd",
+  "round": 1,
+  "family": "jq-data-processing",
+  "stats": {
+    "skill_formation": {
+      "0000-student_initial-05d16eb5": {
+        "records": 53
+      },
+      "0001-student_initial-9ff1c7fa": {
+        "records": 45
+      },
+      "0002-round_00-student_retry-c85a2168": {
+        "records": 65
+      },
+      "0002-student_initial-f67adbdf": {
+        "records": 79
+      },
+      "0002-teacher-0a18c2b7": {
+        "records": 69
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 51,
+        "score": 0.9375,
+        "passed": 15,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 44,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 88,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 37,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 36,
+        "score": 0.9230769230769231,
+        "passed": 12,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 29,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 29,
+        "score": 0.9,
+        "passed": 9,
+        "failed": 1,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 311,
+    "train": 0,
+    "heldout": 314,
+    "heldoutVariants": 7,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

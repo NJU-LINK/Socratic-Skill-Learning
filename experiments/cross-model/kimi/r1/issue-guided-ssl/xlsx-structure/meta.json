@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "issue-guided-ssl",
+  "round": 1,
+  "family": "xlsx-structure",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 36
+      },
+      "student-author": {
+        "records": 178
+      }
+    }
+  },
+  "totals": {
+    "records": 214
+  }
+}

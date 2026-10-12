@@ -1,0 +1,235 @@
+@prefix uni: <http://university.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ---------------------------
+# Universities
+# ---------------------------
+uni:ETHZurich a uni:University ;
+    uni:hasName "ETH Zurich" ;
+    uni:locatedInCountry "CH" .
+
+uni:UPM a uni:University ;
+    uni:hasName "Universidad Politecnica de Madrid" ;
+    uni:locatedInCountry "ES" .
+
+uni:IST a uni:University ;
+    uni:hasName "Instituto Superior Tecnico" ;
+    uni:locatedInCountry "PT" .
+
+uni:NTUA a uni:University ;
+    uni:hasName "National Technical University of Athens" ;
+    uni:locatedInCountry "GR" .
+
+uni:NKUA a uni:University ;
+    uni:hasName "National and Kapodistrian University of Athens" ;
+    uni:locatedInCountry "GR" .
+
+uni:Sorbonne a uni:University ;
+    uni:hasName "Sorbonne University" ;
+    uni:locatedInCountry "FR" .
+
+uni:MIT a uni:University ;
+    uni:hasName "Massachusetts Institute of Technology" ;
+    uni:locatedInCountry "US" .
+
+uni:Berkeley a uni:University ;
+    uni:hasName "University of California, Berkeley" ;
+    uni:locatedInCountry "US" .
+
+uni:LMU a uni:University ;
+    uni:hasName "Ludwig Maximilian University of Munich" ;
+    uni:locatedInCountry "DE" .
+
+# ---------------------------
+# Campuses
+# ---------------------------
+uni:AthensCentralCampus a uni:Campus ;
+    uni:partOfUniversity uni:NTUA .
+
+uni:LisbonAlamedaCampus a uni:Campus ;
+    uni:partOfUniversity uni:IST .
+
+uni:AthensHumanitiesCampus a uni:Campus ;
+    uni:partOfUniversity uni:NKUA .
+
+uni:CambridgeLifeSciencesCampus a uni:Campus ;
+    uni:partOfUniversity uni:MIT .
+
+uni:ParisLeftBankCampus a uni:Campus ;
+    uni:partOfUniversity uni:Sorbonne .
+
+uni:MunichInnovationCampus a uni:Campus ;
+    uni:partOfUniversity uni:LMU .
+
+uni:BerkeleyNorthCampus a uni:Campus ;
+    uni:partOfUniversity uni:Berkeley .
+
+uni:MadridRoboticsCampus a uni:Campus ;
+    uni:partOfUniversity uni:UPM .
+
+uni:ZurichScienceCampus a uni:Campus ;
+    uni:partOfUniversity uni:ETHZurich .
+
+# ---------------------------
+# Faculties
+# ---------------------------
+uni:EngineeringFaculty_NTUA a uni:Faculty ;
+    uni:locatedOnCampus uni:AthensCentralCampus .
+
+uni:SciencesFaculty_IST a uni:Faculty ;
+    uni:locatedOnCampus uni:LisbonAlamedaCampus .
+
+uni:HumanitiesFaculty_NKUA a uni:Faculty ;
+    uni:locatedOnCampus uni:AthensHumanitiesCampus .
+
+uni:LifeSciencesFaculty_MIT a uni:Faculty ;
+    uni:locatedOnCampus uni:CambridgeLifeSciencesCampus .
+
+uni:MathematicsFaculty_Sorbonne a uni:Faculty ;
+    uni:locatedOnCampus uni:ParisLeftBankCampus .
+
+uni:EngineeringFaculty_LMU a uni:Faculty ;
+    uni:locatedOnCampus uni:MunichInnovationCampus .
+
+uni:EngineeringFaculty_Berkeley a uni:Faculty ;
+    uni:locatedOnCampus uni:BerkeleyNorthCampus .
+
+uni:AutomationFaculty_UPM a uni:Faculty ;
+    uni:locatedOnCampus uni:MadridRoboticsCampus .
+
+uni:PhysicsFaculty_ETH a uni:Faculty ;
+    uni:locatedOnCampus uni:ZurichScienceCampus .
+
+# ---------------------------
+# Research groups
+# ---------------------------
+uni:KnowledgeSystemsGroup a uni:ResearchGroup ;
+    uni:partOfFaculty uni:EngineeringFaculty_NTUA .
+
+uni:DiscreteModelsLab a uni:ResearchGroup ;
+    uni:partOfFaculty uni:SciencesFaculty_IST .
+
+uni:ScienceHistoryLab a uni:ResearchGroup ;
+    uni:partOfFaculty uni:HumanitiesFaculty_NKUA .
+
+uni:CellSystemsLab a uni:ResearchGroup ;
+    uni:partOfFaculty uni:LifeSciencesFaculty_MIT .
+
+uni:PureMathCircle a uni:ResearchGroup ;
+    uni:partOfFaculty uni:MathematicsFaculty_Sorbonne .
+
+uni:AdaptiveMachinesGroup a uni:ResearchGroup ;
+    uni:partOfFaculty uni:EngineeringFaculty_LMU .
+
+uni:BaySystemsLab a uni:ResearchGroup ;
+    uni:partOfFaculty uni:EngineeringFaculty_Berkeley .
+
+uni:RoboticsFieldLab a uni:ResearchGroup ;
+    uni:partOfFaculty uni:AutomationFaculty_UPM .
+
+uni:PhotonicsCircle a uni:ResearchGroup ;
+    uni:partOfFaculty uni:PhysicsFaculty_ETH .
+
+# ---------------------------
+# Courses
+# ---------------------------
+uni:CS101 a uni:Course ;
+    uni:isTaughtIn uni:KnowledgeSystemsGroup .
+
+uni:AI101 a uni:Course ;
+    uni:isTaughtIn uni:KnowledgeSystemsGroup .
+
+uni:Math101 a uni:Course ;
+    uni:isTaughtIn uni:DiscreteModelsLab .
+
+uni:Math201 a uni:Course ;
+    uni:isTaughtIn uni:PureMathCircle .
+
+uni:Physics301 a uni:Course ;
+    uni:isTaughtIn uni:PhotonicsCircle .
+
+uni:Bio101 a uni:Course ;
+    uni:isTaughtIn uni:CellSystemsLab .
+
+uni:Eng202 a uni:Course ;
+    uni:isTaughtIn uni:AdaptiveMachinesGroup .
+
+uni:EngUS302 a uni:Course ;
+    uni:isTaughtIn uni:BaySystemsLab .
+
+uni:STS101 a uni:Course ;
+    uni:isTaughtIn uni:ScienceHistoryLab .
+
+# ---------------------------
+# Professors
+# ---------------------------
+uni:Alex_Morgan a uni:Person ;
+    uni:hasName "Alex Morgan" ;
+    uni:role "Professor of Computer Science" ;
+    uni:teaches uni:CS101 ;
+    uni:worksAt uni:KnowledgeSystemsGroup .
+
+uni:Thomas_Berger a uni:Person ;
+    uni:hasName "Thomas Berger" ;
+    uni:role "Assistant Professor of Computer Science" ;
+    uni:teaches uni:CS101 ;
+    uni:worksAt uni:KnowledgeSystemsGroup .
+
+uni:Felix_Wagner a uni:Person ;
+    uni:hasName "Felix Wagner" ;
+    uni:role "Professor of Mathematics" ;
+    uni:teaches uni:Math101 , uni:AI101 ;
+    uni:worksAt uni:DiscreteModelsLab .
+
+uni:Martin_Keller a uni:Person ;
+    uni:hasName "Martin Keller" ;
+    uni:role "Professor of History of Scienceand Technology" ;
+    uni:teaches uni:STS101 ;
+    uni:worksAt uni:ScienceHistoryLab .
+
+uni:John_Smith a uni:Person ;
+    uni:hasName "John Smith" ;
+    uni:role "Professor of Biology" ;
+    uni:teaches uni:Bio101 ;
+    uni:worksAt uni:CellSystemsLab .
+
+uni:Marie_Dubois a uni:Person ;
+    uni:hasName "Marie Dubois" ;
+    uni:role "Professor of Mathematics" ;
+    uni:teaches uni:Math201 ;
+    uni:worksAt uni:PureMathCircle .
+
+uni:Stefan_Mueller a uni:Person ;
+    uni:hasName "Stefan Mueller" ;
+    uni:role "Assistant Professor of Engineering" ;
+    uni:teaches uni:Eng202 ;
+    uni:worksAt uni:AdaptiveMachinesGroup .
+
+uni:Jane_Petterson a uni:Person ;
+    uni:hasName "Jane Petterson" ;
+    uni:role "Lecturer" ;
+    uni:worksAt uni:BaySystemsLab .
+
+# ---------------------------
+# Other staff and students
+# ---------------------------
+uni:Student1 a uni:Person ;
+    uni:hasName "Sophia Muller" ;
+    uni:role "Student" .
+
+uni:Student2 a uni:Person ;
+    uni:hasName "Luca Rossi" ;
+    uni:role "Student" .
+
+uni:Student3 a uni:Person ;
+    uni:hasName "Emma Garcia" ;
+    uni:role "Student" .
+
+uni:Student1 uni:isEnrolledIn uni:CS101, uni:Bio101, uni:STS101, uni:EngUS302 ;
+    uni:hasEnrollmentDate "2024-01-10"^^xsd:date .
+
+uni:Student2 uni:isEnrolledIn uni:CS101, uni:Bio101, uni:EngUS302 ;
+    uni:hasEnrollmentDate "2024-01-11"^^xsd:date .
+
+uni:Student3 uni:isEnrolledIn uni:CS101, uni:Bio101, uni:EngUS302 ;
+    uni:hasEnrollmentDate "2024-01-12"^^xsd:date .

@@ -1,0 +1,24 @@
+instruction: |-
+  Analyze the interactive program `/app/vulnerable` which guards access to a secret key.
+  The goal is to extract the secret key and save it to `/app/results.txt`.
+
+  The program presents a command-line interface. You will need to interact with
+  it to discover how to access the protected information. The secret is derived
+  algorithmically from a value embedded in the program.
+
+  The secret key is in the format `FLAG{...}` (64 hexadecimal characters inside
+  the braces).
+
+  Once you have determined the correct secret key, write it (and nothing else)
+  to `/app/results.txt`.
+author_name: Task Author
+difficulty: hard
+category: security
+tags:
+  - security
+  - reverse-engineering
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

@@ -1,0 +1,110 @@
+@prefix uni: <http://university.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Probe graph for testing edge cases in professor identification
+# 
+# EXPECTED RESULTS BY PATTERN:
+#
+# Pattern A (lcase+CONTAINS - portable default):
+#   ACCEPTED: Alice Lowercase (case insensitive), Charlie Emeritus (substring match),
+#              David Assistant (contains "Professor"), Grace Multi-Department (DISTINCT=1 row),
+#              Henry Standard, Ivy Assistant
+#   REJECTED: Bob Abbreviation ("Prof." doesn't contain "professor"),
+#             Eve Lecturer, Frank Student
+#
+# Pattern B (regex with word boundaries):
+#   ACCEPTED: Alice Lowercase, Charlie Emeritus (word boundary after Professor),
+#              Grace Multi-Department, Henry Standard, Ivy Assistant (word boundary before Professor)
+#   REJECTED: Bob Abbreviation ("Prof." not matched),
+#             David Assistant ("Professor" not at word boundary - preceded by "the "),
+#             Eve Lecturer, Frank Student
+#
+# Pattern A-Narrowed (exclude Assistant/Associate/Emeritus):
+#   ACCEPTED: Alice Lowercase, Charlie Emeritus (if emeritus excluded: REJECTED),
+#              David Assistant (if "Assistant" excluded: REJECTED),
+#              Grace Multi-Department, Henry Standard
+#   REJECTED: Bob Abbreviation, Eve Lecturer, Frank Student, Ivy Assistant (Assistant excluded)
+#
+# Note: Decisions on Emeritus/Abbreviation/near-misses are instruction-driven,
+# not pattern bugs. Build exclusion list from actual role census.
+
+# ---------------------------
+# Universities
+# ---------------------------
+uni:TestUniversity a uni:University ;
+    uni:hasName "Test University" .
+
+uni:OtherUniversity a uni:University ;
+    uni:hasName "Other University" .
+
+# ---------------------------
+# Departments
+# ---------------------------
+uni:Dept1_Test a uni:Department ;
+    uni:partOfUniversity uni:TestUniversity .
+
+uni:Dept2_Test a uni:Department ;
+    uni:partOfUniversity uni:TestUniversity .
+
+uni:Dept_Other a uni:Department ;
+    uni:partOfUniversity uni:OtherUniversity .
+
+# ---------------------------
+# Probe Cases
+# ---------------------------
+
+# CASE 1: Lowercase "professor" - ACCEPTED by both patterns (case insensitive)
+uni:Prof_Lowercase a uni:Person ;
+    uni:hasName "Alice Lowercase" ;
+    uni:role "professor of physics" ;
+    uni:worksAt uni:Dept1_Test .
+
+# CASE 2: Abbreviation "Prof." - REJECTED by both patterns (needs extension)
+uni:Prof_Abbrev a uni:Person ;
+    uni:hasName "Bob Abbreviation" ;
+    uni:role "Prof. of Chemistry" ;
+    uni:worksAt uni:Dept1_Test .
+
+# CASE 3: "Professor Emeritus" - instruction-driven decision
+# Accepted by default patterns; exclude with narrowing if required
+uni:Prof_Emeritus a uni:Person ;
+    uni:hasName "Charlie Emeritus" ;
+    uni:role "Professor Emeritus" ;
+    uni:worksAt uni:Dept1_Test .
+
+# CASE 4: "Assistant to the Professor" - REJECTED by word-boundary regex only
+# ACCEPTED by lcase+CONTAINS (contains "Professor")
+uni:Prof_Assistant a uni:Person ;
+    uni:hasName "David Assistant" ;
+    uni:role "Assistant to the Professor" ;
+    uni:worksAt uni:Dept1_Test .
+
+# CASE 5: Lecturer - REJECTED by all patterns
+uni:NotProf_Lecturer a uni:Person ;
+    uni:hasName "Eve Lecturer" ;
+    uni:role "Lecturer" ;
+    uni:worksAt uni:Dept1_Test .
+
+# CASE 6: Student - REJECTED by all patterns
+uni:NotProf_Student a uni:Person ;
+    uni:hasName "Frank Student" ;
+    uni:role "Student" ;
+    uni:worksAt uni:Dept1_Test .
+
+# CASE 7: Multi-department professor (same university) - should return 1 row with DISTINCT
+uni:Prof_MultiDept a uni:Person ;
+    uni:hasName "Grace Multi-Department" ;
+    uni:role "Professor of Engineering" ;
+    uni:worksAt uni:Dept1_Test, uni:Dept2_Test .
+
+# CASE 8: Standard Full Professor - ACCEPTED by all patterns
+uni:Prof_Standard a uni:Person ;
+    uni:hasName "Henry Standard" ;
+    uni:role "Professor of Computer Science" ;
+    uni:worksAt uni:Dept1_Test .
+
+# CASE 9: Assistant Professor - ACCEPTED by default; REJECTED by narrowing
+uni:Prof_AssistantProf a uni:Person ;
+    uni:hasName "Ivy Assistant" ;
+    uni:role "Assistant Professor" ;
+    uni:worksAt uni:Dept1_Test .

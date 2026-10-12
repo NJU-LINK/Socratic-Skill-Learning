@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "issue-guided-ssl",
+  "round": 1,
+  "family": "html-finance-verify",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 22
+      },
+      "student-author": {
+        "records": 160
+      }
+    }
+  },
+  "totals": {
+    "records": 182
+  }
+}

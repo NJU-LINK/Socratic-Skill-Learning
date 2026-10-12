@@ -1,0 +1,22 @@
+axes:
+  - name: synthesis_signal_parameters
+    type: freeform
+    description: >
+      The deterministic audio synthesis recipe. The seed generates a mono 16 kHz 3 second waveform
+      from five sine tones with small dither and RMS normalization. Variants may change sample rate,
+      duration, tone count, frequency set, amplitude envelope, noise distribution, or normalization
+      target while preserving a reproducible synthesized WAV pipeline.
+  - name: stft_configuration
+    type: freeform
+    description: >
+      The STFT parameters and magnitude export requirements. The seed uses scipy stft with a Hann
+      window, fixed segment/overlap/FFT sizes, one-sided output, and a frame/bin/value CSV. Variants
+      may change window type, nperseg, noverlap, nfft, boundary handling, magnitude scaling, or CSV
+      schema while keeping the task centered on correct scipy STFT computation.
+  - name: peak_extraction_logic
+    type: freeform
+    description: >
+      The command-line peak extraction step. The seed requires awk to compute the top three spectral
+      bins per frame from mag.csv and support a peaks-only mode. Variants may change top-k,
+      tie-breaking, frame grouping, output columns, allowed awk implementations, or mode flags while
+      preserving the requirement that the shell/awk stage performs the final peak selection.

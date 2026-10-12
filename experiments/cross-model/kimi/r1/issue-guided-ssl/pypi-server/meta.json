@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "issue-guided-ssl",
+  "round": 1,
+  "family": "pypi-server",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 30
+      },
+      "student-author": {
+        "records": 184
+      }
+    }
+  },
+  "totals": {
+    "records": 214
+  }
+}

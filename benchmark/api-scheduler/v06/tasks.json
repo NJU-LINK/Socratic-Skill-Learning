@@ -1,0 +1,80 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "title": "Board Presentation",
+      "duration_min": 60,
+      "urgency": 5,
+      "importance": 5,
+      "deadline": "17:00"
+    },
+    {
+      "id": "B",
+      "title": "Fix Critical Bug",
+      "duration_min": 45,
+      "urgency": 5,
+      "importance": 4,
+      "deadline": "16:00"
+    },
+    {
+      "id": "C",
+      "title": "Vendor Call Prep",
+      "duration_min": 30,
+      "urgency": 4,
+      "importance": 4,
+      "deadline": "15:00"
+    },
+    {
+      "id": "D",
+      "title": "Sprint Retro Notes",
+      "duration_min": 30,
+      "urgency": 3,
+      "importance": 2
+    },
+    {
+      "id": "E",
+      "title": "Performance Reports",
+      "duration_min": 45,
+      "urgency": 3,
+      "importance": 3,
+      "deadline": "18:00"
+    },
+    {
+      "id": "F",
+      "title": "Research New Tools",
+      "duration_min": 40,
+      "urgency": 2,
+      "importance": 3
+    },
+    {
+      "id": "G",
+      "title": "Update Wiki Pages",
+      "duration_min": 20,
+      "urgency": 1,
+      "importance": 1
+    },
+    {
+      "id": "H",
+      "title": "Archive Old Projects",
+      "duration_min": 30,
+      "urgency": 1,
+      "importance": 1
+    }
+  ],
+  "emergencies": [
+    {
+      "id": "X",
+      "title": "Urgent Client Call",
+      "duration_min": 30,
+      "arrival_time": "15:30",
+      "urgency": 5,
+      "deadline": "16:30"
+    }
+  ],
+  "config": {
+    "work_start": "14:00",
+    "work_end": "19:00",
+    "priority_method": "weighted",
+    "calendar_id": "Hk9Nw8KsRd5X"
+  }
+}

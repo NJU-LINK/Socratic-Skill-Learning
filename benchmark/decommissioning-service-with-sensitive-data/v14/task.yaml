@@ -1,0 +1,35 @@
+instruction: |-
+  Securely decommission the running legacy service in this environment.
+
+  The service has sensitive data in `/opt/sensitive_service_data/`, configuration
+  at `/etc/service_config.ini`, and a running process whose PID is recorded in
+  `/tmp/decommissioned_svc.pid`. It also has logs under
+  `/var/log/decommissioned_svc/` and a socket artifact at
+  `/run/decommissioned_svc.sock`.
+
+  Complete these objectives in order:
+
+  1. Stop the service process before archiving or deleting its files.
+  2. Create `/app/sensitive_files.tar.gz`, a gzip-compressed tar archive whose
+     members preserve paths such as `opt/sensitive_service_data/...`.
+  3. Symmetrically encrypt that archive with GPG AES256 and passphrase
+     `t-bench-passphrase`, writing `/app/service_archive.gpg`.
+  4. Overwrite every regular file under the sensitive directory with random data
+     using at least three shred passes, remove the files, and remove the directory.
+  5. Remove the configuration, PID file, complete log directory, and socket artifact.
+  6. Remove the unencrypted intermediate archive. No unencrypted copy of the
+     sensitive data may remain in an accessible location.
+
+author_name: Task Author
+difficulty: hard
+category: file-operations
+tags:
+  - encryption
+  - secure-deletion
+  - process-management
+  - artifact-cleanup
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

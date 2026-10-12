@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Transit Planning Memo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <h1>Platform renovation schedule</h1>
+    <nav aria-label="Memo navigation">
+      <a href="#overview">Overview</a>
+      <a href="#survey" onclick="alert('nav')">Survey notes</a>
+      <a href="/memos/archive">Archive</a>
+    </nav>
+  </header>
+
+  <main>
+    <article id="overview">
+      <p>
+        City editors need this memo cleaned without disturbing the public-facing layout.
+        Safe attributes, links, captions, and the block quote below should survive unchanged.
+      </p>
+
+      <blockquote cite="/sources/interview-14">
+        "The platform canopy was retained, but access ramps were widened for winter traffic."
+      </blockquote>
+
+      <figure>
+        <img src="/img/platform-east.png" alt="East platform concept art" width="800" height="450">
+        <figcaption>Boarding canopy draft <script>alert('caption')</script> for the eastbound stop.</figcaption>
+      </figure>
+
+      <section id="survey">
+        <h2>Station survey</h2>
+        <table>
+          <caption>Observed conditions on the inspection walk</caption>
+          <thead>
+            <tr>
+              <th scope="col">Area</th>
+              <th scope="col">Condition</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Ticket hall</th>
+              <td>Clear signage</td>
+              <td><a href="/ops/signage">Retain current panels</a></td>
+            </tr>
+            <tr>
+              <th scope="row">North stairs</th>
+              <td>Handrail wear</td>
+              <td><a href="javascript:alert('repair')">Open repair request</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <pre>Boarding windows
+06:15  southbound
+06:42  express
+07:05  shuttle</pre>
+    </article>
+  </main>
+</body>
+</html>

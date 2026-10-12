@@ -1,0 +1,73 @@
+{
+  "analysisCohort": "main-155",
+  "families": 22,
+  "cases": 155,
+  "exclusions": [
+    {
+      "family": "ode-solver-rk4",
+      "variant": "v16",
+      "note": "Same exclusion as the main comparison (paper data manifest); raw outcomes for v16 remain in results/outcomes.csv and meta.json heldout."
+    }
+  ],
+  "aggregation": "mean over families of per-family mean over runs and variants (macro-family, matching the paper schedule comparison)",
+  "schedules": {
+    "g5": {
+      "macroFamilyScore": 0.7757707430055916,
+      "paperUtility": 0.7757707430055915,
+      "runs": 66,
+      "familyScores": {
+        "acl-permissions-inheritance": 0.8694444444444445,
+        "api-scheduler": 0.7878787878787878,
+        "audio-synth-stft-peaks": 0.6422222222222221,
+        "bank-trans-filter": 0.537037037037037,
+        "cross-entropy-method": 0.6444444444444444,
+        "db-wal-recovery": 0.875,
+        "deterministic-tarball": 0.6874939874939875,
+        "filter-js-from-html": 0.3989438339438339,
+        "financial-analysis": 0.875,
+        "financial-document-processor": 0.7619047619047619,
+        "flask": 0.5892857142857143,
+        "git-leak-recovery": 0.9208333333333333,
+        "html-finance-verify": 0.925925925925926,
+        "jq-data-processing": 0.8661935286935287,
+        "kv-store-grpc": 0.6458333333333334,
+        "ode-solver-rk4": 0.9733333333333333,
+        "office-workflow": 0.9642857142857143,
+        "organization-json-generator": 1.0,
+        "pypi-server": 0.575,
+        "sparql-professors-universities": 0.6884920634920635,
+        "sqlite-db-truncate": 0.9151234567901234,
+        "xlsx-structure": 0.9232804232804234
+      }
+    },
+    "g20": {
+      "macroFamilyScore": 0.7759414315042021,
+      "paperUtility": 0.7759414315042021,
+      "runs": 66,
+      "familyScores": {
+        "acl-permissions-inheritance": 0.8324074074074074,
+        "api-scheduler": 0.7757575757575758,
+        "audio-synth-stft-peaks": 0.6505555555555556,
+        "bank-trans-filter": 0.6092592592592593,
+        "cross-entropy-method": 0.5972222222222222,
+        "db-wal-recovery": 0.8860544217687075,
+        "deterministic-tarball": 0.6896103896103897,
+        "filter-js-from-html": 0.4087789987789988,
+        "financial-analysis": 0.875,
+        "financial-document-processor": 0.8333333333333334,
+        "flask": 0.6772486772486772,
+        "git-leak-recovery": 0.9063492063492062,
+        "html-finance-verify": 0.9074074074074073,
+        "jq-data-processing": 0.853495115995116,
+        "kv-store-grpc": 0.6069444444444445,
+        "ode-solver-rk4": 1.0,
+        "office-workflow": 0.8992063492063492,
+        "organization-json-generator": 1.0,
+        "pypi-server": 0.5694444444444444,
+        "sparql-professors-universities": 0.6968253968253968,
+        "sqlite-db-truncate": 0.8679012345679012,
+        "xlsx-structure": 0.9279100529100529
+      }
+    }
+  }
+}

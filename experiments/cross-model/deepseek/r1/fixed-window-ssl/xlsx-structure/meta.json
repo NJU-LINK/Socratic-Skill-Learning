@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "xlsx-structure",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 104
+      },
+      "student-author": {
+        "records": 260
+      }
+    }
+  },
+  "totals": {
+    "records": 364
+  }
+}

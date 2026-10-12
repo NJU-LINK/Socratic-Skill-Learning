@@ -1,0 +1,31 @@
+{
+  "expected_outputs": {
+    "tidepool_survey.txt": {
+      "sha256": "cf7929d777ecf41a0fd1c74db239c6756e11dc3fe9b70ee1c354fe0c49d7b5e3",
+      "size": 234
+    },
+    "lantern_roster.md": {
+      "sha256": "2ba974ad5d573b83a3302d96174bf811a378141c7d1ca6845087b3064f8c14e5",
+      "size": 188
+    }
+  },
+  "evidence_sha256": {
+    "case_manifest.json": "5f387b639333073c21c234e00774a0bf6f45878a19132840554034988a8b2984",
+    "frag-a1.part": "a788bc2f9dede718ab057019d28a7312f65f80ca3c2f75136ba42aa85a07bec0",
+    "frag-a2.part": "abcfe73bb23d4ddad354c26f50d3c96b4c732c62690d3ef7a88b222370062f94",
+    "frag-a3.part": "fa0de25c682b8d13f0f4f28bdebe8af966a5116d0e5346fd73d25045ebbe3c53",
+    "frag-b1.part": "501122427816fd794d3fe5000028b77128ee59cd752c4d6100de36dfb33e10de",
+    "frag-b2.part": "9c6dbf2c8ba67c5e392f61f434378213ecc45f49ecbd1fff8495c63e7fbf06e9",
+    "readme.txt": "5c02d401a9c303d13ba522e12391ba8ecfdf0baee3a6a25820413b575a536f27",
+    "supply_log.txt": "0dab1423c6d8caa44cea3772a486faa434908ffd5d5439f5f465af528172cade"
+  },
+  "distractor_names": [
+    "readme.txt",
+    "supply_log.txt"
+  ],
+  "app_top_level_allowlist": [
+    "NOTE_FROM_ATTACKER.txt",
+    "recovered",
+    "sensitive_data"
+  ]
+}

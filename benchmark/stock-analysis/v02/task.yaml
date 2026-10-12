@@ -1,0 +1,23 @@
+instruction: |-
+  Microsoft (MSFT) daily stock price data is somewhere in /app/.
+  Not all files in the directory contain stock data — explore to find
+  the right CSV file with OHLCV data (columns: Date,Open,High,Low,Close,Volume).
+
+  Your task:
+  1. Find the correct CSV file
+  2. Calculate 5-day SMA and 10-day SMA of Close price
+  3. Write to /app/results.csv with columns: date,close,sma5,sma10
+  4. N/A for periods with insufficient data
+  5. Round to 2 decimal places
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - technical-analysis
+  - sma
+  - data-discovery
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

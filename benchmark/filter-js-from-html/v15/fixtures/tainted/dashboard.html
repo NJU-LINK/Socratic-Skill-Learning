@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northwind Ops Dashboard</title>
+  <link rel="stylesheet" href="/assets/dashboard.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Northwind Ops</div>
+    <nav aria-label="Primary">
+      <a href="/overview">Overview</a>
+      <a href="/incidents">Incidents</a>
+      <a href="/reports">Reports</a>
+      <a href="/settings">Settings</a>
+    </nav>
+  </header>
+  <main class="page-grid">
+    <aside class="sidebar">
+      <section>
+        <h2>Regions</h2>
+        <ul>
+          <li><a href="/regions/us-west">US West</a></li>
+          <li><a href="/regions/us-east">US East</a></li>
+          <li><a href="/regions/eu-central">EU Central</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Status Legend</h2>
+        <p><strong>Green</strong> means within target.</p>
+        <p><strong>Amber</strong> indicates investigation.</p>
+      </section>
+    </aside>
+    <section class="content">
+      <h1>Morning Summary</h1>
+      <p>All metrics below reflect the 15-minute rolling aggregate.</p>
+      <table class="metrics">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Latency</th>
+            <th>Error Rate</th>
+            <th>Open Tickets</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Checkout API</td>
+            <td>142 ms</td>
+            <td>0.08%</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Catalog API</td>
+            <td>95 ms</td>
+            <td>0.03%</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Warehouse Sync</td>
+            <td>211 ms</td>
+            <td>0.14%</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+      <section class="notes">
+        <h2>Operator Notes</h2>
+        <p>Remember to export the reconciliation snapshot before 11:00 UTC.</p>
+        <p>Use the linked report pages for drill-down; the summary table is read only.</p>
+      </section>
+      <div class="map-card" data-region="all" aria-label="Regional capacity map">
+        <svg viewBox="0 0 160 90" role="img" aria-labelledby="map-title map-desc">
+          <title id="map-title">Fulfillment regions</title>
+          <desc id="map-desc">Simple region diagram for the dashboard overview.</desc>
+          <g fill="none" stroke="#3b4a6b" stroke-width="2">
+            <rect x="8" y="10" width="42" height="22"></rect>
+            <rect x="58" y="38" width="42" height="22"></rect>
+            <rect x="108" y="18" width="42" height="22"></rect>
+            <path d="M50 21 H58"></path>
+            <path d="M100 49 L108 29"></path>
+          </g>
+          <g fill="#1f7a8c" font-size="8">
+            <text x="12" y="24">US-WEST</text>
+            <text x="61" y="52">US-EAST</text>
+            <text x="111" y="32">EU-CENTRAL</text>
+          </g>
+          <a xlink:href="javas&#x63;ript:alert('svg-map')"><text x="15" y="76">Open live map</text></a>
+        </svg>
+      </div>
+      <p class="export-link"><a href="java&#x73;cript:%61lert('dash')" data-track="csv">Download CSV export</a></p>
+    </section>
+  </main>
+</body>
+</html>

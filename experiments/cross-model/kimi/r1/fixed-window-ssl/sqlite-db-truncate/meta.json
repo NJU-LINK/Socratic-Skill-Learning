@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "sqlite-db-truncate",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 95
+      },
+      "student-author": {
+        "records": 349
+      }
+    }
+  },
+  "totals": {
+    "records": 444
+  }
+}

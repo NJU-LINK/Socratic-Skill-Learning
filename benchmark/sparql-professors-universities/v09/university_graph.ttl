@@ -1,0 +1,262 @@
+@prefix uni: <http://university.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ---------------------------
+# Universities
+# ---------------------------
+uni:ETHZurich a uni:University ;
+    uni:hasName "ETH Zurich" ;
+    uni:locatedInCountry "CH" .
+
+uni:UPM a uni:University ;
+    uni:hasName "Universidad Politécnica de Madrid" ;
+    uni:locatedInCountry "ES" .
+
+uni:IST a uni:University ;
+    uni:hasName "Instituto Superior Técnico" ;
+    uni:locatedInCountry "PT" .
+
+uni:NTUA a uni:University ;
+    uni:hasName "National Technical University of Athens" ;
+    uni:locatedInCountry "GR" .
+
+uni:NKUA a uni:University ;
+    uni:hasName "National and Kapodistrian University of Athens" ;
+    uni:locatedInCountry "GR" .
+
+uni:Sorbonne a uni:University ;
+    uni:hasName "Sorbonne University" ;
+    uni:locatedInCountry "FR" .
+
+uni:MIT a uni:University ;
+    uni:hasName "Massachusetts Institute of Technology" ;
+    uni:locatedInCountry "US" .
+
+uni:Berkeley a uni:University ;
+    uni:hasName "University of California, Berkeley" ;
+    uni:locatedInCountry "US" .
+
+uni:LMU a uni:University ;
+    uni:hasName "Ludwig Maximilian University of Munich" ;
+    uni:locatedInCountry "DE" .
+
+# ---------------------------
+# Internal units
+# ---------------------------
+uni:ComputerScience_NTUA a uni:Department ;
+    uni:partOfUniversity uni:NTUA .
+
+uni:AICenter_NTUA a uni:Institute ;
+    uni:partOfUniversity uni:NTUA .
+
+uni:Mathematics_IST a uni:Department ;
+    uni:partOfUniversity uni:IST .
+
+uni:DataScience_IST a uni:Institute ;
+    uni:partOfUniversity uni:IST .
+
+uni:HistoryAndPhilosophy_NKUA a uni:Department ;
+    uni:partOfUniversity uni:NKUA .
+
+uni:ScienceStudies_NKUA a uni:Institute ;
+    uni:partOfUniversity uni:NKUA .
+
+uni:Mathematics_Sorbonne a uni:Department ;
+    uni:partOfUniversity uni:Sorbonne .
+
+uni:ComputationalMethods_Sorbonne a uni:Institute ;
+    uni:partOfUniversity uni:Sorbonne .
+
+uni:Biology_MIT a uni:Department ;
+    uni:partOfUniversity uni:MIT .
+
+uni:BroadSystems_MIT a uni:Institute ;
+    uni:partOfUniversity uni:MIT .
+
+uni:Engineering_LMU a uni:Department ;
+    uni:partOfUniversity uni:LMU .
+
+uni:AutonomousSystems_LMU a uni:Institute ;
+    uni:partOfUniversity uni:LMU .
+
+uni:Engineering_Berkeley a uni:Department ;
+    uni:partOfUniversity uni:Berkeley .
+
+uni:EnergySystems_Berkeley a uni:Institute ;
+    uni:partOfUniversity uni:Berkeley .
+
+uni:Robotics_UPM a uni:Department ;
+    uni:partOfUniversity uni:UPM .
+
+uni:Physics_ETH a uni:Department ;
+    uni:partOfUniversity uni:ETHZurich .
+
+# ---------------------------
+# Courses and projects
+# ---------------------------
+uni:CS101 a uni:Course ;
+    uni:isTaughtIn uni:ComputerScience_NTUA .
+
+uni:AI501 a uni:Course ;
+    uni:isTaughtIn uni:AICenter_NTUA .
+
+uni:Math101 a uni:Course ;
+    uni:isTaughtIn uni:Mathematics_IST .
+
+uni:Data204 a uni:Course ;
+    uni:isTaughtIn uni:DataScience_IST .
+
+uni:STS101 a uni:Course ;
+    uni:isTaughtIn uni:HistoryAndPhilosophy_NKUA .
+
+uni:STS404 a uni:Course ;
+    uni:isTaughtIn uni:ScienceStudies_NKUA .
+
+uni:Math201 a uni:Course ;
+    uni:isTaughtIn uni:Mathematics_Sorbonne .
+
+uni:Comp302 a uni:Course ;
+    uni:isTaughtIn uni:ComputationalMethods_Sorbonne .
+
+uni:Bio101 a uni:Course ;
+    uni:isTaughtIn uni:Biology_MIT .
+
+uni:Systems440 a uni:Course ;
+    uni:isTaughtIn uni:BroadSystems_MIT .
+
+uni:Eng202 a uni:Course ;
+    uni:isTaughtIn uni:Engineering_LMU .
+
+uni:Robotics430 a uni:Course ;
+    uni:isTaughtIn uni:AutonomousSystems_LMU .
+
+uni:EngUS302 a uni:Course ;
+    uni:isTaughtIn uni:Engineering_Berkeley .
+
+uni:Energy350 a uni:Course ;
+    uni:isTaughtIn uni:EnergySystems_Berkeley .
+
+uni:LabAutomation a uni:Project ;
+    uni:hostedBy uni:AICenter_NTUA .
+
+uni:DigitalArchives a uni:Project ;
+    uni:hostedBy uni:ScienceStudies_NKUA .
+
+uni:GenomicsAtlas a uni:Project ;
+    uni:hostedBy uni:BroadSystems_MIT .
+
+# ---------------------------
+# Professors
+# ---------------------------
+uni:Alex_Morgan a uni:Person ;
+    uni:hasName "Alex Morgan" ;
+    uni:role "Professor of Computer Science" ;
+    uni:worksAt uni:ComputerScience_NTUA, uni:AICenter_NTUA ;
+    uni:teaches uni:CS101, uni:AI501 ;
+    uni:leadsProject uni:LabAutomation .
+
+uni:Thomas_Berger a uni:Person ;
+    uni:hasName "Thomas Berger" ;
+    uni:role "Assistant Professor of Computer Science" ;
+    uni:worksAt uni:ComputerScience_NTUA ;
+    uni:memberOf uni:AICenter_NTUA ;
+    uni:teaches uni:CS101 ;
+    uni:advises uni:Student1, uni:Student2 .
+
+uni:Nadia_Fischer a uni:Person ;
+    uni:hasName "Nadia Fischer" ;
+    uni:role "Professor of Mathematics" ;
+    uni:worksAt uni:Mathematics_IST, uni:DataScience_IST ;
+    uni:teaches uni:Math101, uni:Data204 .
+
+uni:Martin_Keller a uni:Person ;
+    uni:hasName "Martin Keller" ;
+    uni:role "Professor of History of Science and Technology" ;
+    uni:worksAt uni:HistoryAndPhilosophy_NKUA ;
+    uni:memberOf uni:ScienceStudies_NKUA ;
+    uni:teaches uni:STS101, uni:STS404 ;
+    uni:leadsProject uni:DigitalArchives .
+
+uni:John_Smith a uni:Person ;
+    uni:hasName "John Smith" ;
+    uni:role "Professor of Biology" ;
+    uni:worksAt uni:Biology_MIT ;
+    uni:memberOf uni:BroadSystems_MIT ;
+    uni:teaches uni:Bio101, uni:Systems440 ;
+    uni:leadsProject uni:GenomicsAtlas .
+
+uni:Marie_Dubois a uni:Person ;
+    uni:hasName "Marie Dubois" ;
+    uni:role "Professor of Mathematics" ;
+    uni:worksAt uni:Mathematics_Sorbonne ;
+    uni:memberOf uni:ComputationalMethods_Sorbonne ;
+    uni:teaches uni:Math201, uni:Comp302 .
+
+uni:Stefan_Mueller a uni:Person ;
+    uni:hasName "Stefan Mueller" ;
+    uni:role "Assistant Professor of Engineering" ;
+    uni:worksAt uni:Engineering_LMU ;
+    uni:memberOf uni:AutonomousSystems_LMU ;
+    uni:teaches uni:Eng202, uni:Robotics430 .
+
+uni:Nathan_Cole a uni:Person ;
+    uni:hasName "Nathan Cole" ;
+    uni:role "Professor of Engineering" ;
+    uni:worksAt uni:Engineering_Berkeley, uni:EnergySystems_Berkeley ;
+    uni:teaches uni:EngUS302, uni:Energy350 .
+
+# ---------------------------
+# Non-professors and other noise
+# ---------------------------
+uni:Jane_Petterson a uni:Person ;
+    uni:hasName "Jane Petterson" ;
+    uni:role "Lecturer" ;
+    uni:worksAt uni:Engineering_Berkeley ;
+    uni:memberOf uni:EnergySystems_Berkeley ;
+    uni:teaches uni:EngUS302 .
+
+uni:Mike_Wazowski a uni:Person ;
+    uni:hasName "Mike Wazowski" ;
+    uni:role "Secretary" ;
+    uni:worksAt uni:ComputerScience_NTUA ;
+    uni:memberOf uni:AICenter_NTUA .
+
+uni:Elena_Keller a uni:Person ;
+    uni:hasName "Elena Keller" ;
+    uni:role "Research Staff" ;
+    uni:memberOf uni:BroadSystems_MIT .
+
+uni:Student1 a uni:Person ;
+    uni:hasName "Sophia Müller" ;
+    uni:role "Student" ;
+    uni:isEnrolledIn uni:CS101, uni:AI501 ;
+    uni:hasEnrollmentDate "2024-01-10"^^xsd:date ;
+    uni:researchHome uni:AICenter_NTUA .
+
+uni:Student2 a uni:Person ;
+    uni:hasName "Luca Rossi" ;
+    uni:role "Student" ;
+    uni:isEnrolledIn uni:CS101, uni:Math101 ;
+    uni:hasEnrollmentDate "2024-01-11"^^xsd:date ;
+    uni:researchHome uni:ComputerScience_NTUA .
+
+uni:Student3 a uni:Person ;
+    uni:hasName "Emma García" ;
+    uni:role "Student" ;
+    uni:isEnrolledIn uni:Math201, uni:Comp302 ;
+    uni:hasEnrollmentDate "2024-01-12"^^xsd:date ;
+    uni:researchHome uni:ComputationalMethods_Sorbonne .
+
+uni:Student4 a uni:Person ;
+    uni:hasName "Nina Papadopoulos" ;
+    uni:role "Student" ;
+    uni:isEnrolledIn uni:STS101, uni:STS404 ;
+    uni:hasEnrollmentDate "2024-01-13"^^xsd:date ;
+    uni:researchHome uni:ScienceStudies_NKUA .
+
+uni:Student5 a uni:Person ;
+    uni:hasName "Oliver Smith" ;
+    uni:role "Student" ;
+    uni:isEnrolledIn uni:Bio101, uni:Systems440 ;
+    uni:hasEnrollmentDate "2024-01-14"^^xsd:date ;
+    uni:researchHome uni:BroadSystems_MIT .

@@ -1,0 +1,78 @@
+{
+  "method": "post-hoc-teaching",
+  "round": 2,
+  "family": "financial-analysis",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 13
+      },
+      "student-author": {
+        "records": 107
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 16
+      },
+      "iteration-2": {
+        "records": 15
+      },
+      "iteration-3": {
+        "records": 20
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 22,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 17,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 15,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 17,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 16,
+        "score": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 16,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 120,
+    "train": 51,
+    "heldout": 103,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

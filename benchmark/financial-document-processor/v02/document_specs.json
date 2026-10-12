@@ -1,0 +1,126 @@
+[
+  {
+    "filename": "doc01.pdf",
+    "format": "pdf",
+    "title": "Blue Harbor Water Services",
+    "lines": [
+      "Customer Statement",
+      "Account Number: 48392015",
+      "Billing Period: April 1, 2026 to April 30, 2026",
+      "Service Address: 18 Pine Court, Brookside, NY 11721",
+      "Statement Date: May 3, 2026",
+      "Previous Balance: $0.00",
+      "Current Charges: $82.35",
+      "Sales Tax: $6.59",
+      "Total Due: $88.94",
+      "Payment Due Date: May 24, 2026",
+      "Detach and return this payment stub with your mailed payment."
+    ]
+  },
+  {
+    "filename": "doc02.jpg",
+    "format": "jpg",
+    "title": "Northline Wireless",
+    "lines": [
+      "Monthly Service Statement",
+      "Account Number: 99104482",
+      "Billing Period: March 16, 2026 to April 15, 2026",
+      "Service Address: 440 Cedar Avenue, Unit 5, Leland, OR 97035",
+      "Current Charges: $64.40",
+      "Sales Tax: $5.15",
+      "Balance Due: $69.55",
+      "Due Date: April 29, 2026",
+      "Please include the payment stub when paying by mail."
+    ]
+  },
+  {
+    "filename": "doc03.pdf",
+    "format": "pdf",
+    "title": "Summit Natural Gas",
+    "lines": [
+      "Residential Service Statement",
+      "Account Number: 55077193",
+      "Billing Period: February 1, 2026 to February 28, 2026",
+      "Service Address: 902 Willow Terrace, Grand Mesa, CO 81501",
+      "Meter Reference: 17-554-201",
+      "Current Charges: $114.72",
+      "Municipal Tax: $9.18",
+      "Balance Due: $123.90",
+      "Please return the remittance portion with your check."
+    ]
+  },
+  {
+    "filename": "doc04.pdf",
+    "format": "pdf",
+    "title": "Cedar Valley Internet",
+    "lines": [
+      "Service Statement",
+      "Account Number: 77120561",
+      "Billing Period: May 1, 2026 to May 31, 2026",
+      "Service Address: 71 Alder Street, Fairview, WA 98208",
+      "Plan: Home Fiber 500",
+      "Current Charges: $59.99",
+      "Sales Tax: $4.80",
+      "Total Due: $64.79",
+      "Return this payment stub only if mailing a payment."
+    ]
+  },
+  {
+    "filename": "doc05.pdf",
+    "format": "pdf",
+    "title": "Metro Credit Union",
+    "lines": [
+      "Courtesy Account Notice",
+      "Member Number: 30115502",
+      "Notice Period: April 2026",
+      "Available Balance: $2,411.09",
+      "Ending Balance: $2,365.91",
+      "Recent Service Charge: $12.00",
+      "This notice is provided for your records only.",
+      "No payment is requested with this notice."
+    ]
+  },
+  {
+    "filename": "doc06.jpg",
+    "format": "jpg",
+    "title": "Pine Ridge Mutual",
+    "lines": [
+      "Policy Update Letter",
+      "Policy Number: PRM-77431",
+      "Coverage Address: 221 Magnolia Lane, Carson, TN 37014",
+      "Current Balance on Claims Escrow: $18.40",
+      "Renewal Review Date: July 1, 2026",
+      "This letter is informational and is not a bill.",
+      "Do not send payment with this letter."
+    ]
+  },
+  {
+    "filename": "doc07.pdf",
+    "format": "pdf",
+    "title": "Autumn Savings Bank",
+    "lines": [
+      "Quarterly Account Summary",
+      "Account Number: 67190014",
+      "Summary Period: January 1, 2026 to March 31, 2026",
+      "Opening Balance: $9,820.00",
+      "Deposits: $1,550.00",
+      "Withdrawals: $600.00",
+      "Closing Balance: $10,770.00",
+      "This summary is not a payment coupon."
+    ]
+  },
+  {
+    "filename": "doc08.pdf",
+    "format": "pdf",
+    "title": "Hillside Bank",
+    "lines": [
+      "Rate Change Notice",
+      "Loan Reference: 44288017",
+      "Notice Date: June 2, 2026",
+      "Current Principal Balance: $18,904.77",
+      "Estimated Monthly Payment After Adjustment: $412.18",
+      "The updated amount begins with your next scheduled payment cycle.",
+      "This notice explains future terms and does not include a remittance stub."
+    ]
+  }
+]

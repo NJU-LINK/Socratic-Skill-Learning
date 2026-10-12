@@ -1,0 +1,3438 @@
+{
+  "schemaVersion": 2,
+  "scorers": {
+    "family-acl-permissions-inheritance/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online uv bootstrap.",
+      "runnerSha256": "1c43b968156e1a0f1b3be9a5b935514708a8246584f8b44bd3e6a6691f09e00c"
+    },
+    "family-acl-permissions-inheritance/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online uv bootstrap.",
+      "runnerSha256": "ba60158f7ac144551d1b51bdb32150b893a627044c9bda1f201013ce9d2f2e60"
+    },
+    "family-acl-permissions-inheritance/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online uv bootstrap.",
+      "runnerSha256": "3b4683f3e66ffb3b4cbbfbac74bb7141def2ce1525ecef418e8c0428a533281f"
+    },
+    "family-acl-permissions-inheritance/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online uv bootstrap.",
+      "runnerSha256": "0791783a29599eb6e0b32e00b1ba880acdc28be0f683fe5a16209ebd06d6792c"
+    },
+    "family-acl-permissions-inheritance/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer observes the submitted ACL state directly instead of deleting it and executing the private reference solution.",
+      "runnerSha256": "167a0c03e183589911b022fdd0f844d275a208ed221a7753728bf2c82399248c"
+    },
+    "family-acl-permissions-inheritance/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online uv bootstrap.",
+      "runnerSha256": "aa4d0cad165fc769f590b2d4fcb2a0f738e987481452d50f47cbbe6df7a31a41"
+    },
+    "family-acl-permissions-inheritance/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_acl_workspace.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap.",
+      "runnerSha256": "fa4de0f09298f53240a655fe52b8f40a16f870c360a0545e44176517d45f06ec"
+    },
+    "family-acl-permissions-inheritance/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap.",
+      "runnerSha256": "426f92effedbdfbefb7c662590ad8d197bc70ed51c86f3e347711c69ff4235ba"
+    },
+    "family-acl-permissions-inheritance/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap.",
+      "runnerSha256": "842fd4f0ff94a1cec194faca9f0484791dd112d14652563602a7b86f0ba69304"
+    },
+    "family-acl-permissions-inheritance/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap.",
+      "runnerSha256": "f59f21ba85ad19251f6be5823e9a75dae7829f1a37a8515eb778419f0f8b4b4e"
+    },
+    "family-acl-permissions-inheritance/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap.",
+      "runnerSha256": "af75a540ff6fd3dc138fac9ef5bb2e37c9baee0455d3106654d445d613d88961"
+    },
+    "family-acl-permissions-inheritance/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_acl_workspace.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap.",
+      "runnerSha256": "ceb49df8a8c9eb36eff054c973e30569967c78398f4ce9bcbfbf0445b462eeab"
+    },
+    "family-acl-permissions-inheritance/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only ACL checks with the pytest version baked into the curated image, without the source runner's online bootstrap.",
+      "runnerSha256": "89d5ca6511dc440b4adcd33e26df2b0eee2df1d1d990a45f6833dce76dd198e6"
+    },
+    "family-api-scheduler/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-api-scheduler/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tasks.json",
+        "api_simulator.py",
+        "simulator_intro.md"
+      ],
+      "runnerSha256": "864ddd4bb4052b60c5bc9e873db86a925dcdf2a61b57f4e28e223a986e38a8e8"
+    },
+    "family-audio-synth-stft-peaks/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-audio-synth-stft-peaks/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-audio-synth-stft-peaks/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-audio-synth-stft-peaks/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-audio-synth-stft-peaks/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-audio-synth-stft-peaks/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-audio-synth-stft-peaks/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-audio-synth-stft-peaks/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-audio-synth-stft-peaks/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-audio-synth-stft-peaks/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-audio-synth-stft-peaks/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "9721027a4d66cc1009ec7654506b54f7714327587eca411f1436c8e3399ff502"
+    },
+    "family-bank-trans-filter/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The shared scorer checks only the submitted JSON against a reviewed row set from the restored public CSV; it never executes the private reference.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-bank-trans-filter/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/bank_transactions.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the shared task image; scoring directly invokes the private output-only tests without runtime package installation.",
+      "runnerSha256": "79fe7145af562254c4e425161893c19734c668244415a0171f326c415890fe25"
+    },
+    "family-camera-layout/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-camera-layout/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "floor_plan.json",
+        "camera_geom.py"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer restores the public floor plan and geometry contract before running private coverage checks, preventing solver-side input changes from altering the verifier.",
+      "runnerSha256": "de12c34ecf197829a643640f9f0580a35818e3a592388b35943d3f82240e5ff4"
+    },
+    "family-cocktail-recipes/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7d3abc72e26f14d2ea332e5b2ee3d68fb60deeea2efdff420a9e3872cd2349d6"
+    },
+    "family-cocktail-recipes/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7d3abc72e26f14d2ea332e5b2ee3d68fb60deeea2efdff420a9e3872cd2349d6"
+    },
+    "family-cocktail-recipes/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7d3abc72e26f14d2ea332e5b2ee3d68fb60deeea2efdff420a9e3872cd2349d6"
+    },
+    "family-cocktail-recipes/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7d3abc72e26f14d2ea332e5b2ee3d68fb60deeea2efdff420a9e3872cd2349d6"
+    },
+    "family-cocktail-recipes/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7d3abc72e26f14d2ea332e5b2ee3d68fb60deeea2efdff420a9e3872cd2349d6"
+    },
+    "family-cocktail-recipes/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7d3abc72e26f14d2ea332e5b2ee3d68fb60deeea2efdff420a9e3872cd2349d6"
+    },
+    "family-cocktail-recipes/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7d3abc72e26f14d2ea332e5b2ee3d68fb60deeea2efdff420a9e3872cd2349d6"
+    },
+    "family-cocktail-recipes/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7d3abc72e26f14d2ea332e5b2ee3d68fb60deeea2efdff420a9e3872cd2349d6"
+    },
+    "family-cross-entropy-method/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v12": {
+      "strategy": "source-runner",
+      "testLayout": "runner-tests-subdir",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-cross-entropy-method/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "de41828ff439b04fd90ba792acf6d66174f4e7b8c66f7d4a0b71c40381beae23"
+    },
+    "family-db-wal-recovery/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks the exact recovered rows from the verified seed database and XOR-obfuscated WAL; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered.json produced from the supplied base database and encoded WAL; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered.json reconstructed from the supplied inverted WAL-only backup; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only the recovered employee rows; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered.json after byte-order and frame-page recovery; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered.json after RC4 and fake-frame recovery; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only the merged recovered output from the two damaged WAL streams; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered scalar and base64-encoded BLOB values; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks recovered rows and the restored public view; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks exact rows and relationships across all recovered tables; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks only recovered.json after public-password decryption and frame-page reconstruction; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-db-wal-recovery/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer checks exact recovery and update provenance across both byte-swapped WAL streams; it never invokes the private reference.",
+      "runnerSha256": "3c8077326b5708d0b20882c2d9b29ab00d7f59fd03dc30607ea28c7a309dae7e"
+    },
+    "family-decommissioning-service-with-sensitive-data/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "e3859f9e6f750261f02c3979908ece9324d05de00ab1c01b28f4bf64b9121b15"
+    },
+    "family-decommissioning-service-with-sensitive-data/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "e3859f9e6f750261f02c3979908ece9324d05de00ab1c01b28f4bf64b9121b15"
+    },
+    "family-decommissioning-service-with-sensitive-data/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and task dependencies are fixed in the curated image; scoring invokes the private output-only tests without runtime network installation.",
+      "runnerSha256": "a6457ac28e5d67d615967ad88050a31c0f83ba5b57ef9d7ce3d5e8a0c5f0c6d7"
+    },
+    "family-decommissioning-service-with-sensitive-data/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the task image; direct scoring avoids the source runner's runtime curl/uv installation.",
+      "runnerSha256": "e3859f9e6f750261f02c3979908ece9324d05de00ab1c01b28f4bf64b9121b15"
+    },
+    "family-decommissioning-service-with-sensitive-data/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the task image; direct scoring avoids the source runner's runtime package installation.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-decommissioning-service-with-sensitive-data/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the task image; direct scoring avoids the source runner's runtime package installation.",
+      "runnerSha256": "0026d38703feb454509ca2f9a3134348391ed2f4494641442c13cabf7cbaa0ce"
+    },
+    "family-decommissioning-service-with-sensitive-data/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and task dependencies are fixed in the curated image; scoring invokes the private output-only tests without runtime network installation.",
+      "runnerSha256": "e3859f9e6f750261f02c3979908ece9324d05de00ab1c01b28f4bf64b9121b15"
+    },
+    "family-decommissioning-service-with-sensitive-data/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the task image; direct scoring avoids the source runner's runtime curl/uv installation.",
+      "runnerSha256": "e3859f9e6f750261f02c3979908ece9324d05de00ab1c01b28f4bf64b9121b15"
+    },
+    "family-decommissioning-service-with-sensitive-data/v18": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "2991cacae2820aa772c7fe6f12da35c7befe8b204f84fe68aaba4fcbb2bfc78b"
+    },
+    "family-deterministic-tarball/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "src"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored from its pre-rollout snapshot before reproducibility, exclusion, normalization, and archive-format checks.",
+      "runnerSha256": "55949f27b5c00236c37816399392c6287c2015e344b7ce9336ae71bfcf7ec41f"
+    },
+    "family-deterministic-tarball/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "src"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored from its pre-rollout snapshot before manifest, metadata, and byte-reproducibility checks.",
+      "runnerSha256": "885bf1db1c981ee99aa3e43986b4e13de79c6c7ea9864be606f995098d43c44c"
+    },
+    "family-deterministic-tarball/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "src"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored before manifest-driven type, mode, text-normalization, epoch, and archive-format checks.",
+      "runnerSha256": "39706a667624cfe64b90384940b588679bf1bc708103c0ccabfe7769f9a65c40"
+    },
+    "family-deterministic-tarball/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "src"
+      ],
+      "testTarget": "test_release_archives.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored before independently checking both payload and metadata archives.",
+      "runnerSha256": "e0efbf362152f7d70474031137de889fbc0b0abac1271be141756a784104bc75"
+    },
+    "family-deterministic-tarball/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "src"
+      ],
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored before checking dynamic packaging manifests, contents, modes, and reproducibility.",
+      "runnerSha256": "17921dd5f36e8bba6054e659475525c042e97a3323530f40d74c52d06053f1b7"
+    },
+    "family-deterministic-tarball/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "sdk"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the SDK tree is restored before checking symlink preservation, exclusions, PAX metadata, ordering, and epoch behavior.",
+      "runnerSha256": "896bb96834c9448d25d744adb60b4410f79b492aa57c875adaec9e6ba76d2dbf"
+    },
+    "family-deterministic-tarball/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "src"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the monorepo tree is restored before scoped normalization, exclusion, metadata, and gzip reproducibility checks.",
+      "runnerSha256": "19eb2f73e55312baab9a5efb6484c616a761cd6c7c02a5296ec0b7e1bc9118d2"
+    },
+    "family-deterministic-tarball/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "src"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the Rust source tree is restored before text/binary, symlink, permission, timestamp, ordering, and xz checks.",
+      "runnerSha256": "3b4683f3e66ffb3b4cbbfbac74bb7141def2ce1525ecef418e8c0428a533281f"
+    },
+    "family-deterministic-tarball/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "workspace"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the project workspace is restored before archive layout, transformation, exclusion, gzip-header, and reproducibility checks.",
+      "runnerSha256": "463346e4107cf25d49bb5bf92d020c0dfd5b6f333fe103d06c91a869db75d5dc"
+    },
+    "family-deterministic-tarball/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "site-src"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired output-only scorer requires the agent-authored build.sh and never executes the private reference; the website source tree is restored before verification.",
+      "runnerSha256": "22b3b057233b0a5af7dc7de8e6c34298bf5efb5c25b2368ec176e10dbebae5ce"
+    },
+    "family-deterministic-tarball/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "src"
+      ],
+      "testTarget": "test_release_bundle.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored before ordered include/exclude manifest, metadata, byte identity, and epoch checks.",
+      "runnerSha256": "b4b5b27dfdeedf16d977a7587e38ef0d5584d16e87c787c0ca304b74ea309a0c"
+    },
+    "family-deterministic-tarball/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "src"
+      ],
+      "testTarget": "test_build_archive.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the offline scorer; the source tree is restored before independent canonical archive construction and full member verification.",
+      "runnerSha256": "573ac1ae5e6aa5a5e2945f31c57c5b230134113fa40bee8bb9bbb064a959281b"
+    },
+    "family-excel-auto/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/company_revenues.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-excel-auto/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/score.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-excel-auto/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/financial_report_2.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-excel-auto/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/score.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-excel-auto/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/team_training_schedule.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-excel-auto/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/calendar"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-excel-auto/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/financial_report.pdf"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-excel-auto/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/Invoice.pdf",
+        "data/Invoice_2.pdf"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-excel-auto/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/Invoice.pdf",
+        "data/Invoice_2.pdf"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-filter-js-from-html/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and browser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "27e91fdba73e0f2733013a6eee50d9d65c3dec79468f17984c3408191958534d"
+    },
+    "family-filter-js-from-html/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and browser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "5764f894af959d1896a80ef2a6f60a192cc05844931f6d9ca712313996168195"
+    },
+    "family-filter-js-from-html/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "db27712af288c5652e4295a0da4e5a1f00bc62f15661b5f040093831d86a12cf"
+    },
+    "family-filter-js-from-html/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "f6ae58da827273d758a49b56d78926ccfbc3ca935f0990f08cf507f86032171c"
+    },
+    "family-filter-js-from-html/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and browser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "3f3181f6f874e5c8f92029e2bb544faf9889f9c708705b29d739eb116f878d30"
+    },
+    "family-filter-js-from-html/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pinned parser and browser dependencies execute the output-only sanitizer suite directly; the private reference is never invoked.",
+      "runnerSha256": "5764f894af959d1896a80ef2a6f60a192cc05844931f6d9ca712313996168195"
+    },
+    "family-filter-js-from-html/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "e28d2fe7d09adad825fba690f86e45472e7acef6f15b13349d4bf4e26e5497a1"
+    },
+    "family-filter-js-from-html/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pinned parser and browser dependencies execute the agent-created sanitizer directly; the legacy runner no longer replays the private reference.",
+      "runnerSha256": "556ae135fdcae88e4611ef4202a3f6038db2f3a9b6557059293136cf83177e23"
+    },
+    "family-filter-js-from-html/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "556ae135fdcae88e4611ef4202a3f6038db2f3a9b6557059293136cf83177e23"
+    },
+    "family-filter-js-from-html/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and browser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "a4d6a73291d871ffe1bcd4a7a660d90c0520ed8b28ad86d6dd0efd4522aae4a0"
+    },
+    "family-filter-js-from-html/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "36b330a1b4227216de2cf18c1ca8cf1505321b4ee4211d8129ca7dfa1675eed7"
+    },
+    "family-filter-js-from-html/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "63efa2ddd1c244ea451375f74460cab702f46fd35453d3641585e95b86459b51"
+    },
+    "family-filter-js-from-html/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "a506c32cf7b50b49fe2750f9f48e867bb077646dd7ed0e4e7bd9c72930b49ee2"
+    },
+    "family-filter-js-from-html/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Only public input pages enter the task image; private normalized output digests and synthetic checks score the agent sanitizer without exposing expected HTML.",
+      "runnerSha256": "2cb2b76ba21e95eb6eef9a38c40e80ab53fdf9e63e87881e57eeb282c5d6da3c"
+    },
+    "family-filter-js-from-html/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Only tainted realistic pages are public; private clean-output digests and fresh synthetic checks score exact preservation without running the reference.",
+      "runnerSha256": "12a730f66b89ac45c1c7b627f13ee041ebbb5dc6359adcacd0e1a644087a86aa"
+    },
+    "family-filter-js-from-html/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_filter.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and parser dependencies are fixed in the curated image; scoring invokes the private tests directly without runtime network installation.",
+      "runnerSha256": "a99d246fc29054f9a2924517554da44412b54553b39e3fa9d62daf393b974f29"
+    },
+    "family-financial-analysis/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates the complete requested per-year result artifact and never invokes the private reference.",
+      "runnerSha256": "c1609f548e4bb698f9290a1c38b6a8e238f1a7860744e44c6e5c24d04e89784d"
+    },
+    "family-financial-analysis/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates all AMD operating-margin rows and never invokes the private reference.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-financial-analysis/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates the complete signed year-over-year growth series and never invokes the private reference.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-financial-analysis/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates all joined income/equity ROE rows and never invokes the private reference.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-financial-analysis/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates the complete Excel schema, source values, and calculated net margins without invoking the private reference.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-financial-analysis/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates every joined Chinese-statement ROE row and never invokes the private reference.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-financial-analysis/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer validates all Wuliangye operating-margin rows and never invokes the private reference.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-financial-document-processor/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-financial-document-processor/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The private scorer evaluates only the final routed documents and summary CSV against reviewed case expectations; it never executes the reference implementation.",
+      "runnerSha256": "9f3c23de1c160bf231c0d18c1a37957808d7d37d2bc4aaa765957686188a4b31"
+    },
+    "family-flask/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "62a54f18a118c73a5aa00613b58bce71f1771b82a5f996858df542ab53e37b65"
+    },
+    "family-flask/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "62a54f18a118c73a5aa00613b58bce71f1771b82a5f996858df542ab53e37b65"
+    },
+    "family-flask/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "62a54f18a118c73a5aa00613b58bce71f1771b82a5f996858df542ab53e37b65"
+    },
+    "family-flask/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "62a54f18a118c73a5aa00613b58bce71f1771b82a5f996858df542ab53e37b65"
+    },
+    "family-flask/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "62a54f18a118c73a5aa00613b58bce71f1771b82a5f996858df542ab53e37b65"
+    },
+    "family-flask/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "62a54f18a118c73a5aa00613b58bce71f1771b82a5f996858df542ab53e37b65"
+    },
+    "family-flask/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "62a54f18a118c73a5aa00613b58bce71f1771b82a5f996858df542ab53e37b65"
+    },
+    "family-flask/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "62a54f18a118c73a5aa00613b58bce71f1771b82a5f996858df542ab53e37b65"
+    },
+    "family-flask/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "62a54f18a118c73a5aa00613b58bce71f1771b82a5f996858df542ab53e37b65"
+    },
+    "family-git-leak-recovery/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "af63ccd71b1a0782d96924bc27860a7deb29c82ddf9e92dca189a78314bac381"
+    },
+    "family-git-leak-recovery/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "af63ccd71b1a0782d96924bc27860a7deb29c82ddf9e92dca189a78314bac381"
+    },
+    "family-git-leak-recovery/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "af63ccd71b1a0782d96924bc27860a7deb29c82ddf9e92dca189a78314bac381"
+    },
+    "family-git-leak-recovery/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "af63ccd71b1a0782d96924bc27860a7deb29c82ddf9e92dca189a78314bac381"
+    },
+    "family-git-leak-recovery/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "af63ccd71b1a0782d96924bc27860a7deb29c82ddf9e92dca189a78314bac381"
+    },
+    "family-git-leak-recovery/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "af63ccd71b1a0782d96924bc27860a7deb29c82ddf9e92dca189a78314bac381"
+    },
+    "family-git-leak-recovery/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "af63ccd71b1a0782d96924bc27860a7deb29c82ddf9e92dca189a78314bac381"
+    },
+    "family-git-leak-recovery/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "af63ccd71b1a0782d96924bc27860a7deb29c82ddf9e92dca189a78314bac381"
+    },
+    "family-git-leak-recovery/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "af63ccd71b1a0782d96924bc27860a7deb29c82ddf9e92dca189a78314bac381"
+    },
+    "family-git-leak-recovery/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "683613f21b6bbbf32c3cd2438d21aed48e00e107bb45d890ae06b0a437e05e96"
+    },
+    "family-git-leak-recovery/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "ebb087b3ed7120128b645b0c705ca2743e6c82dc1a378f2a433266b880fa5bef"
+    },
+    "family-git-leak-recovery/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "45307019cd11737f2f59464a7db259138844d70e657a2fe9ce50d6b71f7f325c"
+    },
+    "family-git-leak-recovery/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "f92ba93121731bc2f2002155b0c2874816d1fde76c56f51f761098f41f17ad73"
+    },
+    "family-git-leak-recovery/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated Git image includes pinned pytest; the hidden scorer checks recovery, object cleanup, and preservation without a runtime reference oracle.",
+      "runnerSha256": "1ab3237526d304c97a2dd421b3637de1f59c245f91806762ef4e9ef23f9e21b0"
+    },
+    "family-graph-bfs/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "4fb00c666ecb075699f6a9d1f047f61641221e92fdab43c53bc713fa3a24f922"
+    },
+    "family-graph-bfs/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "4fb00c666ecb075699f6a9d1f047f61641221e92fdab43c53bc713fa3a24f922"
+    },
+    "family-graph-bfs/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "4fb00c666ecb075699f6a9d1f047f61641221e92fdab43c53bc713fa3a24f922"
+    },
+    "family-graph-bfs/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "4fb00c666ecb075699f6a9d1f047f61641221e92fdab43c53bc713fa3a24f922"
+    },
+    "family-html-edit/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-html-edit/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-html-edit/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-html-edit/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-html-edit/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-html-finance-verify/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-html-finance-verify/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-jq-data-processing/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl and uv before invoking this exact pytest file. Pytest and the test dependencies are baked into the curated image, so this adapter removes only the network bootstrap.",
+      "runnerSha256": "13ad86b02ee071d6b80db9ba324a2fc25f4959dabf38e5e263959e09fc94c9a7"
+    },
+    "family-jq-data-processing/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation.",
+      "runnerSha256": "b3b09f7556b49c9a3971d2445a246ba83d6db7bdc0b8438c3107a5484edfe13c"
+    },
+    "family-jq-data-processing/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl and uv before invoking this exact pytest file. Pytest and the test dependencies are baked into the curated image, so this adapter removes only the network bootstrap.",
+      "runnerSha256": "38c116ef401c6f4756c89de9eb2fb8c6bedb907d5110985554d50a1718e11144"
+    },
+    "family-jq-data-processing/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation.",
+      "runnerSha256": "16a0b2b060229b75b0774a0cbebbbe5effb1fabdfb2ff31723b9747bc51e5cfd"
+    },
+    "family-jq-data-processing/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation.",
+      "runnerSha256": "21ab11f6c3324f67c4b1cd68bc32489a2748a595779993e57ef697224bd32f99"
+    },
+    "family-jq-data-processing/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl and uv before invoking this exact pytest file. Pytest and the test dependencies are baked into the curated image, so this adapter removes only the network bootstrap.",
+      "runnerSha256": "8e1a3769e92c32d765eba88e823a8dc113ef31bc50396c2b7311861958d482de"
+    },
+    "family-jq-data-processing/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation.",
+      "runnerSha256": "c1adf25f0d8c55132556fe1407ef65dc81f333423d4979e28f4eba26aede41a5"
+    },
+    "family-jq-data-processing/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl and uv before invoking this exact pytest file. Pytest and the test dependencies are baked into the curated image, so this adapter removes only the network bootstrap.",
+      "runnerSha256": "13ad86b02ee071d6b80db9ba324a2fc25f4959dabf38e5e263959e09fc94c9a7"
+    },
+    "family-jq-data-processing/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation.",
+      "runnerSha256": "e1092172dc8167fe8b8d8f200e334c63bde1dc6abc9558d034835a9819fc5b61"
+    },
+    "family-jq-data-processing/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation.",
+      "runnerSha256": "ffd906b25da9db0e8903251efc70c8fee15fb7ab2353ed37d63e0d2fc20460b5"
+    },
+    "family-jq-data-processing/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation.",
+      "runnerSha256": "5d760e124eb81c0f505388e1686946d3f494331b994948772194d40711979105"
+    },
+    "family-jq-data-processing/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest and jq/yq dependencies are fixed in the shared image; scoring directly invokes the private input-derived tests without runtime installation.",
+      "runnerSha256": "bee0722267bba29020253c80d8d7d0a68a7614fc1a6662d4b7ccd3974e8757d7"
+    },
+    "family-kv-store-grpc/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner installs test-only packages at scoring time before invoking this exact pytest file. Pytest is baked into the curated image; task-required gRPC packages remain the agent's responsibility.",
+      "runnerSha256": "a6c2132eb955eca783972708fc9c536f467b4482faea734296e869fe4d54b7b4"
+    },
+    "family-kv-store-grpc/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution.",
+      "runnerSha256": "25522e853c508887a0e5c342a932aaf0a70ccba5b4b410330fd0a3a9e227864b"
+    },
+    "family-kv-store-grpc/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution.",
+      "runnerSha256": "6677e91f93f010df1b91a02e6b61e8044f16768375d5a2bdd2055a9ad705a7fb"
+    },
+    "family-kv-store-grpc/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner installs test-only packages at scoring time before invoking this exact pytest file. Pytest is baked into the curated image; task-required gRPC packages remain the agent's responsibility.",
+      "runnerSha256": "0d55a9a0564ec76a8d8b4ebccb72834f4398fb723050148e4f42ff8af6daf050"
+    },
+    "family-kv-store-grpc/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest and the scorer-only psutil dependency; private tests exercise startup delay, real gRPC state, and concurrent increments without executing the reference solution.",
+      "runnerSha256": "a6c2132eb955eca783972708fc9c536f467b4482faea734296e869fe4d54b7b4"
+    },
+    "family-kv-store-grpc/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution.",
+      "runnerSha256": "25522e853c508887a0e5c342a932aaf0a70ccba5b4b410330fd0a3a9e227864b"
+    },
+    "family-kv-store-grpc/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution.",
+      "runnerSha256": "3c2dba83b902e8608fab44da75308c32170fbbe2f36b2047d026604bdab321d2"
+    },
+    "family-kv-store-grpc/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner installs test-only packages at scoring time before invoking this exact pytest file. Pytest is baked into the curated image; task-required gRPC packages remain the agent's responsibility.",
+      "runnerSha256": "d1db24da5e81e4c7079a0498f5f76ec2fb30eea564f0db0ccb7f820917ecd228"
+    },
+    "family-kv-store-grpc/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution.",
+      "runnerSha256": "c741d31ae87d5591a17deebdfe700250326597daa338c93e7911b4b0be34c21e"
+    },
+    "family-kv-store-grpc/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner also executes the private reference, so it is bypassed; private pytest instead evaluates the agent/reference artifact directly against concurrent inventory semantics.",
+      "runnerSha256": "29ca8b8c61a08914fdbe6d72f88c8f521d5bc17fc8f35652de11a2c6d4cb9d0d"
+    },
+    "family-kv-store-grpc/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise the generated bindings and real long-lived gRPC service without executing the reference solution.",
+      "runnerSha256": "85924ad186df03973b5079aa758b8acfb3a0214af7188172762d39f74024fbfb"
+    },
+    "family-kv-store-grpc/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner installs test-only packages at scoring time before invoking this exact pytest file. Pytest is baked into the curated image; task-required gRPC packages remain the agent's responsibility.",
+      "runnerSha256": "45a1d658fd8462eea96db9a95945a8645b94f86313524f7582e567c885bc2d2f"
+    },
+    "family-kv-store-grpc/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise compare-and-set behavior under contention through the real gRPC endpoint.",
+      "runnerSha256": "ce9e419499da1557eca04c87d0a3adf0b6fc1b5d9c17533a197c2f80ea8c2246"
+    },
+    "family-kv-store-grpc/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise both services, delayed readiness, state snapshots, and the real gRPC endpoint.",
+      "runnerSha256": "ce9e419499da1557eca04c87d0a3adf0b6fc1b5d9c17533a197c2f80ea8c2246"
+    },
+    "family-kv-store-grpc/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests exercise structured repeated fields, deterministic ordering, persistence, and fresh channels.",
+      "runnerSha256": "b93a287826e74472c55b6de4b3e42dc8806300f830428a7c0941b1fea21fbd55"
+    },
+    "family-kv-store-grpc/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins pytest; private tests require a real generated and running gRPC implementation even though the state machine is smaller.",
+      "runnerSha256": "ae9fba8d6011240b6b377db3909aef44e36cfee23987cc2750f711e415291286"
+    },
+    "family-multi-source-data-merger/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, pandas, and pyarrow before invoking this exact pytest file. Those dependencies are baked into the curated image, so this adapter removes only the network bootstrap.",
+      "runnerSha256": "9549a8bf3a92c0bca792ff9dbd0b87a4521a0a9e8bb4d814b251e064afdc456b"
+    },
+    "family-multi-source-data-merger/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated input-derived scorer evaluates only the submitted Parquet and JSON artifacts; it never executes the private reference solution.",
+      "runnerSha256": "e45bee97e995d6fa3ae4f8ebc4aeda01464d76657390a5fd0e9bf9116ffdc430"
+    },
+    "family-multi-source-data-merger/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated input-derived scorer evaluates only the submitted Parquet and JSON artifacts; it never executes the private reference solution.",
+      "runnerSha256": "65dd8de2c5f29d49cfc625323b81df5a9dc6732a70356c5ec0ee00dfa3f7beb2"
+    },
+    "family-multi-source-data-merger/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, pandas, and pyarrow before invoking this exact pytest file. Those dependencies are baked into the curated image, so this adapter removes only the network bootstrap.",
+      "runnerSha256": "d4507a87e3401e466bc1c867ab024e2b7adc4e16f841928fccfb223abcba1beb"
+    },
+    "family-multi-source-data-merger/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pandas, PyArrow, and pytest are fixed in the shared image; scoring directly invokes private output-only tests without runtime installation.",
+      "runnerSha256": "3ae6f9b521e89e81598485ddbee4cf02de454160599dbe902a68d4ad93d1974f"
+    },
+    "family-multi-source-data-merger/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pandas, PyArrow, and pytest are fixed in the shared image; scoring directly invokes private output-only tests without runtime installation.",
+      "runnerSha256": "38aa76dfa862dd9644fbd183ccff78a39958eb36111769495400c3189280d537"
+    },
+    "family-multi-source-data-merger/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pandas, PyArrow, and pytest are fixed in the shared image; scoring directly invokes private output-only tests without runtime installation.",
+      "runnerSha256": "c5114f0caa8e4f184744411bd05812cdc8d62a0d3c12b023b04878da5bac6e2a"
+    },
+    "family-multi-source-data-merger/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, pandas, and pyarrow before invoking this exact pytest file. Those dependencies are baked into the curated image, so this adapter removes only the network bootstrap.",
+      "runnerSha256": "17f7d2132e55980aad8049fbfd7d778b6f8cbdd093909915b1cb3cfa5054fc5e"
+    },
+    "family-multi-source-data-merger/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pandas, PyArrow, and pytest are fixed in the shared image; scoring directly invokes private output-only tests without runtime installation.",
+      "runnerSha256": "3623456fa5cba405e610c7ed416a02fbd8a4bdc66226465b98a2d508ab50d748"
+    },
+    "family-multi-source-data-merger/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated input-derived scorer evaluates only the submitted Parquet and JSON artifacts; it never executes the private reference solution.",
+      "runnerSha256": "9549a8bf3a92c0bca792ff9dbd0b87a4521a0a9e8bb4d814b251e064afdc456b"
+    },
+    "family-multi-source-data-merger/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, pandas, and pyarrow before invoking this exact pytest file. Those dependencies are baked into the curated image, so this adapter removes only the network bootstrap.",
+      "runnerSha256": "0e1ca123e7bff63ad6fcc38ada4ca09faf4d10764bdbb0ba5fed26a799a5d7f6"
+    },
+    "family-multi-source-data-merger/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pandas, PyArrow, and pytest are fixed in the shared image; scoring directly invokes private output-only tests without runtime installation.",
+      "runnerSha256": "45eac72473a77e27b9bf67559cef6b7219517c120456cbde7b815cb69fc4df98"
+    },
+    "family-multi-source-data-merger/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated input-derived scorer evaluates only the submitted Parquet and JSON artifacts; it never executes the private reference solution.",
+      "runnerSha256": "4fbefda67cea1ae587fd59fed5b37171090885f343a444751a201efe58e8e5b5"
+    },
+    "family-multi-source-data-merger/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated input-derived scorer evaluates only the submitted Parquet and JSON artifacts; it never executes the private reference solution.",
+      "runnerSha256": "0f631d7d07b3ac2305967fb566e4345f52bc0567c36dbf2f8d8a91dfcce50be6"
+    },
+    "family-ode-solver-rk4/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer executes the submitted solver across multiple mild nonlinear IVPs without invoking the private reference script.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The scorer executes only the submitted ode_solve.py against generated IVPs and independently computed numerical references.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer evaluates sharp-curvature and near-coincident target cases without invoking the private reference script.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer measures the strict RHS-call budget on three schedules without invoking the private reference script.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer measures exact landing through a dense middle burst without invoking the private reference script.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer enforces the public 1/400 step ceiling and 6*steps+12 call budget without invoking the private reference script.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer evaluates local curvature bursts and clustered outputs without invoking the private reference script.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer and reference both enforce the public 1/800 step ceiling and tight call budget.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-ode-solver-rk4/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_suite.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer evaluates stronger nonlinear dynamics under clustered schedules and a tight call budget without invoking the private reference script.",
+      "runnerSha256": "f31187a471cf0d9b6427390a3c20241ca744dd35b1ba5e03a70967f77e6a5a37"
+    },
+    "family-office-workflow/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-office-workflow/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-office-workflow/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-office-workflow/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/calendar/Bob.ics",
+        "data/calendar/Tom.ics"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-office-workflow/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/class_member.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-office-workflow/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/sales_report.pdf"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-office-workflow/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-office-workflow/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "data/UIC_Admitted_Students.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-office-workflow/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-organization-json-generator/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "8e3820525fdfedb2fc95b206794324de80540a458f66121a7cc4ad87c1017424"
+    },
+    "family-organization-json-generator/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "5154cc32037af879da298f574ed6def2eb5a3ab4e38364911ea7f278354ec0e0"
+    },
+    "family-organization-json-generator/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "5154cc32037af879da298f574ed6def2eb5a3ab4e38364911ea7f278354ec0e0"
+    },
+    "family-organization-json-generator/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "5154cc32037af879da298f574ed6def2eb5a3ab4e38364911ea7f278354ec0e0"
+    },
+    "family-organization-json-generator/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "1d5ff193ab63dc51ba315e1a33596c5a44f88c605cbfdfc31c425f911cc1ee14"
+    },
+    "family-organization-json-generator/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "be9f4f02f16abd125e3ddedeea885d851217fb16102f010b422f32c9bf0c33bc"
+    },
+    "family-organization-json-generator/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "60d3114882a6890f6666e37a3f6aa39fa51bbb3bc6f29b3f9e912e54a92e8706"
+    },
+    "family-organization-json-generator/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "f5ff2fbc8d20ec3377c69cbff5cd3956c478abfd2be09cc2d755f965253d42c7"
+    },
+    "family-organization-json-generator/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "4e7d2d4728ed79f592cd96a61554aceb3ed7ed1ca4fef7f57105ff031207de91"
+    },
+    "family-organization-json-generator/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "4614a37228cb496246c5f77fdd273940e5cc0ec6dee2cdb9dc3db7eb85a7a071"
+    },
+    "family-organization-json-generator/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "3c6ac4160471d492e2ec724a83a3716707d5745cfaeb2cec397b12610aff4c12"
+    },
+    "family-organization-json-generator/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "54adc45e76fc77a2c21bd25f2e6b87c808daf5e01bbe07de18a75227cc0644a0"
+    },
+    "family-organization-json-generator/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "A shared output-only scorer reconstructs the normalized organization from the public CSVs and avoids hidden identity constants.",
+      "runnerSha256": "28c8f9bbce70f80197b4c7f0cdcb49b93d025080a55c51742b4385f774ee36ea"
+    },
+    "family-password-recovery/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "1951e0b4be1eadea518b1dc96bc078092582b9c8ea235b07369a40a36c8183ff"
+    },
+    "family-password-recovery/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "5e6c0006086fc606ed1605c5115b780ef79c57fb23ff2789eb38f4202490211d"
+    },
+    "family-password-recovery/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "5e6c0006086fc606ed1605c5115b780ef79c57fb23ff2789eb38f4202490211d"
+    },
+    "family-password-recovery/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "0205638b61d716a1ed6159340be02518399c036b46dfc93c3e4041af7156bb94"
+    },
+    "family-password-recovery/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The repaired scorer requires exactly one CRC-verified password instead of accepting a dump of all syntactic candidates.",
+      "runnerSha256": "fbae5aca88329f555b1385be3f27f277445289e314bcb1a23a8fa5b9ee33329b"
+    },
+    "family-password-recovery/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "0fb56ae8ef14812d585195fabab0ede422d7b3d601018e5b15f710bd2bff1631"
+    },
+    "family-password-recovery/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "5e6c0006086fc606ed1605c5115b780ef79c57fb23ff2789eb38f4202490211d"
+    },
+    "family-password-recovery/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "5e6c0006086fc606ed1605c5115b780ef79c57fb23ff2789eb38f4202490211d"
+    },
+    "family-password-recovery/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "1951e0b4be1eadea518b1dc96bc078092582b9c8ea235b07369a40a36c8183ff"
+    },
+    "family-password-recovery/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "5e6c0006086fc606ed1605c5115b780ef79c57fb23ff2789eb38f4202490211d"
+    },
+    "family-password-recovery/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated test retains the public format/checksum checks and adds a hidden exact-answer digest so an arbitrary checksum collision cannot pass.",
+      "runnerSha256": "44ab3836d5b3141ac204ccd2be329eff3322e71293d3bb4d7331ea31ce10cdd3"
+    },
+    "family-password-recovery/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "1e74d105552be7a765c32b58ae907b18bfee796b1d98d8bf4366adfe6571546e"
+    },
+    "family-password-recovery/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated forensic image bakes pinned pytest so scoring runs the original output-only assertions without network bootstrap.",
+      "runnerSha256": "d0ba1a3c4b8d377af1d4894405cd8009db954c4c56795ac540785cc99c5bd51e"
+    },
+    "family-pptx-edit/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-pptx-edit/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-pptx-edit/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-pptx-edit/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-pptx-edit/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-pptx-edit/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-pptx-edit/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-pypi-server/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "af341c39a8cb673351dfbf975d5e55d84b80133a2fa987e855dd6dd023ac2512"
+    },
+    "family-pypi-server/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "b14b4c26df2e4f9fcdf5cf75e39e1bdb17192d18f01989f18d53e9468c014499"
+    },
+    "family-pypi-server/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "c8a93369f75ef7385f3ab53336324e1c8062e553953978d213c753e65d8f56ca"
+    },
+    "family-pypi-server/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "66691b113cfddd0664505317a0e459fabfb5b188fc280021c042559a7eceee58"
+    },
+    "family-pypi-server/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the local-index and pytest toolchain; the output-only scorer checks the live repaired release without network bootstrap.",
+      "runnerSha256": "dc3fd4a3ca84cd8856b0864b06bcbc6300f6903a753c6f17afc00ff5ab3af9f9"
+    },
+    "family-pypi-server/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins the package-build, local-index, and pytest toolchain; the output-only scorer validates the live service and fresh installations without running the private reference.",
+      "runnerSha256": "3a6f14bb3e4b5aeec48ea5d610e5c2d16e202996d309bdebfa810b415ef51d03"
+    },
+    "family-pypi-server/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins build and pytest; scoring requires the solver to leave its own local index alive instead of starting a verifier-owned substitute service.",
+      "runnerSha256": "887c1a50b19be751e5df05dd9566bc103f9d13e21a00fd3104c1d87548746ec5"
+    },
+    "family-pypi-server/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "e02676ffe49ea62fff5258f3f4f00a61c56e88ff9518d47dcd577726e6b06fd2"
+    },
+    "family-pypi-server/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image removes prebuilt correct wheels and pins the authenticated-index toolchain; the scorer validates only the solver-built wheel, live service, fresh install, and rejected bad credentials.",
+      "runnerSha256": "36be51acab2b7ef49c94f52116865924c327d57e0c1831420bed481cb54c7ee2"
+    },
+    "family-pypi-server/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "prebuilt-dist"
+      ],
+      "runnerSha256": "6b383a1bd43a9778c82b88f4449ef09e33de2abf5747b2d252ca827c497243b8"
+    },
+    "family-pypi-server/v11": {
+      "strategy": "source-runner",
+      "testLayout": "runner-tests-subdir",
+      "runnerSha256": "aa2e90358d841acff803302de94b9ecb7d27036b381b9045f408f8b192dd2608"
+    },
+    "family-pypi-server/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated output-only scorer probes the declared authenticated upload endpoint, byte-exact hosted artifacts, and fresh installation without replaying the private reference.",
+      "runnerSha256": "885640d9de06f82a969e003bf6e9a8282df8eaea81c80c960ddc248919a5208b"
+    },
+    "family-pypi-server/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "c4288d0d74c0b02707dea52297d3a019077fbd70dec377efd7285486281dcdd5"
+    },
+    "family-pypi-server/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "d2ba2a0c7be055b45d32006bab2f017997c2e465a8993de94b70afcadbf31032"
+    },
+    "family-pypi-server/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "43efb684de4df8e1dc135765e9c4fdd393a422aaffa745ebbcbebc6a68db1cda"
+    },
+    "family-pypi-server/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image pins build, packaging, and pytest; the scorer checks the solver-created authenticated state, retained old release, new release, and exact fresh install.",
+      "runnerSha256": "d4b054839fda536607fac7edb8625b4da00797a615e33115a63c231ccdabe6bf"
+    },
+    "family-recover-obfuscated-files/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap.",
+      "runnerSha256": "5ffa0080aacb5ed21ae1d13c6f6e04db4ca5cdfda558503a476a30689b7a8c53"
+    },
+    "family-recover-obfuscated-files/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks exact recovered names and bytes without executing the reference solution.",
+      "runnerSha256": "fcf33e54cc36e9c003b817def98233cd860ead872f40752d7738fcc25a1e7bca"
+    },
+    "family-recover-obfuscated-files/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap.",
+      "runnerSha256": "e6aa8d170b1a0280dce206f2a87b09a4cce267e1fbd91e1d205b4ac5801ac6ed"
+    },
+    "family-recover-obfuscated-files/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks exact nested paths, decoded content, and absence of encoding artifacts.",
+      "runnerSha256": "5ffa0080aacb5ed21ae1d13c6f6e04db4ca5cdfda558503a476a30689b7a8c53"
+    },
+    "family-recover-obfuscated-files/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer separates marker-based target identification, filename recovery, exact content, and clean-file exclusion.",
+      "runnerSha256": "5ffa0080aacb5ed21ae1d13c6f6e04db4ca5cdfda558503a476a30689b7a8c53"
+    },
+    "family-recover-obfuscated-files/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks recovered files and verifies that nearby clean files remain unmodified.",
+      "runnerSha256": "5ffa0080aacb5ed21ae1d13c6f6e04db4ca5cdfda558503a476a30689b7a8c53"
+    },
+    "family-recover-obfuscated-files/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks marker selection plus independent filename and content transformations.",
+      "runnerSha256": "5ffa0080aacb5ed21ae1d13c6f6e04db4ca5cdfda558503a476a30689b7a8c53"
+    },
+    "family-recover-obfuscated-files/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner conditionally installs pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap.",
+      "runnerSha256": "4be162cf9198b4798017c5d8972512444fcd80d095a6ff1dee0d6988af604f9d"
+    },
+    "family-recover-obfuscated-files/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks manifest-driven discovery and layered recovery without a runtime reference oracle.",
+      "runnerSha256": "5ffa0080aacb5ed21ae1d13c6f6e04db4ca5cdfda558503a476a30689b7a8c53"
+    },
+    "family-recover-obfuscated-files/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks per-file codec dispatch, marker removal, clean-file exclusion, and exact outputs.",
+      "runnerSha256": "62860d9c8b19454076ff3fa7aae6f97b3886c0efe5e2e3a63c53541c1f3fbe75"
+    },
+    "family-recover-obfuscated-files/v19": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Pytest is pinned in the curated image; the hidden output-only scorer checks scattered-file discovery, decoded names and bytes, and clean-file exclusion.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-recover-obfuscated-files/v20": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-shell-deobfuscation/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "e06982dcee74753e3e5b1af7a5e0156334e4353f84f364906f7467ca027cf475"
+    },
+    "family-shell-deobfuscation/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "e0f4ae8a63d72ca6f0443787f10b75723231e3af66dfeeb80c0140fd7d2f4e09"
+    },
+    "family-shell-deobfuscation/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "1ef077e255ec1d28177792edb4567749d6fcaa5199e90cfdb5ec32642bb558dc"
+    },
+    "family-shell-deobfuscation/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "73b8fb7c13901ac372c69e9e350debfa2792a17ea6670de57221dd613a5e5914"
+    },
+    "family-shell-deobfuscation/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "e4f5d0953a548c0c81e537e5710f98cf4968d636a5b03aab464ab7b9ee430abc"
+    },
+    "family-shell-deobfuscation/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "839b671526facba34acfaad8b10969e3bab0eba46c25f2b02c453592fa01e90f"
+    },
+    "family-shell-deobfuscation/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "0b17f23f5aebabc6ac178407f88105537bfa1d85d4695d87ef58ddb606ce18b0"
+    },
+    "family-shell-deobfuscation/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "e9dd083abdba62c4e3374e982aa0e83a20dc1c5db8e766259832eb580e9e438b"
+    },
+    "family-shell-deobfuscation/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "e1a2acc63689d9b614b6dbef3130cd3cf88698024d06eeb0c51e26da16355550"
+    },
+    "family-shell-deobfuscation/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "1ef077e255ec1d28177792edb4567749d6fcaa5199e90cfdb5ec32642bb558dc"
+    },
+    "family-shell-deobfuscation/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "84c2f52764e927fc21ebf0196a258eaf0471c10fea16bbf3e04839cffca8d863"
+    },
+    "family-shell-deobfuscation/v16": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The unified output-only scorer checks exact recovered bytes, immutable input bytes, permissions, side-effect absence, and the declared nontrivial obfuscation structure without executing the private reference.",
+      "runnerSha256": "84c2f52764e927fc21ebf0196a258eaf0471c10fea16bbf3e04839cffca8d863"
+    },
+    "family-sparql-professors-universities/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v06": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sparql-professors-universities/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "26c301887ff2f25d57278caf93955361f8205bfad17f081d024775ca8c490a6e"
+    },
+    "family-sqlite-db-truncate/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-sqlite-db-truncate/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-sqlite-db-truncate/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-sqlite-db-truncate/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-sqlite-db-truncate/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated fragment image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "ffd93b4e234379db6f6d128b50be57a6dc6ac9988f9da99bd4374c6c6f8369df"
+    },
+    "family-sqlite-db-truncate/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-sqlite-db-truncate/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated fragment image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-sqlite-db-truncate/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "0f363ea8f14abdfd1fac4d013018bbf3cf16a9b54828590a802b49b7e4da3628"
+    },
+    "family-sqlite-db-truncate/v12": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-sqlite-db-truncate/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "0868a02a158839ffe122fc82a44679884ceaba150e170683fdd874d5e192bbbe"
+    },
+    "family-sqlite-db-truncate/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap.",
+      "runnerSha256": "1e912fc3542b6442170e134c1b8ed380875af552c52f954ffbbaee9340542368"
+    },
+    "family-sqlite-db-truncate/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "f8260b5a91c6f3f818e02f37bac6423b08d47a8eccb6a0a8770b742998829421"
+    },
+    "family-sqlite-db-truncate/v18": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "c9f0a17d944eb323f00d9bd1d667d2ac6c0f12f9a73fd7afa6ec0c65a60b7617"
+    },
+    "family-sqlite-db-truncate/v19": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The source runner downloads curl, uv, and pytest before invoking this exact file. This adapter preserves the test target and pins pytest without running that bootstrap.",
+      "runnerSha256": "01fabed8cd018536874a948810244850bc6a0252d7bc0318d1a9fa5d32424d45"
+    },
+    "family-sqlite-db-truncate/v20": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated image provides pinned offline pytest and preserves the source output-only recovery assertions.",
+      "runnerSha256": "148e49fca8ef9216c317c55b70430ec04aa5e8538102f82f0e9108debc043a46"
+    },
+    "family-stock-analysis/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "stock_data.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently recomputes every SMA value from the restored public price series.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-stock-analysis/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "msft_prices.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently recomputes the full discovered-series SMA output from restored public prices.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-stock-analysis/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "googl_prices.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently checks every SMA and pointwise crossover label from restored public prices.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-stock-analysis/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tsla_prices.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently applies the public SMA-seeded EMA convention to the complete restored series.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-stock-analysis/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "aapl_prices.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently applies the public Wilder RSI convention to every restored close.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-stock-analysis/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "msft_prices.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently recomputes full-precision EMA, MACD, and signal series from restored prices.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-stock-analysis/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "googl_prices.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently checks all population-standard-deviation Bollinger bands.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-stock-analysis/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "tsla_prices.json"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently recomputes all JSON-source SMA values and unrounded comparisons.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-stock-analysis/v09": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "aapl_prices.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently distinguishes discrete SMA crossing events from persistent above/below state.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-stock-analysis/v10": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "msft_prices.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently checks the entire Wilder RSI series and all threshold labels.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-stock-analysis/v11": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "googl_prices.csv"
+      ],
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "7.4.4",
+      "rationale": "The scorer independently checks complete MACD, signal, and discrete crossover action series.",
+      "runnerSha256": "1cca583905563804006c7e13c1431e649b89d593d462cdd56880aba2739a0042"
+    },
+    "family-vulnerable-secret/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-vulnerable-secret/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-vulnerable-secret/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-vulnerable-secret/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-vulnerable-secret/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "target.bin"
+      ],
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-vulnerable-secret/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-vulnerable-secret/v18": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "runnerSha256": "f0f3bf8bf1c2ed1aca26a820ce434da8cd6cf347c71838738f0907037329a287"
+    },
+    "family-wasm-pipeline/v01": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only pipeline checks with the pytest version baked into the shared native image.",
+      "runnerSha256": "c8aeff1adc6bd7c8c334d4ab4a84c3d89f41190a271e2c45ac0b8aa3e6ae10c2"
+    },
+    "family-wasm-pipeline/v02": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_pipeline.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer evaluates the submitted pipeline instead of reinstalling the private reference before each case.",
+      "runnerSha256": "b704f487638c0656a876e12cc5473b12ca90c150189d495023b417730ae313ec"
+    },
+    "family-wasm-pipeline/v03": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer evaluates the submitted pipeline instead of reinstalling the private reference before each case.",
+      "runnerSha256": "a225e2b814cec1cf4c1cb268e47c34fb1d4d02bebc0e4ccc0f6d88fc637fd9dc"
+    },
+    "family-wasm-pipeline/v04": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only pipeline checks with the pytest version baked into the shared native image.",
+      "runnerSha256": "e15ab56c93d1b1b94c0ac7d773f90dda1b9e00a5d0257f08aec8714c8cd84fc6"
+    },
+    "family-wasm-pipeline/v05": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer evaluates the submitted pipeline instead of executing the private reference.",
+      "runnerSha256": "9b54951a4e875a163b3291ec9ec517e7e3017d8fd241c6e66094bec670697cdf"
+    },
+    "family-wasm-pipeline/v06": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer evaluates the submitted pipeline instead of reinstalling the private reference.",
+      "runnerSha256": "acbcc3f3b9886001a36d7b0e454665a16ac80804253fc7a2214cab5945c987df"
+    },
+    "family-wasm-pipeline/v07": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the existing output-only contract-driven checks with the fixed shared runtime.",
+      "runnerSha256": "15648e80f0c59af7cb2ec7aaab3bdc047c952b2c4563dcd58f4ec470c3640180"
+    },
+    "family-wasm-pipeline/v08": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only two-slice checks with the fixed shared runtime.",
+      "runnerSha256": "e5f6c2203d8253f6780e15f058a15c3a953dfa8b0d353ed453aa56a754dd37dc"
+    },
+    "family-wasm-pipeline/v13": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "The curated scorer evaluates the submitted state-initializing pipeline instead of executing the private reference.",
+      "runnerSha256": "d9c5e34f86c58d0c53654a03565287625068cfabc9c133a2f4870a4de437df23"
+    },
+    "family-wasm-pipeline/v14": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_outputs.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the output-only XOR-offset checks with the fixed shared runtime.",
+      "runnerSha256": "fd1cdacf80486775d19abfff48aa8c451ac2062f9d9a0c35d6e801a85e4e23f0"
+    },
+    "family-wasm-pipeline/v15": {
+      "strategy": "system-pytest",
+      "testLayout": "flat",
+      "testTarget": "test_pipeline.py",
+      "pytestVersion": "8.4.1",
+      "rationale": "Run the existing output-only seed-initialization checks with the fixed shared runtime.",
+      "runnerSha256": "b5667eba8ddfc93142d42a4bfb133d8ddc3b780fefdd3945a904fd33a7897537"
+    },
+    "family-xlsx-formula/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v10": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v11": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v12": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v13": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v16": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v18": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v19": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-formula/v21": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "cc4d4f9ef435af2f3273c5ff07008da441e517b59a1a72f07f51bfa0e0e08fe2"
+    },
+    "family-xlsx-structure/v01": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-xlsx-structure/v02": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-xlsx-structure/v03": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-xlsx-structure/v04": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-xlsx-structure/v05": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-xlsx-structure/v07": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-xlsx-structure/v08": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-xlsx-structure/v09": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-xlsx-structure/v14": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-xlsx-structure/v15": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    },
+    "family-xlsx-structure/v18": {
+      "strategy": "source-runner",
+      "testLayout": "flat",
+      "immutableInputs": [
+        "input.xlsx"
+      ],
+      "runnerSha256": "7a29f8467bd631193d03e97a57c062bdcc80f1929dd52c69251480e5e9b844d2"
+    }
+  }
+}

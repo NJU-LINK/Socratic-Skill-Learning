@@ -1,0 +1,103 @@
+{
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "api-scheduler",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 184
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 17
+      },
+      "iteration-2": {
+        "records": 20
+      },
+      "iteration-3": {
+        "records": 18
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 15,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 15,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 26,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 18,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 23,
+        "score": 0.5454545454545454,
+        "passed": 6,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 28,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 21,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 17,
+        "score": 0.8181818181818182,
+        "passed": 9,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 22,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 18,
+        "score": 0.7272727272727273,
+        "passed": 8,
+        "failed": 3,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 184,
+    "train": 55,
+    "heldout": 203,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: vectorops
+Version: 0.1.0
+Summary: Vector operations package for a local package index task.
+Author: Task Author
+Author-email: noreply@example.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary

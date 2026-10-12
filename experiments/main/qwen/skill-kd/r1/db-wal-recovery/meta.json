@@ -1,0 +1,84 @@
+{
+  "method": "skill-kd",
+  "round": 1,
+  "family": "db-wal-recovery",
+  "stats": {
+    "skill_formation": {
+      "0000-round_00-student_retry-1e54e057": {
+        "records": 24
+      },
+      "0000-student_initial-b5fc8e31": {
+        "records": 150
+      },
+      "0000-teacher-58afd716": {
+        "records": 72
+      },
+      "0001-student_initial-1d9eb1c3": {
+        "records": 28
+      },
+      "0002-student_initial-24505e95": {
+        "records": 25
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v05": {
+        "records": 59,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 73,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 40,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 105,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 63,
+        "score": 1,
+        "passed": 14,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 36,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 31,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 299,
+    "train": 0,
+    "heldout": 407,
+    "heldoutVariants": 7,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

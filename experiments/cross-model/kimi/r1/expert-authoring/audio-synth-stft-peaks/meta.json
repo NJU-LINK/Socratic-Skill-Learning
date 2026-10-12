@@ -1,0 +1,16 @@
+{
+  "model": "kimi",
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "audio-synth-stft-peaks",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 113
+      }
+    }
+  },
+  "totals": {
+    "records": 113
+  }
+}

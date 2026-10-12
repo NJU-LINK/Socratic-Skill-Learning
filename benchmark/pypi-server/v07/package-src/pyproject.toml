@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vector-ops"
+version = "0.1.0"
+description = "Vector operations package"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+
+[tool.setuptools.packages.find]
+include = ["vectorops*"]

@@ -1,0 +1,33 @@
+axes:
+  - name: wal_encoding_or_obfuscation
+    type: freeform
+    description: >
+      How the SQLite WAL bytes differ from a directly usable WAL. A case may
+      provide a base64 wrapper, single-byte XOR, bitwise inversion, byte
+      swapping, damaged header fields, or an otherwise intact WAL. The
+      invariant is that the transformation can be diagnosed from the supplied
+      artifacts and reversed without private information.
+  - name: wal_and_base_database_integrity
+    type: freeform
+    description: >
+      Which parts of the recovery pair remain trustworthy. Cases may retain a
+      usable base database with missing WAL updates, omit the base database,
+      corrupt frame page numbers or headers, provide partial frames, or split
+      updates across multiple WAL files. The solver must distinguish encoding
+      damage from structural damage before applying pages.
+  - name: recovery_depth
+    type: freeform
+    description: >
+      The amount of manual SQLite recovery required after decoding. Depending
+      on the case, SQLite can consume a repaired WAL directly, frames must be
+      parsed and applied to database pages, or a fresh database/output must be
+      reconstructed from the recoverable pages and schema.
+  - name: schema_and_update_topology
+    type: freeform
+    description: >
+      The recovered state may contain one table or several related tables,
+      different column types and primary keys, different record volumes, and
+      updates distributed across one or more WAL streams. Output must preserve
+      complete rows, key relationships, uniqueness, and the case's declared
+      ordering contract.
+

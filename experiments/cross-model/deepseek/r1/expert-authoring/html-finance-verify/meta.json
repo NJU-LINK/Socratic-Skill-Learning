@@ -1,0 +1,16 @@
+{
+  "model": "deepseek",
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "html-finance-verify",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 160
+      }
+    }
+  },
+  "totals": {
+    "records": 160
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "model": "kimi",
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "xlsx-structure",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 136
+      }
+    }
+  },
+  "totals": {
+    "records": 136
+  }
+}

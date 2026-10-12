@@ -1,0 +1,72 @@
+{
+  "model": "qwen",
+  "method": "fixed-window-ssl",
+  "checkpoint_interval": 5,
+  "round": 1,
+  "family": "sqlite-db-truncate",
+  "run_id": "20260810064806975-develop-g5-sqlite-db-truncate-r1",
+  "stats": {
+    "skill_formation": {
+      "student-author": {
+        "records": 226
+      },
+      "max-educator": {
+        "records": 104
+      }
+    }
+  },
+  "heldout": {
+    "v04": {
+      "score": 0.8333333333333334,
+      "passed": 5,
+      "failed": 1,
+      "errors": 0,
+      "toolCalls": 19,
+      "timedOut": false
+    },
+    "v05": {
+      "score": 1.0,
+      "passed": 19,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 24,
+      "timedOut": false
+    },
+    "v13": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 15,
+      "timedOut": false
+    },
+    "v18": {
+      "score": 1.0,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 28,
+      "timedOut": false
+    },
+    "v19": {
+      "score": 1.0,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 37,
+      "timedOut": false
+    },
+    "v20": {
+      "score": 0.7777777777777778,
+      "passed": 7,
+      "failed": 2,
+      "errors": 0,
+      "toolCalls": 40,
+      "timedOut": false
+    }
+  },
+  "primary_score": 0.9351851851851851,
+  "totals": {
+    "records": 330
+  }
+}

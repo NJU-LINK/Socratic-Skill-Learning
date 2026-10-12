@@ -1,0 +1,24 @@
+instruction: |-
+  Financial data for TSMC is split across two files in different directories:
+  - /app/income.csv  (contains Revenue and Net Income)
+  - /app/balance/equity.csv  (contains Total Equity)
+
+  Your task:
+  1. Read both files and correlate the data by fiscal year
+  2. Calculate Return on Equity (ROE) for each year:
+     ROE = Net Income / Total Equity * 100
+  3. Write to /app/results.csv with columns: fiscal_year,roe_pct
+  4. Round to 2 decimal places
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - financial-analysis
+  - cross-reference
+  - multi-file
+  - roe
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

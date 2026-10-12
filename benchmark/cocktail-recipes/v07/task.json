@@ -1,0 +1,29 @@
+{
+  "description": "The ingredient proportions for Whiskey Sour are wrong. Correct them based on the IBA standards.",
+  "recipe": {
+    "name": "Whiskey Sour",
+    "glass": "old-fashioned",
+    "category": "Before Dinner Cocktail",
+    "ingredients": [
+      {
+        "unit": "cl",
+        "amount": 5.5,
+        "ingredient": "Whiskey",
+        "label": "Bourbon whiskey"
+      },
+      {
+        "unit": "cl",
+        "amount": 4.0,
+        "ingredient": "Lemon juice"
+      },
+      {
+        "unit": "cl",
+        "amount": 2.5,
+        "ingredient": "Syrup",
+        "label": "Sugar syrup"
+      }
+    ],
+    "garnish": "Half an orange slice and cherry",
+    "preparation": "Dash egg white (Optional: if used shake little harder to foam up the egg white). Pour all ingredients into cocktail shaker filled with ice. Shake. Strain into cocktail glass. If served \u2018On the rocks\u2019, strain ingredients into old-fashioned glass filled with ice."
+  }
+}

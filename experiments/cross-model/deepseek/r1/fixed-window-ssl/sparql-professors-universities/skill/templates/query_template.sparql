@@ -1,0 +1,73 @@
+PREFIX uni: <http://university.org/ontology#>
+
+# Family-general template for sparql-professors-universities.
+# One row per qualifying (person, university) pair, projection ?professorName ?universityName.
+#
+# ADAPT to the variant before use:
+#  - replace the uni: prefix / predicate names with those found in the variant graph
+#  - extend the rank signals and the qualifying token set ("professor" | "assoc." | ...)
+#    to match the variant's rank vocabulary (role strings and/or hasAcademicRank/rankLabel)
+#  - keep the BOUND guards, the guarded fallback, the '*' + terminal-type anchor,
+#    and the GROUP BY on IRI pairs: these are what make the query robust, not decoration.
+#
+# Three rules encoded here, in priority order:
+#
+# 1) Rank identification is DISJUNCTIVE: every candidate rank signal is bound in an
+#    OPTIONAL and tested with a BOUND-guarded case-insensitive token filter (any
+#    signal may qualify a person). Unguarded CONTAINS on an unbound variable is a
+#    filter error that can silently drop ALL rows on some engines.
+#    Name selection is EXCLUSIVE, not disjunctive: ?pname and ?uname are bound ONLY
+#    by the variant's primary name predicates (the ones the task instruction names).
+#    Alias/label predicates (hasAlternateName, skos:altLabel, ...) must NOT feed the
+#    aggregates: MIN(?x) is lexicographic and would systematically emit the alias.
+#
+# 2) Affiliation: preferred worksAt -> partOfUniversity* -> University-typed terminal.
+#    '*' + anchor subsumes direct affiliation (zero hops), seed depth (one hop),
+#    and deep chains (many hops); '+' would lose direct-affiliation professors, and
+#    a bare path without the type anchor would leak named intermediate orgs.
+#    Course path is a FALLBACK ONLY when worksAt is absent (guarded UNION, never
+#    a plain UNION: unconditional unions duplicate rows and fabricate bogus
+#    universities from cross-university teaching).
+#
+# 3) Cardinality: group by (person, university) IRI pair, and keep EVERY projected
+#    literal inside the grouped subquery (MIN over the primary name predicates).
+#    Nothing decorative joins after the grouping: a second hasName literal on a
+#    university or a person would otherwise re-expand rows post-dedupe (same
+#    mechanism as path fan-out). Two distinct same-named professors still yield
+#    two rows because grouping is by IRI, not by name string.
+
+SELECT ?professorName ?universityName
+WHERE {
+  {
+    SELECT ?person ?university
+           (MIN(?pname) AS ?professorName)
+           (MIN(?uname) AS ?universityName)
+    WHERE {
+      # --- primary name predicates (exclusive: primary person name, primary uni name) ---
+      ?person uni:hasName ?pname .
+      OPTIONAL { ?person uni:role ?roleStr }
+      OPTIONAL { ?person uni:hasAcademicRank ?rankRes . ?rankRes uni:rankLabel ?rankLabel }
+      FILTER( (BOUND(?roleStr)   && CONTAINS(LCASE(?roleStr),   "professor")) ||
+              (BOUND(?rankLabel) && CONTAINS(LCASE(?rankLabel), "professor")) )
+      # --- affiliation: preferred worksAt path ---
+      {
+        ?person uni:worksAt ?unit .
+        ?unit uni:partOfUniversity* ?university .
+        ?university a uni:University .
+      }
+      UNION
+      # --- affiliation: teaching-course fallback only when worksAt is absent ---
+      {
+        FILTER NOT EXISTS { ?person uni:worksAt ?anyUnit }
+        ?person uni:teaches ?course .
+        ?course uni:isTaughtIn ?unit .
+        ?unit uni:partOfUniversity* ?university .
+        ?university a uni:University .
+      }
+      # --- university name joins INSIDE the grouping scope ---
+      ?university uni:hasName ?uname .
+    }
+    GROUP BY ?person ?university
+  }
+}
+ORDER BY ?professorName ?universityName

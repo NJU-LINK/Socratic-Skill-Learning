@@ -1,0 +1,43 @@
+{
+  "model": "kimi",
+  "method": "no-skill",
+  "round": 1,
+  "family": "pypi-server",
+  "stats": {
+    "heldout": {
+      "v04": {
+        "records": 48
+      },
+      "v06": {
+        "records": 42
+      },
+      "v07": {
+        "records": 101
+      },
+      "v08": {
+        "records": 68
+      },
+      "v10": {
+        "records": 52
+      },
+      "v11": {
+        "records": 32
+      },
+      "v13": {
+        "records": 82
+      },
+      "v14": {
+        "records": 82
+      },
+      "v15": {
+        "records": 60
+      },
+      "v16": {
+        "records": 120
+      }
+    }
+  },
+  "totals": {
+    "records": 687
+  }
+}

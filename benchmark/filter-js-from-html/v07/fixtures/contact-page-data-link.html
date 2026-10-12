@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Support</title>
+</head>
+<body class="support-page">
+  <main class="support-layout">
+    <section class="hero card bordered">
+      <h1>Contact Support</h1>
+      <p class="lede">Use the form below and our team will respond within one business day.</p>
+      <form action="/support/request" method="post" class="contact-form spaced">
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" value="Billing question" class="input control">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" class="input control">Please explain the invoice adjustment.</textarea>
+
+        <div class="toolbar spread">
+          <a class="link docs-link" href="data:text/html,%3Cscript%3Ealert%28123%29%3C/script%3E">Troubleshooting guide</a>
+          <button type="submit" class="btn btn-primary">Send request</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

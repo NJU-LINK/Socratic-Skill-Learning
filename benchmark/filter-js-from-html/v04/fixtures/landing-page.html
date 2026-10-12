@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="daybreak" data-build="2026.06.03">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northwind Studio Launch</title>
+  <link rel="preload" as="image" href="/assets/hero-banner.jpg" imagesizes="100vw">
+</head>
+<body class="landing-page font-sans text-slate-900" data-site="northwind" aria-busy="false">
+  <header class="site-header shell shell--wide" data-analytics-id="hero-001" data-track-label="spring-launch" style="background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); border-bottom: 1px solid #dbe7ff;">
+    <nav class="nav nav--desktop" aria-label="Main" data-layout="stack@sm row@lg">
+      <a class="nav__brand text-lg tracking-tight" href="/" aria-label="Northwind Studio home">Northwind Studio</a>
+      <ul class="nav__links list-reset" data-role="primary-links">
+        <li><a class="nav__link" href="/work" data-nav-slot="1">Work</a></li>
+        <li><a class="nav__link" href="/pricing" data-nav-slot="2">Pricing</a></li>
+        <li><a class="nav__link" href="/contact" data-nav-slot="3">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="shell shell--wide grid gap-24" data-template="launch-story">
+    <section class="hero grid grid--2col align-center" aria-labelledby="hero-title" data-surface="glass" data-density="comfortable">
+      <div class="hero__content" data-column="copy">
+        <p class="eyebrow" data-tone="brand">2026 rollout</p>
+        <h1 id="hero-title" class="display display--xl tracking-tight">Campaign pages that keep every pixel tidy.</h1>
+        <p class="lede text-balance" data-copy-slot="intro">The design team needs aggressive HTML cleanup without stripping the classes, labels, spacing, and metadata our publishing system relies on.</p>
+        <form class="cta-row stack@sm row@md" action="/trial" method="post" data-form="hero-cta" aria-label="Hero call to action">
+          <input type="email" name="email" placeholder="name@example.com" autocomplete="email" class="input input--lg" data-track-field="email" aria-label="Work email">
+          <button class="btn btn--primary btn--lg" type="submit" formaction="javascript:window.alert('hero-cta')" formmethod="post" data-variant="solid" aria-label="Start trial now">Start trial</button>
+        </form>
+      </div>
+
+      <aside class="hero__panel card shadow-xl" data-column="visual" aria-label="Preview cards">
+        <article class="feature-card rounded-3xl border border-sky-100 p-6" data-card="insights" data-owner="design-systems" aria-label="Insights card" style="background-image: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(239,246,255,0.96) 100%), url('javascript:alert(1)'); background-position: center; background-size: cover; border-radius: 24px; min-height: 280px;">
+          <img src="/assets/chart-preview.png" alt="Insights dashboard preview" width="480" height="320" loading="lazy" decoding="async" class="w-full rounded-2xl" data-asset-id="chart-preview">
+          <h2 class="text-xl mt-4">Live reporting</h2>
+          <p class="text-sm text-slate-600">Keep your analytics widgets, semantic labels, and responsive spacing untouched while unsafe snippets disappear.</p>
+        </article>
+      </aside>
+    </section>
+
+    <section class="testimonials grid gap-8" aria-labelledby="testimonial-title" data-section="quotes">
+      <h2 id="testimonial-title" class="section-title">What the team cares about</h2>
+      <div class="quote-grid grid grid--3col" data-grid="testimonials">
+        <blockquote class="quote-card" cite="/stories/mira" data-persona="designer">
+          <p>"We need the cleanup to be surgical. Removing one unsafe fragment should not erase the rest of the component."</p>
+          <footer>Mira, Design Lead</footer>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

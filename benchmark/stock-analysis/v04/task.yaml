@@ -1,0 +1,27 @@
+instruction: |-
+  Tesla (TSLA) daily stock prices are in /app/tsla_prices.csv.
+  Columns: Date,Open,High,Low,Close,Volume
+
+  Calculate 12-period and 26-period exponential moving averages of Close.
+  For an EMA of period p:
+  - output N/A for the first p-1 observations;
+  - seed the first valid EMA at observation p with the arithmetic mean of the
+    first p closes;
+  - for every later observation use
+    EMA[t] = Close[t] * (2/(p+1)) + EMA[t-1] * (1 - 2/(p+1)).
+
+  Keep the EMA state at full precision and round only displayed values.
+  Write /app/results.csv with columns date,close,ema12,ema26, rounding the
+  displayed EMA values to 2 decimal places.
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - technical-analysis
+  - ema
+  - exponential-moving-average
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

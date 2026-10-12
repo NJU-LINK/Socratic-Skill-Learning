@@ -1,0 +1,46 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "title": "Review Q3 Report",
+      "duration_min": 60,
+      "urgency": 5,
+      "importance": 3
+    },
+    {
+      "id": "B",
+      "title": "Prepare Sprint Demo",
+      "duration_min": 45,
+      "urgency": 4,
+      "importance": 4
+    },
+    {
+      "id": "C",
+      "title": "Update Documentation",
+      "duration_min": 30,
+      "urgency": 2,
+      "importance": 1
+    },
+    {
+      "id": "D",
+      "title": "Code Review PR #42",
+      "duration_min": 40,
+      "urgency": 3,
+      "importance": 3
+    },
+    {
+      "id": "E",
+      "title": "Write Release Notes",
+      "duration_min": 35,
+      "urgency": 1,
+      "importance": 2
+    }
+  ],
+  "emergencies": [],
+  "config": {
+    "work_start": "14:00",
+    "work_end": "19:00",
+    "priority_method": "urgency",
+    "calendar_id": "Hk9Nw8KsRd5X"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "title": "Executive Summary",
+      "duration_min": 30,
+      "urgency": 5,
+      "importance": 5,
+      "deadline": "15:00"
+    },
+    {
+      "id": "B",
+      "title": "Budget Review",
+      "duration_min": 45,
+      "urgency": 5,
+      "importance": 5,
+      "deadline": "16:00"
+    },
+    {
+      "id": "C",
+      "title": "Team 1-on-1s",
+      "duration_min": 60,
+      "urgency": 4,
+      "importance": 4,
+      "deadline": "17:00"
+    },
+    {
+      "id": "D",
+      "title": "Data Analysis",
+      "duration_min": 60,
+      "urgency": 3,
+      "importance": 4,
+      "deadline": "18:00"
+    },
+    {
+      "id": "E",
+      "title": "Vendor Evaluation",
+      "duration_min": 45,
+      "urgency": 3,
+      "importance": 3,
+      "deadline": "16:30"
+    },
+    {
+      "id": "F",
+      "title": "Training Material Prep",
+      "duration_min": 40,
+      "urgency": 2,
+      "importance": 3
+    },
+    {
+      "id": "G",
+      "title": "Update OKRs",
+      "duration_min": 20,
+      "urgency": 4,
+      "importance": 3,
+      "deadline": "15:30"
+    },
+    {
+      "id": "H",
+      "title": "Fix Minor Bugs",
+      "duration_min": 45,
+      "urgency": 2,
+      "importance": 2
+    },
+    {
+      "id": "I",
+      "title": "Research Competitors",
+      "duration_min": 30,
+      "urgency": 1,
+      "importance": 2
+    },
+    {
+      "id": "J",
+      "title": "Organize Files",
+      "duration_min": 15,
+      "urgency": 1,
+      "importance": 1
+    }
+  ],
+  "emergencies": [
+    {
+      "id": "X",
+      "title": "Client Issue Escalation",
+      "duration_min": 50,
+      "arrival_time": "15:00",
+      "urgency": 5,
+      "deadline": "16:00"
+    },
+    {
+      "id": "Y",
+      "title": "HR Compliance Form",
+      "duration_min": 20,
+      "arrival_time": "17:00",
+      "urgency": 4,
+      "deadline": "18:00"
+    }
+  ],
+  "config": {
+    "work_start": "14:00",
+    "work_end": "19:00",
+    "priority_method": "weighted",
+    "calendar_id": "Hk9Nw8KsRd5X"
+  }
+}

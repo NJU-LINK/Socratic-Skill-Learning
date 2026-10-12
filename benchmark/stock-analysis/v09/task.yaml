@@ -1,0 +1,30 @@
+instruction: |-
+  Apple (AAPL) daily prices are in /app/aapl_prices.csv.
+
+  Calculate trailing SMA20 and SMA50 values and identify discrete crossing
+  events:
+  - golden when today's unrounded SMA20 is above SMA50 and the previous valid
+    relation was at or below;
+  - death when today's unrounded SMA20 is below SMA50 and the previous valid
+    relation was at or above;
+  - none on every other row where both averages are valid.
+
+  Use N/A for each unavailable average and for cross_signal until both averages
+  are valid. The first row where both become valid has cross_signal=none because
+  no previous valid relation exists.
+
+  Write /app/results.csv with columns date,close,sma20,sma50,cross_signal.
+  Keep comparisons at full precision and round displayed averages to 2 decimals.
+author_name: Task Author
+difficulty: hard
+category: data-analysis
+tags:
+  - technical-analysis
+  - golden-cross
+  - crossover
+  - signal
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

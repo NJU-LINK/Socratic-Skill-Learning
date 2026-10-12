@@ -1,0 +1,346 @@
+{
+  "documents": [
+    {
+      "filename": "bluepine_facilities.jpg",
+      "file_type": "jpg",
+      "kind": "invoice",
+      "expected_total_amount": "1344.00",
+      "expected_vat_amount": "224.00",
+      "heading": "INVOICE",
+      "subheading": "camera capture 04-18 09:12 / warehouse desk",
+      "stamp": "RECORDED",
+      "lines": [
+        "Bluepine Facilities Ltd",
+        "Supplier invoice ref BF-2048",
+        "Bill to North Dock Retail",
+        "Lighting maintenance and fixture swap",
+        "Service date 16 Apr 2025",
+        "Subtotal USD 1,120.00",
+        "V.A.T due USD 224.00",
+        "Grand T0tal USD 1,344.00",
+        "Payment terms net 14 days"
+      ],
+      "footer": "remit to Bluepine Facilities Ltd / statement copy"
+    },
+    {
+      "filename": "nimbus_health_supply.jpg",
+      "file_type": "jpg",
+      "kind": "invoice",
+      "expected_total_amount": "523.25",
+      "expected_vat_amount": "68.25",
+      "heading": "BILLING NOTICE",
+      "subheading": "scan from mobile phone / blur near lower margin",
+      "stamp": "FILED",
+      "lines": [
+        "Nimbus Health Supply",
+        "Document type supplier invoice",
+        "Invoice code NHS-771",
+        "Deliver to West Annex Clinic",
+        "Medical glove replenishment",
+        "Items total USD 455.00",
+        "State tax amt USD 68.25",
+        "Amount due USD 523.25",
+        "Reference only spending cap USD 600.00"
+      ],
+      "footer": "accounts@nimbus-health.example / bank transfer preferred"
+    },
+    {
+      "filename": "oakroute_logistics.jpg",
+      "file_type": "jpg",
+      "kind": "invoice",
+      "expected_total_amount": "2086.40",
+      "expected_vat_amount": "347.73",
+      "heading": "ACCOUNTS RECEIVABLE",
+      "subheading": "captured under weak light / slight desk skew",
+      "stamp": "POSTED",
+      "lines": [
+        "Oakroute Logistics",
+        "Customer North Dock Retail",
+        "Invoice no OR-9138",
+        "Freight and handling for store reset",
+        "Base charges USD 1,738.67",
+        "Fuel and VAT USD 347.73",
+        "Total payable USD 2,086.40",
+        "Prior estimate USD 2,100.00 not final"
+      ],
+      "footer": "supplier invoice archive / route team 3"
+    },
+    {
+      "filename": "verdant_it_services.jpg",
+      "file_type": "jpg",
+      "kind": "invoice",
+      "expected_total_amount": "947.80",
+      "expected_vat_amount": "157.97",
+      "heading": "SERVICE BILL",
+      "subheading": "captured after print / compressed jpeg",
+      "stamp": "OK TO PAY",
+      "lines": [
+        "Verdant IT Services",
+        "Tax inv0ice",
+        "Reference VS-4401",
+        "Support retainer for May",
+        "Subtotal USD 789.83",
+        "VAT amt USD 157.97",
+        "Amount Due USD 947.80",
+        "Budget code 950.00 not payment total"
+      ],
+      "footer": "invoice remittance advice follows on separate email"
+    },
+    {
+      "filename": "northspur_cleaning.jpg",
+      "file_type": "jpg",
+      "kind": "invoice",
+      "expected_total_amount": "681.30",
+      "expected_vat_amount": "61.30",
+      "heading": "INVOICE COPY",
+      "subheading": "page edge shadow / lens softness",
+      "stamp": "ARCHIVE",
+      "lines": [
+        "Northspur Cleaning Co",
+        "Inv no NC-5508",
+        "Bill-to Midtown Hub",
+        "Floor treatment and lobby reset",
+        "Service subtotal USD 620.00",
+        "TAX due USD 61.30",
+        "Final total USD 681.30",
+        "Old quote USD 700.00 superseded"
+      ],
+      "footer": "questions to ar@nspur-clean.example"
+    },
+    {
+      "filename": "cedar_printing.jpg",
+      "file_type": "jpg",
+      "kind": "invoice",
+      "expected_total_amount": "1752.64",
+      "expected_vat_amount": "292.11",
+      "heading": "SUPPLIER INVOICE",
+      "subheading": "copied from notice board / low contrast",
+      "stamp": "RECEIVED",
+      "lines": [
+        "Cedar Printing House",
+        "Invoice ref CP-1189",
+        "Campaign brochure rerun",
+        "Ship to Lakeside Merchandising",
+        "Net amount USD 1,460.53",
+        "V4T amount USD 292.11",
+        "Grand Total USD 1,752.64",
+        "Projected campaign budget USD 1,900.00"
+      ],
+      "footer": "supplier invoice generated from print desk"
+    },
+    {
+      "filename": "solace_catering.pdf",
+      "file_type": "pdf",
+      "kind": "invoice",
+      "expected_total_amount": "486.00",
+      "expected_vat_amount": "36.00",
+      "heading": "INVOICE",
+      "subheading": "exported statement from vendor portal",
+      "lines": [
+        "Solace Catering Group",
+        "Invoice number SC-3302",
+        "Event breakfast service for hiring day",
+        "Bill to North Dock Retail",
+        "Subtotal USD 450.00",
+        "VAT due USD 36.00",
+        "Amount due USD 486.00",
+        "Planned event budget USD 520.00"
+      ],
+      "footer": "wire payment reference SC-3302"
+    },
+    {
+      "filename": "marlowe_air_systems.pdf",
+      "file_type": "pdf",
+      "kind": "invoice",
+      "expected_total_amount": "1289.55",
+      "expected_vat_amount": "214.93",
+      "heading": "BILL TO CUSTOMER",
+      "subheading": "rendered export with embedded text",
+      "lines": [
+        "Marlowe Air Systems",
+        "This document is a supplier invoice",
+        "Reference MA-7091",
+        "Air filter replacement and calibration",
+        "Subtotal USD 1,074.62",
+        "Tax due USD 214.93",
+        "Total payable USD 1,289.55",
+        "Maintenance reserve target USD 1,400.00"
+      ],
+      "footer": "send remittance notice once payment is booked"
+    },
+    {
+      "filename": "field_team_expense_summary.jpg",
+      "file_type": "jpg",
+      "kind": "other",
+      "expected_total_amount": "",
+      "expected_vat_amount": "",
+      "heading": "EXPENSE SUMMARY",
+      "subheading": "camera scan from stapled packet",
+      "stamp": "APPROVED",
+      "lines": [
+        "Field team hotel and meal reconciliation",
+        "Prepared by Finance Ops",
+        "Travel amount USD 1,124.20",
+        "Tax reclaim est USD 80.20",
+        "Total items 19",
+        "Approved amount USD 1,204.40",
+        "Do not send to vendor",
+        "Internal reimbursement memo"
+      ],
+      "footer": "employee expenses only / not a bill"
+    },
+    {
+      "filename": "payment_memo_q3.jpg",
+      "file_type": "jpg",
+      "kind": "other",
+      "expected_total_amount": "",
+      "expected_vat_amount": "",
+      "heading": "PAYMENT MEMO",
+      "subheading": "phone photo / page curl on upper left",
+      "stamp": "INTERNAL",
+      "lines": [
+        "Quarter 3 settlement instructions",
+        "Use supplier statements already approved",
+        "Amount reserved USD 2,450.00",
+        "Tax review bucket USD 140.00",
+        "Memo total USD 2,590.00",
+        "No invoice is attached to this memo",
+        "Treasury routing note only"
+      ],
+      "footer": "payment office checklist / internal use"
+    },
+    {
+      "filename": "internal_cost_report.jpg",
+      "file_type": "jpg",
+      "kind": "other",
+      "expected_total_amount": "",
+      "expected_vat_amount": "",
+      "heading": "INTERNAL COST REPORT",
+      "subheading": "desk photo / low saturation printout",
+      "stamp": "FINANCE",
+      "lines": [
+        "Store refresh program cost review",
+        "Material amount USD 980.50",
+        "Tax reserve USD 72.15",
+        "Total forecast USD 1,052.65",
+        "Line items are planning values",
+        "Prepared for Monday budget meeting",
+        "Not payable to any outside party"
+      ],
+      "footer": "internal planning sheet only"
+    },
+    {
+      "filename": "travel_reconciliation.jpg",
+      "file_type": "jpg",
+      "kind": "other",
+      "expected_total_amount": "",
+      "expected_vat_amount": "",
+      "heading": "TRAVEL RECONCILIATION",
+      "subheading": "camera scan / lower edge blur",
+      "stamp": "CHECKED",
+      "lines": [
+        "Regional visit receipt digest",
+        "Taxi and rail amount USD 688.30",
+        "Tax eligible portion USD 31.80",
+        "Trip total USD 720.10",
+        "Employee advance already cleared",
+        "Use for payroll reimbursement",
+        "Not a supplier invoice"
+      ],
+      "footer": "attach to expense claim package"
+    },
+    {
+      "filename": "budget_reallocation.jpg",
+      "file_type": "jpg",
+      "kind": "other",
+      "expected_total_amount": "",
+      "expected_vat_amount": "",
+      "heading": "BUDGET REALLOCATION NOTE",
+      "subheading": "captured beside window / washed contrast",
+      "stamp": "OPS",
+      "lines": [
+        "Move maintenance funds to signage reserve",
+        "Amount moved USD 1,500.00",
+        "Tax impact estimate USD 0.00",
+        "Total after move USD 6,700.00",
+        "Prepared by business operations",
+        "Reference table for internal ledger only"
+      ],
+      "footer": "budget note / not a vendor bill"
+    },
+    {
+      "filename": "petty_cash_audit.jpg",
+      "file_type": "jpg",
+      "kind": "other",
+      "expected_total_amount": "",
+      "expected_vat_amount": "",
+      "heading": "PETTY CASH AUDIT",
+      "subheading": "faint toner / rotated capture",
+      "stamp": "AUDIT",
+      "lines": [
+        "Drawer count and receipt check",
+        "Counted amount USD 314.10",
+        "Tax coded slips USD 11.25",
+        "Total variance USD 0.00",
+        "Supervisor note no vendor payment",
+        "Audit line items close correctly"
+      ],
+      "footer": "cash office control record"
+    },
+    {
+      "filename": "warehouse_spend_digest.jpg",
+      "file_type": "jpg",
+      "kind": "other",
+      "expected_total_amount": "",
+      "expected_vat_amount": "",
+      "heading": "WAREHOUSE SPEND DIGEST",
+      "subheading": "mobile capture / jpeg artifacts near title",
+      "stamp": "SUMMARY",
+      "lines": [
+        "April consumables review",
+        "Packing materials amount USD 842.90",
+        "Tax tracked USD 58.10",
+        "Monthly total USD 901.00",
+        "Numbers summarize prior purchases",
+        "Digest only not an invoice"
+      ],
+      "footer": "compiled for operations leadership"
+    },
+    {
+      "filename": "vendor_spend_digest.pdf",
+      "file_type": "pdf",
+      "kind": "other",
+      "expected_total_amount": "",
+      "expected_vat_amount": "",
+      "heading": "VENDOR SPEND DIGEST",
+      "subheading": "quarterly internal summary",
+      "lines": [
+        "Compiled from multiple paid documents",
+        "Current period amount USD 4,880.45",
+        "Tax captured USD 320.90",
+        "Digest total USD 5,201.35",
+        "This report summarizes vendor history",
+        "It is not itself an invoice"
+      ],
+      "footer": "finance analytics output"
+    },
+    {
+      "filename": "project_chargeback_note.pdf",
+      "file_type": "pdf",
+      "kind": "other",
+      "expected_total_amount": "",
+      "expected_vat_amount": "",
+      "heading": "PROJECT CHARGEBACK NOTE",
+      "subheading": "internal accounting memo",
+      "lines": [
+        "Allocate support costs to remodel project",
+        "Chargeback amount USD 1,930.00",
+        "Tax reference USD 144.75",
+        "Memo total USD 2,074.75",
+        "Used for ledger transfer only",
+        "No supplier invoice enclosed"
+      ],
+      "footer": "general ledger note / internal document"
+    }
+  ]
+}

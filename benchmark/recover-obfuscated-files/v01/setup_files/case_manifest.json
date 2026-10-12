@@ -1,0 +1,60 @@
+{
+  "case": "harbor-storage-recovery",
+  "schema": 1,
+  "recovered_directory": "/app/recovered",
+  "transforms": {
+    "base64": "standard Base64 decode (RFC 4648)",
+    "base32": "standard Base32 decode (RFC 4648)",
+    "hex": "lowercase hexadecimal decode",
+    "url": "URL percent-decode",
+    "rot13": "ROT13 letter substitution",
+    "xor:5a": "single-byte XOR with key 0x5a"
+  },
+  "targets": [
+    {
+      "filename_hex": "74696465706f6f6c5f7375727665792e747874",
+      "fragments": [
+        {
+          "part": "frag-a1.part",
+          "decode": [
+            "base64",
+            "rot13"
+          ]
+        },
+        {
+          "part": "frag-a2.part",
+          "decode": [
+            "hex",
+            "xor:5a"
+          ]
+        },
+        {
+          "part": "frag-a3.part",
+          "decode": [
+            "base32",
+            "url"
+          ]
+        }
+      ]
+    },
+    {
+      "filename_hex": "6c616e7465726e5f726f737465722e6d64",
+      "fragments": [
+        {
+          "part": "frag-b1.part",
+          "decode": [
+            "base64",
+            "url"
+          ]
+        },
+        {
+          "part": "frag-b2.part",
+          "decode": [
+            "hex",
+            "rot13"
+          ]
+        }
+      ]
+    }
+  ]
+}

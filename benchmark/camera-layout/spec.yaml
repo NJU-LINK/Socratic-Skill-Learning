@@ -1,0 +1,27 @@
+family_definition:
+  invariant: >-
+    Given a JSON floor plan and a fixed visibility model, place wall-mounted
+    cameras so that at least 99% of the scorable room grid is visible while
+    respecting the case-specific camera budget.
+  input: /app/floor_plan.json
+  output: /app/output.json
+  verifier: /app/camera_geom.py
+axes:
+  - name: wall_topology
+    type: freeform
+    description: >-
+      The outer boundary and internal wall arrangement vary from bent
+      corridors to irregular rooms and partitioned multi-chamber layouts.
+  - name: obstacle_topology
+    type: freeform
+    description: >-
+      Rectangular line-of-sight blockers vary in count, position, and overlap
+      with otherwise visible regions. Obstacles are distinct from walls and
+      are represented by [x, y, width, height].
+  - name: placement_budget
+    type: range
+    min: 4
+    max: 8
+    description: >-
+      The maximum accepted camera count changes with geometric complexity and
+      is stated explicitly in each case.

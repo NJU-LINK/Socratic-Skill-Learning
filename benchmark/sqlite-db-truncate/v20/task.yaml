@@ -1,0 +1,28 @@
+instruction: |-
+  A SQLite database at /app/recover.db has been damaged. A contiguous section of the file was overwritten with zeros, corrupting a portion of the data.
+
+  The database originally contained three tables:
+  - users: columns id (INTEGER), name (TEXT), score (REAL)
+  - products: columns code (TEXT), price (REAL), quantity (INTEGER)
+  - logs: columns entry_id (INTEGER), message (TEXT)
+
+  Recover as many complete rows as possible from all three tables. Some rows are unrecoverable due to the corruption.  Only include rows where all column values are intact.
+
+  Create /app/recover.json with the following format:
+  {
+    "users": [{"id": <int>, "name": "<str>", "score": <float>}, ...],
+    "products": [{"code": "<str>", "price": <float>, "quantity": <int>}, ...],
+    "logs": [{"entry_id": <int>, "message": "<str>"}, ...]
+  }
+
+  The rows within each table may be in any order. The database file may not open correctly with standard tools.
+author_name: Task Author
+difficulty: hard
+category: debugging
+tags:
+  - file-operations
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

@@ -1,0 +1,246 @@
+@prefix uni: <http://university.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ---------------------------
+# Universities
+# ---------------------------
+uni:ETHZurich a uni:University ;
+    uni:hasName "ETH Zurich" ;
+    uni:locatedInCountry "CH" .
+
+uni:IST a uni:University ;
+    uni:hasName "Instituto Superior Tecnico" ;
+    uni:locatedInCountry "PT" .
+
+uni:NTUA a uni:University ;
+    uni:hasName "National Technical University of Athens" ;
+    uni:locatedInCountry "GR" .
+
+uni:NKUA a uni:University ;
+    uni:hasName "National and Kapodistrian University of Athens" ;
+    uni:locatedInCountry "GR" .
+
+uni:Sorbonne a uni:University ;
+    uni:hasName "Sorbonne University" ;
+    uni:locatedInCountry "FR" .
+
+uni:MIT a uni:University ;
+    uni:hasName "Massachusetts Institute of Technology" ;
+    uni:locatedInCountry "US" .
+
+uni:Berkeley a uni:University ;
+    uni:hasName "University of California, Berkeley" ;
+    uni:locatedInCountry "US" .
+
+uni:LMU a uni:University ;
+    uni:hasName "Ludwig Maximilian University of Munich" ;
+    uni:locatedInCountry "DE" .
+
+# ---------------------------
+# Departments
+# ---------------------------
+uni:ComputerScience_NTUA a uni:Department ;
+    uni:partOfUniversity uni:NTUA .
+
+uni:MechEngineering_NTUA a uni:Department ;
+    uni:partOfUniversity uni:NTUA .
+
+uni:Mathematics_IST a uni:Department ;
+    uni:partOfUniversity uni:IST .
+
+uni:AppliedMath_IST a uni:Department ;
+    uni:partOfUniversity uni:IST .
+
+uni:Mathematics_Sorbonne a uni:Department ;
+    uni:partOfUniversity uni:Sorbonne .
+
+uni:Physics_ETH a uni:Department ;
+    uni:partOfUniversity uni:ETHZurich .
+
+uni:Biology_MIT a uni:Department ;
+    uni:partOfUniversity uni:MIT .
+
+uni:Sloan_MIT a uni:Department ;
+    uni:partOfUniversity uni:MIT .
+
+uni:Engineering_LMU a uni:Department ;
+    uni:partOfUniversity uni:LMU .
+
+uni:Engineering_Berkeley a uni:Department ;
+    uni:partOfUniversity uni:Berkeley .
+
+uni:HistoryAndPhilosophy_NKUA a uni:Department ;
+    uni:partOfUniversity uni:NKUA .
+
+# ---------------------------
+# Courses
+# ---------------------------
+uni:CS101 a uni:Course ;
+    uni:isTaughtIn uni:ComputerScience_NTUA .
+
+uni:AI101 a uni:Course ;
+    uni:isTaughtIn uni:ComputerScience_NTUA .
+
+uni:SystemsLab201 a uni:Course ;
+    uni:isTaughtIn uni:ComputerScience_NTUA .
+
+uni:DataSystems501 a uni:Course ;
+    uni:isTaughtIn uni:ComputerScience_NTUA, uni:MechEngineering_NTUA .
+
+uni:Math101 a uni:Course ;
+    uni:isTaughtIn uni:Mathematics_IST .
+
+uni:Optimization220 a uni:Course ;
+    uni:isTaughtIn uni:Mathematics_IST, uni:AppliedMath_IST .
+
+uni:Math201 a uni:Course ;
+    uni:isTaughtIn uni:Mathematics_Sorbonne .
+
+uni:Physics301 a uni:Course ;
+    uni:isTaughtIn uni:Physics_ETH .
+
+uni:Bio101 a uni:Course ;
+    uni:isTaughtIn uni:Biology_MIT .
+
+uni:Bio210 a uni:Course ;
+    uni:isTaughtIn uni:Biology_MIT, uni:Sloan_MIT .
+
+uni:Eng202 a uni:Course ;
+    uni:isTaughtIn uni:Engineering_LMU .
+
+uni:EngUS302 a uni:Course ;
+    uni:isTaughtIn uni:Engineering_Berkeley .
+
+uni:Innovation301 a uni:Course ;
+    uni:isTaughtIn uni:Engineering_Berkeley .
+
+uni:STS101 a uni:Course ;
+    uni:isTaughtIn uni:HistoryAndPhilosophy_NKUA .
+
+# ---------------------------
+# Professors
+# ---------------------------
+uni:Alex_Morgan a uni:Person ;
+    uni:hasName "Alex Morgan" ;
+    uni:role "Professor of Computer Science" ;
+    uni:teaches uni:CS101, uni:AI101, uni:DataSystems501 .
+
+uni:Thomas_Berger a uni:Person ;
+    uni:hasName "Thomas Berger" ;
+    uni:role "Assistant Professor of Computer Science" ;
+    uni:teaches uni:SystemsLab201, uni:DataSystems501 .
+
+uni:Felix_Wagner a uni:Person ;
+    uni:hasName "Felix Wagner" ;
+    uni:role "Professor of Mathematics" ;
+    uni:teaches uni:Math101, uni:Optimization220 .
+
+uni:Martin_Keller a uni:Person ;
+    uni:hasName "Martin Keller" ;
+    uni:role "Professor of History of Science and Technology" ;
+    uni:teaches uni:STS101 .
+
+uni:John_Smith a uni:Person ;
+    uni:hasName "John Smith" ;
+    uni:role "Professor of Biology" ;
+    uni:teaches uni:Bio101, uni:Bio210 .
+
+uni:Marie_Dubois a uni:Person ;
+    uni:hasName "Marie Dubois" ;
+    uni:role "Professor of Mathematics" ;
+    uni:teaches uni:Math201 .
+
+uni:Stefan_Mueller a uni:Person ;
+    uni:hasName "Stefan Mueller" ;
+    uni:role "Assistant Professor of Engineering" ;
+    uni:teaches uni:Eng202 .
+
+uni:Nathan_Cole a uni:Person ;
+    uni:hasName "Nathan Cole" ;
+    uni:role "Professor of Engineering" ;
+    uni:teaches uni:EngUS302, uni:Innovation301 .
+
+# ---------------------------
+# Non-professor employees and teaching staff
+# ---------------------------
+uni:Jane_Petterson a uni:Person ;
+    uni:hasName "Jane Petterson" ;
+    uni:role "Lecturer" ;
+    uni:teaches uni:Innovation301 ;
+    uni:worksAt uni:Engineering_Berkeley .
+
+uni:Mike_Wazowski a uni:Person ;
+    uni:hasName "Mike Wazowski" ;
+    uni:role "Secretary" ;
+    uni:teaches uni:CS101 ;
+    uni:worksAt uni:ComputerScience_NTUA .
+
+uni:Eva_Keller a uni:Person ;
+    uni:hasName "Eva Keller" ;
+    uni:role "Research Staff" ;
+    uni:worksAt uni:Physics_ETH .
+
+uni:Simon_Lang a uni:Person ;
+    uni:hasName "Simon Lang" ;
+    uni:role "Teaching Fellow" ;
+    uni:teaches uni:STS101 ;
+    uni:worksAt uni:HistoryAndPhilosophy_NKUA .
+
+# ---------------------------
+# Students
+# ---------------------------
+uni:Student1 a uni:Person ;
+    uni:hasName "Sophia Muller" ;
+    uni:role "Student" .
+
+uni:Student2 a uni:Person ;
+    uni:hasName "Luca Rossi" ;
+    uni:role "Student" .
+
+uni:Student3 a uni:Person ;
+    uni:hasName "Emma Garcia" ;
+    uni:role "Student" .
+
+uni:Student4 a uni:Person ;
+    uni:hasName "Hugo Dubois" ;
+    uni:role "Student" .
+
+uni:Student5 a uni:Person ;
+    uni:hasName "Nina Papadopoulos" ;
+    uni:role "Student" .
+
+uni:Student6 a uni:Person ;
+    uni:hasName "Oliver Smith" ;
+    uni:role "Student" .
+
+uni:Student7 a uni:Person ;
+    uni:hasName "Clara Novak" ;
+    uni:role "Student" .
+
+uni:Student8 a uni:Person ;
+    uni:hasName "Lucas Schneider" ;
+    uni:role "Student" .
+
+uni:Student1 uni:isEnrolledIn uni:CS101, uni:Bio101, uni:STS101 ;
+    uni:hasEnrollmentDate "2024-01-10"^^xsd:date .
+
+uni:Student2 uni:isEnrolledIn uni:CS101, uni:DataSystems501, uni:EngUS302 ;
+    uni:hasEnrollmentDate "2024-01-11"^^xsd:date .
+
+uni:Student3 uni:isEnrolledIn uni:Math101, uni:Optimization220 ;
+    uni:hasEnrollmentDate "2024-01-12"^^xsd:date .
+
+uni:Student4 uni:isEnrolledIn uni:Math201, uni:STS101 ;
+    uni:hasEnrollmentDate "2024-01-13"^^xsd:date .
+
+uni:Student5 uni:isEnrolledIn uni:Bio101, uni:Bio210 ;
+    uni:hasEnrollmentDate "2024-01-14"^^xsd:date .
+
+uni:Student6 uni:isEnrolledIn uni:Eng202, uni:Innovation301 ;
+    uni:hasEnrollmentDate "2024-01-15"^^xsd:date .
+
+uni:Student7 uni:isEnrolledIn uni:CS101, uni:Optimization220, uni:Physics301 ;
+    uni:hasEnrollmentDate "2024-01-16"^^xsd:date .
+
+uni:Student8 uni:isEnrolledIn uni:DataSystems501, uni:Bio210, uni:EngUS302 ;
+    uni:hasEnrollmentDate "2024-01-17"^^xsd:date .

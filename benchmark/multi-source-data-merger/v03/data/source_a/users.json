@@ -1,0 +1,22 @@
+[
+  {
+    "id": 101,
+    "full_name": "John Doe",
+    "email": null,
+    "registration_date": "2024-01-15",
+    "status": "active"
+  },
+  {
+    "id": 102,
+    "full_name": "Jane Smith",
+    "email": "jane@a.com",
+    "status": "inactive"
+  },
+  {
+    "id": 104,
+    "full_name": "Alice Brown",
+    "email": "alice@priority.com",
+    "registration_date": "2024-04-01",
+    "status": "active"
+  }
+]

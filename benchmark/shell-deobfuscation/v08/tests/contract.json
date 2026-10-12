@@ -1,0 +1,6 @@
+{
+  "side_effect_paths": ["/tmp/audit_trail.txt"],
+  "minimum_input_bytes": 1000,
+  "required_input_markers": ["mktemp", "exec /bin/bash", "gunzip", "xxd"],
+  "forbidden_plaintext_markers": ["System audit completed successfully"]
+}

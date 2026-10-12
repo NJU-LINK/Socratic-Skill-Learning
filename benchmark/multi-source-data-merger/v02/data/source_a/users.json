@@ -1,0 +1,30 @@
+[
+  {
+    "id": 201,
+    "full_name": "Maya Chen",
+    "email": "maya@alpha.example",
+    "registration_date": "2024-01-11",
+    "status": "active"
+  },
+  {
+    "id": 202,
+    "full_name": "Luca Ortiz",
+    "email": null,
+    "registration_date": "2024-02-04",
+    "status": "inactive"
+  },
+  {
+    "id": 203,
+    "full_name": "Priya Nair",
+    "email": "priya@alpha.example",
+    "registration_date": "2024-03-19",
+    "status": null
+  },
+  {
+    "id": 204,
+    "full_name": "Theo Grant",
+    "email": "theo@alpha.example",
+    "registration_date": "2024-04-08",
+    "status": "inactive"
+  }
+]

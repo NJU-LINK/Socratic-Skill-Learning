@@ -1,0 +1,21 @@
+instruction: |-
+  I have a SQLite database at /app/corrupt.db that was damaged by a storage error. Some of the database pages were overwritten with random garbage, and standard tools can no longer open the file.
+
+  The database has a single table with this schema:
+    CREATE TABLE t(id INTEGER PRIMARY KEY, value REAL)
+
+  There were 8 rows with id values from 1001 to 1008, each associated with a different floating point value. The database page size was set to 4096 bytes. Some of the pages containing data have been partially or fully overwritten with garbage.
+
+  Recover as many of the original (id, value) pairs as possible from the surviving portions of the database. Create a JSON file at /app/recover.json with the recovered data in this format:
+    [{"id": <integer>, "value": <number>}, ...]
+author_name: Task Author
+difficulty: hard
+category: debugging
+tags:
+  - file-operations
+  - binary-analysis
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

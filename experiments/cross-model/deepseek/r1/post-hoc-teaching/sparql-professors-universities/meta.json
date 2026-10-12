@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "sparql-professors-universities",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 21
+      },
+      "student-author": {
+        "records": 208
+      }
+    }
+  },
+  "totals": {
+    "records": 229
+  }
+}

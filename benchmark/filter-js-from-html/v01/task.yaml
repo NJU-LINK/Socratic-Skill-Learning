@@ -1,0 +1,27 @@
+# Adapted from Terminal-Bench for SkillTransferBench; task text and metadata were curated.
+# Original task credits and source: ../../ATTRIBUTION.md (filter-js-from-html).
+# SPDX-License-Identifier: Apache-2.0
+instruction: |-
+  Create a Python file at /app/filter.py that removes executable JavaScript behavior from HTML files, with special attention to SVG and MathML content that browsers can execute.
+
+  The /app/filter.py script should:
+  - Take an HTML file as a command-line argument (argv[1])
+  - Modify the file in-place to remove executable content
+  - Neutralize dangerous behavior in SVG, MathML, and related namespace-aware markup
+  - Preserve legitimate document structure, visible content, vector graphics, equations, forms, links, and non-dangerous attributes
+
+  Do not alter safe content any more than necessary.
+  The output should remain functionally identical to the input except for the removal of dangerous executable behavior.
+author_name: Task Author
+difficulty: moderate
+category: security
+tags:
+  - security
+  - html-sanitization
+  - svg
+  - mathml
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

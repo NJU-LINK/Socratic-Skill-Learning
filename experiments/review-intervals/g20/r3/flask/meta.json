@@ -1,0 +1,72 @@
+{
+  "model": "qwen",
+  "method": "fixed-window-ssl",
+  "checkpoint_interval": 20,
+  "round": 3,
+  "family": "flask",
+  "run_id": "20260810064806975-develop-g20-flask-r3",
+  "stats": {
+    "skill_formation": {
+      "student-author": {
+        "records": 140
+      },
+      "max-educator": {
+        "records": 26
+      }
+    }
+  },
+  "heldout": {
+    "v02": {
+      "score": 1.0,
+      "passed": 22,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 16,
+      "timedOut": false
+    },
+    "v04": {
+      "score": 0.25,
+      "passed": 2,
+      "failed": 6,
+      "errors": 0,
+      "toolCalls": 10,
+      "timedOut": false
+    },
+    "v12": {
+      "score": 1.0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 9,
+      "timedOut": false
+    },
+    "v13": {
+      "score": 0.14285714285714285,
+      "passed": 1,
+      "failed": 6,
+      "errors": 0,
+      "toolCalls": 16,
+      "timedOut": false
+    },
+    "v14": {
+      "score": 0.25,
+      "passed": 2,
+      "failed": 6,
+      "errors": 0,
+      "toolCalls": 9,
+      "timedOut": false
+    },
+    "v15": {
+      "score": 1.0,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 10,
+      "timedOut": false
+    }
+  },
+  "primary_score": 0.6071428571428571,
+  "totals": {
+    "records": 166
+  }
+}

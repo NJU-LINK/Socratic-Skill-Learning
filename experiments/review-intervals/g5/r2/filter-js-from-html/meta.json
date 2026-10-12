@@ -1,0 +1,104 @@
+{
+  "model": "qwen",
+  "method": "fixed-window-ssl",
+  "checkpoint_interval": 5,
+  "round": 2,
+  "family": "filter-js-from-html",
+  "run_id": "20260810064806975-develop-g5-filter-js-from-html-r2",
+  "stats": {
+    "skill_formation": {
+      "student-author": {
+        "records": 242
+      },
+      "max-educator": {
+        "records": 113
+      }
+    }
+  },
+  "heldout": {
+    "v02": {
+      "score": 0.0,
+      "passed": 0,
+      "failed": 4,
+      "errors": 0,
+      "toolCalls": 22,
+      "timedOut": false
+    },
+    "v03": {
+      "score": 0.4,
+      "passed": 2,
+      "failed": 3,
+      "errors": 0,
+      "toolCalls": 32,
+      "timedOut": false
+    },
+    "v05": {
+      "score": 0.6666666666666666,
+      "passed": 2,
+      "failed": 1,
+      "errors": 0,
+      "toolCalls": 34,
+      "timedOut": false
+    },
+    "v06": {
+      "score": 0.5384615384615384,
+      "passed": 7,
+      "failed": 6,
+      "errors": 0,
+      "toolCalls": 28,
+      "timedOut": false
+    },
+    "v07": {
+      "score": 0.2857142857142857,
+      "passed": 2,
+      "failed": 5,
+      "errors": 0,
+      "toolCalls": 35,
+      "timedOut": false
+    },
+    "v08": {
+      "score": 0.7142857142857143,
+      "passed": 5,
+      "failed": 2,
+      "errors": 0,
+      "toolCalls": 48,
+      "timedOut": false
+    },
+    "v10": {
+      "score": 0.0,
+      "passed": 0,
+      "failed": 24,
+      "errors": 0,
+      "toolCalls": 39,
+      "timedOut": false
+    },
+    "v13": {
+      "score": 0.0,
+      "passed": 0,
+      "failed": 5,
+      "errors": 0,
+      "toolCalls": 31,
+      "timedOut": false
+    },
+    "v15": {
+      "score": 0.375,
+      "passed": 3,
+      "failed": 5,
+      "errors": 0,
+      "toolCalls": 46,
+      "timedOut": false
+    },
+    "v16": {
+      "score": 0.4,
+      "passed": 2,
+      "failed": 3,
+      "errors": 0,
+      "toolCalls": 30,
+      "timedOut": false
+    }
+  },
+  "primary_score": 0.3380128205128205,
+  "totals": {
+    "records": 355
+  }
+}

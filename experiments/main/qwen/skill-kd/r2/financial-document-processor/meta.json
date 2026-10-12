@@ -1,0 +1,80 @@
+{
+  "method": "skill-kd",
+  "round": 2,
+  "family": "financial-document-processor",
+  "stats": {
+    "skill_formation": {
+      "0000-round_00-student_retry-61bba36d": {
+        "records": 33
+      },
+      "0000-round_01-student_retry-b216f709": {
+        "records": 33
+      },
+      "0000-student_initial-c5abe1c6": {
+        "records": 34
+      },
+      "0000-teacher-d3196ebb": {
+        "records": 50
+      },
+      "0001-student_initial-b0d1e52e": {
+        "records": 30
+      },
+      "0002-student_initial-05aed011": {
+        "records": 23
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 22,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 32,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 50,
+        "score": 0.7142857142857143,
+        "passed": 5,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 29,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 21,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 20,
+        "score": 1,
+        "passed": 7,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 203,
+    "train": 0,
+    "heldout": 174,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

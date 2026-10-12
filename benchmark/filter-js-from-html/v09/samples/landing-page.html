@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aster Studio Launch</title>
+</head>
+<body class="theme-paper layout-marketing" data-page="launch" data-region="us-west" aria-busy="false">
+  <header class="hero shell shell-wide" data-track-section="hero" data-variant="spring-24">
+    <nav class="topnav cluster" aria-label="Primary" data-nav-depth="1">
+      <a class="brand" href="/" data-brand="aster">Aster Studio</a>
+      <ul class="menu" data-role="primary-links">
+        <li class="menu-item"><a href="/work" class="nav-link" data-slot="1">Work</a></li>
+        <li class="menu-item"><a href="/pricing" class="nav-link" data-slot="2">Pricing</a></li>
+        <li class="menu-item"><a href="/contact" class="nav-link" data-slot="3">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero-copy flow" aria-labelledby="launch-title" data-module="intro-card" data-density="comfortable">
+      <p class="eyebrow" data-copy-id="intro-01">Designer systems for product launches</p>
+      <h1 id="launch-title" class="headline display-xl" data-copy-id="intro-02">Attribute-heavy pages should survive sanitizing intact.</h1>
+      <p class="lede" data-copy-id="intro-03">Cards, badges, analytics hooks, ARIA labels, width and height values, and copy formatting are all significant for downstream rendering.</p>
+      <div class="cta-row" data-block="actions" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;background-image:linear-gradient(135deg,#f6efe8 0%,#fff 40%,#eef6ff 100%);border:1px solid #d9e6f2;">
+        <a class="button button-primary" href="/demo" data-cta="demo">Book a demo</a>
+        <a class="button button-secondary" href="/case-studies" data-cta="stories">See case studies</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="shell shell-wide" data-page-zone="content">
+    <section class="gallery grid" aria-label="Feature gallery" data-columns="3" data-layout="masonry">
+      <article class="card elevated" data-card="alpha" data-owner="design" aria-describedby="card-alpha-copy">
+        <img src="/assets/alpha.png" alt="Alpha dashboard" width="640" height="360" class="media" data-media-slot="alpha">
+        <h2 class="card-title">Revenue snapshots</h2>
+        <p id="card-alpha-copy" class="card-copy">Preserve image metadata, captions, and dimensions while removing only executable fragments.</p>
+      </article>
+      <article class="card elevated" data-card="beta" data-owner="growth" aria-describedby="card-beta-copy">
+        <img src="/assets/beta.png" alt="Beta gallery" width="640" height="360" class="media" data-media-slot="beta">
+        <h2 class="card-title">Campaign galleries</h2>
+        <p id="card-beta-copy" class="card-copy">Long attribute lists are common and should not be flattened or stripped wholesale.</p>
+      </article>
+      <article class="card elevated" data-card="gamma" data-owner="ops" aria-describedby="card-gamma-copy">
+        <img src="/assets/gamma.png" alt="Gamma workspace" width="640" height="360" class="media" data-media-slot="gamma">
+        <h2 class="card-title">Ops workspaces</h2>
+        <p id="card-gamma-copy" class="card-copy">Navigation, labels, and semantic structure must remain usable after sanitization.</p>
+      </article>
+    </section>
+
+    <section class="widget-shell surface-panel" data-widget-zone="preview" data-density="comfortable" aria-label="Embedded previews">
+      <div class="embed-card" data-card="preview" data-owner="creative" aria-describedby="preview-copy">
+        <h2 class="card-title">Designer preview</h2>
+        <p id="preview-copy" class="card-copy">The preview frame keeps its classes, ARIA hooks, and analytics metadata even when its embedded content needs cleanup.</p>
+        <iframe
+          class="preview-frame rounded shadow-sm"
+          title="Campaign preview"
+          width="640"
+          height="240"
+          loading="lazy"
+          data-embed-kind="campaign-preview"
+          data-owner="creative-ops"
+          data-theme="sand"
+          aria-label="Campaign preview frame"
+          srcdoc="<!DOCTYPE html><html lang='en'><body class='mini-preview' data-preview='campaign' style='margin:0;font-family:system-ui;background:#fff8f0 url(javascript:alert(11)) no-repeat right top;'><section class='preview-copy' data-card='inner'><h3>Launch week</h3><p>Keep this preview text and classes intact.</p></section></body></html>"></iframe>
+      </div>
+
+      <article
+        class="promo-band accent-panel"
+        data-module="seasonal-banner"
+        data-priority="high"
+        aria-labelledby="promo-band-title"
+        style="padding:24px;border-radius:18px;background:linear-gradient(90deg,#1f3252 0%,#335d92 48%,#6c9bf2 100%);color:#ffffff;box-shadow:0 10px 24px rgba(22,37,61,.18);width:expression(alert(21));">
+        <h2 id="promo-band-title" class="card-title">Spring launch toolkit</h2>
+        <p class="card-copy" data-copy-id="promo-01">Most of this long style value is legitimate presentation data. Only the executable substring is unsafe.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

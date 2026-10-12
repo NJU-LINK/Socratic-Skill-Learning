@@ -1,0 +1,28 @@
+instruction: |-
+  You are given a PowerPoint file at `/app/input.pptx` (`hadal.pptx`).
+
+  Apply these operations in order:
+
+  1. On slide 1, replace the complete title `探索深海：哈达尔区` with `深海探索`
+     and make the resulting title bold. Preserve the title box's geometry and
+     all unrequested formatting.
+  2. Delete the original slide 4.
+  3. Add speaker notes to slide 1 with exactly this text:
+     `Updated title and removed redundant slide.`
+
+  Preserve the identity and order of every surviving slide, all non-target
+  shapes and formatting, page dimensions, media, embedded fonts, themes,
+  masters, layouts, and pre-existing notes.
+
+  Save the modified presentation as `/app/output.pptx`.
+author_name: Task Author
+difficulty: hard
+category: PPTX Manipulation
+tags:
+  - pptx
+  - document-processing
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

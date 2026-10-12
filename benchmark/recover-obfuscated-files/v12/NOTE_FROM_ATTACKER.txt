@@ -1,0 +1,4 @@
+Your files are protected now!
+I rotated the letters of each file's content and added a marker at the start of each protected file.
+The filenames have also been scrambled -- you might recognize the encoding, but don't forget the extension.
+Good luck finding the originals in /app/sensitive_data/.

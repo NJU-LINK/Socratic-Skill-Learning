@@ -1,0 +1,76 @@
+{
+  "method": "expert-authoring",
+  "round": 2,
+  "family": "acl-permissions-inheritance",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 66
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 33
+      },
+      "iteration-2": {
+        "records": 25
+      },
+      "iteration-3": {
+        "records": 20
+      }
+    },
+    "heldout": {
+      "v03": {
+        "records": 0,
+        "empty": true,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 17,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 17,
+        "score": 1,
+        "passed": 4,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v11": {
+        "records": 19,
+        "score": 0,
+        "passed": 0,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 17,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 23,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 66,
+    "train": 78,
+    "heldout": 93,
+    "heldoutVariants": 5,
+    "heldoutEmpty": 1,
+    "noSkillFormation": false
+  }
+}

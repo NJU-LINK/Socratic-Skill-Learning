@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools==75.6.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vectorops"
+version = "0.1.0"
+description = "Vector operations package for a local package index exercise"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Task Author" },
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

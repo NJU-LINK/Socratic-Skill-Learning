@@ -1,0 +1,35 @@
+instruction: |-
+  You are provided with a Turtle file at `/app/university_graph.ttl` containing the
+  ontology and instance data for a university knowledge graph.
+
+  Create a SPARQL query that returns each professor's name and the name of the
+  university where that person works.
+
+  Contract:
+  - Professor status is represented by the string-valued `uni:role` property.
+  - A role counts when "professor" is the person's academic appointment, including
+    appointment modifiers such as Assistant, Associate, Adjunct, Clinical, Endowed,
+    or Emeritus.
+  - Do not match strings where professor merely describes a different job, such as
+    "Assistant to the Professor", "Professor Search Coordinator", or a program
+    administrator.
+  - A person's `uni:worksAt` target may be a university or an organizational unit
+    connected to a university through one or more affiliation relations in the graph.
+  - Each qualifying person works for exactly one university. Return that pair once,
+    even if more than one affiliation path reaches the same university.
+  - Return exactly `?professorName` and `?universityName`.
+
+  Save the query to `/app/solution.sparql`.
+author_name: Task Author
+difficulty: hard
+category: data-querying
+tags:
+  - knowledge-graph
+  - sparql-query
+  - role-semantics
+  - affiliation-traversal
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

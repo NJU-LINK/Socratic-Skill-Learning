@@ -1,0 +1,28 @@
+{
+  "description": "Complete the Daiquiri recipe and convert all measured ingredients from oz to cl using 1 oz = 3 cl, rounding to the nearest 0.1 cl.",
+  "recipe": {
+    "name": "Daiquiri",
+    "glass": "martini",
+    "category": "Before Dinner Cocktail",
+    "ingredients": [
+      {
+        "unit": "oz",
+        "amount": 1.5,
+        "ingredient": "White rum"
+      },
+      {
+        "unit": "oz",
+        "amount": 0.83,
+        "ingredient": "Lime juice"
+      },
+      {
+        "unit": "oz",
+        "amount": 0.5,
+        "ingredient": "Syrup",
+        "label": "Simple syrup"
+      }
+    ],
+    "garnish": "",
+    "preparation": "Shake and strain into a cocktail glass."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "model": "qwen",
+  "method": "fixed-window-ssl",
+  "checkpoint_interval": 5,
+  "round": 2,
+  "family": "bank-trans-filter",
+  "run_id": "20260810064806975-develop-g5-bank-trans-filter-r2",
+  "stats": {
+    "skill_formation": {
+      "student-author": {
+        "records": 134
+      },
+      "max-educator": {
+        "records": 68
+      }
+    }
+  },
+  "heldout": {
+    "v04": {
+      "score": 0.5,
+      "passed": 3,
+      "failed": 3,
+      "errors": 0,
+      "toolCalls": 7,
+      "timedOut": false
+    },
+    "v06": {
+      "score": 0.3333333333333333,
+      "passed": 1,
+      "failed": 2,
+      "errors": 0,
+      "toolCalls": 11,
+      "timedOut": false
+    },
+    "v08": {
+      "score": 0.3333333333333333,
+      "passed": 2,
+      "failed": 4,
+      "errors": 0,
+      "toolCalls": 11,
+      "timedOut": false
+    },
+    "v09": {
+      "score": 0.5,
+      "passed": 3,
+      "failed": 3,
+      "errors": 0,
+      "toolCalls": 14,
+      "timedOut": false
+    },
+    "v13": {
+      "score": 1.0,
+      "passed": 5,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 9,
+      "timedOut": false
+    },
+    "v16": {
+      "score": 1.0,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "toolCalls": 16,
+      "timedOut": false
+    }
+  },
+  "primary_score": 0.611111111111111,
+  "totals": {
+    "records": 202
+  }
+}

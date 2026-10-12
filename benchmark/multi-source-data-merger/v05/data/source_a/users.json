@@ -1,0 +1,37 @@
+[
+  {
+    "user_id": 101,
+    "display_name": "Jane Smith",
+    "email": "jane.smith@alpha.example",
+    "registered_on": null,
+    "state": "ACTIVE"
+  },
+  {
+    "user_id": 102,
+    "display_name": "Miguel Alvarez",
+    "email": null,
+    "registered_on": "2020-11-09",
+    "state": null
+  },
+  {
+    "user_id": 103,
+    "display_name": "Priya Nair",
+    "email": "priya.nair@example.com",
+    "registered_on": "2019-02-14",
+    "state": "INACTIVE"
+  },
+  {
+    "user_id": 104,
+    "display_name": "Omar Chen",
+    "email": "",
+    "registered_on": null,
+    "state": "ACTIVE"
+  },
+  {
+    "user_id": 105,
+    "display_name": "Lina Park",
+    "email": "lina.park@example.com",
+    "registered_on": null,
+    "state": "ACTIVE"
+  }
+]

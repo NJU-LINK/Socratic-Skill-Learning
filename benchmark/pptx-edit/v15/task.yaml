@@ -1,0 +1,32 @@
+instruction: |-
+  You are given a PowerPoint file at `/app/input.pptx` (`flower.pptx`).
+
+  Add one slide at the end of the presentation using the existing layout named
+  `Slide 1 master`. The input has 10 slides, so the new slide must become slide 11.
+
+  That layout has no title placeholder. Add exactly one text box to the new slide:
+
+  - left: 1 inch
+  - top: 1 inch
+  - width: 8 inches
+  - height: 2 inches
+  - text: `Summary`
+  - font size: 36 pt
+  - bold: true
+
+  Do not add any other shape or alter the ten existing slides. Preserve page
+  dimensions and all existing media, embedded fonts, themes, masters, layouts,
+  and speaker notes.
+
+  Save the modified presentation as `/app/output.pptx`.
+author_name: Task Author
+difficulty: hard
+category: PPTX Manipulation
+tags:
+  - pptx
+  - document-processing
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

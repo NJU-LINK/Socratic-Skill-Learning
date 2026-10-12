@@ -1,0 +1,130 @@
+{
+  "cohort": {
+    "model_pair": "Qwen3.7-Plus / Qwen3.7-Max",
+    "families": 22,
+    "held_out_cases": 155,
+    "replicates": 3
+  },
+  "utility": [
+    {
+      "method": "no-skill",
+      "label": "No Skill",
+      "avg_at_3": 0.7232587834644111
+    },
+    {
+      "method": "expert-authoring",
+      "label": "Expert Authoring",
+      "avg_at_3": 0.7278496725736986
+    },
+    {
+      "method": "post-hoc-teaching",
+      "label": "Post-hoc Teaching",
+      "avg_at_3": 0.7476676420020576
+    },
+    {
+      "method": "trace2skill",
+      "label": "Trace2Skill",
+      "avg_at_3": 0.7608388034524398
+    },
+    {
+      "method": "skill-kd",
+      "label": "SKILL-KD",
+      "avg_at_3": 0.7508511265870573
+    },
+    {
+      "method": "fixed-window-ssl",
+      "label": "Fixed-Window SSL",
+      "avg_at_3": 0.8007866043688555
+    },
+    {
+      "method": "issue-guided-ssl",
+      "label": "Issue-Guided SSL",
+      "avg_at_3": 0.8050249606093761
+    }
+  ],
+  "educator_tokens": {
+    "fixed_window_index": 100,
+    "issue_guided_index": 38.3,
+    "reduction_percent": 61.7,
+    "source": "Reported in the Socratic Skill Learning paper: Issue-Guided SSL uses 61.7% fewer Educator tokens than Fixed-Window SSL in the main Qwen comparison. This cost comparison is not recomputed by the offline utility summary."
+  },
+  "utility_source": "Released experiments/main/qwen meta.json, summarized with scripts/summarize-main.mjs",
+  "shared_subset": {
+    "cohort": {
+      "families": 10,
+      "held_out_cases": 77,
+      "replicates": {
+        "qwen": 3,
+        "deepseek": 1,
+        "kimi": 1
+      },
+      "family_names": [
+        "audio-synth-stft-peaks",
+        "filter-js-from-html",
+        "git-leak-recovery",
+        "html-finance-verify",
+        "jq-data-processing",
+        "kv-store-grpc",
+        "pypi-server",
+        "sparql-professors-universities",
+        "sqlite-db-truncate",
+        "xlsx-structure"
+      ]
+    },
+    "model_pairs": {
+      "qwen": {
+        "student": "qwen3.7-plus",
+        "educator": "qwen3.7-max"
+      },
+      "deepseek": {
+        "student": "deepseek-v4-flash-0731",
+        "educator": "deepseek-v4-pro-0813"
+      },
+      "kimi": {
+        "student": "kimi-k2.5",
+        "educator": "kimi-k3"
+      }
+    },
+    "utility": {
+      "qwen": {
+        "no-skill": 0.7169846696513363,
+        "expert-authoring": 0.728420227920228,
+        "post-hoc-teaching": 0.7096900691900692,
+        "fixed-window-ssl": 0.7584767331433998,
+        "issue-guided-ssl": 0.762483312983313
+      },
+      "deepseek": {
+        "no-skill": 0.7537,
+        "expert-authoring": 0.7658,
+        "post-hoc-teaching": 0.7591,
+        "fixed-window-ssl": 0.7845,
+        "issue-guided-ssl": 0.7787
+      },
+      "kimi": {
+        "no-skill": 0.6793,
+        "expert-authoring": 0.7378,
+        "post-hoc-teaching": 0.7208,
+        "fixed-window-ssl": 0.7617,
+        "issue-guided-ssl": 0.7529
+      }
+    },
+    "educator_tokens": {
+      "deepseek": {
+        "fixed_window_total_millions": 65.46,
+        "issue_guided_total_millions": 23.71,
+        "reduction_percent": 63.8,
+        "coverage": "Persistent Student-author and Educator sessions on the 10-family shared subset; totals across ten family runs."
+      },
+      "kimi": {
+        "fixed_window_total_millions": 42.0,
+        "issue_guided_total_millions": 9.5,
+        "reduction_percent": 77.4,
+        "coverage": "Persistent Student-author and Educator sessions on the 10-family shared subset; totals across ten family runs."
+      }
+    },
+    "sources": {
+      "qwen_utility": "Recomputed from released experiments/main/qwen meta.json on the ten families in configs/scopes/lite.yaml, averaging cases within families, then families, then three runs.",
+      "additional_pairs": "Reported in the SSL paper: Appendix Additional model pairs (utility and gain table), and review scheduling appendix (Educator-token comparison)."
+    }
+  }
+}

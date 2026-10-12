@@ -1,0 +1,68 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "title": "Product Roadmap Review",
+      "duration_min": 60,
+      "urgency": 5,
+      "importance": 5
+    },
+    {
+      "id": "B",
+      "title": "Technical Design Doc",
+      "duration_min": 50,
+      "urgency": 4,
+      "importance": 4
+    },
+    {
+      "id": "C",
+      "title": "Sprint Backlog Grooming",
+      "duration_min": 30,
+      "urgency": 4,
+      "importance": 3
+    },
+    {
+      "id": "D",
+      "title": "Cross-team Sync",
+      "duration_min": 40,
+      "urgency": 3,
+      "importance": 3
+    },
+    {
+      "id": "E",
+      "title": "Deployment Automation",
+      "duration_min": 45,
+      "urgency": 3,
+      "importance": 4
+    },
+    {
+      "id": "F",
+      "title": "Test Coverage Report",
+      "duration_min": 30,
+      "urgency": 2,
+      "importance": 2
+    },
+    {
+      "id": "G",
+      "title": "Update Runbook",
+      "duration_min": 20,
+      "urgency": 1,
+      "importance": 1
+    }
+  ],
+  "emergencies": [
+    {
+      "id": "X",
+      "title": "Major Incident Response",
+      "duration_min": 60,
+      "arrival_time": "15:00",
+      "urgency": 5
+    }
+  ],
+  "config": {
+    "work_start": "14:00",
+    "work_end": "19:00",
+    "priority_method": "weighted",
+    "calendar_id": "Hk9Nw8KsRd5X"
+  }
+}

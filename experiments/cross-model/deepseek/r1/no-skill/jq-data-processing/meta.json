@@ -1,0 +1,34 @@
+{
+  "model": "deepseek",
+  "method": "no-skill",
+  "round": 1,
+  "family": "jq-data-processing",
+  "stats": {
+    "heldout": {
+      "v02": {
+        "records": 43
+      },
+      "v05": {
+        "records": 80
+      },
+      "v06": {
+        "records": 45
+      },
+      "v11": {
+        "records": 26
+      },
+      "v12": {
+        "records": 23
+      },
+      "v15": {
+        "records": 28
+      },
+      "v16": {
+        "records": 17
+      }
+    }
+  },
+  "totals": {
+    "records": 262
+  }
+}

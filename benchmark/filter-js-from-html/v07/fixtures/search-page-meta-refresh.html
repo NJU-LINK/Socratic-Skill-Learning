@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Search Redirect</title>
+  <meta http-equiv="refresh" content="0; url=javascript:alert('redirect-now')">
+</head>
+<body class="search-shell">
+  <main class="content-card">
+    <h1>Search results moved</h1>
+    <p>Your saved search experience is being redirected.</p>
+    <form action="/search" method="get" class="search-form inline" role="search">
+      <label for="search-query">Search</label>
+      <input id="search-query" name="q" type="search" value="portable monitor" class="query-input">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+    <p><a class="fallback-link" href="/search?q=portable+monitor">Continue without redirect</a></p>
+  </main>
+</body>
+</html>

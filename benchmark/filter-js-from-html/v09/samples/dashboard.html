@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Northwind Metrics Console</title>
+</head>
+<body class="dashboard surface-muted" data-app="northwind" data-view="ops" data-release="2026.04" aria-live="polite">
+  <aside class="sidebar" aria-label="Workspace navigation" data-collapsed="false">
+    <a href="/overview" class="sidebar-link" data-key="overview">Overview</a>
+    <a href="/forecasts" class="sidebar-link" data-key="forecasts">Forecasts</a>
+    <a href="/alerts" class="sidebar-link" data-key="alerts">Alerts</a>
+  </aside>
+
+  <main class="main-panel" data-grid="12" data-pane="primary">
+    <section class="widget-row" data-row="summary">
+      <article class="widget stat-card" data-widget="gross-margin" aria-labelledby="gross-margin-title">
+        <h1 id="gross-margin-title" class="widget-title">Gross margin</h1>
+        <p class="widget-value" data-format="percent">62.4%</p>
+        <p class="widget-meta" data-window="30d">Compared with prior 30 days</p>
+      </article>
+      <article class="widget stat-card" data-widget="return-rate" aria-labelledby="return-rate-title">
+        <h1 id="return-rate-title" class="widget-title">Return rate</h1>
+        <p class="widget-value" data-format="percent">1.8%</p>
+        <p class="widget-meta" data-window="30d">Stable across top regions</p>
+      </article>
+    </section>
+
+    <section class="widget detail-card" data-widget="review-queue" aria-labelledby="review-queue-title">
+      <h2 id="review-queue-title" class="section-title">Review queue</h2>
+      <form action="/reviews/export" method="post" class="toolbar" data-form="export" aria-label="Export controls">
+        <label for="review-range" class="field-label">Date range</label>
+        <select id="review-range" name="range" class="field" data-default="7d">
+          <option value="24h">Last 24 hours</option>
+          <option value="7d" selected>Last 7 days</option>
+          <option value="30d">Last 30 days</option>
+        </select>
+        <button type="submit" class="button button-primary" data-intent="export">Export CSV</button>
+      </form>
+      <table class="data-table" data-density="compact" aria-describedby="queue-caption">
+        <caption id="queue-caption">Pending items by workspace</caption>
+        <thead>
+          <tr><th scope="col">Workspace</th><th scope="col">Owner</th><th scope="col">Pending</th></tr>
+        </thead>
+        <tbody>
+          <tr data-row-id="nw-100"><td>Northwind Core</td><td>Priya</td><td>14</td></tr>
+          <tr data-row-id="nw-101"><td>Retail Labs</td><td>Jon</td><td>6</td></tr>
+          <tr data-row-id="nw-102"><td>Partner Ops</td><td>Mina</td><td>9</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="widget detail-card" data-widget="workspace-actions" aria-labelledby="workspace-actions-title">
+      <h2 id="workspace-actions-title" class="section-title">Workspace actions</h2>
+      <form action="/workspaces/review" method="post" class="toolbar stack" data-form="workspace-review" aria-label="Workspace review controls">
+        <label for="workspace-slug" class="field-label">Workspace slug</label>
+        <input id="workspace-slug" name="workspace" type="text" value="northwind-core" class="field" data-field="workspace-slug" aria-describedby="workspace-help">
+        <p id="workspace-help" class="field-help" data-copy-id="workspace-help">Actions keep their labels, names, and tracking metadata after sanitization.</p>
+        <button
+          type="submit"
+          class="button button-secondary"
+          data-intent="review"
+          data-owner="ops-queue"
+          data-audit="workspace-review"
+          formaction="javascript:alert(document.body.dataset.app)">Open review queue</button>
+      </form>
+    </section>
+
+    <section
+      class="widget detail-card"
+      data-widget="status-banner"
+      aria-labelledby="status-banner-title"
+      style="display:block;padding:18px 22px;border:1px solid #d6deea;border-radius:16px;background:#ffffff;color:#17324d;filter:drop-shadow(0 8px 18px rgba(16,28,48,.08));background-image:url(&quot;javascript:alert('banner')&quot;);">
+      <h2 id="status-banner-title" class="section-title">Status banner</h2>
+      <p class="widget-meta" data-window="current">The banner keeps its layout and status copy, but executable URL fragments hidden in a long style attribute are unsafe.</p>
+    </section>
+  </main>
+</body>
+</html>

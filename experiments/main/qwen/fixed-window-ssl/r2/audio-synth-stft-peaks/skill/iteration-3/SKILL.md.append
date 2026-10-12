@@ -1,0 +1,53 @@
+5. **Check portability**: awk must not use gawk-specific features unless spec allows
+
+---
+
+## Debugging & Verification
+
+### Quick Sanity Checks
+```bash
+# Check WAV RMS
+python3 -c "from scipy.io import wavfile; import numpy as np; sr,d=wavfile.read('data/clip.wav'); print(f'RMS: {np.sqrt(np.mean((d/32767.0)**2)):.6f}')"
+
+# Check peaks.csv format
+head -3 data/peaks.csv
+wc -l data/peaks.csv  # Should be n_frames + 1
+
+# Test PEAKS_ONLY mode
+rm data/peaks.csv && PEAKS_ONLY=1 bash run_audio_pipeline.sh
+```
+
+### Cross-Validate Peaks
+```python
+import numpy as np
+from scipy.io import wavfile
+from scipy.signal import stft
+
+sr, data = wavfile.read('data/clip.wav')
+audio = data / 32767.0
+f, t, Zxx = stft(audio, fs=12000, window='blackman', nperseg=768,
+                  noverlap=576, nfft=1024, boundary=None, padded=False, return_onesided=True)
+mag = np.abs(Zxx)
+
+# Compare with awk output
+with open('data/peaks.csv') as f:
+    for line in f.readlines()[1:5]:  # First 4 frames
+        parts = line.strip().split(',')
+        frame = int(parts[0])
+        awk_bins = [int(parts[1]), int(parts[2]), int(parts[3])]
+        vals = mag[:, frame]
+        py_bins = np.argsort(vals)[::-1][:3].tolist()
+        print(f'Frame {frame}: awk={awk_bins}, python={py_bins}, match={awk_bins==py_bins}')
+```
+
+### Test awk Stub Scenario
+```bash
+mkdir -p /tmp/stub/bin
+cat > /tmp/stub/bin/awk << 'STUBEOF'
+#!/bin/bash
+printf 'frame,f1_bin,f2_bin,f3_bin\n0,100,200,300\n'
+STUBEOF
+chmod +x /tmp/stub/bin/awk
+PATH="/tmp/stub/bin:$PATH" bash run_audio_pipeline.sh
+cat data/peaks.csv  # Should match stub output exactly
+```

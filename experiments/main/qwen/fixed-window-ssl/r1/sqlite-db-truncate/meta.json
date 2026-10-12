@@ -1,0 +1,78 @@
+{
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "sqlite-db-truncate",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 64
+      },
+      "student-author": {
+        "records": 268
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 45
+      },
+      "iteration-2": {
+        "records": 34
+      },
+      "iteration-3": {
+        "records": 26
+      }
+    },
+    "heldout": {
+      "v04": {
+        "records": 56,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 60,
+        "score": 1,
+        "passed": 19,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 52,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v18": {
+        "records": 26,
+        "score": 1,
+        "passed": 10,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v19": {
+        "records": 34,
+        "score": 1,
+        "passed": 8,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v20": {
+        "records": 73,
+        "score": 0.4444444444444444,
+        "passed": 4,
+        "failed": 5,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 332,
+    "train": 105,
+    "heldout": 301,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

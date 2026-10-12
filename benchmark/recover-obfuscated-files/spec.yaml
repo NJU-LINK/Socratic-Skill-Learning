@@ -1,0 +1,30 @@
+family_definition:
+  invariant: >-
+    Identify transformed files from the evidence available in the case,
+    reverse the filename and/or content transformations, and place only the
+    recovered originals under /app/recovered/.
+  output_contract: >-
+    Recovered filenames and bytes must match the originals exactly; unrelated
+    clean files must not be copied into the output.
+axes:
+  - name: transformation_pipeline
+    type: freeform
+    description: >-
+      Reversible transformations vary across hex, base32, base64, URL percent
+      encoding, ROT13, single-byte XOR, and layered combinations.
+  - name: transformed_attributes
+    type: freeform
+    description: >-
+      A case may transform filenames, content, or both, and may encode an
+      original extension separately from the main name.
+  - name: identification_evidence
+    type: freeform
+    description: >-
+      Target files may be identified by suffix, directory, manifest, marker,
+      attacker note, or by distinguishing transformed data from nearby clean
+      files.
+  - name: filesystem_distribution
+    type: freeform
+    description: >-
+      Inputs range from a flat directory to nested or scattered files, with
+      clean and transformed files potentially mixed together.

@@ -1,0 +1,16 @@
+[
+  {
+    "user_identifier": 101,
+    "full_name": "John Doe",
+    "email": "john@a.com",
+    "registered_on": "2024/01/15",
+    "status": "active"
+  },
+  {
+    "user_identifier": 102,
+    "full_name": "Jane Smith",
+    "email": "jane@a.com",
+    "registered_on": "2024/02/20",
+    "status": "inactive"
+  }
+]

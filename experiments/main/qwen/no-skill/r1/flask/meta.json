@@ -1,0 +1,61 @@
+{
+  "method": "no-skill",
+  "round": 1,
+  "family": "flask",
+  "stats": {
+    "skill_formation": {},
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 30,
+        "score": 0.8181818181818182,
+        "passed": 18,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 28,
+        "score": 0.25,
+        "passed": 2,
+        "failed": 6,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 14,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 34,
+        "score": 0,
+        "passed": 0,
+        "failed": 7,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 20,
+        "score": 0.25,
+        "passed": 2,
+        "failed": 6,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 24,
+        "score": 0.25,
+        "passed": 2,
+        "failed": 6,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 0,
+    "train": 0,
+    "heldout": 150,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": true
+  }
+}

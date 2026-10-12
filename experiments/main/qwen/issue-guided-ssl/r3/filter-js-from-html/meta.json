@@ -1,0 +1,106 @@
+{
+  "method": "issue-guided-ssl",
+  "round": 3,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 28
+      },
+      "student-author": {
+        "records": 228
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 83
+      },
+      "iteration-2": {
+        "records": 51
+      },
+      "iteration-3": {
+        "records": 82
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 49,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 103,
+        "score": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 57,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 72,
+        "score": 0.6923076923076923,
+        "passed": 9,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 44,
+        "score": 0.2857142857142857,
+        "passed": 2,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 75,
+        "score": 0.7142857142857143,
+        "passed": 5,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 65,
+        "score": 0,
+        "passed": 0,
+        "failed": 24,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 60,
+        "score": 0,
+        "passed": 0,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 133,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 55,
+        "score": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 256,
+    "train": 216,
+    "heldout": 713,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

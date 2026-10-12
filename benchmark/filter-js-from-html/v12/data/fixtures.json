@@ -1,0 +1,34 @@
+[
+  {
+    "name": "checkout-inline-submit",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>Checkout</title>\n</head>\n<body class=\"checkout-page\">\n  <header class=\"hero\">\n    <nav aria-label=\"Checkout navigation\">\n      <a class=\"crumb\" href=\"/cart\">Cart</a>\n      <a class=\"crumb\" href=\"/checkout/review\" target=\"_self\">Review</a>\n    </nav>\n  </header>\n  <main>\n    <form id=\"checkout-form\" class=\"panel stacked\" action=\"javascript:alert('pwned')\" method=\"post\" data-flow=\"checkout\" aria-describedby=\"checkout-help\">\n      <label for=\"full-name\">Full name</label>\n      <input id=\"full-name\" name=\"full_name\" type=\"text\" value=\"Ada Lovelace\" autocomplete=\"shipping name\">\n      <label for=\"address\">Address</label>\n      <input id=\"address\" name=\"address\" type=\"text\" value=\"12 Example Street\">\n      <p id=\"checkout-help\">Review your order before placing it.</p>\n      <button class=\"primary\" type=\"submit\">Place order</button>\n    </form>\n  </main>\n</body>\n</html>"
+  },
+  {
+    "name": "checkout-percent-encoded-formaction",
+    "html": "<!DOCTYPE html>\n<html>\n<head><title>Express Checkout</title></head>\n<body>\n  <form class=\"grid\" action=\"/orders\" method=\"post\" data-step=\"payment\">\n    <input type=\"hidden\" name=\"order_id\" value=\"A-100\">\n    <button type=\"submit\" class=\"pay-now\" formaction=\"java%73cript:alert(11)\" aria-label=\"Pay now\">Pay now</button>\n    <button type=\"submit\" class=\"save-cart\" formaction=\"/cart/save\">Save cart</button>\n  </form>\n</body>\n</html>"
+  },
+  {
+    "name": "contact-data-url-link",
+    "html": "<!DOCTYPE html>\n<html>\n<head><title>Contact Support</title></head>\n<body>\n  <section class=\"support-card\">\n    <h1>Support</h1>\n    <p>Choose the channel that works best for you.</p>\n    <a class=\"chat-link\" href=\"data:text/html,%3Cscript%3Ealert(7)%3C/script%3E\" rel=\"noopener\" target=\"supportFrame\">Open chat</a>\n    <a class=\"email-link\" href=\"mailto:support@example.test\" rel=\"nofollow\">Email us</a>\n  </section>\n</body>\n</html>"
+  },
+  {
+    "name": "admin-meta-refresh",
+    "html": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Admin Handoff</title>\n  <meta http-equiv=\"refresh\" content=\"0; url=javascript:alert('admin')\">\n</head>\n<body class=\"admin-shell\">\n  <p>Redirecting to the admin panel...</p>\n</body>\n</html>"
+  },
+  {
+    "name": "nav-target-iframe",
+    "html": "<!DOCTYPE html>\n<html>\n<head><title>Account</title></head>\n<body>\n  <nav class=\"account-nav\" aria-label=\"Account\">\n    <a href=\"/account/profile\" class=\"tab\">Profile</a>\n    <a href=\"javascript:alert(99)\" class=\"tab danger\" target=\"contentFrame\" aria-current=\"page\">Billing portal</a>\n  </nav>\n  <iframe name=\"contentFrame\" src=\"/account/panel\" title=\"Panel\"></iframe>\n</body>\n</html>"
+  },
+  {
+    "name": "contact-safe-form",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head><title>Contact Us</title></head>\n<body>\n  <form action=\"/support/tickets\" method=\"post\" class=\"stacked dense\" aria-label=\"Contact form\">\n    <label for=\"topic\">Topic</label>\n    <select id=\"topic\" name=\"topic\">\n      <option value=\"billing\">Billing</option>\n      <option value=\"shipping\">Shipping</option>\n    </select>\n    <label for=\"message\">Message</label>\n    <textarea id=\"message\" name=\"message\">Need help with my order.</textarea>\n    <button type=\"submit\" class=\"primary\">Send message</button>\n  </form>\n</body>\n</html>"
+  },
+  {
+    "name": "nav-safe-links",
+    "html": "<!DOCTYPE html>\n<html>\n<head><title>Storefront</title></head>\n<body>\n  <nav class=\"main-nav\" data-layout=\"wide\">\n    <a href=\"/\" class=\"nav-link\">Home</a>\n    <a href=\"/catalog\" class=\"nav-link\">Catalog</a>\n    <a href=\"/contact\" class=\"nav-link\" target=\"_self\">Contact</a>\n  </nav>\n</body>\n</html>"
+  },
+  {
+    "name": "safe-meta-refresh",
+    "html": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Receipt Ready</title>\n  <meta http-equiv=\"refresh\" content=\"5; url=/orders/receipt\">\n</head>\n<body>\n  <p>Your receipt will open shortly.</p>\n</body>\n</html>"
+  }
+]

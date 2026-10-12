@@ -1,0 +1,4 @@
+user_id,name,email_address,created_at,account_flag
+201,Lena Ortiz,lena@source-b.test,2024-01-12,Y
+203,Priya Shah,priya.alt@source-b.test,2024-03-09,Y
+204,Owen Kim,owen@source-b.test,2024-04-18,N

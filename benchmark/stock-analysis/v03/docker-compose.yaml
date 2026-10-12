@@ -1,0 +1,9 @@
+services:
+  client:
+    build:
+      dockerfile: Dockerfile
+    image: ${T_BENCH_TASK_DOCKER_CLIENT_IMAGE_NAME:-family-stock-v03}
+    container_name: ${T_BENCH_TASK_DOCKER_CLIENT_CONTAINER_NAME:-family-stock-v03}
+    command: ["sh", "-c", "sleep infinity"]
+    environment:
+      - TEST_DIR=${T_BENCH_TEST_DIR:-/tests}

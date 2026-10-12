@@ -1,0 +1,101 @@
+{
+  "documents": [
+    {
+      "filename": "alpha_medical_supply.pdf",
+      "kind": "invoice",
+      "total_amount": 1488.0,
+      "vat_amount": 248.0,
+      "sha512": "77fb62fce3f1959769e06334b6c4c883aabfa6e7026f0fce8d63966a99eba0cae8531afe8e47d65358deca3e913fe68dc307389ecee279075a8d4aaac7540aa6"
+    },
+    {
+      "filename": "beacon_catering.jpg",
+      "kind": "invoice",
+      "total_amount": 945.54,
+      "vat_amount": 70.04,
+      "sha512": "142df487d5e70291b3e9e13d90eedcd7aa97ec1559a7e8b4a86bda89ac772f63b94db62a6da900fa90a050f38e125baa68c2743554f0e6c0670f41639e2ac9fa"
+    },
+    {
+      "filename": "cobalt_fabrication.pdf",
+      "kind": "invoice",
+      "total_amount": 3420.0,
+      "vat_amount": 570.0,
+      "sha512": "658a3722727adcf937abac8d35e89a37d645281026f4b99a9c83d3fb979dd146eec7fd7db1a08b43942f3bf1919f7f8c514c9b0bb8a9eb00eb7ee5e2d024b9bd"
+    },
+    {
+      "filename": "delta_maintenance.jpg",
+      "kind": "invoice",
+      "total_amount": 602.0,
+      "vat_amount": 42.0,
+      "sha512": "016d0ae82fd6754bdb80f6b08bef731b580279bb8a0426e2b6fdfe602a49c9c10fed40874c25f77513165c250ca292360d080bb2a08a15fdbf8cf032d25614a2"
+    },
+    {
+      "filename": "ember_logistics.pdf",
+      "kind": "invoice",
+      "total_amount": 2160.0,
+      "vat_amount": 360.0,
+      "sha512": "7f9dcda2e72a73cc3941c4f2a9b1d73c98c659134d7ae353473c75525dccb3c8436a387c02e12acdf2b3f8c2bc9c63b0a05e7c2a172acd5262d82119e3adb1ad"
+    },
+    {
+      "filename": "fjord_analytics.jpg",
+      "kind": "invoice",
+      "total_amount": 1633.91,
+      "vat_amount": 134.91,
+      "sha512": "1d747b740d01c0f1081884a52e600eb9ae1f2b7df68bb81f3a2bf0411e5b6ae60e4d26c90fc67ca28001cb28ef792bec0fd7048308ebaa1f4480b66a3bf7a710"
+    },
+    {
+      "filename": "grove_electric.pdf",
+      "kind": "invoice",
+      "total_amount": 766.5,
+      "vat_amount": 36.5,
+      "sha512": "50ce3d4b36ac22ad0fccf11e65161872f7e891780f78454620a5edea85fe6536c2949d05dc3ba5dadb74626741b70be61e4f9274ee7ce0fa213aa033d1afaca8"
+    },
+    {
+      "filename": "harbor_packaging.pdf",
+      "kind": "invoice",
+      "total_amount": 3520.0,
+      "vat_amount": 320.0,
+      "sha512": "e240c4e026c635757e33efaef6a80e016d1793bde02fa70908884495a856b7387f2f5e902c9a63b8dde29ba54361be3bdf174c411a3b95dcbcf5ef01d3574de1"
+    },
+    {
+      "filename": "iris_office.jpg",
+      "kind": "invoice",
+      "total_amount": 1275.0,
+      "vat_amount": 0.0,
+      "sha512": "a9f1bdae30aac50d6afb64cce5d5a0cf16805d08d09564d280bb61914fc0416c195c4f4876bfe61f6cb2ffccf847da4b9e6851be3289f0b71b34cd36b09f9af1"
+    },
+    {
+      "filename": "juno_quote.pdf",
+      "kind": "other",
+      "total_amount": null,
+      "vat_amount": null,
+      "sha512": "e6aa0ff72bf18731e1c55c0350f7d35c703f9448fd07cdeb648073fdf716cdbb0efa20768245b5f30e018b732b2b0fe46b18cceed05d6638ed0fef8e800f901b"
+    },
+    {
+      "filename": "kestrel_estimate.jpg",
+      "kind": "other",
+      "total_amount": null,
+      "vat_amount": null,
+      "sha512": "2a03591d7331e52e4e8c73f5ae03204d542bffbd2d11564c105f0df61f87559430a2e99e1f386a52866bdf3ee95f7eb09e208cfd67b6f44445d589f3db5dec91"
+    },
+    {
+      "filename": "lumen_statement.pdf",
+      "kind": "other",
+      "total_amount": null,
+      "vat_amount": null,
+      "sha512": "6e61bde5eec85040875e3dea9ae6a6f5f5f91e28536a983087424a8280f1cd46ee9c0d000df046d01b02e608aafff0bb6ce6bd349af13c0b6bf3dcff11a90114"
+    },
+    {
+      "filename": "meadow_proposal.jpg",
+      "kind": "other",
+      "total_amount": null,
+      "vat_amount": null,
+      "sha512": "54133bd0b44ab6354752124fb5355272d969f57885caaa1ee42219d0d1cb2a784669ceeb287e5000ae1ddbe33935f109986a704b69e636dd5ed524c537d9f742"
+    }
+  ],
+  "totals": {
+    "invoice_count": 9,
+    "other_count": 4,
+    "total_amount_sum": 15810.95,
+    "vat_amount_sum": 1781.45
+  }
+}

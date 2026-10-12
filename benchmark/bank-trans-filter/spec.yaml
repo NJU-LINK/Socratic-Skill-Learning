@@ -1,0 +1,30 @@
+axes:
+  - description: >
+      How the target company can be recognized from noisy row-level identifiers. The seed requires
+      handling one target company whose transactions appear under multiple company-name variants and
+      account-number variants with typos. The same skill must also handle: more severe spelling
+      drift, abbreviations and legal-suffix changes, partial-name matches, identifier corruption in
+      either the company name or the account number, and cases where one identifier is trustworthy
+      only after reconciling it against the other.
+    name: company_identity_signal_variation
+    type: freeform
+  - description: >
+      How rows belonging to the target entity must be inferred once some evidence has been found.
+      The seed requires including rows that match either the target's fuzzy name variants or an
+      associated account number discovered from other rows. The same skill must also handle:
+      multiple accounts belonging to the same company, account reuse patterns that require caution,
+      sparse anchor rows that establish entity membership indirectly, and datasets where complete
+      extraction depends on propagating identity evidence across rows instead of filtering by one
+      literal string.
+    name: transaction_membership_inference
+    type: freeform
+  - description: >
+      What exact output-preservation constraints apply after the relevant kinds of distractor
+      entities and near-matches appear in the dataset. The seed is relatively clean apart from typos
+      on the target entity itself. The same skill must also handle: non-target companies with names
+      that partially overlap the target, non-target accounts that differ by only one or two
+      characters from target accounts, subsidiaries or partners whose transactions should remain
+      excluded, and datasets where achieving high precision requires distinguishing genuine target
+      evidence from superficially similar rows.
+    name: distractor_entity_confusability
+    type: freeform

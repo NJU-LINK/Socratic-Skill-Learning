@@ -1,0 +1,57 @@
+// Template: proto skeleton for kv-store-grpc variants.
+// Generated module names come from the proto FILENAME (dash/underscore
+// normalized), never from the package line: kv-store.proto -> kv_store_pb2.
+syntax = "proto3";
+
+package kvstore;
+
+// One service; RPCs are unary unless the variant spec says otherwise.
+service KVStore {
+  rpc Put(PutRequest) returns (PutResponse);
+  rpc Fetch(FetchRequest) returns (FetchResponse);
+  rpc Delete(DeleteRequest) returns (DeleteResponse);
+  rpc ListNamespaceTotal(ListNamespaceTotalRequest) returns (ListNamespaceTotalResponse);
+}
+
+// Request/response messages with exact names, types and field numbers from
+// the task spec. Variants may add fields, nested/repeated messages, or enums.
+message PutRequest {
+  string namespace = 1;
+  string key = 2;
+  int32 value = 3;
+}
+
+message PutResponse {
+  int32 value = 1;
+}
+
+message FetchRequest {
+  string namespace = 1;
+  string key = 2;
+}
+
+message FetchResponse {
+  int32 value = 1;
+}
+
+message DeleteRequest {
+  string namespace = 1;
+  string key = 2;
+}
+
+message DeleteResponse {
+  bool success = 1;
+  int32 value = 2;
+}
+
+message ListNamespaceTotalRequest {
+  string namespace = 1;
+}
+
+message ListNamespaceTotalResponse {
+  int32 total = 1;
+}
+
+// Generate with:
+//   python3 -m grpc_tools.protoc -I<dir> --python_out=<dir> \
+//       --grpc_python_out=<dir> <dir>/<name>.proto

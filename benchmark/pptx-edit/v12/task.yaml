@@ -1,0 +1,26 @@
+instruction: |-
+  You are given a PowerPoint file at /app/input.pptx (data.pptx).
+
+  Make exactly these two changes:
+
+  - On slide 1, in the top title "Low dimensional and quantum material fabrication",
+    replace the phrase "quantum material" with "Q-Material". Leave all other
+    text, including the separate "Quatnum circuits" caption, unchanged.
+  - Add speaker notes to slide 1 with exactly this text:
+    "Updated terminology: quantum materials now referred to as Q-Material."
+
+  Preserve the target title's existing geometry and formatting, as well as every
+  non-target shape and package resource.
+
+  Save the modified presentation as /app/output.pptx.
+author_name: Task Author
+difficulty: hard
+category: PPTX Manipulation
+tags:
+  - pptx
+  - document-processing
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

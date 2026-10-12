@@ -1,0 +1,25 @@
+instruction: |-
+  You are given:
+  1. /app/format_spec.json — the JSON schema for a cocktail recipe
+  2. /app/task.json — the task description and partially filled recipe
+  3. /app/knowledge/ref.txt — reference information about this cocktail
+
+  Your task: Complete the recipe by filling in all missing fields according to the IBA standard.
+  Write the completed recipe to /app/output.json following the format_spec schema.
+
+  The reference text contains the information you need, but it may be incomplete, 
+  ambiguous, or contain distractors. Extract only the correct information.
+
+  Extract the recipe for Negroni from the reference text. All ingredient amounts are missing — determine them from the description.
+author_name: Task Author
+difficulty: hard
+category: Data Extraction
+tags:
+  - cocktail-recipes
+  - data-extraction
+  - format-compliance
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

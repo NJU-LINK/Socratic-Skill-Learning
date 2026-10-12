@@ -1,0 +1,31 @@
+family_definition:
+  invariant: >-
+    Recover the exact shell commands represented by an untrusted obfuscated
+    script through static analysis only, write them to /app/clean.sh, preserve
+    the original script, and make both files non-executable.
+  safety_boundary: >-
+    Neither the suspicious script nor the recovered script may be executed
+    during analysis.
+axes:
+  - name: transformation_pipeline
+    type: freeform
+    description: >-
+      Payloads use reversible combinations of base64, hex, octal, XOR, gzip,
+      bzip2, generated wrappers, and eval-like launch code.
+  - name: layer_depth
+    type: range
+    min: 1
+    max: 12
+    description: >-
+      The number and ordering of encoding or compression layers varies from a
+      single wrapper to deeply nested heterogeneous pipelines.
+  - name: payload_structure
+    type: freeform
+    description: >-
+      Encoded data may be contiguous, split across variables or heredocs, or
+      distributed among multiple fragments that must be reassembled.
+  - name: decoy_strategy
+    type: freeform
+    description: >-
+      Cases vary from no decoys to interleaved tokens and plausible no-op
+      payloads that must not appear in the recovered commands.

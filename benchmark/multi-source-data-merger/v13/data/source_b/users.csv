@@ -1,0 +1,6 @@
+user_id,name,email_address,created_at,is_active
+201,Avery Stone,avery@beta.io,01-05-2024,true
+202,Bianca Hart,bianca@beta.io,2024/02/12,false
+203,Caleb Ng,caleb@beta.io,2024-03-03,true
+204,Darius Cole,darius@beta.io,04/20/2024,true
+206,Farah Noor,farah@beta.io,2024-06-19,false

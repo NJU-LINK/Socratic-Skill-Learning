@@ -1,0 +1,4 @@
+Your harbor files are in pieces now.
+I kept a tidy record of my work in case_manifest.json -
+every fragment, every step, in order.
+Put the originals back together if you can.

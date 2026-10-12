@@ -1,0 +1,26 @@
+instruction: |-
+  You are given a PowerPoint file at `/app/input.pptx` (`hadal.pptx`).
+
+  Apply these operations in order:
+
+  1. Delete the original slide 6.
+  2. Delete the original slide 4.
+  3. Change the complete title of the original slide 7, now visible as slide 5,
+     to `深海物种概述` and make it bold.
+
+  Preserve the identity and order of every surviving slide, all non-target
+  shapes and formatting, page dimensions, media, embedded fonts, themes,
+  masters, layouts, and notes.
+
+  Save the modified presentation as `/app/output.pptx`.
+author_name: Task Author
+difficulty: hard
+category: PPTX Manipulation
+tags:
+  - pptx
+  - document-processing
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

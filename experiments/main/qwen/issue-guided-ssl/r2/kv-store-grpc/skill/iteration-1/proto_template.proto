@@ -1,0 +1,48 @@
+// Template .proto file for gRPC stateful services.
+// Replace all <PLACEHOLDER> values with task-specific values.
+//
+// Proto authoring checklist:
+// - syntax = "proto3" (always)
+// - package name (lowercase, descriptive)
+// - service block with all RPCs
+// - message types for each request and response
+// - field numbers match spec exactly (1-indexed, sequential within message)
+// - Field types: string, int32, int64, bool, float, double, bytes
+// - Complex types: repeated, nested messages, enums
+
+syntax = "proto3";
+
+package <package_name>;
+
+service <ServiceName> {
+  // Each RPC: rpc MethodName(RequestMsg) returns (ResponseMsg);
+  rpc <Method1>(<Method1>Request) returns (<Method1>Response);
+  rpc <Method2>(<Method2>Request) returns (<Method2>Response);
+}
+
+// Request and response messages for each RPC
+message <Method1>Request {
+  string field1 = 1;  // Field numbers must match spec
+  int32 field2 = 2;
+}
+
+message <Method1>Response {
+  int32 result = 1;
+}
+
+// For repeated fields:
+// repeated string items = 1;
+
+// For nested messages:
+// message Inner {
+//   string data = 1;
+// }
+// message Outer {
+//   Inner nested = 1;
+// }
+
+// For enums:
+// enum Status {
+//   UNKNOWN = 0;
+//   ACTIVE = 1;
+// }

@@ -1,0 +1,117 @@
+{
+  "method": "skill-kd",
+  "round": 1,
+  "family": "audio-synth-stft-peaks",
+  "stats": {
+    "skill_formation": {
+      "0000-round_00-student_retry-851d9160": {
+        "records": 45
+      },
+      "0000-round_01-student_retry-2a2a43da": {
+        "records": 35
+      },
+      "0000-round_02-student_retry-652be566": {
+        "records": 37
+      },
+      "0000-student_initial-b78cd922": {
+        "records": 69
+      },
+      "0000-teacher-59a0f2d7": {
+        "records": 32
+      },
+      "0001-student_initial-3cb8010d": {
+        "records": 33
+      },
+      "0002-round_00-student_retry-8c59042d": {
+        "records": 41
+      },
+      "0002-student_initial-bbdccb89": {
+        "records": 31
+      },
+      "0002-teacher-ff15fa68": {
+        "records": 27
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v02": {
+        "records": 46,
+        "score": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 33,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v04": {
+        "records": 37,
+        "score": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 37,
+        "score": 0,
+        "passed": 0,
+        "failed": 6,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 48,
+        "score": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 51,
+        "score": 1,
+        "passed": 6,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v12": {
+        "records": 45,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v14": {
+        "records": 35,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 33,
+        "score": 0.8333333333333334,
+        "passed": 5,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 32,
+        "score": 1,
+        "passed": 5,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 350,
+    "train": 0,
+    "heldout": 397,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

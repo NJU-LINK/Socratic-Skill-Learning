@@ -1,0 +1,51 @@
+instruction: |-
+  You are given a CSV of bank transactions at `/app/data/bank_transactions.csv`.
+
+  Filter it down to only the transactions that belong to North West Capital. Resolve
+  the target entity across rows instead of filtering by one literal string.
+
+  Use these public identity rules:
+
+  - For company-name comparison only, ignore case, punctuation, whitespace, and common
+    legal suffixes such as Inc, Incorporated, Corp, Company, Ltd, LLC, and Pty.
+    `Group`, `Grp`, and `Gp` are optional target descriptors.
+  - Accept the initials NWC or NWCG and mild spelling drift in the three target words.
+    For a deterministic typo boundary, keep the first letter of each word, remove its
+    remaining vowels, and allow edit distance at most one from the corresponding
+    `North`, `West`, or `Capital` skeleton.
+  - A name with an additional substantive entity descriptor such as Advisors,
+    Partners, Holdings, or Services denotes a separate company and must not be
+    accepted merely because it contains the target words.
+  - Establish target account numbers from rows whose company name independently
+    identifies the target. When comparing the account suffix after `-`, treat the
+    common OCR substitutions B→8, G→0, I→1, L→1, O→0, Q→0, S→5, and Z→2 as equivalent.
+    Then include otherwise abbreviated or incomplete rows whose normalized account is
+    linked to the target.
+
+  This case contains several independently anchored target account clusters and
+  multiple OCR substitutions, alongside related entities on nearby account numbers.
+  Reconcile the clusters separately before taking their union.
+
+  Write the result to `/app/data/output.json`.
+
+  The output JSON must be:
+
+  - A JSON array with no top-level key
+  - Sorted by `Date` in ascending order
+  - Made only from rows present in the CSV
+  - Exact-string preserving: do not normalize values in the output
+  - Each object must contain these exact keys in this order:
+    `Company Name`, `Account Number`, `Date`, `Amount`, `Transaction Type`,
+    `Description`
+
+author_name: Task Author
+difficulty: hard
+category: data-science
+tags:
+  - entity-resolution
+  - data-cleaning
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

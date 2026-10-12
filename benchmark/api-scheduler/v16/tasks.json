@@ -1,0 +1,68 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "title": "Infrastructure Review",
+      "duration_min": 45,
+      "urgency": 5,
+      "importance": 5
+    },
+    {
+      "id": "B",
+      "title": "Security Patch Testing",
+      "duration_min": 60,
+      "urgency": 5,
+      "importance": 4
+    },
+    {
+      "id": "C",
+      "title": "Capacity Planning",
+      "duration_min": 40,
+      "urgency": 4,
+      "importance": 4
+    },
+    {
+      "id": "D",
+      "title": "Onboarding Materials",
+      "duration_min": 30,
+      "urgency": 3,
+      "importance": 3
+    },
+    {
+      "id": "E",
+      "title": "Monitoring Setup",
+      "duration_min": 45,
+      "urgency": 3,
+      "importance": 3
+    },
+    {
+      "id": "F",
+      "title": "Code Cleanup",
+      "duration_min": 30,
+      "urgency": 2,
+      "importance": 2
+    },
+    {
+      "id": "G",
+      "title": "Read Industry News",
+      "duration_min": 15,
+      "urgency": 1,
+      "importance": 1
+    }
+  ],
+  "emergencies": [
+    {
+      "id": "X",
+      "title": "P1 Support Ticket",
+      "duration_min": 35,
+      "arrival_time": "16:00",
+      "urgency": 5
+    }
+  ],
+  "config": {
+    "work_start": "14:00",
+    "work_end": "19:00",
+    "priority_method": "weighted",
+    "calendar_id": "Hk9Nw8KsRd5X"
+  }
+}

@@ -1,0 +1,11 @@
+provider:
+  id: dashscope
+  studentModel: kimi-k2.5
+  teacherModel: kimi-k3
+  contextWindow: 262144
+  maxCompletionTokens: 16384
+  teacherLimits:
+    contextWindow: 1048576
+    maxCompletionTokens: 131072
+  thinkingEnabled: true
+  reasoningEffort: max

@@ -1,0 +1,31 @@
+instruction: |-
+  Alphabet (GOOGL) daily prices are in /app/googl_prices.csv.
+
+  Calculate MACD using SMA-seeded, full-precision EMA12 and EMA26, then calculate
+  a 9-period SMA-seeded EMA signal line over the valid MACD sequence:
+  - an EMA of period p is N/A for p-1 observations, is seeded by the arithmetic
+    mean of the first p input values, and then uses multiplier 2/(p+1);
+  - MACD = EMA12 - EMA26;
+  - the signal line is N/A until 9 valid MACD values exist.
+
+  Derive discrete actions from unrounded values:
+  - buy when MACD crosses from at-or-below to above the signal line;
+  - sell when MACD crosses from at-or-above to below the signal line;
+  - hold otherwise after both lines are valid;
+  - N/A before both lines are valid. The first jointly valid row is hold.
+
+  Write /app/results.csv with columns date,close,macd,signal,action and round
+  displayed indicator values to 2 decimals.
+author_name: Task Author
+difficulty: hard
+category: data-analysis
+tags:
+  - technical-analysis
+  - macd
+  - crossover
+  - trading-signal
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

@@ -1,0 +1,8 @@
+provider:
+  id: dashscope
+  studentModel: deepseek-v4-flash-0731
+  teacherModel: deepseek-v4-pro-0813
+  contextWindow: 1000000
+  maxCompletionTokens: 393216
+  thinkingEnabled: true
+  reasoningEffort: max

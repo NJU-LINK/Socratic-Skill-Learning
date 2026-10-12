@@ -1,0 +1,12 @@
+{
+    "app_name": "SecureVault",
+    "version": "2.4.1",
+    "log_level": "info",
+    "max_connections": 100,
+    "timeout_seconds": 30,
+    "features": {
+        "encryption": true,
+        "audit_logging": true,
+        "rate_limiting": false
+    }
+}

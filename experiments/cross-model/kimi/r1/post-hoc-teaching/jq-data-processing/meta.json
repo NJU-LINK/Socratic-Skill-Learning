@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "jq-data-processing",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 9
+      },
+      "student-author": {
+        "records": 195
+      }
+    }
+  },
+  "totals": {
+    "records": 204
+  }
+}

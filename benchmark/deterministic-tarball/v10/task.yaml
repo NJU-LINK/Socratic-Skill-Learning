@@ -1,0 +1,54 @@
+instruction: |-
+  Create a deterministic build script that packages an existing website source tree into an uncompressed tar archive.
+
+  Current environment:
+  A website project exists at /app/site-src. It includes public pages, theme assets, CGI scripts, metadata under .well-known/, preview and draft content, sourcemaps, dot-directories, deeply nested content, long paths, files with mixed timestamps and permissions, and many symlinks. Some symlinks are valid and must be preserved as symlinks. Some symlinks are broken and must not appear in the archive.
+
+  Your task:
+  Create /app/build.sh that produces /app/site.tar with these requirements:
+
+  Exclusion rules:
+    - Exclude drafts/ entirely
+    - Exclude preview-cache/ entirely
+    - Exclude any file ending in .map
+    - Exclude dot-directories and their contents, except .well-known/
+    - Exclude broken symlinks
+
+  Processing rules:
+    - Preserve valid symlinks as symlinks without following them
+    - Normalize permissions:
+      * Directories: 0755
+      * Regular files under cgi-bin/: 0755
+      * All other regular files: 0644
+      * Symlink objects should remain symlinks
+    - Normalize line endings to LF only for .html, .css, .js, and .json files
+    - Leave all other regular files unchanged
+    - Set all archive entry mtimes to SOURCE_DATE_EPOCH if set, else 946684800
+    - Set owner/group to 0:0 using numeric ownership
+    - Sort archive entries by name in a locale-independent way
+    - Use tar --format=ustar
+    - Produce /app/site.tar with no compression
+
+  Success criteria:
+    - /app/build.sh is executable
+    - Re-running with the same SOURCE_DATE_EPOCH produces identical SHA256 output
+    - Changing SOURCE_DATE_EPOCH changes the archive hash
+    - The archive preserves valid symlinks, omits broken ones, excludes the required paths, and applies deterministic metadata
+  END
+author_name: Task Author
+difficulty: hard
+category: reproducible-builds
+tags:
+  - reproducible-builds
+  - deterministic-packaging
+  - tar
+  - symlinks
+  - file-operations
+  - line-endings
+  - metadata-normalization
+  - websites
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

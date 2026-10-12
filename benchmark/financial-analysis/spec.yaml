@@ -1,0 +1,34 @@
+axes:
+  - name: source_representation
+    type: freeform
+    description: >
+      The source may be CSV, nested JSON, fixed-width text, or an HTML table with
+      merged headers. Filenames may be explicit or may require content-based
+      discovery among decoys.
+  - name: statement_topology
+    type: freeform
+    description: >
+      Required values may live in one statement or must be joined across income
+      and balance-sheet files by fiscal year.
+  - name: financial_metric
+    type: enum
+    values:
+      - gross_margin
+      - operating_margin
+      - net_margin
+      - return_on_equity
+      - year_over_year_growth
+    description: >
+      Each case requests one standard single-company metric, including its exact
+      numerator, denominator, sign convention, percentage scale, and rounding.
+  - name: schema_and_locale
+    type: freeform
+    description: >
+      Field labels, header depth, language, numeric punctuation, year labels, and
+      irrelevant rows vary while retaining the same financial meaning.
+  - name: output_contract
+    type: freeform
+    description: >
+      The required result artifact may vary in column names and serialization,
+      but it always contains the requested per-year values in an explicit public
+      schema.

@@ -1,0 +1,34 @@
+axes:
+  - description: >
+      How records are selected and ordered in the jq pipeline. The seed filters users by one status
+      value and sorts the result by username ascending. The same skill must also handle
+      multi-condition predicates, inclusion and exclusion logic across several fields, ordering by
+      multiple keys, descending order, and tasks where selection criteria interact with derived
+      values or intermediate pipeline stages.
+    name: selection_and_ordering_logic
+    type: freeform
+  - description: >
+      How output records are structurally assembled from the input JSON. The seed renames fields,
+      keeps a flat object schema, and extracts values from nested array context. The same skill must
+      also handle deeper field access, optional nested objects, combining multiple source fields
+      into one output field, emitting nested output objects or arrays, and building records whose
+      structure differs more substantially from the input while staying within jq-based JSON
+      transformation.
+    name: field_derivation_and_reshaping
+    type: freeform
+  - description: >
+      What scalar-level conversions are required for values placed into the output. The seed
+      converts an ISO 8601 timestamp to a YYYY-MM-DD string and uses null when no primary role
+      exists. The same skill must also handle string cleanup, extracting parts of structured
+      strings, numeric coercion, boolean derivation, fallback defaults, null propagation, and other
+      per-value formatting or normalization rules independent of the surrounding record structure.
+    name: value_normalization
+    type: freeform
+  - description: >
+      How the jq program must summarize, collect, or reorganize data across items. The seed counts
+      each user's roles and picks the first role from an array within each record. The same skill
+      must also handle grouping records, aggregating over subsets, deduplicating values, flattening
+      or rebuilding arrays, computing collection-level summaries, and combining per-record
+      transformation with cross-record aggregation in a single jq workflow.
+    name: aggregation_and_collection_operations
+    type: freeform

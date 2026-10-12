@@ -1,0 +1,16 @@
+{
+  "model": "kimi",
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "jq-data-processing",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 139
+      }
+    }
+  },
+  "totals": {
+    "records": 139
+  }
+}

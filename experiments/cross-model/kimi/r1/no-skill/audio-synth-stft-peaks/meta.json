@@ -1,0 +1,43 @@
+{
+  "model": "kimi",
+  "method": "no-skill",
+  "round": 1,
+  "family": "audio-synth-stft-peaks",
+  "stats": {
+    "heldout": {
+      "v02": {
+        "records": 50
+      },
+      "v03": {
+        "records": 66
+      },
+      "v04": {
+        "records": 62
+      },
+      "v05": {
+        "records": 95
+      },
+      "v06": {
+        "records": 38
+      },
+      "v08": {
+        "records": 56
+      },
+      "v12": {
+        "records": 74
+      },
+      "v14": {
+        "records": 58
+      },
+      "v15": {
+        "records": 50
+      },
+      "v16": {
+        "records": 68
+      }
+    }
+  },
+  "totals": {
+    "records": 617
+  }
+}

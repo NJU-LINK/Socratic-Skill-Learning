@@ -1,0 +1,35 @@
+axes:
+  - description: >
+      How invoice and non-invoice documents signal their identity in extracted text. The seed mixes
+      invoices with other financial or business documents and relies on content cues rather than
+      filenames. The same skill must also handle: invoices with weaker or less standard invoice
+      markers, non-invoice documents that contain overlapping financial vocabulary, and documents
+      whose decisive classification cues are spread across multiple text regions.
+    name: document_content_patterns
+    type: freeform
+  - description: >
+      The file types and text quality of the input documents. The seed contains a mix of JPG and PDF
+      files with randomized filenames, requiring OCR or text extraction before classification. The
+      same skill must also handle: scans with noisier OCR output, PDFs with mixed embedded text and
+      rendered pages, different page layouts or image quality, and cases where key fields are only
+      partially legible and must be inferred from imperfect extraction.
+    name: document_modality_and_ocr_noise
+    type: freeform
+  - description: >
+      How invoice totals and tax values are expressed in the document text. The seed already covers
+      common labels such as Total, Amount Due, Grand Total, and VAT/Tax/GST. The same skill must
+      also handle stronger variation beyond the seed: amounts written in different numeric
+      conventions, taxes that must be recovered from subtotals, rates, or line-item summaries rather
+      than a single explicit field, and invoices with multiple plausible amount candidates across
+      sections, pages, or summary blocks that require selecting the correct total_amount and
+      vat_amount.
+    name: financial_field_expression
+    type: freeform
+  - description: >
+      The number and class balance of documents in the batch that must be routed into output folders
+      and summarized. The seed has a moderate batch with multiple invoices and non-invoices, all
+      renamed to opaque filenames. The same skill must also handle: much smaller or larger batches,
+      invoice-heavy or other-heavy mixes, and cases where the summary row must stay correct across
+      many more or many fewer invoice rows.
+    name: batch_scale_and_class_balance
+    type: freeform

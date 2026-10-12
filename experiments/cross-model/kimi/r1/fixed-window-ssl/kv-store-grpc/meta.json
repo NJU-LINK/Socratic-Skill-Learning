@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "kv-store-grpc",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 63
+      },
+      "student-author": {
+        "records": 230
+      }
+    }
+  },
+  "totals": {
+    "records": 293
+  }
+}

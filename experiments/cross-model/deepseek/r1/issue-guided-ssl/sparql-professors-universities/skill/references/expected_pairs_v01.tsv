@@ -1,0 +1,15 @@
+# v01 PREVIEW-DRAW expected professor-university pairs (hand-traced oracle)
+# WARNING: this oracle is valid ONLY for the iteration-1 preview draw
+# (names Morgan/Wagner). Evaluated instances are REGENERATED - names,
+# title strings, and professor cardinality vary. Use this file only for
+# local preview-draw sanity (verify.py); correctness across draws comes
+# from the semantic anchor query + cross_draw_check.py, never from this
+# fixed list.
+# professorName<TAB>universityName, one per line
+Martin Keller	National and Kapodistrian University of Athens
+Thomas Berger	National Technical University of Athens
+John Smith	Massachusetts Institute of Technology
+Marie Dubois	Sorbonne University
+Alex Morgan	National Technical University of Athens
+Felix Wagner	Instituto Superior Técnico
+Stefan Mueller	Ludwig Maximilian University of Munich

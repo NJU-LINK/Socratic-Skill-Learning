@@ -1,0 +1,30 @@
+instruction: |-
+  You are a product manager with 5 hours available (14:00 - 19:00).
+  A list of 10 tasks is in /app/tasks.json.
+  An additional 1 emergency task(s) will arrive mid-session.
+
+  Your job:
+  1. Read the API documentation in /app/simulator_intro.md
+  2. Interact with the API simulator at /app/api_simulator.py
+  3. Schedule tasks by priority using the calendar API
+  4. Handle any emergencies that arrive (re-schedule as needed)
+  5. Record ALL API requests and responses in /app/history.jsonl
+  6. Write the final schedule to /app/output.json (format: {"schedule": [...], "completion_summary": {completed, missed}})
+
+  Priority method: weighted.
+  
+  Some tasks have dependencies (depends_on field).
+  Calendar ID: Hk9Nw8KsRd5X
+  
+author_name: Task Author
+difficulty: medium
+category: Workflow Automation
+tags:
+  - api-interaction
+  - task-scheduling
+  - workflow
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

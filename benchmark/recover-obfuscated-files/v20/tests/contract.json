@@ -1,0 +1,29 @@
+{
+  "expected_outputs": {
+    "backup_codes.txt": {
+      "sha256": "624062d4e445eba1f1493f5d722e4066ac8bedf95cef82944cfcfed58aa876c3",
+      "size": 173
+    },
+    "migration_plan.md": {
+      "sha256": "9c1b340fa8cf323d790987b82f7c78fa153ccc377c9d6cbbb0962ed98a71d1fb",
+      "size": 333
+    }
+  },
+  "evidence_sha256": {
+    "596d466a6133567758324e765a47567a4c6e523464413d3d": "71c9591635de80449fe78c3964af4afd73f9eb438c799e129c3a07c51e104954",
+    "62576c6e636d46306157397558334273595734756257513d": "2c9afae097d88ccea982617c20777c663b8d8352b6bd26f56907b88954ae7bdb",
+    "README.md": "3c2d06c871fb724743d86d21dfc2c0dbd09ef01754f38be37e37f47a7582190c",
+    "config.json": "86e444f8c6f1b3be74433acb1ee2b9a2c935774063de1edcb3dac351920e0dc0",
+    "notes.txt": "9c245373d2d29e6c978eb8522740b71b8fb67d83a78efbde85f4607b60b98267"
+  },
+  "distractor_names": [
+    "README.md",
+    "config.json",
+    "notes.txt"
+  ],
+  "app_top_level_allowlist": [
+    "NOTE_FROM_ATTACKER.txt",
+    "recovered",
+    "sensitive_data"
+  ]
+}

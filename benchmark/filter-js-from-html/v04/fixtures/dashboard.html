@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-app="ops-console" data-release="2026.2">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Operations Snapshot</title>
+</head>
+<body class="dashboard bg-slate-50 text-slate-900" data-page="ops-home" aria-live="polite">
+  <div class="shell shell--wide" data-density="compact">
+    <header class="page-header flex items-center justify-between" data-region="header" style="padding: 24px 32px; background: #ffffff; border-bottom: 1px solid #e2e8f0;">
+      <div>
+        <p class="eyebrow" data-status="healthy">Control center</p>
+        <h1 class="title" aria-label="Operations Snapshot">Operations Snapshot</h1>
+      </div>
+      <img src="/assets/avatar-ops.png" alt="Operations team avatar stack" width="96" height="32" loading="lazy" decoding="async" data-image-role="avatars">
+    </header>
+
+    <main class="grid grid--dashboard gap-6" data-layout="two-column">
+      <section class="panel panel--metrics rounded-2xl" data-panel="throughput" aria-labelledby="throughput-title" style="width: expression(alert('legacy-layout')); min-height: 260px; background: #ffffff; box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08); border-radius: 20px;">
+        <div class="panel__head flex items-center justify-between">
+          <h2 id="throughput-title" class="panel__title">Throughput</h2>
+          <span class="badge badge--success" data-value="stable">Stable</span>
+        </div>
+        <table class="data-table w-full" aria-describedby="throughput-caption" data-view="summary-table">
+          <caption id="throughput-caption">Daily processing summary</caption>
+          <thead>
+            <tr><th scope="col">Region</th><th scope="col">Jobs</th><th scope="col">Latency</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>East</td><td>418</td><td>82 ms</td></tr>
+            <tr><td>West</td><td>403</td><td>89 ms</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside class="panel panel--preview rounded-2xl" data-panel="preview" aria-label="Embedded preview">
+        <iframe class="preview-frame w-full rounded-xl border-0" title="Release preview" src="/previews/release.html" srcdoc="<!DOCTYPE html><html><body><script>top.alert('srcdoc')</script><p>release preview</p></body></html>" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin" data-preview-id="release-card" style="min-height: 280px; background: #ffffff;"></iframe>
+      </aside>
+
+      <section class="panel panel--notes rounded-2xl" data-panel="notes" aria-labelledby="notes-title">
+        <h2 id="notes-title">Operator notes</h2>
+        <p class="text-sm text-slate-600" data-copy-slot="notes">Preserve our labels, dimensions, and data attributes. Only the executable parts should change.</p>
+        <a class="text-link" href="/docs/release-checklist" data-doc-kind="runbook" aria-label="Open release checklist">Open release checklist</a>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

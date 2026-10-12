@@ -1,0 +1,92 @@
+{
+  "method": "skill-kd",
+  "round": 2,
+  "family": "bank-trans-filter",
+  "stats": {
+    "skill_formation": {
+      "0000-round_00-student_retry-702258e1": {
+        "records": 24
+      },
+      "0000-round_01-student_retry-0d3978d6": {
+        "records": 22
+      },
+      "0000-round_02-student_retry-4f78823d": {
+        "records": 26
+      },
+      "0000-student_initial-de6c587b": {
+        "records": 24
+      },
+      "0000-teacher-3577b630": {
+        "records": 25
+      },
+      "0001-round_00-student_retry-4db76ef2": {
+        "records": 22
+      },
+      "0001-round_01-student_retry-270d51ea": {
+        "records": 27
+      },
+      "0001-student_initial-09bb801d": {
+        "records": 20
+      },
+      "0001-teacher-66674b0f": {
+        "records": 19
+      },
+      "0002-student_initial-d1a9aa91": {
+        "records": 24
+      }
+    },
+    "train": {},
+    "heldout": {
+      "v04": {
+        "records": 18,
+        "score": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 13,
+        "score": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 25,
+        "score": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v09": {
+        "records": 17,
+        "score": 0.3333333333333333,
+        "passed": 2,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 19,
+        "score": 0.2,
+        "passed": 1,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 23,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 233,
+    "train": 0,
+    "heldout": 115,
+    "heldoutVariants": 6,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

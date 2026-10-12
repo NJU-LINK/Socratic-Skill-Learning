@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="80" viewBox="0 0 600 80" role="img" aria-labelledby="title desc">
+  <title id="title">Main evaluation scale</title>
+  <desc id="desc">22 task families, 155 held-out cases, and 3 independent runs with Qwen3.7-Plus and Qwen3.7-Max.</desc>
+  <rect width="600" height="80" rx="8" fill="#f6f8fa"/>
+  <g stroke="#d8dee4" stroke-width="1">
+    <path d="M200 18V62"/>
+    <path d="M400 18V62"/>
+  </g>
+  <g text-anchor="middle" font-family="Arial, Helvetica, sans-serif">
+    <g fill="#243247" font-size="30" font-weight="700">
+      <text x="100" y="36">22</text>
+      <text x="300" y="36">155</text>
+      <text x="500" y="36">3</text>
+    </g>
+    <g fill="#59636e" font-size="14">
+      <text x="100" y="60">task families</text>
+      <text x="300" y="60">held-out cases</text>
+      <text x="500" y="60">independent runs</text>
+    </g>
+  </g>
+</svg>

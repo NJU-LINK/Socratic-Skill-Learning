@@ -1,0 +1,12 @@
+services:
+  client:
+    build:
+      dockerfile: Dockerfile
+    image: ${T_BENCH_TASK_DOCKER_CLIENT_IMAGE_NAME:-tb-family-multi-source-data-merger}
+    container_name: ${T_BENCH_TASK_DOCKER_CLIENT_CONTAINER_NAME:-tb-family-multi-source-data-merger}
+    command: ["sh", "-c", "sleep infinity"]
+    environment:
+      - TEST_DIR=${T_BENCH_TEST_DIR:-/tmp/testdir}
+    volumes:
+      - ${T_BENCH_TASK_LOGS_PATH:-/tmp/tbench/logs}:${T_BENCH_CONTAINER_LOGS_PATH:-/tmp/tbench/logs}
+      - ${T_BENCH_TASK_AGENT_LOGS_PATH:-/tmp/tbench/agent-logs}:${T_BENCH_CONTAINER_AGENT_LOGS_PATH:-/tmp/tbench/agent-logs}

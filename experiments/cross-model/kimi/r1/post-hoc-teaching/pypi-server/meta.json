@@ -1,0 +1,19 @@
+{
+  "model": "kimi",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "pypi-server",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 11
+      },
+      "student-author": {
+        "records": 180
+      }
+    }
+  },
+  "totals": {
+    "records": 191
+  }
+}

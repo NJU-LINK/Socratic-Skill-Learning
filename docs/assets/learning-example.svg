@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="440" viewBox="0 0 1440 440" role="img" aria-labelledby="title desc">
+<title id="title">Teaching becomes a tested, retained Skill</title>
+<desc id="desc">A released Fixed-Window SSL run: the Educator challenges metric-name assumptions, the Student tests and repairs the procedure, and the final Skill retains handling for renamed metrics.</desc>
+<rect width="1440" height="440" rx="16" fill="#17233C"/>
+<text x="40" y="43" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2" fill="#BCACE4">A RECORDED LEARNING MOMENT</text>
+<text x="39" y="86" font-family="Arial, Helvetica, sans-serif" font-size="33" font-weight="700" fill="#FFFFFF">Teaching becomes a tested, retained Skill.</text>
+<g id="panel1"><rect x="40" y="118" width="434" height="256" rx="12" fill="#24324D" stroke="#4C4667" stroke-width="1.5"/>
+<text x="64" y="155" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#C1AFE8">01  Challenge</text>
+<text x="64" y="179" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#B8C4D5">EDUCATOR</text>
+<text x="64" y="228" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#FFFFFF">Revenue → Net sales</text>
+<text x="64" y="263" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#FFFFFF">Cost of revenue → Cost of sales</text>
+<text x="64" y="313" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#C5CEDC">Challenge the procedure under</text>
+<text x="64" y="342" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#C5CEDC">renamed financial metrics.</text></g>
+<g id="panel2"><rect x="503" y="118" width="434" height="256" rx="12" fill="#24324D" stroke="#45556F" stroke-width="1.5"/>
+<text x="527" y="155" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">02  Test &amp; revise</text>
+<text x="527" y="179" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#B8C4D5">STUDENT</text>
+<text x="527" y="217" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#B8C4D5">First renamed test</text>
+<text x="527" y="249" font-family="Courier New, monospace" font-size="25" font-weight="700" fill="#EAB58D">110,842.0</text>
+<text x="527" y="284" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#B8C4D5">After revision</text>
+<text x="527" y="314" font-family="Courier New, monospace" font-size="23" fill="#AADCCB">Original  210,60.8</text>
+<text x="527" y="345" font-family="Courier New, monospace" font-size="23" fill="#AADCCB">Renamed   210,60.8</text></g>
+<g id="panel3"><rect x="966" y="118" width="434" height="256" rx="12" fill="#24324D" stroke="#3E665F" stroke-width="1.5"/>
+<text x="990" y="155" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#AADCCB">03  Retain</text>
+<text x="990" y="179" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#B8C4D5">STUDENT-AUTHORED SKILL</text>
+<text x="990" y="224" font-family="Courier New, monospace" font-size="22" font-weight="700" fill="#FFFFFF">SKILL.md + verify.py</text>
+<text x="990" y="272" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#D4DAE7">Renamed metrics:</text>
+<text x="990" y="306" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#FFFFFF">“Net sales” instead of “Revenue”</text>
+<text x="990" y="345" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#B8C4D5">Kept in the final package.</text></g>
+<path d="m483 244 7 7-7 7M946 244l7 7-7 7" fill="none" stroke="#78869D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="411" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#B8C4D5">Fixed-Window SSL · Qwen · html-finance-verify / run 1 · condensed from released records</text>
+</svg>

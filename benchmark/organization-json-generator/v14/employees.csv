@@ -1,0 +1,14 @@
+id,name,position,skills,years_of_service,department_id
+D001-E001,Cristiano Ronaldo,Manager,Python;Leadership;Project Management,"39",D001
+D001-E002,Bernardo Silva,Senior Developer,JavaScript;Python;Cloud Services,"0001",D001
+D001-E003,Sergio Ramos,Team Lead,Java;C++;DevOps,"0",D001
+D002-E001,Kylian Mbappe,Designer,UI/UX Design;Communication;Marketing,"1",D002
+D002-E002,Vinicius Junior,Specialist,Content Creation;Marketing;Communication,"0",D002
+D003-E001,Antonio Silva,Director,Leadership;Communication;Project Management,"2",D003
+D003-E002,Diogo Dalot,Coordinator,SQL;Data Analysis;Communication,"0001",D003
+D004-E001,Lewis Hamilton,Senior Developer,Python;Machine Learning;Data Analysis,"12",D004
+D004-E002,Charles Leclerc,Researcher,Research;Python;Data Analysis,"0",D004
+D004-E003,Max Verstappen,Analyst,SQL;Data Analysis;Machine Learning,"1",D004
+D004-E004,Lando Norris,Engineer,Python;Automation;Testing,"3",D004
+D005-E001,Jude Bellingham,Team Lead,Customer Service;Leadership;Communication,"2",D005
+D005-E002,Luka Modric,Specialist,Customer Service;Communication;Sales,"1",D005

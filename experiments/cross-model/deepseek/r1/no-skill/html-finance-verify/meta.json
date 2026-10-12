@@ -1,0 +1,31 @@
+{
+  "model": "deepseek",
+  "method": "no-skill",
+  "round": 1,
+  "family": "html-finance-verify",
+  "stats": {
+    "heldout": {
+      "v05": {
+        "records": 14
+      },
+      "v08": {
+        "records": 14
+      },
+      "v09": {
+        "records": 11
+      },
+      "v13": {
+        "records": 12
+      },
+      "v14": {
+        "records": 12
+      },
+      "v16": {
+        "records": 11
+      }
+    }
+  },
+  "totals": {
+    "records": 74
+  }
+}

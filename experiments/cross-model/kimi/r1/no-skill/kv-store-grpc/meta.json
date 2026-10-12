@@ -1,0 +1,31 @@
+{
+  "model": "kimi",
+  "method": "no-skill",
+  "round": 1,
+  "family": "kv-store-grpc",
+  "stats": {
+    "heldout": {
+      "v04": {
+        "records": 36
+      },
+      "v05": {
+        "records": 50
+      },
+      "v06": {
+        "records": 30
+      },
+      "v09": {
+        "records": 44
+      },
+      "v11": {
+        "records": 30
+      },
+      "v13": {
+        "records": 38
+      }
+    }
+  },
+  "totals": {
+    "records": 228
+  }
+}

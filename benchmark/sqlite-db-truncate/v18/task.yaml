@@ -1,0 +1,12 @@
+instruction: |-
+  I have a sqlite database at /app/trunc.db that got corrupted when the disk filled up mid-write — the file was truncated. Additionally, a few of the key strings inside the database file appear garbled with wrong characters. I need to recover as many of the rows as possible. Create /app/recover.json with the recovered data in the format [{"word": "testwordXY", "value": M}, {"word": "testwordZZ", "value": N}, ...]
+author_name: Task Author
+difficulty: hard
+category: debugging
+tags:
+  - file-operations
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

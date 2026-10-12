@@ -1,0 +1,30 @@
+axes:
+  - description: >
+      How complex the gRPC interface is that must be expressed in the proto file and implemented in
+      Python. The seed uses one service with two unary RPCs, simple request and response messages,
+      and only string and integer scalar fields. The same skill must also handle: more RPC methods
+      in the same service, requests and responses with multiple fields, nested or repeated message
+      fields, enums or other protobuf field combinations, and naming variations that still require
+      correct generated Python bindings and server wiring.
+    name: rpc_api_structure
+    type: freeform
+  - description: >
+      How the server's in-memory state behaves across RPC calls. The seed uses a flat dictionary of
+      integer values keyed by strings, with overwrite-on-set behavior and a default value when a key
+      is missing. The same skill must also handle: larger key spaces, multiple related collections
+      or namespaces, different deterministic read and write semantics such as deletes, resets,
+      conditional updates, aggregate reads, or multi-key operations, while still requiring the
+      server to preserve state correctly over a session.
+    name: stateful_service_semantics
+    type: freeform
+  - description: >
+      How demanding the server lifecycle and request-serving conditions are once the proto,
+      generated files, and server implementation are in place. The seed starts one insecure Python
+      gRPC server as a single long-lived process and serves a short sequence of unary calls under
+      light load. The same skill must also handle: servers that must remain healthy across
+      longer-lived test windows, bursts of concurrent or closely spaced requests, startup delays or
+      readiness requirements, repeated channel creation from clients, and other serving conditions
+      where a correct implementation can still fail unless it is launched, kept alive, and exposed
+      reliably as a real gRPC endpoint.
+    name: runtime_interaction_requirements
+    type: freeform

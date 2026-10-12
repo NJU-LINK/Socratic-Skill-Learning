@@ -1,0 +1,29 @@
+{
+  "description": "Two incomplete sources describe the Espresso Martini. Source A (ref.txt) and Source B disagree on some amounts. Merge the information and produce the complete IBA recipe.",
+  "recipe": {
+    "name": "Espresso Martini",
+    "glass": "martini",
+    "category": "After Dinner Cocktail",
+    "ingredients": [
+      {
+        "unit": "cl",
+        "amount": 5,
+        "ingredient": "Vodka"
+      },
+      {
+        "unit": "cl",
+        "amount": 1,
+        "ingredient": "Coffee liqueur",
+        "label": "Kahl\u00faa"
+      },
+      {
+        "special": "Sugar syrup (according to individual preference of sweetness)"
+      },
+      {
+        "special": "1 short strong Espresso"
+      }
+    ],
+    "preparation": "Shake and strain into a chilled cocktail glass."
+  },
+  "merge_from_two": true
+}

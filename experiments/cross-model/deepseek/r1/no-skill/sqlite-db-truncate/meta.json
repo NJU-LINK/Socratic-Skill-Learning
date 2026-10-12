@@ -1,0 +1,31 @@
+{
+  "model": "deepseek",
+  "method": "no-skill",
+  "round": 1,
+  "family": "sqlite-db-truncate",
+  "stats": {
+    "heldout": {
+      "v04": {
+        "records": 28
+      },
+      "v05": {
+        "records": 57
+      },
+      "v13": {
+        "records": 26
+      },
+      "v18": {
+        "records": 31
+      },
+      "v19": {
+        "records": 46
+      },
+      "v20": {
+        "records": 118
+      }
+    }
+  },
+  "totals": {
+    "records": 306
+  }
+}

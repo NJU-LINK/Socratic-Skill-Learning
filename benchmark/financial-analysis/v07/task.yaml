@@ -1,0 +1,24 @@
+instruction: |-
+  在 /app/financials/ 目录下有贵州茅台（600519）的财务数据文件，使用中文标签。
+  你需要区分资产负债表（BS）和利润表（IS）文件。
+
+  任务：
+  1. 在 /app/financials/ 中找到利润表文件（含"营业收入"和"净利润"的项目）
+  2. 找到资产负债表文件（含"股东权益合计"）
+  3. 按年份关联两张表的数据
+  4. 计算各年净资产收益率（ROE）= 净利润 / 股东权益 × 100%
+  5. 输出到 /app/results.csv：列名 fiscal_year,roe_pct
+  6. 百分比四舍五入到2位小数
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - financial-analysis
+  - chinese-financial
+  - multi-file
+  - roe
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

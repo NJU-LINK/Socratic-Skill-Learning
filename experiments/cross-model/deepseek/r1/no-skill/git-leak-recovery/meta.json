@@ -1,0 +1,31 @@
+{
+  "model": "deepseek",
+  "method": "no-skill",
+  "round": 1,
+  "family": "git-leak-recovery",
+  "stats": {
+    "heldout": {
+      "v05": {
+        "records": 21
+      },
+      "v07": {
+        "records": 27
+      },
+      "v11": {
+        "records": 29
+      },
+      "v12": {
+        "records": 34
+      },
+      "v14": {
+        "records": 28
+      },
+      "v16": {
+        "records": 40
+      }
+    }
+  },
+  "totals": {
+    "records": 179
+  }
+}

@@ -1,0 +1,6 @@
+The target installable artifact for this task is the wheel file
+`vectorops-0.1.0-py3-none-any.whl`.
+
+This directory also contains an extra stale source archive,
+`vectorops-0.0.9.tar.gz`, to reflect a dist folder with unrelated older build
+output present alongside the real release artifact.

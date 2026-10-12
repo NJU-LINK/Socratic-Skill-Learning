@@ -1,0 +1,82 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "title": "Quarterly Review Meeting",
+      "duration_min": 60,
+      "urgency": 5,
+      "importance": 5
+    },
+    {
+      "id": "B",
+      "title": "Fix Payment Gateway Bug",
+      "duration_min": 45,
+      "urgency": 5,
+      "importance": 4
+    },
+    {
+      "id": "C",
+      "title": "Update Compliance Docs",
+      "duration_min": 30,
+      "urgency": 4,
+      "importance": 5
+    },
+    {
+      "id": "D",
+      "title": "Code Review PRs",
+      "duration_min": 50,
+      "urgency": 3,
+      "importance": 3
+    },
+    {
+      "id": "E",
+      "title": "Write Integration Tests",
+      "duration_min": 40,
+      "urgency": 2,
+      "importance": 3
+    },
+    {
+      "id": "F",
+      "title": "Refactor Old Module",
+      "duration_min": 60,
+      "urgency": 1,
+      "importance": 2
+    },
+    {
+      "id": "G",
+      "title": "Update README",
+      "duration_min": 20,
+      "urgency": 1,
+      "importance": 1
+    },
+    {
+      "id": "H",
+      "title": "Clean Up Logs",
+      "duration_min": 15,
+      "urgency": 1,
+      "importance": 1
+    }
+  ],
+  "emergencies": [
+    {
+      "id": "X",
+      "title": "Customer Escalation",
+      "duration_min": 45,
+      "arrival_time": "15:00",
+      "urgency": 5
+    },
+    {
+      "id": "Y",
+      "title": "Team Sync Request",
+      "duration_min": 20,
+      "arrival_time": "16:30",
+      "urgency": 4
+    }
+  ],
+  "config": {
+    "work_start": "14:00",
+    "work_end": "19:00",
+    "priority_method": "weighted",
+    "calendar_id": "Hk9Nw8KsRd5X"
+  }
+}

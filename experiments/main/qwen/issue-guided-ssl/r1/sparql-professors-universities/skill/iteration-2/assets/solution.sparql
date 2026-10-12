@@ -1,0 +1,11 @@
+PREFIX uni: <http://university.org/ontology#>
+
+SELECT DISTINCT ?professorName ?universityName
+WHERE {
+  ?person uni:role ?role ;
+          uni:hasName ?professorName .
+  FILTER(CONTAINS(?role, "Professor"))
+  ?person uni:worksAt ?dept .
+  ?dept uni:partOfUniversity ?uni .
+  ?uni uni:hasName ?universityName .
+}

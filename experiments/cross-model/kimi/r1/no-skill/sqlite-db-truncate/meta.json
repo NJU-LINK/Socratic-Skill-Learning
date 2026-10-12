@@ -1,0 +1,31 @@
+{
+  "model": "kimi",
+  "method": "no-skill",
+  "round": 1,
+  "family": "sqlite-db-truncate",
+  "stats": {
+    "heldout": {
+      "v04": {
+        "records": 34
+      },
+      "v05": {
+        "records": 58
+      },
+      "v13": {
+        "records": 40
+      },
+      "v18": {
+        "records": 40
+      },
+      "v19": {
+        "records": 75
+      },
+      "v20": {
+        "records": 90
+      }
+    }
+  },
+  "totals": {
+    "records": 337
+  }
+}

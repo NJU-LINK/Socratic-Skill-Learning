@@ -1,0 +1,31 @@
+axes:
+  - name: workflow_relation
+    type: freeform
+    description: >
+      The semantic relation between source and destination artifacts: relevance filtering,
+      conflict-free scheduling, fact or table extraction, quantitative analysis and
+      visualization, summarization plus scheduling, notification, or recipient-based routing
+      and format conversion.
+  - name: source_artifacts
+    type: freeform
+    description: >
+      The office artifacts inspected by the workflow, including MIME email, iCalendar, PDF,
+      XLSX tables, and combinations of several files whose contents must be reconciled.
+  - name: destination_artifacts
+    type: freeform
+    description: >
+      The artifacts materialized by the workflow, including TXT, ICS, JPEG, DOCX, EML, PDF, and
+      structured JSON, plus in-place updates of existing calendars.
+  - name: temporal_and_routing_constraints
+    type: freeform
+    description: >
+      Constraints that determine where and when outputs belong, such as recipient identity,
+      subject-based relevance, class membership, duplicate source rows, common free-time windows,
+      public meeting times, and one-output-per-message or one-output-per-recipient routing.
+  - name: preservation_and_consistency
+    type: freeform
+    description: >
+      Existing source content that must remain intact and facts that must agree across outputs,
+      including original calendar events, selected email bodies, extracted dates, quantitative
+      summaries shared by machine-readable and visual outputs, recipient folder names, and
+      individualized facts repeated across paired PDF/email or TXT/calendar artifacts.

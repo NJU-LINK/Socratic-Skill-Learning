@@ -1,0 +1,25 @@
+axes:
+  - name: evidence_completeness
+    type: freeform
+    description: >
+      Which recipe fields are already present and which must be recovered from the supplied
+      evidence. Cases range from a few missing ingredient amounts to reconstruction of the name,
+      category, vessel, ingredient list, garnish, and preparation method.
+  - name: evidence_reliability
+    type: freeform
+    description: >
+      How the supplied sources must be interpreted: one authoritative description, several
+      provenance-labelled sources with conflicting claims, irrelevant distractors, or a record
+      containing deliberately corrupted fields.
+  - name: measurement_semantics
+    type: enum
+    values: [direct, unit_conversion, nonstandard_measure]
+    description: >
+      Whether quantities can be copied directly, converted under a public conversion rule, or
+      represented with a nonstandard measure such as dashes, slices, or sprigs.
+  - name: schema_surface
+    type: freeform
+    description: >
+      The combination of required scalar fields and ingredient representations exercised by the
+      case. Every answer must satisfy the same public JSON schema, while particular cases stress
+      named measured ingredients, special measures, optional labels, or nullable garnish.

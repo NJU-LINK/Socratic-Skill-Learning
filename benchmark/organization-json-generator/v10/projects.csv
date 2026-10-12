@@ -1,0 +1,17 @@
+name,status,member_ids,deadline,department_id
+Madrid Revamp," In Progress "," D001-E001 ; D001-E002 ; D001-E003 "," 2025-06-30 "," D001 "
+Ferrari Migration,Completed,"D001-E002 ;; D001-E003",2025-03-15,D001
+Brand Refresh," Planning "," D002-E001 ; D002-E002 ",2025-09-10," D002 "
+Campaign Vault,In Progress," "," 2025-10-20 ",D002
+Model Atlas,In Progress,"D004-E001 ; D004-E002 ; D004-E003 ; D004-E004",2025-05-15," D004 "
+Quantum Sprint," In Progress "," D004-E002 ; D004-E003 ",2025-08-25,D004
+Lab Archive,Testing,"D004-E001 ; D004-E004"," 2025-11-05 "," D004 "
+Customer Pulse,On Hold,"D005-E001 ; D005-E002",2025-11-30,D005
+Lakehouse Hardening,In Progress," D006-E001 ; D006-E002 ; D006-E003 ; D006-E004 ; D006-E005 ",2025-04-18,D006
+Stream Atlas," In Progress ","D006-E001 ; D006-E002 ; D006-E004",2025-07-01," D006 "
+Warehouse Cleanup,Completed," D006-E002 ; D006-E003 ; D006-E005 ",2025-02-28,D006
+Schema Watch,In Progress,"D006-E001 ; D006-E003 ; D006-E005",2025-09-14," D006 "
+Replay Drill,In Progress," ;; ",2025-12-01,D006
+Shift Optimizer,In Progress," D007-E001 ; D007-E002 ; D007-E003 ",2025-07-30," D007 "
+Policy Mirror,Planning,"D008-E001 ; D008-E002",2025-10-05,D008
+Audit Sandbox," In Progress "," "," 2025-12-15 "," D008 "

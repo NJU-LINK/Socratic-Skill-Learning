@@ -1,0 +1,26 @@
+instruction: |-
+  Microsoft (MSFT) daily prices are in /app/msft_prices.csv.
+
+  Calculate MACD as follows:
+  1. Compute EMA12 and EMA26 of Close. For each period p, output no EMA before
+     observation p, seed at observation p with the mean of the first p closes,
+     and then apply EMA[t] = Close[t] * 2/(p+1) + EMA[t-1] * (1-2/(p+1)).
+  2. MACD is EMA12 - EMA26 and is N/A until both EMAs are valid.
+  3. The signal line is a 9-period EMA over the valid MACD sequence, seeded
+     with the mean of its first 9 values. It is N/A before that seed exists.
+
+  Keep all intermediate values at full precision. Write /app/results.csv with
+  columns date,close,macd,signal and round displayed indicator values to 2
+  decimal places.
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - technical-analysis
+  - macd
+  - multi-step
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

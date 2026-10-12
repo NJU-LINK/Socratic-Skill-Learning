@@ -1,0 +1,24 @@
+axes:
+  - description: >
+      The WebAssembly module interface and memory region that must be read. The seed exports
+      produce() and memory, and produce returns an offset to a 16-byte buffer. Variants may change
+      exported function names, buffer length, pointer encoding, memory export naming, initialization
+      behavior, or sample module contents while preserving the need to instantiate WASM and read
+      linear memory correctly.
+    name: wasm_export_and_memory_contract
+    type: freeform
+  - description: >
+      The POSIX shared library interface and call semantics. The seed exposes a transform function
+      taking a pointer to bytes and returning int64. Variants may alter symbol names, integer return
+      width, signedness, auxiliary length arguments, byte interpretation, or library generation
+      while preserving a deterministic native ABI bridge from WASM-produced bytes.
+    name: native_library_abi
+    type: freeform
+  - description: >
+      How the solver wires the WASM runtime, memory extraction, dynamic library loading, and output
+      file together. The seed accepts any implementation language behind run_pipeline.sh. Variants
+      may change allowed runtimes, dependency installation, input/output paths, randomized test
+      files, and sample debugging artifacts while keeping the full pipeline executable from a shell
+      entry point.
+    name: pipeline_orchestration_and_runtime
+    type: freeform

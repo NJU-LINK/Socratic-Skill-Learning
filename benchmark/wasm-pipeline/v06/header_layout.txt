@@ -1,0 +1,9 @@
+Sample memory contract
+
+The WebAssembly sample keeps its payload separate from the value returned by produce().
+
+1. Call produce() to get the offset of an 8-byte header in exported linear memory.
+2. Read 8 bytes starting at that header offset.
+3. Interpret bytes 0-3 as a little-endian uint32 payload pointer.
+4. Interpret bytes 4-7 as a little-endian uint32 payload length.
+5. Read that many bytes from the exported memory starting at the decoded payload pointer.

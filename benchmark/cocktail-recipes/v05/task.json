@@ -1,0 +1,27 @@
+{
+  "description": "Three sources describe the Manhattan differently. Source A and Source B disagree on amounts. Read all three and determine which matches the IBA standard.",
+  "recipe": {
+    "name": "Manhattan",
+    "glass": "martini",
+    "category": "Before Dinner Cocktail",
+    "ingredients": [
+      {
+        "unit": "cl",
+        "amount": 5,
+        "ingredient": "Whiskey",
+        "label": "Rye whiskey"
+      },
+      {
+        "unit": "cl",
+        "amount": 2,
+        "ingredient": "Vermouth",
+        "label": "Red vermouth"
+      },
+      {
+        "special": "1 dash Angostura Bitters"
+      }
+    ],
+    "garnish": "Cherry",
+    "preparation": "Stir in mixing glass with ice cubes. Strain into chilled cocktail glass."
+  }
+}

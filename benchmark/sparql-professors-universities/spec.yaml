@@ -1,0 +1,27 @@
+axes:
+  - description: >
+      How qualifying professors are represented and distinguished from nearby non-target roles.
+      The seed uses string-valued uni:role titles and includes unmodified/full professors and
+      assistant professors while excluding lecturers, students, and staff. Variants may broaden or
+      narrow the accepted appointment ranks, vary spelling and abbreviations, introduce
+      professor-like near misses, or represent academic rank with uni:hasAcademicRank resources
+      and uni:rankLabel instead of only a role string.
+    name: professor_identification_semantics
+    type: freeform
+  - description: >
+      How a qualifying person is linked to the university name that should be returned. The seed
+      follows uni:worksAt to a department and uni:partOfUniversity to a university. Variants may
+      use direct university affiliation, different person-to-organization predicates, longer or
+      heterogeneous organization chains, inverse containment relations, appointment resources, or
+      a preferred worksAt path with a teaching-course fallback when the preferred relation is
+      absent.
+    name: affiliation_structure_to_university
+    type: freeform
+  - description: >
+      How much distracting data and duplicate-binding risk surrounds the answer. Variants change
+      graph size, professor cardinality, non-professor roles, overlapping organization paths,
+      multiple departments or courses within one university, and duplicate professor signals. The
+      required invariant is exactly one row per qualifying professor-university pair with exactly
+      the requested projection variables.
+    name: graph_noise_and_result_cardinality
+    type: freeform

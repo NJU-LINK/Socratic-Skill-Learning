@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="/static/store.css">
+</head>
+<body class="checkout shell shell-wide">
+  <header class="page-header compact">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a class="crumb" href="/shop">Shop</a>
+      <a class="crumb" href="/cart">Cart</a>
+      <span class="crumb current">Checkout</span>
+    </nav>
+  </header>
+  <main class="content-grid">
+    <section class="panel payment-panel" data-region="primary">
+      <h1 class="page-title">Complete your order</h1>
+      <form class="stacked checkout-form" action="javas%63ript:alert('pay-now')" method="post" data-flow="checkout-v2" accept-charset="utf-8">
+        <label class="field-row" for="full-name">Full name</label>
+        <input id="full-name" name="full_name" type="text" value="Morgan Lee" class="input wide" autocomplete="shipping name">
+
+        <label class="field-row" for="street">Street</label>
+        <input id="street" name="street" type="text" value="1458 Market Street" class="input wide" autocomplete="shipping street-address">
+
+        <label class="field-row" for="city">City</label>
+        <input id="city" name="city" type="text" value="Oakland" class="input short" autocomplete="shipping address-level2">
+
+        <div class="actions split">
+          <a class="button secondary" href="/cart">Return to cart</a>
+          <button class="button primary" type="submit" data-style="prominent">Place order</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

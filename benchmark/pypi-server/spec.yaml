@@ -1,0 +1,34 @@
+axes:
+  - description: >
+      How the Python package is structured and declared for building. The seed starts from an
+      otherwise empty workspace and requires a src-layout vectorops project, pyproject.toml build
+      metadata, and a deliberate top-level public export. The same skill must also handle
+      pre-staged or broken projects, flat and src layouts, multi-module packages, setup.py or
+      pyproject.toml metadata, explicit package discovery, package data, and projects where the
+      import surface does not coincide automatically with the file layout.
+    name: package_layout_and_build_metadata
+    type: freeform
+  - description: >
+      What code behavior the published package must provide once installed. The seed requires a
+      dotproduct function over numeric lists. The same skill must also handle packages exposing
+      multiple functions or classes, validation and edge-case behavior, logic spanning helper
+      modules, and APIs whose correctness depends on the exact import path, callable signature,
+      and installed-runtime behavior.
+    name: package_functionality_requirements
+    type: freeform
+  - description: >
+      How the local Python package index is configured and exposed to clients. The seed requires a
+      local PEP 503-compatible service on port 8091. The same skill must also handle static indexes,
+      pypiserver, devpi or a provided index tool, alternate storage layouts and ports,
+      authenticated uploads, and services that must be initialized, started, kept running, and
+      pointed at the intended artifacts.
+    name: package_index_service_configuration
+    type: freeform
+  - description: >
+      How built artifacts move from source tree to a client-installable package on the local
+      index. The seed builds and serves both a wheel and source distribution for one version. The
+      same skill must also handle wheel-only or source-only publication, stale and unrelated
+      artifacts, version replacement or preservation, normalized distribution names, authenticated
+      upload flows, and exact fresh installation without falling back to another source.
+    name: publication_and_installation_flow
+    type: freeform

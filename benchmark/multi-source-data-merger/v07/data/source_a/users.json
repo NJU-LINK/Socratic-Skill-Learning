@@ -1,0 +1,58 @@
+[
+  {
+    "id": 201,
+    "full_name": "Alicia Carter",
+    "email": "alicia@primary.example",
+    "registration_date": "2024-01-05",
+    "status": "active"
+  },
+  {
+    "id": 202,
+    "full_name": "Brandon Lee",
+    "email": "brandon.lee@primary.example",
+    "registration_date": "2024-01-18",
+    "status": "inactive"
+  },
+  {
+    "id": 203,
+    "full_name": "Carla Gomez",
+    "email": "carla@primary.example",
+    "registration_date": "2024-02-02",
+    "status": "active"
+  },
+  {
+    "id": 204,
+    "full_name": "Darius Reed",
+    "email": "darius@primary.example",
+    "registration_date": "2024-02-11",
+    "status": "active"
+  },
+  {
+    "id": 205,
+    "full_name": "Elena Park",
+    "email": "elena@primary.example",
+    "registration_date": "2024-02-28",
+    "status": "inactive"
+  },
+  {
+    "id": 206,
+    "full_name": "Farah Khan",
+    "email": "farah@primary.example",
+    "registration_date": "2024-03-09",
+    "status": "active"
+  },
+  {
+    "id": 207,
+    "full_name": "Gavin Moore",
+    "email": "gavin@primary.example",
+    "registration_date": "2024-03-17",
+    "status": "active"
+  },
+  {
+    "id": 208,
+    "full_name": "Hana Patel",
+    "email": "hana@primary.example",
+    "registration_date": "2024-03-30",
+    "status": "inactive"
+  }
+]

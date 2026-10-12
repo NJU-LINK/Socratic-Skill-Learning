@@ -1,0 +1,25 @@
+instruction: |-
+  Apple (AAPL) daily stock price data is in /app/stock_data.csv.
+  Columns: Date,Open,High,Low,Close,Volume
+
+  Your task:
+  1. Parse the CSV file
+  2. Calculate 5-day Simple Moving Average (SMA5) of Close price
+  3. Calculate 10-day Simple Moving Average (SMA10) of Close price
+  4. Write to /app/results.csv with columns: date,close,sma5,sma10
+  5. For the first 4 days, SMA5 will be N/A (not enough data)
+     For the first 9 days, SMA10 will be N/A
+  6. Round SMA values to 2 decimal places
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - technical-analysis
+  - sma
+  - stock
+  - python
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

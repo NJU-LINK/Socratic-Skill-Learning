@@ -1,0 +1,44 @@
+[
+  {
+    "acct_id": 201,
+    "preferred_name": "Ariana Stone",
+    "contact_email": null,
+    "registered_on": null,
+    "member_state": null
+  },
+  {
+    "acct_id": 202,
+    "preferred_name": "Brian Cole",
+    "contact_email": "brian.cole@alpha.example",
+    "registered_on": null,
+    "member_state": "enabled"
+  },
+  {
+    "acct_id": 203,
+    "preferred_name": "Casey Nguyen",
+    "contact_email": null,
+    "registered_on": "2024-02-01",
+    "member_state": null
+  },
+  {
+    "acct_id": 204,
+    "preferred_name": null,
+    "contact_email": "mina@oldmail.example",
+    "registered_on": null,
+    "member_state": "ACTIVE"
+  },
+  {
+    "acct_id": 205,
+    "preferred_name": "Evan Li",
+    "contact_email": "evan@northwind.example",
+    "registered_on": null,
+    "member_state": null
+  },
+  {
+    "acct_id": 206,
+    "preferred_name": null,
+    "contact_email": null,
+    "registered_on": null,
+    "member_state": null
+  }
+]

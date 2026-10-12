@@ -1,0 +1,27 @@
+axes:
+  - description: >
+      The shape and numerical behavior of the imported scalar right-hand side function rhs(t, y).
+      The seed uses a smooth, bounded, non-stiff nonlinear function with time-varying coefficients.
+      The same skill must also handle other smooth scalar dynamics with different mixtures of time
+      dependence, linear and nonlinear terms, stronger local curvature, weaker or stronger
+      growth/decay, and coefficients that make fixed-step integration accuracy more or less
+      demanding while remaining compatible with the same numeric IVP-solving setup.
+    name: rhs_dynamics
+    type: freeform
+  - description: >
+      The distribution of requested evaluation times within the integration interval. The seed uses
+      a moderate number of strictly increasing eval_ts spread through [t0, t1]. The same skill must
+      also handle schedules with different counts, uneven spacing, clusters of closely spaced
+      targets, long sparse gaps, targets very near the interval boundaries, and segment layouts that
+      change how often the solver must land exactly on requested times without interpolation.
+    name: evaluation_schedule
+    type: freeform
+  - description: >
+      How restrictive the solver-side numerical constraints are while advancing through the
+      interval. The seed enforces a step ceiling derived from the interval length, requires exact
+      landing at each eval_t without interpolation, and checks a loose sample-efficiency cap. The
+      same skill must also handle looser or tighter step ceilings, looser or tighter efficiency
+      budgets, and looser or tighter landing requirements that increase the pressure to balance
+      accuracy against the number and size of integration steps.
+    name: integration_constraints
+    type: freeform

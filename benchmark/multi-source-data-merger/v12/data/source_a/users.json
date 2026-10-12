@@ -1,0 +1,22 @@
+[
+  {
+    "id": 201,
+    "full_name": "Lena Ortiz",
+    "email": "lena@source-a.test",
+    "registration_date": "2024-01-12",
+    "status": "enabled"
+  },
+  {
+    "id": 202,
+    "full_name": "Mason Lee",
+    "email": "mason@source-a.test",
+    "registration_date": "2024-02-05",
+    "status": "disabled"
+  },
+  {
+    "id": 203,
+    "full_name": "Priya Shah",
+    "email": "priya@source-a.test",
+    "registration_date": "2024-03-09"
+  }
+]

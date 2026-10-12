@@ -1,0 +1,25 @@
+instruction: |-
+  Alphabet (GOOGL) daily stock prices are in /app/googl_prices.csv.
+  Columns: Date,Open,High,Low,Close,Volume
+
+  Your task:
+  1. Calculate the trailing 5-observation and 10-observation simple moving
+     averages (SMA5 and SMA10) of Close
+  2. Set signal to 1 when both averages are valid and the unrounded SMA5 is
+     strictly greater than the unrounded SMA10; otherwise set it to 0
+  3. Write /app/results.csv with columns date,close,sma5,sma10,signal
+  4. Use N/A for each unavailable average and for signal until both averages
+     are available
+  5. Round displayed averages to 2 decimal places
+author_name: Task Author
+difficulty: medium
+category: data-analysis
+tags:
+  - technical-analysis
+  - sma-crossover
+  - trading-signal
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false

@@ -1,0 +1,44 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 507 >>
+stream
+BT
+/F1 16 Tf
+1 0 0 1 72 740 Tm (Apex Window Cleaning) Tj
+1 0 0 1 72 712 Tm (Service Statement AWC-1048) Tj
+1 0 0 1 72 684 Tm (Customer: Harbor Office Suites) Tj
+1 0 0 1 72 656 Tm (Visit date: 2026-03-03) Tj
+1 0 0 1 72 628 Tm (Exterior glass cleaning and frame wipe-down) Tj
+1 0 0 1 72 600 Tm (Current services: $1,680.00) Tj
+1 0 0 1 72 572 Tm (City sales tax 8.0%: $134.40) Tj
+1 0 0 1 72 544 Tm (Total: $1,814.40) Tj
+1 0 0 1 72 516 Tm (Amount Due: $1,864.40) Tj
+1 0 0 1 72 488 Tm (Remit by 2026-03-20) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+869
+%%EOF

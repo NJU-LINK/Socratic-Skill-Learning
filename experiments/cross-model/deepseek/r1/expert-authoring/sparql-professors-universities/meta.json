@@ -1,0 +1,16 @@
+{
+  "model": "deepseek",
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "sparql-professors-universities",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 141
+      }
+    }
+  },
+  "totals": {
+    "records": 141
+  }
+}

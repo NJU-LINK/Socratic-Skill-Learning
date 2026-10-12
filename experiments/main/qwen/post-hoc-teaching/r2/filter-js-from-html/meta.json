@@ -1,0 +1,106 @@
+{
+  "method": "post-hoc-teaching",
+  "round": 2,
+  "family": "filter-js-from-html",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 13
+      },
+      "student-author": {
+        "records": 261
+      }
+    },
+    "train": {
+      "iteration-1": {
+        "records": 79
+      },
+      "iteration-2": {
+        "records": 48
+      },
+      "iteration-3": {
+        "records": 56
+      }
+    },
+    "heldout": {
+      "v02": {
+        "records": 72,
+        "score": 0,
+        "passed": 0,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v03": {
+        "records": 57,
+        "score": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "timedOut": false
+      },
+      "v05": {
+        "records": 56,
+        "score": 1,
+        "passed": 3,
+        "failed": 0,
+        "timedOut": false
+      },
+      "v06": {
+        "records": 105,
+        "score": 0.6153846153846154,
+        "passed": 8,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v07": {
+        "records": 43,
+        "score": 0.2857142857142857,
+        "passed": 2,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v08": {
+        "records": 53,
+        "score": 0.5714285714285714,
+        "passed": 4,
+        "failed": 3,
+        "timedOut": false
+      },
+      "v10": {
+        "records": 119,
+        "score": 0,
+        "passed": 0,
+        "failed": 24,
+        "timedOut": false
+      },
+      "v13": {
+        "records": 71,
+        "score": 0,
+        "passed": 0,
+        "failed": 5,
+        "timedOut": false
+      },
+      "v15": {
+        "records": 69,
+        "score": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "timedOut": false
+      },
+      "v16": {
+        "records": 85,
+        "score": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "timedOut": false
+      }
+    }
+  },
+  "totals": {
+    "skill_formation": 274,
+    "train": 183,
+    "heldout": 730,
+    "heldoutVariants": 10,
+    "heldoutEmpty": 0,
+    "noSkillFormation": false
+  }
+}

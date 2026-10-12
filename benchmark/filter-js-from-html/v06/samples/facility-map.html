@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Facility Evacuation Map</title>
+  </head>
+  <body>
+    <article>
+      <h1>Facility Evacuation Map</h1>
+      <p>Room labels, arrows, and legend boxes should remain unchanged.</p>
+
+      <svg
+        viewBox="0 0 720 420"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        onload = "alert('map-ready')"
+      >
+        <defs>
+          <marker id="arrow-tip" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="#ef4444" />
+          </marker>
+        </defs>
+        <rect x="20" y="20" width="680" height="380" fill="#ffffff" stroke="#cbd5e1" stroke-width="3" />
+        <rect x="60" y="70" width="180" height="100" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+        <rect x="280" y="70" width="180" height="100" fill="#dcfce7" stroke="#16a34a" stroke-width="2" />
+        <rect x="500" y="70" width="140" height="100" fill="#fee2e2" stroke="#dc2626" stroke-width="2" />
+        <rect x="60" y="220" width="240" height="120" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+        <rect x="340" y="220" width="300" height="120" fill="#ede9fe" stroke="#7c3aed" stroke-width="2" />
+        <text x="112" y="125" font-size="22" fill="#0f172a">Assembly A</text>
+        <text x="335" y="125" font-size="22" fill="#0f172a">Server Room</text>
+        <text x="531" y="125" font-size="22" fill="#0f172a">Exit 2</text>
+        <text x="138" y="285" font-size="22" fill="#0f172a">Loading Dock</text>
+        <text x="455" y="285" font-size="22" fill="#0f172a">South Corridor</text>
+        <path d="M390 170 L390 210 L570 210 L570 185" fill="none" stroke="#ef4444" stroke-width="6" marker-end="url(#arrow-tip)" />
+        <script>
+          alert("inline-svg-script");
+        </script>
+      </svg>
+
+      <form action="/report-route" method="post">
+        <label for="checkpoint">Checkpoint</label>
+        <input id="checkpoint" name="checkpoint" value="Dock-17" />
+      </form>
+    </article>
+  </body>
+</html>

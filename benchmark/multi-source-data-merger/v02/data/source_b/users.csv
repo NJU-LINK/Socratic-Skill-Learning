@@ -1,0 +1,6 @@
+user_id,name,email_address,created_at,account_state
+201,Maya Chen,maya@beta.example,01/11/2024,enabled
+202,Luca Ortiz,luca@beta.example,2024/02/04,disabled
+203,Priya Nair,priya@beta.example,03-19-2024,enabled
+204,Theo G. Theo,theo@ops.example,2024-04-08,enabled
+205,Nora Patel,nora@beta.example,2024-05-02,enabled

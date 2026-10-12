@@ -1,0 +1,6 @@
+{
+  "max_completion_tokens": 65536,
+  "extra_body": {
+    "enable_thinking": true
+  }
+}

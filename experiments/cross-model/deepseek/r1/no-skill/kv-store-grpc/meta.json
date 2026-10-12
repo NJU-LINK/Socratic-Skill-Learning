@@ -1,0 +1,31 @@
+{
+  "model": "deepseek",
+  "method": "no-skill",
+  "round": 1,
+  "family": "kv-store-grpc",
+  "stats": {
+    "heldout": {
+      "v04": {
+        "records": 28
+      },
+      "v05": {
+        "records": 26
+      },
+      "v06": {
+        "records": 22
+      },
+      "v09": {
+        "records": 40
+      },
+      "v11": {
+        "records": 35
+      },
+      "v13": {
+        "records": 23
+      }
+    }
+  },
+  "totals": {
+    "records": 174
+  }
+}

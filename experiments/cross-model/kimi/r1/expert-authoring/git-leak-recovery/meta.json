@@ -1,0 +1,16 @@
+{
+  "model": "kimi",
+  "method": "expert-authoring",
+  "round": 1,
+  "family": "git-leak-recovery",
+  "stats": {
+    "skill_formation": {
+      "max-direct-author": {
+        "records": 117
+      }
+    }
+  },
+  "totals": {
+    "records": 117
+  }
+}

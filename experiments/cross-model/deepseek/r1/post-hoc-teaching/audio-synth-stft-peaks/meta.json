@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "post-hoc-teaching",
+  "round": 1,
+  "family": "audio-synth-stft-peaks",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 24
+      },
+      "student-author": {
+        "records": 223
+      }
+    }
+  },
+  "totals": {
+    "records": 247
+  }
+}

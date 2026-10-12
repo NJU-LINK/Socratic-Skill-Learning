@@ -1,0 +1,19 @@
+{
+  "model": "deepseek",
+  "method": "fixed-window-ssl",
+  "round": 1,
+  "family": "kv-store-grpc",
+  "stats": {
+    "skill_formation": {
+      "max-educator": {
+        "records": 61
+      },
+      "student-author": {
+        "records": 184
+      }
+    }
+  },
+  "totals": {
+    "records": 245
+  }
+}

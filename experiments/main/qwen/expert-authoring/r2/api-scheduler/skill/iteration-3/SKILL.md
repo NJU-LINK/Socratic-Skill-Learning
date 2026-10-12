@@ -1,0 +1,240 @@
+---
+name: api-scheduler
+description: >
+  Use a stateful calendar API simulator to build a priority-based task schedule,
+  handle emergency interruptions with stateful replanning, and produce correct
+  output artifacts. Covers priority scoring (urgency/eisenhower/weighted),
+  dependency-aware scheduling, emergency deletion and rescheduling, transient
+  error retries, optional batch insertion, and full API interaction logging.
+---
+
+# API Scheduler Skill
+
+## Overview
+
+You are a product manager scheduling tasks within a work-day window using a
+calendar API simulator. The simulator reads JSON commands from stdin (one per
+line) and writes JSON responses to stdout. State persists across invocations
+via a temp file. You must:
+
+1. Read configuration from `/app/tasks.json`
+2. Read API documentation from `/app/simulator_intro.md`
+3. Inspect `/app/api_simulator.py` for hidden capabilities (e.g. batch_insert)
+4. Build a priority-ordered schedule respecting constraints
+5. Submit the plan via the API, handling emergencies and errors
+6. Record **every** API request/response pair in `/app/history.jsonl`
+7. Write the final schedule to `/app/output.json`
+
+## Step 1: Read and Parse Inputs
+
+Read `/app/tasks.json`. It contains:
+- `tasks`: array of task objects with fields like `id`, `title`, `duration_min`,
+  `urgency`, `importance`, optionally `team_priority`, `depends_on` (list of
+  task IDs), `deadline` (HH:MM string or null)
+- `emergencies`: array of emergency objects (may be empty) with `id`, `title`,
+  `duration_min`, `arrival_time`, optionally `deadline`
+- `config`: `work_start`, `work_end`, `priority_method`, `calendar_id`
+
+Read `/app/simulator_intro.md` for the full scheduling contract.
+
+Read `/app/api_simulator.py` source code to check if `batch_insert` is
+supported. Look for the string `"batch_insert"` in the source. If present,
+you can use batch insertion for the initial plan; otherwise use individual
+`insert` commands.
+
+## Step 2: Compute Priority Scores
+
+Use the `priority_method` from config:
+
+| Method     | Formula                                                    |
+|------------|------------------------------------------------------------|
+| urgency    | `score = urgency`                                          |
+| eisenhower | `score = urgency * importance`                             |
+| weighted   | `score = 0.6*u + 0.4*i` (no team_priority field present)  |
+| weighted   | `score = 0.5*u + 0.3*i + 0.2*t` (team_priority present)   |
+
+**Tie-breaking (deterministic):**
+1. Higher score first
+2. Earlier hard deadline first (tasks **without** a deadline sort **after**
+   those with one)
+3. Original input order in `tasks.json` (earlier index first)
+
+## Step 3: Build the Initial Plan
+
+**Algorithm — greedy priority scheduling with dependencies:**
+
+```
+available_time = parse_time(config.work_start)
+work_end = parse_time(config.work_end)
+scheduled = []
+missed = []
+completed_ids = set()
+
+Repeat until all tasks are processed:
+  candidates = tasks not yet scheduled or missed
+               whose depends_on tasks are all in completed_ids
+  if no candidates: break (remaining tasks have unresolvable deps → missed)
+
+  Sort candidates by priority (descending) with tie-breaking rules.
+  Pick the top candidate.
+
+  start = available_time
+  end = start + duration_min
+
+  Feasibility checks:
+    - end <= work_end
+    - If task has a deadline: end <= parse_time(deadline)
+
+  If feasible:
+    scheduled.append(task with start, end, status="scheduled")
+    completed_ids.add(task.id)
+    available_time = end
+  Else:
+    missed.append(task)
+    # Do NOT add to completed_ids — dependents will also be missed
+    # Loop continues: the next iteration picks the next-highest-priority
+    # candidate, which may still fit.
+```
+
+**Critical rules:**
+- A task whose prerequisite is missed is automatically missed.
+- When a task is marked missed, the algorithm **continues** trying
+  lower-priority tasks — they may still fit in the remaining window.
+- Events are uninterrupted blocks (no splitting).
+- Time is tracked in minutes from midnight for arithmetic.
+
+## Step 4: Submit the Initial Plan to the API
+
+**The first mutating request MUST be `clear`.**
+
+Build a helper script (see scripts section below) or use inline commands.
+
+For each event in the initial plan, **include `status` in the event dict** so
+the simulator stores it (the test compares simulator state to output.json):
+```json
+{"cmd":"insert","calendar_id":"...","event":{"task_id":"A","title":"...","start":"14:00","end":"15:00","status":"scheduled"}}
+```
+
+If batch_insert is available in the simulator, use:
+```json
+{"cmd":"batch_insert","calendar_id":"...","events":[...]}
+```
+
+Record every request and response in `/app/history.jsonl`:
+```json
+{"request":{...},"response":{...}}
+```
+
+## Step 5: Handle Emergencies
+
+Process emergencies in chronological `arrival_time` order. For each:
+
+1. **Preserve** calendar events whose `end` ≤ `arrival_time`.
+2. **Delete** every event whose `end` > `arrival_time` (including in-progress).
+   - Use `{"cmd":"delete","calendar_id":"...","event_id":"evt_N"}` for each.
+   - Interrupted normal tasks return to the pool at full duration (no partial credit).
+3. **Insert** the emergency event at exactly `arrival_time`.
+   - Emergency must finish by its deadline (if any) and by `work_end`.
+   - Include `"status": "emergency"` in the event dict sent to the simulator.
+4. **Rebuild** the remaining normal plan starting from the emergency's end time.
+   - Use the same priority + dependency algorithm from Step 3.
+   - Rescheduled events get status = `"rescheduled"`.
+   - Submit new events via insert (or batch_insert if available).
+5. Repeat for later emergencies.
+
+**Important:** When deleting, you need the `event_id` for each calendar event.
+Use `list` or track IDs from insert responses. After deletions and re-insertions,
+event IDs increment — always track them.
+
+## Step 6: Handle API Errors
+
+- If a response has `status: "error"`, the state was **not** mutated.
+- For transient errors (rate limiting, server errors), **retry the same
+  logical operation** until it succeeds.
+- Record every attempt (including failed ones) in `history.jsonl`.
+- Use a retry loop with a reasonable max (e.g., 20 retries).
+
+## Step 7: Write Output
+
+Write `/app/output.json`:
+
+```json
+{
+  "schedule": [
+    {"task_id": "A", "title": "...", "start": "14:00", "end": "15:00", "status": "scheduled"},
+    {"task_id": "F", "title": "Emergency Fix", "start": "15:30", "end": "16:00", "status": "emergency"},
+    {"task_id": "B", "title": "...", "start": "16:00", "end": "16:45", "status": "rescheduled"}
+  ],
+  "completion_summary": {
+    "completed": ["A", "B"],
+    "missed": ["C"],
+    "total_tasks": 3,
+    "completed_count": 2,
+    "missed_count": 1
+  }
+}
+```
+
+- `schedule` must be chronological and non-overlapping.
+- `schedule` includes all events: normal tasks, emergencies, and rescheduled tasks.
+- Each schedule entry must have exactly: `task_id`, `title`, `start`, `end`, `status`.
+- **`completed` must be sorted alphabetically** by task_id (e.g., `["A", "B", "C"]`).
+- **`missed` must be sorted alphabetically** by task_id.
+- `completed` lists only **normal** tasks that were successfully scheduled.
+- `missed` lists only **normal** tasks that could not be scheduled.
+- `total_tasks` counts normal tasks only (not emergencies).
+- Invariant: `completed_count + missed_count == total_tasks`.
+- Statuses: `scheduled` (initial plan), `rescheduled` (after emergency),
+  `emergency` (emergency event).
+- **Critical:** The simulator state (after stripping auto-generated `id` fields)
+  must exactly match the `schedule` array in output.json. This means every
+  event inserted into the simulator must include `status` in the event dict.
+
+## Helper Script
+
+A complete scheduling script is provided at `scripts/schedule.py` in this
+skill package. **Deploy it to `/app/scripts/schedule.py` and run it:**
+
+```bash
+mkdir -p /app/scripts
+cp <skill-package-path>/scripts/schedule.py /app/scripts/schedule.py
+python3 /app/scripts/schedule.py
+```
+
+If the script file is not already in `/app/scripts/`, check the skill
+package directory (the directory containing this SKILL.md) for
+`scripts/schedule.py` and copy it. If you cannot find the file, write
+your own implementation following Steps 1-7 above.
+
+The script reads `/app/tasks.json`, computes the schedule, interacts with
+the API simulator, handles emergencies, and writes all output files. It
+supports all priority methods, dependency DAGs, deadlines, transient error
+retries, batch insertion, and emergency replanning.
+
+## Time Arithmetic
+
+Use minutes-from-midnight for all calculations:
+- `"14:00"` → 840
+- `"15:30"` → 930
+- To add duration: `end_min = start_min + duration_min`
+- To format back: `f"{h:02d}:{m:02d}"` where `h, m = divmod(total_min, 60)`
+
+## Verification Checklist
+
+Before finalizing, verify:
+
+1. ✅ First mutating API call was `clear`
+2. ✅ All events are chronological and non-overlapping
+3. ✅ Every event has `task_id`, `title`, `start`, `end`, `status`
+4. ✅ All events fit within `[work_start, work_end]`
+5. ✅ Tasks with deadlines end by their deadline
+6. ✅ Dependencies are respected (prereq completes before dependent starts)
+7. ✅ Emergency events start at their `arrival_time`
+8. ✅ Events ending after an emergency arrival were deleted
+9. ✅ `history.jsonl` has every request/response pair (including retries)
+10. ✅ Final `list` command confirms simulator state matches `output.json`
+    (state events minus auto `id` field == schedule entries)
+11. ✅ `completed` and `missed` lists are **sorted alphabetically** by task_id
+12. ✅ `output.json` has correct `completion_summary` counts
+13. ✅ Status values are correct (`scheduled`/`rescheduled`/`emergency`)
+14. ✅ Every insert to simulator includes `status` in the event dict

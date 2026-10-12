@@ -1,0 +1,32 @@
+instruction: |-
+  Read /app/input.xlsx and transform Sheet1 as follows.
+
+  Treat the nonempty strings in column A as a dictionary. For every valid ordered pair
+  (source_word, replacement_word):
+
+  - source_word contains at least one letter S;
+  - both words have the same length;
+  - replacement_word is obtained by replacing every S in source_word with one same vowel chosen
+    from A, E, I, O, or U;
+  - every non-S position is identical in the two words.
+
+  Emit each distinct pair once, with source_word in column G and replacement_word in column H.
+  Sort the pairs case-insensitively by column G and then column H. Do not write a header: the first
+  pair belongs in G1:H1. Overwrite the complete answer range G1:H65 and do not rely on any prior
+  contents in that range.
+
+  Preserve every input sheet, all values outside G1:H65, and the workbook's existing styles,
+  filters, merged ranges, panes, row heights, and column widths. Save the result to
+  /app/output.xlsx.
+author_name: Task Author
+difficulty: medium
+category: software-engineering
+tags:
+  - spreadsheet
+  - xlsx
+  - structural
+  - matching
+parser_name: pytest
+max_agent_timeout_sec: 360
+max_test_timeout_sec: 60
+run_tests_in_same_shell: false

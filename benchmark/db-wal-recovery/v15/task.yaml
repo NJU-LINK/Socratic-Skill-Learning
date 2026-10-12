@@ -1,0 +1,33 @@
+instruction: |-
+  A colleague was working with a SQLite database in /app/ when a
+  pre-commit hook encrypted the Write-Ahead Log (WAL) file using
+  openssl enc -aes-256-cbc (password: "secret123"). On top of that,
+  the hook also scrambled the page number field inside each WAL
+  frame header, so SQLite can't apply the WAL automatically.
+
+  Your task is to:
+  1. Decrypt the WAL file using the known password
+  2. Examine the WAL frame headers to determine which database page
+     each frame belongs to (the page number has been zeroed out)
+  3. Manually apply the WAL frames to the database to recover all data
+  4. Export the full dataset as a JSON file at /app/recovered.json
+
+  The database has a single table `items` with columns id, name, value.
+  The output JSON should be a list of objects sorted by id, e.g.:
+  [{"id": 1, "name": "item1", "value": 123}, ...]
+
+  You need to recover all 11 records. The base database only has 5
+  records; the WAL contains inserts for records 6-11 plus updates to
+  records 1 and 2.
+author_name: Task Author
+difficulty: medium
+category: database
+tags:
+  - database
+  - encryption
+  - recovery
+parser_name: pytest
+max_agent_timeout_sec: 1200
+max_test_timeout_sec: 180
+run_tests_in_same_shell: false
+disable_asciinema: false
