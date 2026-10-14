@@ -29,3 +29,35 @@ authors:
     given-names: Wenbo
   - family-names: Liu
     given-names: Jiaheng
+preferred-citation:
+  type: article
+  title: "Socratic Skill Learning: Interleaving Teaching and Practice for Transferable Agent Skills"
+  authors:
+    - family-names: Zhu
+      given-names: Letian
+    - family-names: Li
+      given-names: Han
+    - family-names: Yao
+      given-names: Yifan
+    - family-names: Lei
+      given-names: Xinping
+    - family-names: Che
+      given-names: Xinyu
+    - family-names: Wang
+      given-names: Jiahao
+    - family-names: Wang
+      given-names: Dianyi
+    - family-names: Fu
+      given-names: Yucheng
+    - family-names: Wang
+      given-names: Jiakai
+    - family-names: Bai
+      given-names: Zhiqi
+    - family-names: Su
+      given-names: Wenbo
+    - family-names: Liu
+      given-names: Jiaheng
+  year: 2026
+  journal: arXiv
+  doi: "10.48550/arXiv.2610.17860"
+  url: "https://arxiv.org/abs/2610.17860"

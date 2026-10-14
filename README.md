@@ -6,15 +6,15 @@
 
 **[NJU-LINK](https://github.com/NJU-LINK) · Nanjing University**
 
-<!-- TODO: Add the arXiv paper link after publication. -->
-
 <p align="center">
+  <a href="https://arxiv.org/abs/2610.17860"><img src="https://img.shields.io/badge/arXiv-2610.17860-b31b1b.svg" alt="arXiv: 2610.17860" /></a>
   <a href="benchmark/README.md"><img src="https://img.shields.io/badge/Benchmark-SkillTransferBench-f6c343.svg" alt="Benchmark: SkillTransferBench" /></a>
   <a href="docs/running.md"><img src="https://img.shields.io/badge/Docs-Usage-4f7cba.svg" alt="Docs: Usage" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/Code-MIT-6a8f5f.svg" alt="Code license: MIT" /></a>
 </p>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2610.17860">Paper</a> ·
   <a href="#quick-start">Quick Start</a> ·
   <a href="benchmark/README.md">SkillTransferBench</a> ·
   <a href="#results">Results</a> ·
@@ -108,7 +108,11 @@ docs/           Running guide, results, and learning examples
             and Xinyu Che and Jiahao Wang and Dianyi Wang and Yucheng Fu
             and Jiakai Wang and Zhiqi Bai and Wenbo Su and Jiaheng Liu},
   year   = {2026},
-  url    = {https://github.com/NJU-LINK/Socratic-Skill-Learning}
+  eprint = {2610.17860},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  doi    = {10.48550/arXiv.2610.17860},
+  url    = {https://arxiv.org/abs/2610.17860}
 }
 ```
 

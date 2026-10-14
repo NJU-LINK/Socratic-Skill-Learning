@@ -23,8 +23,9 @@ and [lite.yaml](../configs/scopes/lite.yaml). Model pairs are specified in
 [deepseek.yaml](../configs/models/deepseek.yaml), and
 [kimi.yaml](../configs/models/kimi.yaml).
 
-Cross-model performance is reported in the paper. Here the Skill methods
-provide learning records and packages, and the `no-skill` directories provide
+Cross-model performance is reported in the
+[paper](https://arxiv.org/abs/2610.17860). Here the Skill methods provide
+learning records and packages, and the `no-skill` directories provide
 held-out solving sessions.
 
 ## Follow one run

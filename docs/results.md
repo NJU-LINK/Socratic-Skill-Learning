@@ -1,6 +1,6 @@
 # Results
 
-[← Project overview](../README.md#results)
+[← Project overview](../README.md#results) · [Paper](https://arxiv.org/abs/2610.17860)
 
 ## Main comparison
 
