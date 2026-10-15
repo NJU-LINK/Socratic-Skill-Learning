@@ -1,49 +1,55 @@
-<a href="https://github.com/NJU-LINK"><img align="right" src="docs/assets/nju-link-logo.png" width="120" alt="NJU-LINK" /></a>
-
-# Socratic Skill Learning
-
-> **Interleaving Teaching and Practice for Transferable Agent Skills**
-
-**[NJU-LINK](https://github.com/NJU-LINK) · Nanjing University**
-
 <p align="center">
-  <a href="https://arxiv.org/abs/2610.17860"><img src="https://img.shields.io/badge/arXiv-2610.17860-b31b1b.svg" alt="arXiv: 2610.17860" /></a>
-  <a href="benchmark/README.md"><img src="https://img.shields.io/badge/Benchmark-SkillTransferBench-f6c343.svg" alt="Benchmark: SkillTransferBench" /></a>
-  <a href="docs/running.md"><img src="https://img.shields.io/badge/Docs-Usage-4f7cba.svg" alt="Docs: Usage" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/Code-MIT-6a8f5f.svg" alt="Code license: MIT" /></a>
+  <img src="docs/assets/nju-link-logo.png" width="104" alt="NJU-LINK" />
 </p>
 
+<h1 align="center">Socratic Skill Learning</h1>
+
+<p align="center"><strong>Interleaving Teaching and Practice for Transferable Agent Skills</strong></p>
+
+<p align="center"><strong>NJU-LINK</strong> · Nanjing University</p>
+
 <p align="center">
-  <a href="https://arxiv.org/abs/2610.17860">Paper</a> ·
-  <a href="#quick-start">Quick Start</a> ·
-  <a href="benchmark/README.md">SkillTransferBench</a> ·
-  <a href="#results">Results</a> ·
-  <a href="#citation">Citation</a>
+  <a href="https://arxiv.org/abs/2610.17860"><img src="https://img.shields.io/badge/arXiv-2610.17860-a04b4b.svg?logo=arxiv&amp;logoColor=white" alt="Paper on arXiv" /></a>
+  <a href="https://huggingface.co/datasets/NJU-LINK/SkillTransferBench"><img src="https://img.shields.io/badge/Hugging_Face-SkillTransferBench-967348.svg?logo=huggingface&amp;logoColor=white" alt="SkillTransferBench on Hugging Face" /></a>
+  <a href="docs/README.md"><img src="https://img.shields.io/badge/Docs-Guide-64737d.svg?logo=readthedocs&amp;logoColor=white" alt="Documentation" /></a>
 </p>
 
----
-
-## Introduction
+## Overview
 
 **Socratic Skill Learning (SSL)** develops reusable agent Skills by interleaving
 a Student's practice with an Educator's guidance. The Student authors the
 package, which fresh solvers apply to unseen tasks.
 
-We release:
-
-- **[SSL](src/)** — Fixed-Window and Issue-Guided Skill learning and evaluation.
-- **[SkillTransferBench](benchmark/README.md)** — 35 task families and 408 executable variants.
-- **[Skills and records](experiments/README.md)** — Learned packages, scores, and Student–Educator sessions.
+Fixed-Window SSL reviews progress at regular intervals. Issue-Guided SSL
+focuses review on unresolved learning issues as they change.
 
 <p align="center">
-  <a href="docs/assets/method-overview.png"><img src="docs/assets/method-overview.png" width="880" alt="SSL learning and transfer: the Student tests and authors the Skill, the Educator reviews recent work, and fresh solvers apply the learned package. Fixed-Window and Issue-Guided SSL use different review schedules." /></a>
+  <picture><source media="(max-width: 640px)" srcset="docs/assets/repo-overview-mobile.svg"><img src="docs/assets/repo-overview.svg" width="880" alt="The Educator guides Student practice. The Student tests and authors a Skill package, which fresh solvers apply to unseen tasks."></picture>
 </p>
 
-[See an annotated learning run →](docs/learning-example.md)
+<details>
+<summary>Full method diagram</summary>
+
+![SSL method and review policies](docs/assets/method-overview.png)
+
+</details>
+
+## SkillTransferBench
+
+**35 task families · 408 executable cases · 6 domains.**
+Public family specifications define what can vary; fresh solver sessions test
+whether learned Skills transfer to held-out cases.
+
+<p align="center">
+  <picture><source media="(max-width: 640px)" srcset="docs/assets/benchmark-overview-mobile.svg"><img src="docs/assets/benchmark-overview.svg" width="880" alt="SkillTransferBench covers systems, services, data processing, scientific computing, finance, and office automation."></picture>
+</p>
+
+The main evaluation uses **22 families / 155 held-out cases**; cross-model
+experiments use a shared **10-family / 77-case** subset.
+Browse specifications and download executable tasks on
+[Hugging Face](https://huggingface.co/datasets/NJU-LINK/SkillTransferBench).
 
 ## Quick Start
-
-### Installation
 
 Requires **Node.js 22.19+**, **Docker**, and an OpenAI-compatible model endpoint.
 
@@ -56,8 +62,6 @@ cp .env.example .env
 
 Set `SSL_URL` and `SSL_KEY` in `.env` and start Docker.
 
-### Usage
-
 Learn and evaluate a Skill on one task family:
 
 ```bash
@@ -68,8 +72,7 @@ npm run ssl -- run --scope main --model qwen \
 
 Add `--dry-run` to preview the plan without model calls.
 
-[Evaluate a released Skill](docs/running.md#evaluate-a-released-skill) ·
-[Summarize results offline](docs/running.md#recompute-the-main-results-offline)
+The [documentation](docs/README.md) covers setup, released Skills, and offline analysis.
 
 ## Results
 
@@ -78,24 +81,9 @@ Fixed-Window SSL improves utility over No Skill by **7.8 pp on Qwen**
 
 Issue-Guided SSL uses **61.7–77.4% fewer Educator tokens** than Fixed-Window SSL.
 
-[Full results →](docs/results.md)
-
-<details>
-<summary>Project structure</summary>
-
-```text
-src/            Skill learning, teaching, and evaluation
-benchmark/      SkillTransferBench tasks and specifications
-experiments/    Learned Skills, scores, and session archives
-configs/        Models and experiment scopes
-docs/           Running guide, results, and learning examples
-```
-
-</details>
+See [results and model settings](docs/results.md) for the complete comparisons.
 
 ## Citation
-
-[CITATION.cff](CITATION.cff)
 
 <details>
 <summary><b>BibTeX</b></summary>
@@ -120,9 +108,14 @@ docs/           Running guide, results, and learning examples
 
 ## License
 
-**Original code:** [MIT](LICENSE). **Benchmark:** [upstream terms](THIRD_PARTY_NOTICES.md)
-and [attribution](benchmark/ATTRIBUTION.md).
+Original code is [MIT licensed](LICENSE). Benchmark materials retain their
+[source-specific licenses and attribution](THIRD_PARTY_NOTICES.md).
+
+<details>
+<summary>Acknowledgments</summary>
 
 Runtime: [Pi](https://github.com/earendil-works/pi) · Baseline adapters:
 [Trace2Skill](https://github.com/Qwen-Applications/Trace2Skill) and
 [SKILL-KD](https://github.com/KhanCold/SKILL-KD).
+
+</details>

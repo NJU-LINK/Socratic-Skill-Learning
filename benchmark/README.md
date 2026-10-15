@@ -6,6 +6,11 @@ SkillTransferBench contains **35 task families and 408 executable variants**:
 family's task contract while changing the inputs or conditions described in
 the specification. Variant numbers are preserved and may have gaps.
 
+[Browse and download on Hugging Face](https://huggingface.co/datasets/NJU-LINK/SkillTransferBench)
+· [Local family catalog](../docs/benchmark-catalog.md)
+
+![Domain coverage](../docs/assets/benchmark-overview.svg)
+
 ## Evaluation scopes
 
 | Scope | Families | Training anchors | Held-out cases | Total variants |
