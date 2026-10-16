@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/nju-link-logo.png" width="104" alt="NJU-LINK" />
+  <img src="docs/assets/nju-link-logo.png" width="84" alt="NJU-LINK" />
 </p>
 
 <h1 align="center">Socratic Skill Learning</h1>
@@ -41,13 +41,21 @@ Public family specifications define what can vary; fresh solver sessions test
 whether learned Skills transfer to held-out cases.
 
 <p align="center">
-  <picture><source media="(max-width: 640px)" srcset="docs/assets/benchmark-overview-mobile.svg"><img src="docs/assets/benchmark-overview.svg" width="880" alt="SkillTransferBench covers systems, services, data processing, scientific computing, finance, and office automation."></picture>
+  <picture><source media="(max-width: 640px)" srcset="docs/assets/benchmark-atlas-mobile.svg"><img src="docs/assets/benchmark-atlas.svg" width="880" alt="Six domains of executable tasks, with representative workflows and family / case counts."></picture>
 </p>
 
 The main evaluation uses **22 families / 155 held-out cases**; cross-model
 experiments use a shared **10-family / 77-case** subset.
 Browse specifications and download executable tasks on
 [Hugging Face](https://huggingface.co/datasets/NJU-LINK/SkillTransferBench).
+
+## Results
+
+<p align="center">
+  <picture><source media="(max-width: 640px)" srcset="docs/assets/results-summary-mobile.svg"><img src="docs/assets/results-summary.svg" width="880" alt="Fixed-Window SSL utility gains over No Skill: Qwen main +7.8 pp, DeepSeek shared +3.1 pp, Kimi shared +8.2 pp. Issue-Guided SSL saves 61.7%, 63.8%, 77.4% Educator tokens against Fixed-Window SSL."></picture>
+</p>
+
+[Full comparisons and model settings](docs/results.md).
 
 ## Quick Start
 
@@ -73,15 +81,6 @@ npm run ssl -- run --scope main --model qwen \
 Add `--dry-run` to preview the plan without model calls.
 
 The [documentation](docs/README.md) covers setup, released Skills, and offline analysis.
-
-## Results
-
-Fixed-Window SSL improves utility over No Skill by **7.8 pp on Qwen**
-(22 families), **3.1 pp on DeepSeek**, and **8.2 pp on Kimi** (10 shared families).
-
-Issue-Guided SSL uses **61.7–77.4% fewer Educator tokens** than Fixed-Window SSL.
-
-See [results and model settings](docs/results.md) for the complete comparisons.
 
 ## Citation
 
