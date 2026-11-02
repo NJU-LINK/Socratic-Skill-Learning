@@ -5,8 +5,8 @@ services:
   client:
     build:
       dockerfile: Dockerfile
-    image: ${T_BENCH_TASK_DOCKER_CLIENT_IMAGE_NAME:-Task Author-deterministic-tarball-client}
-    container_name: ${T_BENCH_TASK_DOCKER_CLIENT_CONTAINER_NAME:-Task Author-deterministic-tarball-client}
+    image: ${T_BENCH_TASK_DOCKER_CLIENT_IMAGE_NAME:-stb-deterministic-tarball-client}
+    container_name: ${T_BENCH_TASK_DOCKER_CLIENT_CONTAINER_NAME:-stb-deterministic-tarball-client}
     command: ["sh", "-c", "sleep infinity"]
     environment:
       - TEST_DIR=${T_BENCH_TEST_DIR:-/tmp/test-dir}

@@ -77,6 +77,11 @@ from benchmark preparation. The source manifest uses the original
 The released catalog and evaluation membership are specified by the scope
 files above.
 
+The source manifest is a frozen preparation snapshot: its `localSha256`
+values predate release data sanitization and later fixes. The scorer manifest
+validates the current test runners. See the [release changes](CHANGELOG.md)
+for packaging fixes.
+
 </details>
 
 ## Sources and licenses
